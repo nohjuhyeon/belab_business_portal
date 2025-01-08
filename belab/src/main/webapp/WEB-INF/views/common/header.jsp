@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java"  pageEncoding="UTF-8"%>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -149,8 +149,8 @@
                             회사소개
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="#">오시는 길</a></li>
-                            <li><a class="dropdown-item" href="#">인사말</a></li>
+                            <li><a class="dropdown-item" href="/Directions">오시는 길</a></li>
+                            <li><a class="dropdown-item" href="/Greeting">인사말</a></li>
                         </ul>
                     </li>
                     <!-- PlatForm Service -->
