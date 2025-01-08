@@ -88,6 +88,9 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+tasks.named('bootWar') {
+    archiveFileName = 'be_web'  // WAR 파일 이름을 'my-custom-name.war'로 지정
+}
 tasks.named('test') {
     useJUnitPlatform()
 }
