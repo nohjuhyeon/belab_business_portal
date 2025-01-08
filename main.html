@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 상단바 스타일 */
+        .navbar {
+            background-color: rgb(85, 85, 85); /* 짙은 회색 */
+        }
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: #ffffff !important; /* 글씨 흰색 */
+        }
+        .navbar .nav-link:hover {
+            color: #d1d1d1 !important; /* 글씨 호버 시 밝은 회색 */
+        }
+
+        /* 로고와 버튼을 한 줄에 배치 */
+        .header-container {
+            display: flex;
+            justify-content: center; /* 기본적으로 로고 가운데 정렬 */
+            align-items: center; /* 세로 중앙 정렬 */
+            padding: 10px 20px;
+            background-color: #f8f9fa; /* 배경색 */
+        }
+        .header-container img {
+            max-height: 91px; /* 로고 최대 높이 설정 */
+            height: auto;
+        }
+
+        /* 버튼 스타일 */
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            right: 20px; /* 버튼을 오른쪽으로 정렬 */
+        }
+        .action-buttons .btn {
+            border: 1px solid rgb(85, 85, 85); /* 버튼 테두리 */
+            color: rgb(85, 85, 85); /* 버튼 텍스트 */
+            background-color: transparent; /* 투명 배경 */
+        }
+        .action-buttons .btn:hover {
+            background-color: rgb(85, 85, 85); /* 호버 시 배경색 */
+            color: #ffffff; /* 호버 시 텍스트 흰색 */
+        }
+
+        /* 햄버거 버튼 스타일 */
+        .navbar-toggler {
+            background-color: #ffffff; /* 버튼 배경 흰색 */
+            border: none; /* 테두리 제거 */
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 세 줄을 검정색으로 설정 */
+        }
+
+        /* 데스크탑 화면에서 메뉴를 가운데 정렬 */
+        @media (min-width: 992px) {
+            .navbar-collapse {
+                justify-content: center; /* 메뉴를 가운데 정렬 */
+                text-align: center; /* 텍스트도 가운데 정렬 */
+            }
+        }
+
+        /* 모바일 화면에서만 햄버거 버튼과 메뉴를 왼쪽 정렬 */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                justify-content: flex-start; /* 메뉴 전체 왼쪽 정렬 */
+                text-align: left; /* 텍스트 왼쪽 정렬 */
+            }
+
+            .navbar-toggler {
+                margin-left: 0; /* 햄버거 버튼을 왼쪽으로 정렬 */
+            }
+
+            .header-container {
+                justify-content: space-between; /* 로고 왼쪽, 버튼 오른쪽 */
+            }
+        }
+        @media (max-width: 991px) {
+            .header-container {
+                justify-content: space-between; /* 로고 왼쪽, 버튼 오른쪽 */
+            }
+            .header-container img {
+                max-width: 50%; /* 로고 너비를 화면의 50%로 제한 */
+                height: auto; /* 비율 유지 */
+            }
+            /* collapse 내부 텍스트 왼쪽 정렬 */
+            .navbar-collapse {
+                text-align: left; /* 텍스트 왼쪽 정렬 */
+            }
+        }
+
+    </style>
+</head>
+<header>
+<!-- 로고 및 버튼 영역 -->
+    <div class="header-container">
+        <!-- 로고 이미지 -->
+        <img src="https://github.com/user-attachments/assets/ee5ebda4-b909-4390-86e8-5891c78f996e" alt="Logo">
+        <!-- 데스크탑 및 모바일 버튼 -->
+        <div class="action-buttons">
+            <button class="btn btn-sm">로그인</button>
+            <button class="btn btn-sm">마이 페이지</button>
+            <button class="btn btn-sm">관리자</button>
+        </div>
+    </div>
+
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- 햄버거 메뉴 버튼 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 네비게이션 메뉴 -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- 회사소개 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            회사소개
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">오시는 길</a></li>
+                            <li><a class="dropdown-item" href="#">인사말</a></li>
+                        </ul>
+                    </li>
+                    <!-- PlatForm Service -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="platformDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PlatForm Service
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="platformDropdown">
+                            <li><a class="dropdown-item" href="#">MSP(cloud)</a></li>
+                            <li><a class="dropdown-item" href="#">Hosting</a></li>
+                            <li><a class="dropdown-item" href="#">K-PaaS</a></li>
+                        </ul>
+                    </li>
+                    <!-- Content Service -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Content Service
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="contentDropdown">
+                            <li><a class="dropdown-item" href="#">BeLog</a></li>
+                            <li><a class="dropdown-item" href="#">BeMON</a></li>
+                        </ul>
+                    </li>
+                    <!-- Data Service -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Data Service
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dataDropdown">
+                            <li><a class="dropdown-item" href="#">DB</a></li>
+                            <li><a class="dropdown-item" href="#">Web</a></li>
+                            <li><a class="dropdown-item" href="#">WAS</a></li>
+                            <li><a class="dropdown-item" href="#">DataHubPlatForm</a></li>
+                            <li><a class="dropdown-item" href="#">Data Analysis</a></li>
+                        </ul>
+                    </li>
+                    <!-- 고객센터 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="supportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            고객센터
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="supportDropdown">
+                            <li><a class="dropdown-item" href="#">공지사항</a></li>
+                            <li><a class="dropdown-item" href="#">문의게시판</a></li>
+                            <li><a class="dropdown-item" href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 부트스트랩 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</header>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px 0;
+            align-items: center;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .service img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        .service-text {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .contact-section {
+            text-align: center;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .contact-section p {
+            margin: 10px 0;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-buttons button {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .chat-button {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .link-button {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- 메인 이미지 슬라이드 -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1920x600?text=Slide+1" class="d-block w-100" alt="슬라이드 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1920x600?text=Slide+2" class="d-block w-100" alt="슬라이드 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1920x600?text=Slide+3" class="d-block w-100" alt="슬라이드 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">이전</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">다음</span>
+        </button>
+    </div>
+
+    <!-- 설명 -->
+    <div class="description">
+        <p>이 페이지에서는 데이터 서비스, 플랫폼 서비스, 컨텐츠 서비스의 세 가지 핵심 솔루션을 제공합니다.</p>
+    </div>
+
+    <!-- 서비스 섹션 -->
+    <div class="services">
+        <div class="service">
+            <img src="img_data_service.png" alt="데이터 서비스">
+            <div class="service-text">
+                <strong>Img_data_service</strong>
+                <p>text</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="img_platform_service.png" alt="플랫폼 서비스">
+            <div class="service-text">
+                <strong>Img_platform_service</strong>
+                <p>text</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="img_data_service.png" alt="컨텐츠 서비스">
+            <div class="service-text">
+                <strong>Img_data_service</strong>
+                <p>text</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 고객센터 -->
+    <div class="contact-section">
+        <h2>고객센터</h2>
+        <p>CONTACT US</p>
+        <p>(주) 비이랩은 항상 고객과의 소통을 위해 노력합니다.<br>궁금하신 사항은 언제든지 문의해주셔도 됩니다. 항상 고객의 입장에서 생각합니다.</p>
+        <div class="contact-buttons">
+            <button class="link-button">바로가기</button>
+            <button class="chat-button">채팅상담</button>
+        </div>
+    </div>
+
+    <!-- 부트스트랩 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<head>
+    <style>
+        /* 푸터 스타일 */
+        footer {
+            background-color: #333; /* 배경색: 어두운 회색 */
+            color: #fff; /* 텍스트 색상: 흰색 */
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap; /* 반응형: 줄바꿈 가능 */
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1 1 50px; /* 최소 너비 300px, 공간 나눔 */
+            margin: 10px;
+        }
+
+        .footer-section p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #ccc; /* 저작권 텍스트 색상 */
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column; /* 모바일에서는 세로 정렬 */
+                text-align: center;
+            }
+
+            .footer-section {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<footer>
+    <div class="footer-container">
+        <!-- 회사 정보 -->
+        <div class="footer-section">
+            <p><strong>상호:</strong> 주식회사 비이랩</p>
+            <p><strong>개인정보책임자:</strong> 김성걸</p>
+            <p><strong>이메일:</strong> sk.kim@belab.co.kr</p>
+            <p><strong>소재지:</strong> (06349) 서울 강남구 광평로 295 사이룩스오피스텔 동관동1714호</p>
+        </div>
+
+        <!-- 연락처 -->
+        <div class="footer-section">
+            <p><strong>사업자등록번호:</strong> 457-87-02772</p>
+            <p><strong>Tel:</strong> 02-451-0902</p>
+            <p><strong>팩스:</strong> 02-451-0905</p>
+        </div>
+
+        <!-- 저작권 -->
+        <div class="footer-section">
+            <p>Copyright © Belab. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- 저작권 문구 -->
+    <div class="copyright">
+        Copyright @ Belab. All Rights Reserved.
+    </div>
+</footer>
+</html>
