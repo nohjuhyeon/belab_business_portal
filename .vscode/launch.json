@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BelabApplication<belab>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.belab.co.kr.BelabApplication",
+            "projectName": "belab",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
