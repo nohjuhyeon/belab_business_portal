@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Header With Mobile Left-Aligned Menu</title>
     <!-- 부트스트랩 CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* 상단바 스타일 */
@@ -18,6 +19,29 @@
             color: #d1d1d1 !important; /* 글씨 호버 시 밝은 회색 */
         }
 
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* 부트스트랩 기본 스타일에서 약간의 간격을 제거 */
+        }
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.6) !important; /* 검은색 배경, 투명도 80% */
+            color: #ffffff; /* 텍스트 흰색 */
+            border: none; /* 테두리 제거 */
+        }
+    
+        /* 드롭다운 메뉴 항목 스타일 */
+        .dropdown-item {
+            color: #ffffff !important; /* 드롭다운 항목 텍스트 흰색 */
+        }
+    
+        .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.1) !important; /* 호버 시 약간 밝은 배경 */
+            color: #ffffff !important; /* 호버 시 텍스트 색상 유지 */
+        }    
+        /* 드롭다운 메뉴의 전환 애니메이션 */
+        .navbar-nav .dropdown-menu {
+            transition: all 0.3s ease-in-out;
+        }
         /* 로고와 버튼을 한 줄에 배치 */
         .header-container {
             display: flex;

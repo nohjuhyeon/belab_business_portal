@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
     @GetMapping("/")
     public String index() {
-        return "index"; // index.jsp를 가리킵니다.
+        return "main"; // index.jsp를 가리킵니다.
     }
 }
