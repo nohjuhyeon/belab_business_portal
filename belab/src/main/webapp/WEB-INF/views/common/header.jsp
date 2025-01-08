@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* 상단바 스타일 */
+        .templete-header {
+            padding: 20px 0;
+
+        }
         .navbar {
             background-color: rgb(85, 85, 85); /* 짙은 회색 */
         }
@@ -121,10 +125,12 @@
     </style>
 </head>
     <!-- 로고 및 버튼 영역 -->
-<header>
+<div class="templete-header">
     <div class="header-container">
         <!-- 로고 이미지 -->
-        <img src="https://github.com/user-attachments/assets/ee5ebda4-b909-4390-86e8-5891c78f996e" alt="Logo">
+        <a href="/" target="_blank">
+            <img src="https://github.com/user-attachments/assets/ee5ebda4-b909-4390-86e8-5891c78f996e" alt="Logo">
+        </a>
         <!-- 데스크탑 및 모바일 버튼 -->
         <div class="action-buttons">
             <button class="btn btn-sm">로그인</button>
@@ -149,8 +155,8 @@
                             회사소개
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="/Directions">오시는 길</a></li>
                             <li><a class="dropdown-item" href="/Greeting">인사말</a></li>
+                            <li><a class="dropdown-item" href="/Directions">오시는 길</a></li>
                         </ul>
                     </li>
                     <!-- PlatForm Service -->
@@ -205,4 +211,4 @@
 
     <!-- 부트스트랩 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</header>
+</div>
