@@ -10,8 +10,8 @@
       color: #000; /* 텍스트 색상: 검정색 */
       padding: 5px 20px;
       font-size: 14px;
-      margin-right : 30px;
-      margin-top : 10px;
+      margin-right: 30px;
+      margin-top: 10px;
     }
 
     .top-bar a {
