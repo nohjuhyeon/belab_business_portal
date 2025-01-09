@@ -7,10 +7,11 @@
   <style>
     /* top-bar 스타일 */
     .top-bar {
-      background-color: #fff; /* 배경색: 흰색 */
       color: #000; /* 텍스트 색상: 검정색 */
       padding: 5px 20px;
       font-size: 14px;
+      margin-right : 30px;
+      margin-top : 10px;
     }
 
     .top-bar a {
@@ -28,15 +29,16 @@
     /* 네비게이션 바 기본 설정 */
     .navbar {
         margin-bottom: 10px;
+      }
+  
+    .headerbar {
         background-color: transparent; /* 기본 배경 제거 */
         transition: background-color 0.3s ease; /* 배경 전환 효과 */
-      }
-  
-      /* 네비게이션 바 hover 시 전체 배경 변경 */
-      .navbar:hover {
+
+    }
+    .headerbar:hover {
         background-color: #fff; /* 배경 흰색으로 변경 */
       }
-  
 
     /* 로고 이미지 크기 조정 */
     .navbar-brand img {
@@ -49,9 +51,8 @@
     .navbar-nav .nav-link {
         font-size: clamp(1.0rem, 1.2vw, 1.5rem);  /* 메인 메뉴 글씨 크기 */
         font-weight: bold; /* 글씨를 굵게 설정 */
-        margin: 0 20px; /* 좌우 간격 추가 */
+        margin: 0 25px; /* 좌우 간격 추가 */
     }
-
     /* 드롭다운 메뉴 글씨 크기 조정 */
     .dropdown-menu .dropdown-item {
       font-size: 16px; /* 드롭다운 메뉴 글씨 크기 */
@@ -68,18 +69,18 @@
 </head>
 <body>
   <!-- 상단 바 -->
+   <div class="headerbar">
   <div class="top-bar d-flex justify-content-end">
-    <a href="#">로그인</a>
-    <a href="#">회원가입</a>
-    <a href="#">사이트맵</a>
-    <a href="#">ENGLISH</a>
+    <a href="#">LOGIN</a>
+    <a href="#">My Page</a>
+    <a href="#">Admin</a>
   </div>
 
   <!-- 네비게이션 바 -->
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+    <div class="container-fluid  d-flex align-items-center">
       <!-- 로고 -->
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand  me-3" href="/">
         <img src="/images/logo.png" alt="Logo" class="img-fluid">
       </a>
 
@@ -89,11 +90,11 @@
       </button>
 
       <!-- 메뉴 -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse  ms-3" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                회사소개
+                회사 소개
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                 <li><a class="dropdown-item" href="/Greeting">인사말</a></li>
@@ -145,6 +146,7 @@
         </ul>
       </div>
     </div>
+</div>
   </nav>
 
   <!-- 부트스트랩 JS -->
