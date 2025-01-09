@@ -78,7 +78,6 @@
         font-size: clamp(1.0rem, 1.2vw, 1.5rem);  /* 메인 메뉴 글씨 크기 */
         font-weight: bold; /* 글씨를 굵게 설정 */
         margin: 0 25px; /* 좌우 간격 추가 */
-        color: #000;
     }
     /* 드롭다운 메뉴 글씨 크기 조정 */
     .dropdown-menu .dropdown-item {
