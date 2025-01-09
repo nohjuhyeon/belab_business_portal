@@ -5,7 +5,9 @@ plugins {
     id 'io.spring.dependency-management' version '1.1.7'
     id 'eclipse' // Eclipse 플러그인 추가
 }
-
+war {
+    webAppDirName = 'src/main/webapp'
+}
 group = 'com.belab'
 version = '0.0.1-SNAPSHOT'
 
@@ -64,7 +66,6 @@ dependencies {
     implementation group: 'net.coobird', name: 'thumbnailator', version: '0.4.8'
 
     // Apache Tiles 의존성
-    implementation 'org.apache.tiles:tiles-jsp:3.0.4'
 
     // JSON 처리 의존성
     implementation 'net.sf.json-lib:json-lib:2.4:jdk15'

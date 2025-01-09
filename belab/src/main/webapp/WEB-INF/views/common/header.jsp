@@ -1,4 +1,5 @@
 <%@ page language="java"  pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,7 @@
     .navbar {
         margin-bottom: 10px;
       }
-  
+
     .headerbar {
         background-color: transparent; /* 기본 배경 제거 */
         transition: background-color 0.3s ease; /* 배경 전환 효과 */
@@ -69,12 +70,25 @@
 </head>
 <body>
   <!-- 상단 바 -->
-   <div class="headerbar">
-  <div class="top-bar d-flex justify-content-end">
-    <a href="#">LOGIN</a>
-    <a href="#">My Page</a>
-    <a href="#">Admin</a>
-  </div>
+  <div class="headerbar">
+    <div class="top-bar d-flex justify-content-end">
+        <c:choose>
+            <c:when test="${sessionScope.loggedInUser != null}">
+                <!-- 로그인된 경우 -->
+                <a href="/member/logout">LOGOUT</a>
+                <a href="mypage/intro">My Page</a>
+                <a href="#">Admin</a>
+            </c:when>
+            <c:otherwise>
+                <!-- 로그인되지 않은 경우 -->
+                <a href="/member/login">LOGIN</a>
+                <a href="/member/userjoin">회원가입</a>
+            </c:otherwise>
+        </c:choose>
+    </div>
+</div>
+
+
 
   <!-- 네비게이션 바 -->
   <nav class="navbar navbar-expand-lg">
