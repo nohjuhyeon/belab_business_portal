@@ -10,12 +10,22 @@
             color: #333;
         }
 
-        .carousel-inner img {
-            width: 100%;
-            max-height: 480px;
-            object-fit: cover;
+        .header-blank {
+            height: 200px;
         }
-
+        .header-section {
+            background-color: rgb(124, 124, 124); /* 남색 배경 + 투명도 */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding-top : 0px;
+            padding-bottom : 0px;
+            height : 305px;
+        }
         .services {
             display: flex;
             flex-direction: column;
@@ -200,28 +210,9 @@
 </head>
 <body>
     <!-- 메인 이미지 슬라이드 -->
-    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/images/main_slide_1.png" class="d-block w-100" alt="슬라이드 1">
-            </div>
-            <div class="carousel-item">
-                <img src="/images/main_slide_2.png" class="d-block w-100" alt="슬라이드 2">
-            </div>
-            <div class="carousel-item">
-                <img src="/images/main_slide_3.png" class="d-block w-100" alt="슬라이드 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">이전</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">다음</span>
-        </button>
+    <div class="header-section">
+        <div class="header-blank"></div>
     </div>
-
     <!-- 서비스 섹션 -->
     <div class="services">
         <div class="service">

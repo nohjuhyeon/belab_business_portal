@@ -78,13 +78,13 @@
 
         /* 햄버거 버튼 스타일 */
         .navbar-toggler {
-            background-color: #ffffff; /* 버튼 배경 흰색 */
+            background-color: #ffff; /* 버튼 배경 흰색 */
             border: none; /* 테두리 제거 */
         }
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 세 줄을 검정색으로 설정 */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath fill='white' stroke='rgba%280, 0, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 흰색 내부와 검정색 선의 햄버거 아이콘 */
         }
-
+    
         /* 데스크탑 화면에서 메뉴를 가운데 정렬 */
         @media (min-width: 992px) {
             .navbar-collapse {
