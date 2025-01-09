@@ -17,18 +17,19 @@
             color: #000; /* 텍스트 색상 검정 */
         }
         .header-section {
-          text-align: center;
-          padding: 20px 0;
-          background-color: #f8f8f8; /* 헤더 배경색 연한 회색 */
-          border-bottom: 1px solid #ddd;
-          border-top: 1px solid #ddd;
+            text-align: center;
+            margin: 20px 0;
         }
         .header-section h1 {
-            font-size: 3em; /* "OUR COMPANY" 글자 크기 */
-            margin: 0;
-            letter-spacing: 1px;
-            color: #333;
+            font-size: 2rem;
+            margin-bottom: 5px;
         }
+        .header-section hr {
+            width: 50px;
+            margin: 10px auto;
+            border: 1px solid #000;
+        }
+
         .header-section h3 {
             margin: 5px 0 0 0;
             color: #666;
@@ -52,114 +53,112 @@
         .nav-section a:hover {
             background-color: #e0e0e0;
         }
-        .image-section {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .image-section img {
-            width: 100%; /* 부모 요소 너비에 맞춤 */
-            max-width: 1100px; /* 최대 너비 설정 */
-            height: 500px; /* 고정된 높이 */
-            object-fit: cover; /* 비율 유지하며, 넘치는 부분은 잘라냄 */
-            object-position: center; /* 이미지의 중앙을 표시 */
-            border: 2px solid #ddd;
-            border-radius: 10px;
-        }
-        .text-section {
+        .images {
             display: flex;
-            justify-content: space-between; /* 두 블록을 양쪽으로 배치 */
-            align-items: flex-start; /* 상단 정렬 */
-            margin: 30px auto;
-            padding: 20px;
-            max-width: 1100px; /* 섹션 최대 너비 */
-            gap: 20px; /* 두 블록 사이 간격 */
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
         }
-        .text-section h2 {
-            flex: 1; /* 왼쪽 블록 */
-            font-size: 2em;
-            color: #444;
-            margin: 0;
-            font-weight: 800; /* 텍스트 굵게 설정 */
+        .images img {
+            width: 30%;
+            height: auto;
+            border-radius: 5px;
         }
-        .text-section .text-content {
-            flex: 2; /* 오른쪽 블록 */
-            font-size: 0.9em;
-            line-height: 1.8;
-            color: #333;
-            text-align: justify; /* 본문 정렬 */
-        }
-        .text-section .text-content p {
-            margin-bottom: 15px;
-        }
-        footer {
-            background-color: #f8f8f8;
+        .address {
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #666;
+            margin: 20px 0;
+            font-size: 1.2rem;
         }
-
-        /* 반응형 디자인 */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em; /* 작은 화면에서 헤더 글자 크기 축소 */
-            }
-            header h3 {
-                font-size: 1em; /* 작은 화면에서 "인사말" 글자 크기 축소 */
-            }
-            nav a {
-                font-size: 0.9em; /* 네비게이션 링크 크기 축소 */
-                margin: 5px 5px;
-            }
-            .text-section {
-                flex-direction: column; /* 세로 정렬로 변경 */
-                gap: 10px;
-            }
-            .text-section h2, .text-section .text-content {
-                flex: none;
-                width: 100%; /* 블록 너비 100% */
-            }
-            .text-section .text-content {
-                text-align: left; /* 본문 왼쪽 정렬 */
-            }
+        .map {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            height: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f0f0f0;
         }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 2em; /* 더 작은 화면에서 헤더 글자 크기 축소 */
+        .transport {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 30px 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            flex-wrap: wrap;
+        }
+        .transport div {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        .transport div img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .transport div h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .transport div ul {
+            list-style: none;
+            padding: 0;
+        }
+        .transport div ul li {
+            margin: 5px 0;
+        }
+        @media (min-width: 768px) {
+            .transport {
+                flex-wrap: nowrap;
             }
-            header h3 {
-                font-size: 0.9em; /* "인사말" 글자 크기 더 축소 */
-            }
-            nav {
-                flex-direction: column; /* 네비게이션을 세로로 배치 */
-                align-items: center;
-            }
-            nav a {
-                font-size: 0.8em; /* 네비게이션 링크 크기 더 축소 */
-                margin: 5px 0;
-            }
-            .text-section {
-                font-size: 0.9em; /* 본문 텍스트 크기 더 축소 */
-                padding: 10px;
+            .transport div {
+                width: 40%;
             }
         }
     </style>
   </head>
 <body>
-  <div class="header-section">
-        <h1>오시는 길</h1>
-        <h3>OUR COMPANY</h3>
-  </div>
+    <div class="header-section">
+        <h1>OUR COMPANY</h1>
+        <h2>오시는 길</h2>
+        <hr>
+    </div>
   <div class="nav-section">
         <a href="/Greeting">인사말</a>
         <a href="/Directions">오시는 길</a>
   </div>
-  <div id="map" style="width: 500px; height: 400px;">
-
-  </div> 
-          
+    <section class="images">
+        <img src="/images/surrounding_view_1.jpg" alt="Building Image 2">
+        <img src="/images/surrounding_view_2.png" alt="Building Image 3">
+    </section>
+    <section class="address">
+        <p><strong>주소:</strong> 서울 강남구 광평로 295 사이룩스오피스텔</p>
+    </section>
+    <section class="map" id="map">
+    </section> 
+    <section class="transport">
+        <div>
+            <img src="/images/car.png" alt="Car Icon">
+            <h3>[자가용 이용시]</h3>
+            <ul>
+                <li>사이룩스 동관 지하주차장 무료 주차</li>
+            </ul>
+        </div>
+        <div>
+            <img src="/images/bus.png" alt="Transfer Icon">
+            <h3>[대중교통 이용시]</h3>
+            <ul>
+                <li>3호선: 수서지하철역 하차, 3번 출구와 인접</li>
+                <li>분당선: 수서지하철역 하차, 3번 출구와 인접</li>
+                <li>SRT: 수서역 하차, 지하 통로로 수서지하철역 이동, 3번 출구와 인접</li>
+            </ul>
+        </div>
+    </section>      
   <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=45465a972bba01251806dfd3929bebf3"></script>
   <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
