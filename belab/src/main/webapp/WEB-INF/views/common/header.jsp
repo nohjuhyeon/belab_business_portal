@@ -7,7 +7,6 @@
   <style>
     /* top-bar 스타일 */
     .top-bar {
-      color: #000; /* 텍스트 색상: 검정색 */
       padding: 5px 20px;
       font-size: 15px;
       margin-right : 30px;
@@ -15,7 +14,6 @@
     }
 
     .top-bar a {
-      color: #fff; /* 링크 색상: 검정색 */
       text-decoration: none;
       margin-left: 15px;
       transition: color 0.3s ease; /* 색상 전환 효과 */
@@ -25,7 +23,6 @@
     }
       
     .top-bar a:hover {
-      color: #000; /* 링크에 마우스를 올렸을 때 강조 효과 (파란색) */
       text-decoration: underline;
     }
 
