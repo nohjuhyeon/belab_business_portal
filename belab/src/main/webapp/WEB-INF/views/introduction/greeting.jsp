@@ -16,43 +16,45 @@
             background-color: #fff; /* 배경색 흰색 */
             color: #000; /* 텍스트 색상 검정 */
         }
-        .header-section {
-          text-align: center;
-          padding: 20px 0;
-          background-color: #f8f8f8; /* 헤더 배경색 연한 회색 */
-          border-bottom: 1px solid #ddd;
-          border-top: 1px solid #ddd;
-        }
-        .header-section h1 {
-            font-size: 3em; /* "OUR COMPANY" 글자 크기 */
-            margin: 0;
-            letter-spacing: 1px;
-            color: #333;
-        }
-        .header-section h3 {
-            margin: 5px 0 0 0;
-            color: #666;
-        }
-        .nav-section {
-            display: flex;
-            justify-content: center;
-            background-color: #f0f0f0;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-            flex-wrap: wrap; /* 반응형에서 줄바꿈 가능 */
-        }
-        .nav-section a {
-            color: #333;
-            text-decoration: none;
-            margin: 5px 10px;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .nav-section a:hover {
-            background-color: #e0e0e0;
-        }
-        .image-section {
+    
+    .header-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .header-section h1 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+    .header-section hr {
+        width: 50px;
+        margin: 10px auto;
+        border: 1px solid #000;
+    }
+
+    .header-section h3 {
+        margin: 5px 0 0 0;
+        color: #666;
+    }
+    .nav-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f0f0f0;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        flex-wrap: wrap; /* 반응형에서 줄바꿈 가능 */
+    }
+    .nav-section a {
+        color: #333;
+        text-decoration: none;
+        margin: 5px 10px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .nav-section a:hover {
+        background-color: #e0e0e0;
+    }
+    .image-section {
             text-align: center;
             margin: 30px 0;
         }
@@ -148,14 +150,15 @@
     </style>
 </head>
 <body>
-  <div class="header-section">
-        <h1>인사말</h1>
-        <h3>OUR COMPANY</h3>
-  </div>
+    <div class="header-section">
+        <h1>OUR COMPANY</h1>
+        <h2>인사말</h2>
+        <hr>
+    </div>
   <div class="nav-section">
         <a href="/Greeting">인사말</a>
         <a href="/Directions">오시는 길</a>
-    </div>
+  </div>
     <div class="image-section">
         <img src="/images/company_intro.png" alt="회사 이미지">
     </div>
