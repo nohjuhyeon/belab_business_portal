@@ -19,6 +19,9 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             height: 375px;
         }
+        .header-blank {
+          height: 270px;
+      }
 
         .header-section h2 {
             font-size: 36px;
@@ -198,7 +201,8 @@
 
 <body>
     <div class="header-section">
-        <h2>마이페이지</h2>
+      <div class="header-blank"></div>
+      <h2>마이페이지</h2>
     </div>
 
     <div class="container">
