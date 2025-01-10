@@ -34,7 +34,7 @@
             margin-bottom: 10px;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             .headerbar {
                 position: absolute;
                 top: 0;

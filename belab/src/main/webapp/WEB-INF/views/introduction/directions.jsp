@@ -20,9 +20,9 @@
             height: 200px;
         }
         .header-section {
-            background-image: url('images/universe.jpg');
+            background-image: url('images/universe2.jpg');
             background-size: 100% auto; /* 너비를 100%로 설정하고 높이는 자동으로 조정 */
-            background-position: bottom; /* 이미지의 아래쪽이 보이도록 설정 */
+            background-position: top; /* 이미지의 아래쪽이 보이도록 설정 */
             background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
             color: #fff;
             text-align: center;
@@ -123,7 +123,7 @@
         .transport div ul li {
             margin: 5px 0;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             .transport {
                 flex-wrap: nowrap;
             }
