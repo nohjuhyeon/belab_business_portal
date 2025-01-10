@@ -113,7 +113,7 @@
         }
 
         /* 반응형 디자인 */
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             header h1 {
                 font-size: 2.5em; /* 작은 화면에서 헤더 글자 크기 축소 */
             }

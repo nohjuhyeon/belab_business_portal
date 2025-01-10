@@ -123,7 +123,7 @@
         .transport div ul li {
             margin: 5px 0;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             .transport {
                 flex-wrap: nowrap;
             }

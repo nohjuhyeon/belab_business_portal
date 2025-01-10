@@ -109,7 +109,7 @@
     }
 
     /* 반응형 디자인 */
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .service {
         flex-direction: column;
         align-items: center;

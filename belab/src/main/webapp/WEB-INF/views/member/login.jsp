@@ -117,7 +117,7 @@
     }
 
     /* 반응형 디자인 */
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .header-section h2 {
         font-size: 28px;
       }
