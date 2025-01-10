@@ -42,9 +42,25 @@ public class MemberServiceImpl implements MemberService {
         memberMapper.insertMember(memberVO);
         return true; // 회원가입 성공
     }
+
+    @Override
+    public boolean updateMember(MemberVO memberVO) {
+        // 입력값 검증
+        if (memberVO == null  || memberVO.getEmail() == null || memberVO.getEmail().isEmpty()) {
+            throw new IllegalArgumentException("수정할 회원 정보가 유효하지 않습니다.");
+        }
+
+        int rowsAffected = memberMapper.updateMember(memberVO);
+        return rowsAffected > 0; // 수정 성공 여부 반환
+    }
     @Override
     public MemberVO login(MemberVO memberVO) {
         // 로그인 처리: 이메일과 비밀번호로 사용자 정보 조회
         return memberMapper.loginMember(memberVO.getEmail(), memberVO.getPassword());
+    }
+
+    @Override
+    public MemberVO findMemberByEmail(String email) {
+        return null;
     }
 }

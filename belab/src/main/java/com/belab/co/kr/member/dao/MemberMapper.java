@@ -14,4 +14,6 @@ public interface MemberMapper {
 
     // 로그인
     MemberVO loginMember(@Param("email") String email, @Param("password") String password);  // @Param 추가
+
+    int updateMember(MemberVO memberVO);
 }

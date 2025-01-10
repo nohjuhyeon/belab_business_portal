@@ -108,4 +108,38 @@ public class MemberController {
         // 로그아웃 후 메인 페이지로 리다이렉트
         return "redirect:/";  // 로그아웃 후 홈 페이지로 리다이렉트
     }
+
+    /***
+     *  get 수정페이지
+     * @param session
+     * @return
+     */
+
+    @RequestMapping(value = "/modifyForm", method = RequestMethod.GET)
+    public String editForm(HttpSession session) {
+        MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
+        if (loggedInUser != null) {
+            return "/member/modifyFrom";  // 회원 개인정보 수정 페이지로 이동
+        }
+        return "redirect:/member/login";  // 로그인 페이지로 리다이렉트
+    }
+
+    /**
+     * 회원수정 기능
+     * @param memberVO
+     * @param session
+     * @return
+     */
+    @RequestMapping(value = "/modify", method = RequestMethod.POST)
+    public String updateMember(MemberVO memberVO, HttpSession session) {
+        boolean isUpdated = memberService.updateMember(memberVO);
+
+        if (isUpdated) {
+            // 수정된 사용자 정보를 세션에 갱신
+            session.setAttribute("loggedInUser", memberVO);
+            return "redirect:/member/modifyForm?success=true";  // 수정 성공 시 수정 페이지로 리다이렉트
+        } else {
+            return "redirect:/member/modifyForm?error=true";  // 수정 실패 시 수정 페이지로 리다이렉트
+        }
+    }
 }
