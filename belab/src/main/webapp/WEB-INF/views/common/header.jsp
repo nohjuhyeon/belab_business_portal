@@ -92,7 +92,6 @@
             </c:otherwise>
         </c:choose>
     </div>
-</div>
 
 <script>
     function logoutAndReload() {
@@ -195,6 +194,7 @@
     </div>
     </div>
 </nav>
+</div>
 
 <!-- 부트스트랩 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
