@@ -17,7 +17,7 @@
             color: #000; /* 텍스트 색상 검정 */
         }
     .header-blank {
-        height: 200px;
+        height: 270px;
     }
     .header-section {
         background-color: rgba(0, 31, 84); /* 남색 배경 + 투명도 */
@@ -30,7 +30,7 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         padding-top : 0px;
         padding-bottom : 0px;
-        height : 305px;
+        height : 375px;
     }
     .header-section h1 {
         font-size: 2rem;

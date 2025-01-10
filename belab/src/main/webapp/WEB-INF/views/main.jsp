@@ -11,7 +11,7 @@
         }
 
         .header-blank {
-            height: 200px;
+            height: 270px;
         }
         .header-section {
             background-color: rgb(124, 124, 124); /* 남색 배경 + 투명도 */
@@ -24,7 +24,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             padding-top : 0px;
             padding-bottom : 0px;
-            height : 395px;
+            height : 375px;
         }
         .services {
             display: flex;

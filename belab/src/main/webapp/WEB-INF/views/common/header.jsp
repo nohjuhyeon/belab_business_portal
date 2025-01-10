@@ -26,7 +26,10 @@
       .top-bar a:hover {
         text-decoration: underline;
       }
-  
+    .dropdown-toggle::after {
+    display: none !important; /* 기본 화살표 제거 */
+  }
+
       /* 네비게이션 바 기본 설정 */
       .navbar {
           margin-bottom: 10px;
@@ -64,6 +67,20 @@
           }
           
       }
+      .navbar-toggler {
+        border: none; /* 테두리 제거 */
+        outline: none; /* 포커스 시 외곽선 제거 */
+      }
+      .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath fill='black' stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          filter: invert(1); /* 기본적으로 밝은 아이콘 */
+          width: 40px; /* 버튼 크기 조정 */
+          height: 40px;
+        }
+      
+        .headerbar:hover .navbar-toggler-icon {
+          filter: invert(0); /* 배경이 밝아질 때 어두운 아이콘 */
+        }
       /* 로고 이미지 크기 조정 */
       .navbar-brand img {
         max-width: 100%; /* 부모 요소의 크기를 초과하지 않음 */
@@ -150,6 +167,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <!-- 메뉴 -->
         <div class="collapse navbar-collapse  ms-3" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -218,4 +236,38 @@
 
 <!-- 부트스트랩 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // 햄버거 메뉴 닫기 기능
+  const navbarCollapse = document.querySelector('#navbarSupportedContent');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  // 메뉴 외부 클릭 시 닫기
+  document.addEventListener('click', function (event) {
+    if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+      bsCollapse.hide();
+    }
+  });
+
+  // 메뉴에서 커서가 나갔을 때 닫기
+  navbarCollapse.addEventListener('mouseleave', function () {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+    bsCollapse.hide();
+  });
+  // 스크롤 시 닫기
+  window.addEventListener('scroll', function() {
+    const navbarCollapse = document.querySelector('#navbarSupportedContent');
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+    bsCollapse.hide();
+  });
+  // 창 밖으로 커서가 나갔을 때 닫기
+  window.addEventListener('mouseout', (event) => {
+    // 창 밖으로 나갔는지 확인
+    if (event.relatedTarget === null || event.relatedTarget === window) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+      bsCollapse.hide(); // 메뉴 닫기
+    }
+  });
+
+</script>
 </body>
