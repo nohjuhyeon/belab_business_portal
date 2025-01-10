@@ -12,8 +12,8 @@ public class MemberVO {
     private String hp;          // 휴대전화 번호
     private String affiliation; // 소속
     private int isActive = 1;   // 기본값을 1로 설정 (active 상태)
-    private Timestamp joinAt;   // 가입 일시
-    private Timestamp updatedAt; // 수정 일시
+    private Timestamp join_at;   // 가입 일시
+    private Timestamp updated_at; // 수정 일시
     private String role;        // 역할 ('admin', 'user')
 }
 

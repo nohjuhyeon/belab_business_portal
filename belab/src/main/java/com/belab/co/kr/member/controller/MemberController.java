@@ -1,4 +1,5 @@
 package com.belab.co.kr.member.controller;
+
 import com.belab.co.kr.member.service.MemberService;
 import com.belab.co.kr.member.vo.MemberVO;
 import jakarta.servlet.http.HttpServletResponse;
@@ -6,10 +7,14 @@ import jakarta.servlet.http.HttpSession;
 import org.apache.logging.log4j.Logger;
 import org.mybatis.logging.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 @Controller
@@ -126,6 +131,7 @@ public class MemberController {
 
     /**
      * 회원수정 기능
+     *
      * @param memberVO
      * @param session
      * @return
@@ -137,9 +143,32 @@ public class MemberController {
         if (isUpdated) {
             // 수정된 사용자 정보를 세션에 갱신
             session.setAttribute("loggedInUser", memberVO);
-            return "redirect:/member/modifyForm?success=true";  // 수정 성공 시 수정 페이지로 리다이렉트
+            System.out.println("정상적으로 갱신됨.");
+            return "redirect:/main?success=true";  // 수정 성공 시 메인 페이지로 리다이렉트
         } else {
             return "redirect:/member/modifyForm?error=true";  // 수정 실패 시 수정 페이지로 리다이렉트
+        }
+    }
+
+    @RequestMapping(value = "/validateForm", method = RequestMethod.GET)
+    public String validateForm() {
+        return "/member/validateForm";  // 비밀번호 입력 페이지로 이동
+    }
+
+    // 비밀번호 확인 후 /modifyForm으로 리다이렉트
+    @RequestMapping(value = "/validatePassword", method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseEntity<String> validatePassword(@RequestParam String password, HttpSession session) {
+        MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
+
+        // 비밀번호 검증
+        boolean isPasswordValid = memberService.checkPassword(loggedInUser.getEmail(), password);
+
+        if (isPasswordValid) {
+            return ResponseEntity.ok("valid");  // 비밀번호가 맞으면 success를 반환
+
+        } else {
+            return ResponseEntity.status(400).body("invalid");  // 비밀번호가 틀리면 error 반환
         }
     }
 }

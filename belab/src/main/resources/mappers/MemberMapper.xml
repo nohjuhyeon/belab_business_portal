@@ -11,18 +11,7 @@
 
     <!-- 이메일로 회원 조회 -->
     <select id="findMemberByEmail" resultType="com.belab.co.kr.member.vo.MemberVO">
-        SELECT user_id    AS userId,
-               email,
-               username,
-               password,
-               hp,
-               affiliation,
-               is_active  AS isActive,
-               role,
-               join_at    AS joinAt,
-               updated_at AS updatedAt
-        FROM user
-        WHERE email = #{email}
+        SELECT * FROM user WHERE email = #{email}
     </select>
 
     <!-- 로그인 쿼리 (이메일과 비밀번호로 회원 조회) -->
@@ -44,14 +33,14 @@
 
     <!-- 회원정보 수정 -->
     <update id="updateMember" parameterType="com.belab.co.kr.member.vo.MemberVO">
-        UPDATE members
-        SET email       = #{email},
-            password    = #{password},
-            username    = #{username},
-            dob         = #{dob},
-            hp          = #{hp},
-            affiliation = #{affiliation}
-        WHERE user_id = #{userId}
+        UPDATE user
+        SET
+        username = #{username},           <!-- 이름 수정 -->
+        hp = #{hp},                       <!-- 휴대전화 번호 수정 -->
+        password = #{password},           <!-- 비밀번호 수정 -->
+        updated_at = CURRENT_TIMESTAMP      <!-- 수정 일시 -->
+        WHERE email = #{email}                <!-- 이메일을 기준으로 수정 -->
     </update>
+
 
 </mapper>

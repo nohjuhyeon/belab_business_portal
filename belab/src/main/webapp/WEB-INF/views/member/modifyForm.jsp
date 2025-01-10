@@ -4,6 +4,7 @@
 <%@ include file="../common/header.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>마이페이지 - 개인정보 수정</title>
@@ -144,6 +145,7 @@
             background-color: #ccc;
             cursor: not-allowed;
         }
+
         .dropdown-btn {
             display: none;
             background-color: #6a1b1b;
@@ -161,7 +163,6 @@
         .dropdown-btn:hover {
             background-color: #eae0d5;
             color: #000;
-
         }
 
         @media (max-width: 992px) {
@@ -177,6 +178,7 @@
                 overflow: hidden;
                 visibility: hidden;
             }
+
             .sidebar.open {
                 visibility: visible;
                 max-height: 300px; /* 드롭다운 메뉴가 열릴 때 최대 높이 */
@@ -252,7 +254,7 @@
     <!-- 좌측 사이드바 -->
     <div class="sidebar" id="sidebar">
         <a href="/member/modifyForm">개인정보 수정</a>
-        <a href="/member/mypage/intro">마이페이지</a>
+        <a href="/mypage/intro">마이페이지</a>
         <a href="/member/inquiry">문의내역 수정</a>
     </div>
 
@@ -268,8 +270,8 @@
 
             <!-- 비밀번호 수정 -->
             <div class="form-group">
-                <label for="password">비밀번호:</label>
-                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required />
+                <label for="password">비밀번호 수정:</label>
+                <input type="password" id="password" name="password" placeholder="현재 비밀번호를 입력하세요" required />
             </div>
 
             <!-- 이름 수정 -->
@@ -284,38 +286,17 @@
                 <input type="text" id="hp" name="hp" value="${loggedInUser.hp}" required />
             </div>
 
-            <!-- 소속 수정 -->
-            <div class="form-group">
-                <label>소속:</label>
-                <div class="form-group-inline">
-                    <input type="radio" id="belab" name="affiliation" value="비이랩" ${loggedInUser.affiliation == '비이랩' ? 'checked' : ''} />
-                    <label for="belab">비이랩</label>
-                    <input type="radio" id="external" name="affiliation" value="외부소속" ${loggedInUser.affiliation == '외부소속' ? 'checked' : ''} />
-                    <label for="external">외부소속</label>
-                </div>
-            </div>
-
-            <!-- 제출 버튼 -->
-            <button class='modify-btn' type="submit" id="submitButton" disabled>수정하기</button>
+            <!-- 수정 버튼 -->
+            <button type="submit" class="modify-btn">수정하기</button>
         </form>
     </div>
 </div>
 
-<%@ include file="../common/footer.jsp" %>
-
 <script>
-    // 수정 가능 여부 확인
-    const form = document.getElementById('modifyForm');
-    const submitButton = document.getElementById('submitButton');
-
-    // 폼 데이터 변경 시 버튼 활성화
-    form.addEventListener('input', () => {
-        submitButton.disabled = false;
-    });
     function toggleSidebar() {
-        const sidebar = document.getElementById('sidebar');
-        sidebar.classList.toggle('open');
+        document.getElementById("sidebar").classList.toggle("open");
     }
 </script>
+
 </body>
 </html>
