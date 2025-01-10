@@ -24,7 +24,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             padding-top : 0px;
             padding-bottom : 0px;
-            height : 305px;
+            height : 395px;
         }
         .services {
             display: flex;
