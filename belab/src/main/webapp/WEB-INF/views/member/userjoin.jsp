@@ -11,6 +11,11 @@
 <body>
 <h1>회원가입</h1>
 <form action="/member/userjoin" method="post">
+  <!-- 사용자 이름 -->
+  <label for="username">사용자 이름:</label>
+  <input type="text" id="username" name="username" placeholder="이름을 입력하세요" required />
+  <br/>
+
   <!-- 이메일 -->
   <label for="email">이메일:</label>
   <input type="email" id="email" name="email" placeholder="이메일을 입력하세요" required />
