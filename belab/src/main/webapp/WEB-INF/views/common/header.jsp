@@ -72,47 +72,36 @@
     </style>
 </head>
 <body>
-<!-- 상단 바 -->
+
+
 <!-- 상단 바 -->
 <div class="headerbar">
-    <div class="top-bar d-flex justify-content-end">
-        <c:choose>
-            <c:when test="${sessionScope.loggedInUser != null}">
-                <!-- 로그인된 경우 -->
-                <a href="javascript:void(0);" onclick="logoutAndReload();">LOGOUT</a>
-                <a href="/mypage/intro">My Page</a>
-                <c:if test="${sessionScope.loggedInUser.role == 'admin'}">
-                    <a href="/admin">Admin</a>
-                </c:if>
-            </c:when>
-            <c:otherwise>
-                <!-- 로그인되지 않은 경우 -->
-                <a href="/member/login">LOGIN</a>
-                <a href="/member/userjoin">회원가입</a>
-            </c:otherwise>
-        </c:choose>
-    </div>
+    <div class="top-bar d-flex justify-content-end"><c:choose> <c:when
+            test="${sessionScope.loggedInUser != null}"> <!-- 로그인된 경우 --> <a href="javascript:void(0);"
+                                                                             onclick="logoutAndReload();">LOGOUT</a> <a
+            href="/mypage/intro">My Page</a> <c:if test="${sessionScope.loggedInUser.role == 'admin'}"> <a
+            href="/admin">Admin</a> </c:if> </c:when> <c:otherwise> <!-- 로그인되지 않은 경우 --> <a
+            href="/member/login">LOGIN</a> <a href="/member/userjoin">회원가입</a> </c:otherwise> </c:choose></div>
 </div>
-
 <script>
     function logoutAndReload() {
         // POST 방식으로 로그아웃 처리
         fetch('/member/logout', {
             method: 'POST' // 로그아웃은 POST로 처리
         })
-        .then(response => {
-            if (response.ok) {
-                // 로그아웃 후 페이지 새로 고침
-                alert("로그아웃 성공. 다시 로그인해주세요.");
-                location.reload();
-            } else {
-                alert("로그아웃 실패. 다시 시도해주세요.");
-            }
-        })
-        .catch(error => {
-            console.error("로그아웃 오류:", error);
-            alert("로그아웃 처리 중 오류가 발생했습니다.");
-        });
+            .then(response => {
+                if (response.ok) {
+                    // 로그아웃 후 페이지 새로 고침
+                    alert("로그아웃 성공. 다시 로그인해주세요.");
+                } else {
+                    alert("로그아웃 실패. 다시 시도해주세요.");
+                    location.reload()
+                }
+            })
+            .catch(error => {
+                console.error("로그아웃 오류:", error);
+                alert("로그아웃 처리 중 오류가 발생했습니다.");
+            });
     }
 </script>
 
