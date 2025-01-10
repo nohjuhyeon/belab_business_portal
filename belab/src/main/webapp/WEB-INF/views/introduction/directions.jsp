@@ -16,9 +16,21 @@
             background-color: #fff; /* 배경색 흰색 */
             color: #000; /* 텍스트 색상 검정 */
         }
+        .header-blank {
+            height: 200px;
+        }
         .header-section {
+            background-color: rgba(0, 31, 84); /* 남색 배경 + 투명도 */
+            color: #fff;
             text-align: center;
-            margin: 20px 0;
+            padding: 20px 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding-top : 0px;
+            padding-bottom : 0px;
+            height : 305px;
         }
         .header-section h1 {
             font-size: 2rem;
@@ -124,6 +136,7 @@
   </head>
 <body>
     <div class="header-section">
+        <div class="header-blank"></div>
         <h1>OUR COMPANY</h1>
         <h2>오시는 길</h2>
         <hr>
