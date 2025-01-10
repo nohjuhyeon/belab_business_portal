@@ -58,7 +58,7 @@
             }
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 992px) {
             .headerbar {
                 position: absolute;
                 z-index: 1000; /* 헤더가 항상 위에 보이도록 설정 */
