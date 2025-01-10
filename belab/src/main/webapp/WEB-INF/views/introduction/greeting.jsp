@@ -20,18 +20,17 @@
         height: 270px;
     }
     .header-section {
-        background-color: rgba(0, 31, 84); /* 남색 배경 + 투명도 */
+        background-image: url('images/universe.jpg');
+        background-size: 100% auto; /* 너비를 100%로 설정하고 높이는 자동으로 조정 */
+        background-position: bottom; /* 이미지의 아래쪽이 보이도록 설정 */
+        background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
         color: #fff;
         text-align: center;
         padding: 20px 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        padding-top : 0px;
-        padding-bottom : 0px;
-        height : 375px;
-    }
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        height: 375px; /* 컨테이너 높이 고정 */
+      }
+
     .header-section h1 {
         font-size: 2rem;
         margin-bottom: 5px;
