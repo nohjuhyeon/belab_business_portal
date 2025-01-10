@@ -12,9 +12,9 @@
     }
 
     .header-section {
-      background-image: url('../images/universe.jpg');
+      background-image: url('../images/universe2.jpg');
       background-size: 100% auto;
-      background-position: bottom;
+      background-position: top;
       background-repeat: no-repeat;
       color: #fff;
       text-align: center;
