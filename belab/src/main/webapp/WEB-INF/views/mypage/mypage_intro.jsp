@@ -32,6 +32,8 @@
 <body>
 <h1>환영합니다, ${username}님!</h1>
 <p>마이페이지에 오신 것을 환영합니다.</p>
+
+<a href="/member/modifyForm">회원정보 수정</a>
 <a href="/member/logout">로그아웃</a>
 <%@ include file="../common/footer.jsp" %>
 </body>
