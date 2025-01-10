@@ -144,8 +144,26 @@
             background-color: #ccc;
             cursor: not-allowed;
         }
+        .dropdown-btn {
+            display: none;
+            background-color: #6a1b1b;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
 
-        /* 반응형 디자인 */
+        .dropdown-btn:hover {
+            background-color: #eae0d5;
+            color: #000;
+
+        }
+
         @media (max-width: 992px) {
             .container {
                 flex-direction: column;
@@ -154,7 +172,22 @@
             .sidebar {
                 width: 100%;
                 border-right: none;
-                border-bottom: 1px solid #ddd;
+                border-bottom: none;
+                max-height: 0;
+                overflow: hidden;
+                visibility: hidden;
+            }
+            .sidebar.open {
+                visibility: visible;
+                max-height: 300px; /* 드롭다운 메뉴가 열릴 때 최대 높이 */
+            }
+    
+            .dropdown-btn {
+                display: block;
+            }
+
+            .sidebar.open {
+                max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
             }
 
             .content {
@@ -173,17 +206,12 @@
                 font-size: 20px;
             }
 
-            .form-group input[type="text"],
-            .form-group input[type="email"],
-            .form-group input[type="password"],
-            .form-group input[type="date"] {
-                font-size: 12px;
-                padding: 10px;
+            .welcome-card h3 {
+                font-size: 20px;
             }
 
-            .modify-btn {
+            .welcome-card p {
                 font-size: 14px;
-                padding: 10px 12px;
             }
         }
 
@@ -192,21 +220,20 @@
                 font-size: 28px;
             }
 
-            .form-group label {
+            .sidebar a {
                 font-size: 12px;
             }
 
-            .form-group input[type="text"],
-            .form-group input[type="email"],
-            .form-group input[type="password"],
-            .form-group input[type="date"] {
-                font-size: 10px;
-                padding: 8px;
+            .content h2 {
+                font-size: 18px;
             }
 
-            .modify-btn {
+            .welcome-card h3 {
+                font-size: 18px;
+            }
+
+            .welcome-card p {
                 font-size: 12px;
-                padding: 8px 10px;
             }
         }
     </style>
@@ -219,8 +246,11 @@
     </div>
 
     <div class="container">
+        <!-- 드롭다운 버튼 -->
+        <button class="dropdown-btn" onclick="toggleSidebar()">메뉴</button>
+
         <!-- 좌측 사이드바 -->
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <a href="/member/modifyForm">개인정보 수정</a>
             <a href="/member/mypage/intro">마이페이지</a>
             <a href="/member/inquiry">문의내역 수정</a>
@@ -282,6 +312,10 @@
         form.addEventListener('input', () => {
             submitButton.disabled = false;
         });
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
     </script>
 </body>
 </html>

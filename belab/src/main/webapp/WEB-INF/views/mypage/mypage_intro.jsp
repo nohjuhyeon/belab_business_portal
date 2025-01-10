@@ -57,28 +57,31 @@
         }
 
         .sidebar a:hover {
-            background-color: #007BFF; /* 로그인 페이지 색상 */
+            background-color: #eaeaea; /* 로그인 페이지 색상 */
             color: #fff;
         }
 
         /* 드롭다운 버튼 */
+        /* 반응형 디자인 */
         .dropdown-btn {
-            display: none;
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 15px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            width: 100%;
-            text-align: left;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
+          display: none;
+          background-color: #6a1b1b;
+          color: #fff;
+          border: none;
+          padding: 15px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          width: 100%;
+          text-align: left;
+          border-radius: 8px;
+          margin-bottom: 10px;
+      }
 
-        .dropdown-btn:hover {
-            background-color: #0056b3;
-        }
+      .dropdown-btn:hover {
+          background-color: #eae0d5;
+          color: #000;
+
+      }
 
         /* 우측 내용 영역 */
         .content {
@@ -116,74 +119,80 @@
             margin: 0;
         }
 
-        /* 반응형 디자인 */
-        @media (max-width: 992px) {
-            .container {
-                flex-direction: column;
-            }
 
-            .sidebar {
-                width: 100%;
-                border-right: none;
-                border-bottom: none;
-                max-height: 0;
-                overflow: hidden;
-            }
 
-            .dropdown-btn {
-                display: block;
-            }
+      @media (max-width: 992px) {
+          .container {
+              flex-direction: column;
+          }
 
-            .sidebar.open {
-                max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
-            }
+          .sidebar {
+              width: 100%;
+              border-right: none;
+              border-bottom: none;
+              max-height: 0;
+              overflow: hidden;
+              visibility: hidden;
+          }
+          .sidebar.open {
+              visibility: visible;
+              max-height: 300px; /* 드롭다운 메뉴가 열릴 때 최대 높이 */
+          }
+  
+          .dropdown-btn {
+              display: block;
+          }
 
-            .content {
-                margin: 0;
-                box-shadow: none;
-                border-radius: 0;
-                padding: 20px;
-            }
+          .sidebar.open {
+              max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
+          }
 
-            .sidebar a {
-                padding: 10px 15px;
-                font-size: 14px;
-            }
+          .content {
+              margin: 0;
+              box-shadow: none;
+              border-radius: 0;
+              padding: 20px;
+          }
 
-            .content h2 {
-                font-size: 20px;
-            }
+          .sidebar a {
+              padding: 10px 15px;
+              font-size: 14px;
+          }
 
-            .welcome-card h3 {
-                font-size: 20px;
-            }
+          .content h2 {
+              font-size: 20px;
+          }
 
-            .welcome-card p {
-                font-size: 14px;
-            }
-        }
+          .welcome-card h3 {
+              font-size: 20px;
+          }
 
-        @media (max-width: 480px) {
-            .header-section h2 {
-                font-size: 28px;
-            }
+          .welcome-card p {
+              font-size: 14px;
+          }
+      }
 
-            .sidebar a {
-                font-size: 12px;
-            }
+      @media (max-width: 480px) {
+          .header-section h2 {
+              font-size: 28px;
+          }
 
-            .content h2 {
-                font-size: 18px;
-            }
+          .sidebar a {
+              font-size: 12px;
+          }
 
-            .welcome-card h3 {
-                font-size: 18px;
-            }
+          .content h2 {
+              font-size: 18px;
+          }
 
-            .welcome-card p {
-                font-size: 12px;
-            }
-        }
+          .welcome-card h3 {
+              font-size: 18px;
+          }
+
+          .welcome-card p {
+              font-size: 12px;
+          }
+      }
     </style>
 </head>
 
