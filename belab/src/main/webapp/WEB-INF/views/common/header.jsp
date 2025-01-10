@@ -138,7 +138,6 @@
     </c:otherwise>
 </c:choose>
     </div>
-</div>
 
 <!-- 네비게이션 바 -->
 <nav class="navbar navbar-expand-lg">
@@ -218,9 +217,43 @@
         </div>
     </div>
 </nav>
+</div>
 
 <!-- 부트스트랩 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // 햄버거 메뉴 닫기 기능
+  const navbarCollapse = document.querySelector('#navbarSupportedContent');
+  const navbarToggler = document.querySelector('.navbar-toggler');
 
+  // 메뉴 외부 클릭 시 닫기
+  document.addEventListener('click', function (event) {
+    if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+      bsCollapse.hide();
+    }
+  });
+
+  // 메뉴에서 커서가 나갔을 때 닫기
+  navbarCollapse.addEventListener('mouseleave', function () {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+    bsCollapse.hide();
+  });
+  // 스크롤 시 닫기
+  window.addEventListener('scroll', function() {
+    const navbarCollapse = document.querySelector('#navbarSupportedContent');
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+    bsCollapse.hide();
+  });
+  // 창 밖으로 커서가 나갔을 때 닫기
+  window.addEventListener('mouseout', (event) => {
+    // 창 밖으로 나갔는지 확인
+    if (event.relatedTarget === null || event.relatedTarget === window) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+      bsCollapse.hide(); // 메뉴 닫기
+    }
+  });
+
+</script>
 </body>
 </html>
