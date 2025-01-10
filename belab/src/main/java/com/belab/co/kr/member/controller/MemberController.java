@@ -119,7 +119,7 @@ public class MemberController {
     public String editForm(HttpSession session) {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
         if (loggedInUser != null) {
-            return "/member/modifyFrom";  // 회원 개인정보 수정 페이지로 이동
+            return "/member/modifyForm";  // 회원 개인정보 수정 페이지로 이동
         }
         return "redirect:/member/login";  // 로그인 페이지로 리다이렉트
     }

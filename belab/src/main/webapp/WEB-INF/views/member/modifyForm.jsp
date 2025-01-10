@@ -108,6 +108,12 @@
                 <input type="email" id="email" name="email" value="${loggedInUser.email}" readonly required />
             </div>
 
+            <!-- 비밀번호 확인 -->
+            <div class="form-group">
+                <label for="password">비밀번호:</label>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required />
+            </div>
+
             <!-- 비밀번호 수정 -->
             <div class="form-group">
                 <label for="password">비밀번호:</label>
