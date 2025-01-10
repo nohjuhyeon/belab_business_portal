@@ -5,7 +5,31 @@
 <head>
   <meta charset="UTF-8">
   <title>로그인</title>
+  <style>
+    .header-blank {
+      height: 200px;
+  }
+  .header-section {
+      background-color: rgb(124, 124, 124); /* 남색 배경 + 투명도 */
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding-top : 0px;
+      padding-bottom : 0px;
+      height : 395px;
+  }
+
+  </style>
 </head>
+<div class="header-section">
+  <div class="header-blank"></div>
+</div>
+
+
 <body>
 <h1>로그인</h1>
 <form action="/member/login" method="post">
