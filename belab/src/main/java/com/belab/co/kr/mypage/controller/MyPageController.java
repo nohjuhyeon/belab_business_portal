@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/mypage")
 public class MyPageController {
 
-    @GetMapping("/intro")
+    @RequestMapping(value = "/intro")
     public String intro(HttpSession session, Model model) {
         // 세션에서 로그인된 사용자 정보 가져오기
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");

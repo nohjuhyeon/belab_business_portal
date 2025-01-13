@@ -6,18 +6,20 @@ import jakarta.mail.MessagingException;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Controller
 @RequestMapping("/member")  // 부모 URL 경로를 여기서 먼저 설정
 @SessionAttributes("loggedInUser")
 public class MemberController {
-
+    Logger logger = LoggerFactory.getLogger(getClass());
     @Autowired
     private MemberService memberService;
 
@@ -46,7 +48,7 @@ public class MemberController {
 
     // 로그인 처리
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String login(MemberVO memberVO, HttpSession session) {
+    public String login(MemberVO memberVO, HttpSession session, Model model) {
         // 로그인 처리: 이메일과 비밀번호로 사용자 정보 조회
         MemberVO loginMember = memberService.login(memberVO);
 
@@ -58,9 +60,9 @@ public class MemberController {
             // 로그인 후 메인 페이지로 리다이렉트
             return "redirect:/main";
         }
-
+        model.addAttribute("error", "에러입니다.");
         // 로그인 실패 시 로그인 페이지로 돌아가기
-        return "redirect:/member/login?error=true";  // 로그인 실패 시 에러 파라미터를 추가하여 다시 로그인 페이지로 이동
+        return "redirect:/member/login";  // 로그인 실패 시 에러 파라미터를 추가하여 다시 로그인 페이지로 이동
     }
 
     /**
@@ -115,16 +117,25 @@ public class MemberController {
      * @return
      */
     @RequestMapping(value = "/modify", method = RequestMethod.POST)
-    public String updateMember(MemberVO memberVO, HttpSession session) {
+    public String updateMember(MemberVO memberVO, HttpSession session, Model model) {
+        // 회원 정보 갱신
         boolean isUpdated = memberService.updateMember(memberVO);
 
         if (isUpdated) {
-            // 수정된 사용자 정보를 세션에 갱신
-            session.setAttribute("loggedInUser", memberVO);
-            System.out.println("정상적으로 갱신됨.");
-            return "redirect:/main?success=true";  // 수정 성공 시 메인 페이지로 리다이렉트
+            // 업데이트된 사용자 정보를 DB에서 다시 불러옵니다.
+            MemberVO updatedUser = memberService.findMemberByEmail(memberVO.getEmail());
+
+            // 갱신된 사용자 정보를 세션에 저장
+            session.setAttribute("loggedInUser", updatedUser);
+
+            // 갱신 후 마이페이지로 리다이렉트
+            model.addAttribute("loggedInUser", updatedUser);  // 모델에 추가하여 새로 고침 시 반영됨
+            // 갱신 후 마이페이지로 리다이렉트
+            return "redirect:/mypage/intro";  // 수정된 이름을 마이페이지에서 반영
         } else {
-            return "redirect:/member/modifyForm?error=true";  // 수정 실패 시 수정 페이지로 리다이렉트
+            // 실패 시 오류 메시지 처리
+            model.addAttribute("error", "회원 정보 수정에 실패했습니다.");
+            return "redirect:/member/modifyForm";  // 수정 페이지로 돌아갑니다.
         }
     }
 
@@ -134,6 +145,7 @@ public class MemberController {
     }
 
 
+    // 비밀번호 확인 API (비밀번호 유효성 검사)
     // 비밀번호 확인 후 /modifyForm으로 리다이렉트
     @RequestMapping(value = "/validatePassword", method = RequestMethod.POST)
     @ResponseBody
@@ -169,6 +181,7 @@ public class MemberController {
      * @param hp
      * @return
      */
+
     @RequestMapping(value = "/findEmail", method = RequestMethod.POST)
     public String findEmail(@RequestParam String username, @RequestParam String hp, Model model) {
         // 이메일 찾기 서비스 호출
@@ -219,5 +232,30 @@ public class MemberController {
         }
     }
 
-}
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    public String deleteMember(HttpSession session, SessionStatus sessionStatus, Model model) {
+        MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
 
+        if (loggedInUser != null) {
+            String email = loggedInUser.getEmail();
+
+            // 회원 삭제 처리
+            boolean isDeleted = memberService.deleteMember(email);
+
+            if (isDeleted) {
+                // 세션 종료
+                sessionStatus.setComplete();  // 세션 초기화
+
+                // 탈퇴 완료 메시지 전달
+                model.addAttribute("message", "회원탈퇴가 완료되었습니다.");
+                return "redirect:/";  // 홈 페이지로 리다이렉트
+            } else {
+                // 삭제 실패 시 메시지 전달
+                model.addAttribute("error", "회원 탈퇴에 실패했습니다.");
+                return "redirect:/mypage/intro";  // 마이페이지로 리다이렉트
+            }
+        }
+
+        return "redirect:/member/login";  // 로그인되지 않은 경우 로그인 페이지로 리다이렉트
+    }
+}

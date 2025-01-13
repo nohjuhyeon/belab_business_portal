@@ -44,12 +44,17 @@
         WHERE email = #{email}                <!-- 이메일을 기준으로 수정 -->
     </update>
 
+    <select id="checkPassword" resultType="boolean">
+        SELECT COUNT(*) > 0
+        FROM member
+        WHERE email = #{email}
+          AND password = #{password}
+    </select>
 
     <!-- 이메일로 회원 존재 여부 확인 -->
     <select id="findEmailExists" resultType="boolean">
         SELECT EXISTS(SELECT 1 FROM user WHERE email = #{email}) AS emailExists
     </select>
-
 
 
 </mapper>

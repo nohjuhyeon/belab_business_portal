@@ -248,45 +248,51 @@
 </div>
 
 <div class="container">
-    <!-- 드롭다운 버튼 -->
     <button class="dropdown-btn" onclick="toggleSidebar()">메뉴</button>
 
-    <!-- 좌측 사이드바 -->
     <div class="sidebar" id="sidebar">
         <a href="/member/modifyForm">개인정보 수정</a>
         <a href="/mypage/intro">마이페이지</a>
         <a href="/member/inquiry">문의내역 수정</a>
     </div>
 
-    <!-- 우측 내용 -->
     <div class="content">
         <h2>개인정보 수정</h2>
+
+        <!-- 오류 메시지 출력 -->
+        <c:if test="${not empty passwordError}">
+            <div style="color: red; font-weight: bold;">${passwordError}</div>
+        </c:if>
+        <c:if test="${not empty updateError}">
+            <div style="color: red; font-weight: bold;">${updateError}</div>
+        </c:if>
+
         <form id="modifyForm" action="/member/modify" method="post">
-            <!-- 이메일 수정 -->
             <div class="form-group">
                 <label for="email">이메일:</label>
-                <input type="email" id="email" name="email" value="${loggedInUser.email}" readonly required />
+                <input type="email" id="email" name="email" value="${loggedInUser.email}" readonly required/>
             </div>
 
-            <!-- 비밀번호 수정 -->
             <div class="form-group">
                 <label for="password">비밀번호 수정:</label>
-                <input type="password" id="password" name="password" placeholder="현재 비밀번호를 입력하세요" required />
+                <input type="password" id="password" name="password" placeholder="현재 비밀번호를 입력하세요" required/>
             </div>
 
-            <!-- 이름 수정 -->
+            <div class="form-group">
+                <label for="passwordConfirm">비밀번호 확인:</label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="비밀번호를 한 번 더 입력하세요" required/>
+            </div>
+
             <div class="form-group">
                 <label for="username">성명:</label>
-                <input type="text" id="username" name="username" value="${loggedInUser.username}" required />
+                <input type="text" id="username" name="username" value="${loggedInUser.username}" required/>
             </div>
 
-            <!-- 휴대전화 번호 수정 -->
             <div class="form-group">
                 <label for="hp">휴대전화 번호:</label>
-                <input type="text" id="hp" name="hp" value="${loggedInUser.hp}" required />
+                <input type="text" id="hp" name="hp" value="${loggedInUser.hp}" required/>
             </div>
 
-            <!-- 수정 버튼 -->
             <button type="submit" class="modify-btn">수정하기</button>
         </form>
     </div>
@@ -294,9 +300,30 @@
 
 <script>
     function toggleSidebar() {
-        document.getElementById("sidebar").classList.toggle("open");
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("open");
     }
-</script>
 
+    document.getElementById("modifyForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // 폼 제출 방지
+
+        const password = document.getElementById("password").value; // 현재 비밀번호
+        const passwordConfirm = document.getElementById("passwordConfirm").value; // 새 비밀번호 확인
+
+        // 비밀번호 확인
+        if (password !== passwordConfirm) {
+            alert("비밀번호가 일치하지 않습니다. 다시 확인해주세요.");
+            return; // 비밀번호가 일치하지 않으면 폼 제출을 막음
+        }
+
+        // 새 비밀번호 검증 처리
+        const modifyButton = document.querySelector(".modify-btn");
+        modifyButton.disabled = true;
+        modifyButton.innerHTML = "검증 중...";
+
+        // 수정 폼 제출
+        document.getElementById("modifyForm").submit();
+    });
+</script>
 </body>
 </html>

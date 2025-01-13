@@ -7,7 +7,7 @@ import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
-import jakarta.mail.internet.InternetAddress;  // jakarta.mail.internet로 수정
+import jakarta.mail.internet.InternetAddress;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -120,6 +120,7 @@ public class MemberServiceImpl implements MemberService {
         }
         return null;  // 해당 이메일로 회원이 없으면 null 반환
     }
+
     @Override
     public boolean updatePasswordByEmail(String email, String newPassword) {
         int rowsAffected = memberMapper.updatePasswordByEmail(email, newPassword);
@@ -137,5 +138,24 @@ public class MemberServiceImpl implements MemberService {
         }
 
         return password.toString();
+    }
+
+    /***
+     * 회원 삭제
+     * @param email
+     * @return
+     */
+    @Override
+    public boolean deleteMember(String email) {
+        // 이메일로 회원 삭제
+        int rowsAffected = memberMapper.deleteMemberByEmail(email);
+        return rowsAffected > 0;  // 삭제된 행이 있으면 true 반환
+    }
+
+    @Override
+    public boolean isPasswordCorrect(String currentUsername, String password) {
+        // 현재 사용자의 비밀번호가 올바른지 확인하는 메서드
+        MemberVO member = memberMapper.findMemberByEmail(currentUsername);
+        return member != null && member.getPassword().equals(password);
     }
 }
