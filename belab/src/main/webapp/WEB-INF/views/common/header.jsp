@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar with Hover Dropdown</title>
+    <title>비이랩 홈페이지</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* top-bar 스타일 */
@@ -76,7 +76,7 @@
         .navbar-brand img {
             max-width: 100%; /* 부모 요소의 크기를 초과하지 않음 */
             height: auto; /* 비율을 유지하며 높이를 자동 조정 */
-            max-height: 70px; /* 최대 높이 제한 */
+            max-height: 50px; /* 최대 높이 제한 */
         }
 
         /* 메인 메뉴 글씨 크기 조정 */

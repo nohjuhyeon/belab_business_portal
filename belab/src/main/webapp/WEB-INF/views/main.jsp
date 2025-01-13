@@ -241,4 +241,6 @@
       <button>Contact Us</button>
     </div>
   </div>
+<%@ include file="./common/footer.jsp" %>
+
 </body>

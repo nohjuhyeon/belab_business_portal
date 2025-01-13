@@ -28,14 +28,15 @@
             margin: 0;
             font-weight: bold;
         }
-
+        body {
+            background-color: #f4f4f4;
+        }
         /* 전체 레이아웃 */
         .container {
             display: flex;
             flex-wrap: wrap;
-            min-height: 100vh;
-            background-color: #f4f4f9;
             padding: 20px;
+            min-height: calc(60vh);
         }
 
         /* 좌측 네비게이션 바 */
@@ -93,7 +94,7 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
-            margin: 20px;
+            margin: 0px 20px;
         }
 
         .content h2 {
@@ -148,6 +149,7 @@
 
           .sidebar.open {
               max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
+              margin-bottom: 20px;
           }
 
           .content {

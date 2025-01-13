@@ -7,15 +7,20 @@
   <meta charset="UTF-8">
   <title>로그인</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
     .header-blank {
       height: 270px;
     }
 
     .header-section {
       background-image: url('../images/universe2.jpg');
-      background-size: 100% auto;
-      background-position: top;
-      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       color: #fff;
       text-align: center;
       padding: 20px 0;
@@ -33,10 +38,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: calc(50vh);
+      height: 60vh;
       background-color: #f4f4f4;
-      margin: 0;
       font-family: Arial, sans-serif;
+      padding: 20px;
     }
 
     .login-container {
@@ -94,22 +99,63 @@
       color: #fff;
     }
 
-    .login-container .links {
+    .links-container {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-top: 20px;
     }
 
-    .login-container .links a {
+    .links-container .left-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .links-container a {
       font-size: 14px;
       color: #6a1b1b;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    .login-container .links a:hover {
+    .links-container a:hover {
       color: #333;
       text-decoration: underline;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+      .header-section h2 {
+        font-size: 24px;
+      }
+
+      .login-body {
+        padding: 10px;
+        height: 500px;
+      }
+
+      .login-container {
+        padding: 20px;
+      }
+
+      .login-container h3 {
+        font-size: 20px;
+      }
+
+      .login-container input[type="email"],
+      .login-container input[type="password"] {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .login-container button {
+        padding: 12px;
+        font-size: 16px;
+      }
+
+      .links-container a {
+        font-size: 12px;
+      }
     }
 
     /* 커스텀 팝업 스타일 */
@@ -214,7 +260,7 @@
       <h3>환영합니다!</h3>
       <form action="/member/login" method="post">
         <div class="form-group">
-          <label for="email">로그인</label>
+          <label for="email">이메일</label>
           <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
         </div>
         <div class="form-group">
@@ -223,14 +269,16 @@
         </div>
         <button type="submit">로그인</button>
       </form>
-      <div class="links">
-        <a href="/member/findEmail">아이디 찾기</a>
-        <a href="/member/findPassword">비밀번호 찾기</a>
-        <a href="/member/userjoin">회원가입</a>
+      <div class="links-container">
+        <div class="left-links">
+          <a href="/member/findEmail">아이디 찾기</a>
+          /
+          <a href="/member/findPassword">비밀번호 찾기</a>
+        </div>
+        <a href="/member/userjoin" class="right-link">회원가입</a>
       </div>
     </div>
   </div>
-
   <!-- 커스텀 팝업 -->
   <div class="popup-overlay" onclick="closePopup()"></div>
   <div class="custom-popup">
@@ -239,5 +287,6 @@
     <button onclick="closePopup()">확인</button>
   </div>
 </body>
+<%@ include file="../common/footer.jsp" %>
 
 </html>
