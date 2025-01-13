@@ -7909,3 +7909,507 @@ Update your application's configuration. The following values are valid:
 2025-01-13 17:26:43 - Graceful shutdown complete
 2025-01-13 17:26:43 - HikariPool-1 - Shutdown initiated...
 2025-01-13 17:26:43 - HikariPool-1 - Shutdown completed.
+2025-01-13 17:26:49 - Starting BelabApplication using Java 17.0.11 with PID 17512 (C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\build\classes\java\main started by ksk07 in C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab)
+2025-01-13 17:26:49 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-13 17:26:49 - No active profile set, falling back to 1 default profile: "default"
+2025-01-13 17:26:49 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-13 17:26:49 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-13 17:26:50 - Tomcat initialized with port 9000 (http)
+2025-01-13 17:26:50 - Starting service [Tomcat]
+2025-01-13 17:26:50 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-13 17:26:51 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-13 17:26:51 - Initializing Spring embedded WebApplicationContext
+2025-01-13 17:26:51 - Root WebApplicationContext: initialization completed in 1593 ms
+2025-01-13 17:26:51 - 21 mappings in 'requestMappingHandlerMapping'
+2025-01-13 17:26:51 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-13 17:26:51 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-13 17:26:51 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-13 17:26:51 - LiveReload server is running on port 35729
+2025-01-13 17:26:51 - Tomcat started on port 9000 (http) with context path '/'
+2025-01-13 17:26:51 - Started BelabApplication in 2.837 seconds (process running for 3.589)
+2025-01-13 17:26:51 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-13 17:26:51 - Initializing Servlet 'dispatcherServlet'
+2025-01-13 17:26:51 - Detected StandardServletMultipartResolver
+2025-01-13 17:26:51 - Detected AcceptHeaderLocaleResolver
+2025-01-13 17:26:51 - Detected FixedThemeResolver
+2025-01-13 17:26:51 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@63da7941
+2025-01-13 17:26:51 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7c130f22
+2025-01-13 17:26:51 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-01-13 17:26:51 - Completed initialization in 1 ms
+2025-01-13 17:26:51 - GET "/", parameters={}
+2025-01-13 17:26:51 - Mapped to com.belab.co.kr.main.controller.MainController#index()
+2025-01-13 17:26:51 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:26:51 - View name [main], model {}
+2025-01-13 17:26:51 - Forwarding to [/WEB-INF/views/main.jsp]
+2025-01-13 17:26:52 - Completed 200 OK
+2025-01-13 17:26:52 - GET "/images/logo.png", parameters={}
+2025-01-13 17:26:52 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:26:52 - Completed 200 OK
+2025-01-13 17:26:52 - GET "/images/main_content_service.jpg", parameters={}
+2025-01-13 17:26:52 - GET "/images/main_data_service.jpg", parameters={}
+2025-01-13 17:26:52 - GET "/images/main_platform_service.jpg", parameters={}
+2025-01-13 17:26:52 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:26:52 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:26:52 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:26:52 - Completed 200 OK
+2025-01-13 17:26:52 - Completed 200 OK
+2025-01-13 17:26:52 - Completed 200 OK
+2025-01-13 17:26:52 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:26:52 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:26:52 - Completed 200 OK
+2025-01-13 17:26:57 - GET "/member/login", parameters={}
+2025-01-13 17:26:57 - Mapped to com.belab.co.kr.member.controller.MemberController#loginForm()
+2025-01-13 17:26:57 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:26:57 - View name [member/login], model {}
+2025-01-13 17:26:57 - Forwarding to [/WEB-INF/views/member/login.jsp]
+2025-01-13 17:26:58 - Completed 200 OK
+2025-01-13 17:26:58 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:26:58 - GET "/images/logo.png", parameters={}
+2025-01-13 17:26:58 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:26:58 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:26:58 - Completed 200 OK
+2025-01-13 17:26:58 - Completed 200 OK
+2025-01-13 17:27:10 - POST "/member/login", parameters={masked}
+2025-01-13 17:27:10 - Mapped to com.belab.co.kr.member.controller.MemberController#login(MemberVO, HttpSession, Model)
+2025-01-13 17:27:10 - HikariPool-1 - Starting...
+2025-01-13 17:27:11 - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@614a01c0
+2025-01-13 17:27:11 - HikariPool-1 - Start completed.
+2025-01-13 17:27:11 - ==>  Preparing: SELECT user_id AS userId, email, username, password, hp, affiliation, is_active AS isActive, role, join_at AS joinAt, updated_at AS updatedAt FROM user WHERE email = ? AND password = ?
+2025-01-13 17:27:11 - ==> Parameters: ksk11@naver.com(String), 1234(String)
+2025-01-13 17:27:11 - <==    Columns: userId, email, username, password, hp, affiliation, isActive, role, joinAt, updatedAt
+2025-01-13 17:27:11 - <==        Row: 3, ksk11@naver.com, ksk1, 1234, 1234, null, 1, belab, 2025-01-12 20:52:04, 2025-01-12 20:52:04
+2025-01-13 17:27:11 - <==      Total: 1
+2025-01-13 17:27:11 - View name [redirect:], model {}
+2025-01-13 17:27:11 - Completed 302 FOUND
+2025-01-13 17:27:11 - GET "/main", parameters={}
+2025-01-13 17:27:11 - Mapped to com.belab.co.kr.main.controller.MainController#mainPage()
+2025-01-13 17:27:11 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:27:11 - View name [main], model {}
+2025-01-13 17:27:11 - Forwarding to [/WEB-INF/views/main.jsp]
+2025-01-13 17:27:11 - Completed 200 OK
+2025-01-13 17:27:11 - GET "/images/main_data_service.jpg", parameters={}
+2025-01-13 17:27:11 - GET "/images/logo.png", parameters={}
+2025-01-13 17:27:11 - GET "/images/main_platform_service.jpg", parameters={}
+2025-01-13 17:27:11 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:11 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:11 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:11 - GET "/images/main_content_service.jpg", parameters={}
+2025-01-13 17:27:11 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:27:11 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:11 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:11 - Completed 200 OK
+2025-01-13 17:27:11 - Completed 200 OK
+2025-01-13 17:27:11 - Completed 200 OK
+2025-01-13 17:27:11 - Completed 200 OK
+2025-01-13 17:27:11 - Completed 200 OK
+2025-01-13 17:27:12 - GET "/mypage/intro", parameters={}
+2025-01-13 17:27:12 - Mapped to com.belab.co.kr.mypage.controller.MyPageController#intro(HttpSession, Model)
+2025-01-13 17:27:12 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:27:12 - View name [/mypage/mypage_intro], model {username=ksk1}
+2025-01-13 17:27:12 - Forwarding to [/WEB-INF/views//mypage/mypage_intro.jsp]
+2025-01-13 17:27:12 - Completed 200 OK
+2025-01-13 17:27:12 - GET "/images/logo.png", parameters={}
+2025-01-13 17:27:12 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:12 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:27:12 - Completed 200 OK
+2025-01-13 17:27:12 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:12 - Completed 200 OK
+2025-01-13 17:27:16 - POST "/member/delete", parameters={masked}
+2025-01-13 17:27:16 - Mapped to com.belab.co.kr.member.controller.MemberController#deleteMember(HttpSession, SessionStatus, Model)
+2025-01-13 17:27:16 - ==>  Preparing: DELETE FROM user WHERE email = ?
+2025-01-13 17:27:16 - ==> Parameters: ksk11@naver.com(String)
+2025-01-13 17:27:16 - <==    Updates: 1
+2025-01-13 17:27:16 - View name [redirect:], model {}
+2025-01-13 17:27:16 - Completed 302 FOUND
+2025-01-13 17:27:16 - GET "/", parameters={}
+2025-01-13 17:27:16 - Mapped to com.belab.co.kr.main.controller.MainController#index()
+2025-01-13 17:27:16 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:27:16 - View name [main], model {}
+2025-01-13 17:27:16 - Forwarding to [/WEB-INF/views/main.jsp]
+2025-01-13 17:27:16 - Completed 200 OK
+2025-01-13 17:27:16 - GET "/images/main_data_service.jpg", parameters={}
+2025-01-13 17:27:16 - GET "/images/main_platform_service.jpg", parameters={}
+2025-01-13 17:27:16 - GET "/images/main_content_service.jpg", parameters={}
+2025-01-13 17:27:16 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:27:16 - GET "/images/logo.png", parameters={}
+2025-01-13 17:27:16 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:16 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:16 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:16 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:16 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:16 - Completed 200 OK
+2025-01-13 17:27:16 - Completed 200 OK
+2025-01-13 17:27:16 - Completed 200 OK
+2025-01-13 17:27:16 - Completed 200 OK
+2025-01-13 17:27:16 - Completed 200 OK
+2025-01-13 17:27:47 - GET "/member/login", parameters={}
+2025-01-13 17:27:47 - Mapped to com.belab.co.kr.member.controller.MemberController#loginForm()
+2025-01-13 17:27:47 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:27:47 - View name [member/login], model {}
+2025-01-13 17:27:47 - Forwarding to [/WEB-INF/views/member/login.jsp]
+2025-01-13 17:27:47 - Completed 200 OK
+2025-01-13 17:27:47 - GET "/images/logo.png", parameters={}
+2025-01-13 17:27:47 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:47 - Completed 200 OK
+2025-01-13 17:27:47 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:27:47 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:47 - Completed 200 OK
+2025-01-13 17:27:58 - POST "/member/login", parameters={masked}
+2025-01-13 17:27:58 - Mapped to com.belab.co.kr.member.controller.MemberController#login(MemberVO, HttpSession, Model)
+2025-01-13 17:27:58 - ==>  Preparing: SELECT user_id AS userId, email, username, password, hp, affiliation, is_active AS isActive, role, join_at AS joinAt, updated_at AS updatedAt FROM user WHERE email = ? AND password = ?
+2025-01-13 17:27:58 - ==> Parameters: test2@naver.clm(String), 1234(String)
+2025-01-13 17:27:58 - <==    Columns: userId, email, username, password, hp, affiliation, isActive, role, joinAt, updatedAt
+2025-01-13 17:27:58 - <==        Row: 5, test2@naver.clm, test, 1234, 1234, null, 1, belab, 2025-01-13 00:34:01, 2025-01-13 00:34:01
+2025-01-13 17:27:58 - <==      Total: 1
+2025-01-13 17:27:58 - View name [redirect:], model {}
+2025-01-13 17:27:58 - Completed 302 FOUND
+2025-01-13 17:27:58 - GET "/main", parameters={}
+2025-01-13 17:27:58 - Mapped to com.belab.co.kr.main.controller.MainController#mainPage()
+2025-01-13 17:27:58 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:27:58 - View name [main], model {}
+2025-01-13 17:27:58 - Forwarding to [/WEB-INF/views/main.jsp]
+2025-01-13 17:27:58 - Completed 200 OK
+2025-01-13 17:27:59 - GET "/images/logo.png", parameters={}
+2025-01-13 17:27:59 - GET "/images/main_data_service.jpg", parameters={}
+2025-01-13 17:27:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:59 - GET "/images/main_content_service.jpg", parameters={}
+2025-01-13 17:27:59 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:27:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:59 - GET "/images/main_platform_service.jpg", parameters={}
+2025-01-13 17:27:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:27:59 - Completed 200 OK
+2025-01-13 17:27:59 - Completed 200 OK
+2025-01-13 17:27:59 - Completed 200 OK
+2025-01-13 17:27:59 - Completed 200 OK
+2025-01-13 17:27:59 - Completed 200 OK
+2025-01-13 17:28:01 - GET "/mypage/intro", parameters={}
+2025-01-13 17:28:01 - Mapped to com.belab.co.kr.mypage.controller.MyPageController#intro(HttpSession, Model)
+2025-01-13 17:28:01 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:28:01 - View name [/mypage/mypage_intro], model {username=test}
+2025-01-13 17:28:01 - Forwarding to [/WEB-INF/views//mypage/mypage_intro.jsp]
+2025-01-13 17:28:01 - Completed 200 OK
+2025-01-13 17:28:01 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:28:01 - GET "/images/logo.png", parameters={}
+2025-01-13 17:28:01 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:01 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:01 - Completed 200 OK
+2025-01-13 17:28:01 - Completed 200 OK
+2025-01-13 17:28:14 - GET "/member/validateForm", parameters={}
+2025-01-13 17:28:14 - Mapped to com.belab.co.kr.member.controller.MemberController#validateForm()
+2025-01-13 17:28:14 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:28:14 - View name [/member/validateForm], model {loggedInUser=MemberVO(userId=5, email=test2@naver.clm, username=test, password=1234, hp=1234, isActive=1, join_at=null, updated_at=null, role=belab), org.springframework.validation.BindingResult.loggedInUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2025-01-13 17:28:14 - Forwarding to [/WEB-INF/views//member/validateForm.jsp]
+2025-01-13 17:28:14 - Completed 200 OK
+2025-01-13 17:28:15 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:28:15 - GET "/images/logo.png", parameters={}
+2025-01-13 17:28:15 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:15 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:15 - Completed 200 OK
+2025-01-13 17:28:15 - Completed 200 OK
+2025-01-13 17:28:16 - POST "/member/validatePassword", parameters={masked}
+2025-01-13 17:28:16 - Mapped to com.belab.co.kr.member.controller.MemberController#validatePassword(String, HttpSession)
+2025-01-13 17:28:16 - ==>  Preparing: SELECT * FROM user WHERE email = ?
+2025-01-13 17:28:16 - ==> Parameters: test2@naver.clm(String)
+2025-01-13 17:28:16 - <==    Columns: user_id, username, password, email, affiliation, is_active, join_at, updated_at, role, hp
+2025-01-13 17:28:16 - <==        Row: 5, test, 1234, test2@naver.clm, null, 1, 2025-01-13 00:34:01, 2025-01-13 00:34:01, belab, 1234
+2025-01-13 17:28:16 - <==      Total: 1
+2025-01-13 17:28:16 - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-01-13 17:28:16 - Writing ["valid"]
+2025-01-13 17:28:16 - Completed 200 OK
+2025-01-13 17:28:16 - GET "/member/modifyForm", parameters={}
+2025-01-13 17:28:16 - Mapped to com.belab.co.kr.member.controller.MemberController#editForm(HttpSession)
+2025-01-13 17:28:16 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:28:16 - View name [/member/modifyForm], model {loggedInUser=MemberVO(userId=5, email=test2@naver.clm, username=test, password=1234, hp=1234, isActive=1, join_at=null, updated_at=null, role=belab), org.springframework.validation.BindingResult.loggedInUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2025-01-13 17:28:16 - Forwarding to [/WEB-INF/views//member/modifyForm.jsp]
+2025-01-13 17:28:17 - Completed 200 OK
+2025-01-13 17:28:17 - GET "/images/logo.png", parameters={}
+2025-01-13 17:28:17 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:17 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:28:17 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:17 - Completed 200 OK
+2025-01-13 17:28:17 - Completed 200 OK
+2025-01-13 17:28:41 - POST "/member/modify", parameters={masked}
+2025-01-13 17:28:41 - Mapped to com.belab.co.kr.member.controller.MemberController#updateMember(MemberVO, HttpSession, Model)
+2025-01-13 17:28:41 - ==>  Preparing: UPDATE user SET username = ?, hp = ?, password = ?, updated_at = CURRENT_TIMESTAMP WHERE email = ?
+2025-01-13 17:28:41 - ==> Parameters: test(String), 1234(String), 1234(String), test2@naver.clm(String)
+2025-01-13 17:28:41 - <==    Updates: 1
+2025-01-13 17:28:41 - ==>  Preparing: SELECT * FROM user WHERE email = ?
+2025-01-13 17:28:41 - ==> Parameters: test2@naver.clm(String)
+2025-01-13 17:28:41 - <==    Columns: user_id, username, password, email, affiliation, is_active, join_at, updated_at, role, hp
+2025-01-13 17:28:41 - <==        Row: 5, test, 1234, test2@naver.clm, null, 1, 2025-01-13 00:34:01, 2025-01-13 03:28:42, belab, 1234
+2025-01-13 17:28:41 - <==      Total: 1
+2025-01-13 17:28:41 - View name [redirect:], model {}
+2025-01-13 17:28:41 - Completed 302 FOUND
+2025-01-13 17:28:41 - GET "/mypage/intro", parameters={}
+2025-01-13 17:28:41 - Mapped to com.belab.co.kr.mypage.controller.MyPageController#intro(HttpSession, Model)
+2025-01-13 17:28:41 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:28:41 - View name [/mypage/mypage_intro], model {username=test}
+2025-01-13 17:28:41 - Forwarding to [/WEB-INF/views//mypage/mypage_intro.jsp]
+2025-01-13 17:28:41 - Completed 200 OK
+2025-01-13 17:28:42 - GET "/images/logo.png", parameters={}
+2025-01-13 17:28:42 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:28:42 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:42 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:42 - Completed 200 OK
+2025-01-13 17:28:42 - Completed 200 OK
+2025-01-13 17:28:47 - GET "/member/logout", parameters={}
+2025-01-13 17:28:47 - Mapped to com.belab.co.kr.member.controller.MemberController#logout(HttpSession, HttpServletResponse, SessionStatus)
+2025-01-13 17:28:47 - View name [redirect:], model {}
+2025-01-13 17:28:47 - Completed 302 FOUND
+2025-01-13 17:28:47 - GET "/", parameters={}
+2025-01-13 17:28:47 - Mapped to com.belab.co.kr.main.controller.MainController#index()
+2025-01-13 17:28:47 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:28:47 - View name [main], model {}
+2025-01-13 17:28:47 - Forwarding to [/WEB-INF/views/main.jsp]
+2025-01-13 17:28:48 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [145] milliseconds.
+2025-01-13 17:28:48 - Completed 200 OK
+2025-01-13 17:28:48 - GET "/images/logo.png", parameters={}
+2025-01-13 17:28:48 - GET "/images/main_data_service.jpg", parameters={}
+2025-01-13 17:28:48 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:48 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:48 - GET "/images/main_content_service.jpg", parameters={}
+2025-01-13 17:28:48 - GET "/images/main_platform_service.jpg", parameters={}
+2025-01-13 17:28:48 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:28:48 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:48 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:48 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:48 - Completed 200 OK
+2025-01-13 17:28:48 - Completed 200 OK
+2025-01-13 17:28:48 - Completed 200 OK
+2025-01-13 17:28:48 - Completed 200 OK
+2025-01-13 17:28:48 - Completed 200 OK
+2025-01-13 17:28:49 - GET "/member/login", parameters={}
+2025-01-13 17:28:49 - Mapped to com.belab.co.kr.member.controller.MemberController#loginForm()
+2025-01-13 17:28:49 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:28:49 - View name [member/login], model {}
+2025-01-13 17:28:49 - Forwarding to [/WEB-INF/views/member/login.jsp]
+2025-01-13 17:28:49 - Completed 200 OK
+2025-01-13 17:28:49 - GET "/images/logo.png", parameters={}
+2025-01-13 17:28:49 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:28:49 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:49 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:49 - Completed 200 OK
+2025-01-13 17:28:49 - Completed 200 OK
+2025-01-13 17:28:53 - POST "/member/login", parameters={masked}
+2025-01-13 17:28:53 - Mapped to com.belab.co.kr.member.controller.MemberController#login(MemberVO, HttpSession, Model)
+2025-01-13 17:28:53 - ==>  Preparing: SELECT user_id AS userId, email, username, password, hp, affiliation, is_active AS isActive, role, join_at AS joinAt, updated_at AS updatedAt FROM user WHERE email = ? AND password = ?
+2025-01-13 17:28:53 - ==> Parameters: sk.kim@belab.co.kr(String), 1234(String)
+2025-01-13 17:28:53 - <==      Total: 0
+2025-01-13 17:28:53 - View name [redirect:], model {}
+2025-01-13 17:28:53 - Completed 302 FOUND
+2025-01-13 17:28:53 - GET "/member/login", parameters={}
+2025-01-13 17:28:53 - Mapped to com.belab.co.kr.member.controller.MemberController#loginForm()
+2025-01-13 17:28:53 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:28:53 - View name [member/login], model {}
+2025-01-13 17:28:53 - Forwarding to [/WEB-INF/views/member/login.jsp]
+2025-01-13 17:28:53 - Completed 200 OK
+2025-01-13 17:28:53 - GET "/images/logo.png", parameters={}
+2025-01-13 17:28:53 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:53 - Completed 200 OK
+2025-01-13 17:28:53 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:28:53 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:53 - Completed 200 OK
+2025-01-13 17:28:59 - POST "/member/login", parameters={masked}
+2025-01-13 17:28:59 - Mapped to com.belab.co.kr.member.controller.MemberController#login(MemberVO, HttpSession, Model)
+2025-01-13 17:28:59 - ==>  Preparing: SELECT user_id AS userId, email, username, password, hp, affiliation, is_active AS isActive, role, join_at AS joinAt, updated_at AS updatedAt FROM user WHERE email = ? AND password = ?
+2025-01-13 17:28:59 - ==> Parameters: test2@naver.clm(String), 1234(String)
+2025-01-13 17:28:59 - <==    Columns: userId, email, username, password, hp, affiliation, isActive, role, joinAt, updatedAt
+2025-01-13 17:28:59 - <==        Row: 5, test2@naver.clm, test, 1234, 1234, null, 1, belab, 2025-01-13 00:34:01, 2025-01-13 03:28:42
+2025-01-13 17:28:59 - <==      Total: 1
+2025-01-13 17:28:59 - View name [redirect:], model {}
+2025-01-13 17:28:59 - Completed 302 FOUND
+2025-01-13 17:28:59 - GET "/main", parameters={}
+2025-01-13 17:28:59 - Mapped to com.belab.co.kr.main.controller.MainController#mainPage()
+2025-01-13 17:28:59 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:28:59 - View name [main], model {}
+2025-01-13 17:28:59 - Forwarding to [/WEB-INF/views/main.jsp]
+2025-01-13 17:28:59 - Completed 200 OK
+2025-01-13 17:28:59 - GET "/images/main_data_service.jpg", parameters={}
+2025-01-13 17:28:59 - GET "/images/logo.png", parameters={}
+2025-01-13 17:28:59 - GET "/images/main_platform_service.jpg", parameters={}
+2025-01-13 17:28:59 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:28:59 - GET "/images/main_content_service.jpg", parameters={}
+2025-01-13 17:28:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:59 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:28:59 - Completed 200 OK
+2025-01-13 17:28:59 - Completed 200 OK
+2025-01-13 17:28:59 - Completed 200 OK
+2025-01-13 17:28:59 - Completed 200 OK
+2025-01-13 17:28:59 - Completed 200 OK
+2025-01-13 17:29:01 - GET "/mypage/intro", parameters={}
+2025-01-13 17:29:01 - Mapped to com.belab.co.kr.mypage.controller.MyPageController#intro(HttpSession, Model)
+2025-01-13 17:29:01 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:29:01 - View name [/mypage/mypage_intro], model {username=test}
+2025-01-13 17:29:01 - Forwarding to [/WEB-INF/views//mypage/mypage_intro.jsp]
+2025-01-13 17:29:01 - Completed 200 OK
+2025-01-13 17:29:01 - GET "/images/logo.png", parameters={}
+2025-01-13 17:29:01 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:29:01 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:29:01 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:29:01 - Completed 200 OK
+2025-01-13 17:29:01 - Completed 200 OK
+2025-01-13 17:29:02 - GET "/member/validateForm", parameters={}
+2025-01-13 17:29:02 - Mapped to com.belab.co.kr.member.controller.MemberController#validateForm()
+2025-01-13 17:29:02 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:29:02 - View name [/member/validateForm], model {loggedInUser=MemberVO(userId=5, email=test2@naver.clm, username=test, password=1234, hp=1234, isActive=1, join_at=null, updated_at=null, role=belab), org.springframework.validation.BindingResult.loggedInUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2025-01-13 17:29:02 - Forwarding to [/WEB-INF/views//member/validateForm.jsp]
+2025-01-13 17:29:02 - Completed 200 OK
+2025-01-13 17:29:02 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:29:02 - GET "/images/logo.png", parameters={}
+2025-01-13 17:29:02 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:29:02 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:29:02 - Completed 200 OK
+2025-01-13 17:29:02 - Completed 200 OK
+2025-01-13 17:29:25 - POST "/member/validatePassword", parameters={masked}
+2025-01-13 17:29:25 - Mapped to com.belab.co.kr.member.controller.MemberController#validatePassword(String, HttpSession)
+2025-01-13 17:29:25 - ==>  Preparing: SELECT * FROM user WHERE email = ?
+2025-01-13 17:29:25 - ==> Parameters: test2@naver.clm(String)
+2025-01-13 17:29:25 - <==    Columns: user_id, username, password, email, affiliation, is_active, join_at, updated_at, role, hp
+2025-01-13 17:29:25 - <==        Row: 5, test, 1234, test2@naver.clm, null, 1, 2025-01-13 00:34:01, 2025-01-13 03:28:42, belab, 1234
+2025-01-13 17:29:25 - <==      Total: 1
+2025-01-13 17:29:25 - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-01-13 17:29:25 - Writing ["valid"]
+2025-01-13 17:29:25 - Completed 200 OK
+2025-01-13 17:29:25 - GET "/member/modifyForm", parameters={}
+2025-01-13 17:29:25 - Mapped to com.belab.co.kr.member.controller.MemberController#editForm(HttpSession)
+2025-01-13 17:29:25 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:29:25 - View name [/member/modifyForm], model {loggedInUser=MemberVO(userId=5, email=test2@naver.clm, username=test, password=1234, hp=1234, isActive=1, join_at=null, updated_at=null, role=belab), org.springframework.validation.BindingResult.loggedInUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2025-01-13 17:29:25 - Forwarding to [/WEB-INF/views//member/modifyForm.jsp]
+2025-01-13 17:29:25 - Completed 200 OK
+2025-01-13 17:29:25 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:29:25 - GET "/images/logo.png", parameters={}
+2025-01-13 17:29:25 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:29:25 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:29:25 - Completed 200 OK
+2025-01-13 17:29:25 - Completed 200 OK
+2025-01-13 17:29:55 - POST "/member/modify", parameters={masked}
+2025-01-13 17:29:55 - Mapped to com.belab.co.kr.member.controller.MemberController#updateMember(MemberVO, HttpSession, Model)
+2025-01-13 17:29:55 - ==>  Preparing: UPDATE user SET username = ?, hp = ?, password = ?, updated_at = CURRENT_TIMESTAMP WHERE email = ?
+2025-01-13 17:29:55 - ==> Parameters: test+test(String), 1234(String), 1234(String), test2@naver.clm(String)
+2025-01-13 17:29:55 - <==    Updates: 1
+2025-01-13 17:29:55 - ==>  Preparing: SELECT * FROM user WHERE email = ?
+2025-01-13 17:29:55 - ==> Parameters: test2@naver.clm(String)
+2025-01-13 17:29:55 - <==    Columns: user_id, username, password, email, affiliation, is_active, join_at, updated_at, role, hp
+2025-01-13 17:29:55 - <==        Row: 5, test+test, 1234, test2@naver.clm, null, 1, 2025-01-13 00:34:01, 2025-01-13 03:29:56, belab, 1234
+2025-01-13 17:29:55 - <==      Total: 1
+2025-01-13 17:29:55 - View name [redirect:], model {}
+2025-01-13 17:29:55 - Completed 302 FOUND
+2025-01-13 17:29:55 - GET "/mypage/intro", parameters={}
+2025-01-13 17:29:55 - Mapped to com.belab.co.kr.mypage.controller.MyPageController#intro(HttpSession, Model)
+2025-01-13 17:29:55 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:29:55 - View name [/mypage/mypage_intro], model {username=test+test}
+2025-01-13 17:29:55 - Forwarding to [/WEB-INF/views//mypage/mypage_intro.jsp]
+2025-01-13 17:29:55 - Completed 200 OK
+2025-01-13 17:29:56 - GET "/images/logo.png", parameters={}
+2025-01-13 17:29:56 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:29:56 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:29:56 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:29:56 - Completed 200 OK
+2025-01-13 17:29:56 - Completed 200 OK
+2025-01-13 17:30:00 - GET "/mypage/intro", parameters={}
+2025-01-13 17:30:00 - Mapped to com.belab.co.kr.mypage.controller.MyPageController#intro(HttpSession, Model)
+2025-01-13 17:30:00 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:30:00 - View name [/mypage/mypage_intro], model {username=test+test}
+2025-01-13 17:30:00 - Forwarding to [/WEB-INF/views//mypage/mypage_intro.jsp]
+2025-01-13 17:30:00 - Completed 200 OK
+2025-01-13 17:30:00 - GET "/images/logo.png", parameters={}
+2025-01-13 17:30:00 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:00 - Completed 200 OK
+2025-01-13 17:30:00 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:30:00 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:00 - Completed 200 OK
+2025-01-13 17:30:02 - GET "/mypage/intro", parameters={}
+2025-01-13 17:30:02 - Mapped to com.belab.co.kr.mypage.controller.MyPageController#intro(HttpSession, Model)
+2025-01-13 17:30:02 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:30:02 - View name [/mypage/mypage_intro], model {username=test+test}
+2025-01-13 17:30:02 - Forwarding to [/WEB-INF/views//mypage/mypage_intro.jsp]
+2025-01-13 17:30:02 - Completed 200 OK
+2025-01-13 17:30:02 - GET "/images/logo.png", parameters={}
+2025-01-13 17:30:02 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:02 - Completed 200 OK
+2025-01-13 17:30:02 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:30:02 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:02 - Completed 200 OK
+2025-01-13 17:30:04 - POST "/member/delete", parameters={masked}
+2025-01-13 17:30:04 - Mapped to com.belab.co.kr.member.controller.MemberController#deleteMember(HttpSession, SessionStatus, Model)
+2025-01-13 17:30:04 - ==>  Preparing: DELETE FROM user WHERE email = ?
+2025-01-13 17:30:04 - ==> Parameters: test2@naver.clm(String)
+2025-01-13 17:30:04 - <==    Updates: 1
+2025-01-13 17:30:04 - View name [redirect:], model {}
+2025-01-13 17:30:04 - Completed 302 FOUND
+2025-01-13 17:30:04 - GET "/", parameters={}
+2025-01-13 17:30:04 - Mapped to com.belab.co.kr.main.controller.MainController#index()
+2025-01-13 17:30:04 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:30:04 - View name [main], model {}
+2025-01-13 17:30:04 - Forwarding to [/WEB-INF/views/main.jsp]
+2025-01-13 17:30:04 - Completed 200 OK
+2025-01-13 17:30:04 - GET "/images/main_data_service.jpg", parameters={}
+2025-01-13 17:30:04 - GET "/images/logo.png", parameters={}
+2025-01-13 17:30:04 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:04 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:04 - Completed 200 OK
+2025-01-13 17:30:04 - Completed 200 OK
+2025-01-13 17:30:04 - GET "/images/main_platform_service.jpg", parameters={}
+2025-01-13 17:30:04 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:30:04 - GET "/images/main_content_service.jpg", parameters={}
+2025-01-13 17:30:04 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:04 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:04 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:30:04 - Completed 200 OK
+2025-01-13 17:30:04 - Completed 200 OK
+2025-01-13 17:30:04 - Completed 200 OK
+2025-01-13 17:31:25 - GET "/member/login", parameters={}
+2025-01-13 17:31:25 - Mapped to com.belab.co.kr.member.controller.MemberController#loginForm()
+2025-01-13 17:31:25 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:31:25 - View name [member/login], model {}
+2025-01-13 17:31:25 - Forwarding to [/WEB-INF/views/member/login.jsp]
+2025-01-13 17:31:25 - Completed 200 OK
+2025-01-13 17:31:25 - GET "/images/logo.png", parameters={}
+2025-01-13 17:31:25 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:31:25 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:31:25 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:31:25 - Completed 200 OK
+2025-01-13 17:31:25 - Completed 200 OK
+2025-01-13 17:31:31 - GET "/member/userjoin", parameters={}
+2025-01-13 17:31:31 - Mapped to com.belab.co.kr.member.controller.MemberController#signupForm()
+2025-01-13 17:31:31 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:31:31 - View name [/member/userjoin], model {}
+2025-01-13 17:31:31 - Forwarding to [/WEB-INF/views//member/userjoin.jsp]
+2025-01-13 17:31:32 - Completed 200 OK
+2025-01-13 17:31:32 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:31:32 - GET "/images/logo.png", parameters={}
+2025-01-13 17:31:32 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:31:32 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:31:32 - Completed 200 OK
+2025-01-13 17:31:32 - Completed 200 OK
+2025-01-13 17:31:48 - POST "/member/userjoin", parameters={masked}
+2025-01-13 17:31:48 - Mapped to com.belab.co.kr.member.controller.MemberController#signup(MemberVO)
+2025-01-13 17:31:48 - ==>  Preparing: SELECT * FROM user WHERE email = ?
+2025-01-13 17:31:48 - ==> Parameters: sk.kim@belab.co.kr(String)
+2025-01-13 17:31:48 - <==      Total: 0
+2025-01-13 17:31:48 - ==>  Preparing: INSERT INTO user (email, username, password, hp, is_active, role, join_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+2025-01-13 17:31:48 - ==> Parameters: sk.kim@belab.co.kr(String), ksk(String), 1234(String), 1234(String), 1(Integer), belab(String)
+2025-01-13 17:31:48 - <==    Updates: 1
+2025-01-13 17:31:48 - View name [redirect:], model {}
+2025-01-13 17:31:48 - Completed 302 FOUND
+2025-01-13 17:31:48 - GET "/member/login", parameters={}
+2025-01-13 17:31:48 - Mapped to com.belab.co.kr.member.controller.MemberController#loginForm()
+2025-01-13 17:31:48 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-13 17:31:48 - View name [member/login], model {}
+2025-01-13 17:31:48 - Forwarding to [/WEB-INF/views/member/login.jsp]
+2025-01-13 17:31:48 - Completed 200 OK
+2025-01-13 17:31:48 - GET "/images/logo.png", parameters={}
+2025-01-13 17:31:48 - GET "/images/universe2.jpg", parameters={}
+2025-01-13 17:31:48 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:31:48 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-13 17:31:48 - Completed 200 OK
+2025-01-13 17:31:48 - Completed 200 OK
+2025-01-13 17:34:14 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-13 17:34:15 - Graceful shutdown complete
+2025-01-13 17:34:15 - HikariPool-1 - Shutdown initiated...
+2025-01-13 17:34:15 - HikariPool-1 - Shutdown completed.
