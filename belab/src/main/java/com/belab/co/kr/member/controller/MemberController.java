@@ -3,6 +3,7 @@ package com.belab.co.kr.member.controller;
 import com.belab.co.kr.member.service.MemberService;
 import com.belab.co.kr.member.vo.MemberVO;
 import jakarta.mail.MessagingException;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,8 +48,9 @@ public class MemberController {
     }
 
     // 로그인 처리
+// 로그인 처리
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String login(MemberVO memberVO, HttpSession session, Model model) {
+    public String login(MemberVO memberVO, HttpSession session, Model model,HttpServletRequest request) {
         // 로그인 처리: 이메일과 비밀번호로 사용자 정보 조회
         MemberVO loginMember = memberService.login(memberVO);
 
@@ -59,10 +61,11 @@ public class MemberController {
 
             // 로그인 후 메인 페이지로 리다이렉트
             return "redirect:/main";
+        }else{
+            // 로그인 실패 시 error 페이지로 리다이렉트
+            request.setAttribute("error", "로그인 실패: 이메일 또는 비밀번호가 잘못되었습니다.");
+            return "redirect:/member/error";  // error 페이지로 이동
         }
-        model.addAttribute("error", "에러입니다.");
-        // 로그인 실패 시 로그인 페이지로 돌아가기
-        return "redirect:/member/login";  // 로그인 실패 시 에러 파라미터를 추가하여 다시 로그인 페이지로 이동
     }
 
     /**

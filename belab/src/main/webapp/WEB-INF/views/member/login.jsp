@@ -195,9 +195,9 @@
 
     // 페이지 로드 시 실행
     window.onload = function () {
-      const error = getQueryParam('error');
-      if (error === 'true') {
-        showPopup('비밀번호가 틀렸습니다. 다시 시도해주세요.');
+      const errorMessage = '<%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>';
+      if (errorMessage) {
+        showPopup(errorMessage);
       }
     };
   </script>
