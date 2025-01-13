@@ -143,16 +143,13 @@
                 max-height: 300px; /* 드롭다운 메뉴가 열릴 때 최대 높이 */
             }
 
-<<<<<<< HEAD
           .sidebar.open {
               max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
               margin-bottom: 20px;
           }
-=======
             .dropdown-btn {
                 display: block;
             }
->>>>>>> main
 
             .sidebar.open {
                 max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */

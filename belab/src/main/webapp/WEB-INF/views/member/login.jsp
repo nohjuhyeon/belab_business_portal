@@ -216,13 +216,6 @@
     }
   </style>
   <script>
-    // URL에서 특정 파라미터 값을 가져오는 함수
-    function getQueryParam(param) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
-    }
-
-    // 커스텀 팝업 열기
     function showPopup(message) {
       const popup = document.querySelector('.custom-popup');
       const overlay = document.querySelector('.popup-overlay');
@@ -241,9 +234,9 @@
 
     // 페이지 로드 시 실행
     window.onload = function () {
-      const error = getQueryParam('error');
-      if (error === 'true') {
-        showPopup('비밀번호가 틀렸습니다. 다시 시도해주세요.');
+      const errorMessage = "<%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>";
+      if (errorMessage) {
+        showPopup(errorMessage);
       }
     };
   </script>
