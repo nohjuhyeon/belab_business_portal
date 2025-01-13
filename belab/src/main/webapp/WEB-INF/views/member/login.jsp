@@ -234,7 +234,7 @@
 
     // 페이지 로드 시 실행
     window.onload = function () {
-      const errorMessage = "<%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>";
+      const errorMessage = '<%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>';
       if (errorMessage) {
         showPopup(errorMessage);
       }
