@@ -4,14 +4,15 @@
 
     <!-- 회원가입 쿼리 -->
     <insert id="insertMember" parameterType="com.belab.co.kr.member.vo.MemberVO">
-        INSERT INTO user (user_id, email, username, password, hp, affiliation, is_active, role, join_at, updated_at)
-        VALUES (#{userId}, #{email}, #{username}, #{password}, #{hp}, #{affiliation}, #{isActive, jdbcType=INTEGER},
-                #{role}, NOW(), NOW())
+        INSERT INTO user (email, username, password, hp, is_active, role, join_at, updated_at)
+        VALUES (#{email}, #{username}, #{password}, #{hp}, #{isActive, jdbcType=INTEGER}, #{role}, NOW(), NOW())
     </insert>
 
     <!-- 이메일로 회원 조회 -->
     <select id="findMemberByEmail" resultType="com.belab.co.kr.member.vo.MemberVO">
-        SELECT * FROM user WHERE email = #{email}
+        SELECT *
+        FROM user
+        WHERE email = #{email}
     </select>
 
     <!-- 로그인 쿼리 (이메일과 비밀번호로 회원 조회) -->
@@ -31,8 +32,9 @@
           AND password = #{password}
     </select>
 
+
     <!-- 회원정보 수정 -->
-    <update id="updateMember" parameterType="com.belab.co.kr.member.vo.MemberVO">
+    <update id="updateMember" parameterType="String">
         UPDATE user
         SET
         username = #{username},           <!-- 이름 수정 -->
@@ -41,6 +43,13 @@
         updated_at = CURRENT_TIMESTAMP      <!-- 수정 일시 -->
         WHERE email = #{email}                <!-- 이메일을 기준으로 수정 -->
     </update>
+
+
+    <!-- 이메일로 회원 존재 여부 확인 -->
+    <select id="findEmailExists" resultType="boolean">
+        SELECT EXISTS(SELECT 1 FROM user WHERE email = #{email}) AS emailExists
+    </select>
+
 
 
 </mapper>

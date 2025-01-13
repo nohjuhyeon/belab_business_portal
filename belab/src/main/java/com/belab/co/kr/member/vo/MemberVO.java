@@ -10,7 +10,6 @@ public class MemberVO {
     private String username;    // 사용자 이름
     private String password;    // 비밀번호
     private String hp;          // 휴대전화 번호
-    private String affiliation; // 소속
     private int isActive = 1;   // 기본값을 1로 설정 (active 상태)
     private Timestamp join_at;   // 가입 일시
     private Timestamp updated_at; // 수정 일시

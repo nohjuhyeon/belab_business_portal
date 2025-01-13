@@ -2,19 +2,15 @@ package com.belab.co.kr.member.controller;
 
 import com.belab.co.kr.member.service.MemberService;
 import com.belab.co.kr.member.vo.MemberVO;
+import jakarta.mail.MessagingException;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import org.apache.logging.log4j.Logger;
-import org.mybatis.logging.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
-import org.springframework.web.servlet.ModelAndView;
-
-import java.util.HashMap;
-import java.util.Map;
 
 
 @Controller
@@ -73,24 +69,6 @@ public class MemberController {
      * @param session
      * @return
      */
-
-//    @RequestMapping(value = "/logout", method = {RequestMethod.GET, RequestMethod.POST})
-//    public String logout(HttpSession session) {
-//        // 로그아웃 시 로깅 추가
-//        System.out.println("로그아웃 요청 수신됨.");
-//
-//        // 세션 무효화 전에 세션 속성을 확인
-//        if (session.getAttribute("loggedInUser") != null) {
-//            System.out.println("세션에 loggedInUser가 남아있습니다.");
-//        } else {
-//            System.out.println("세션에서 loggedInUser가 제거되었습니다.");
-//        }
-//
-//        session.invalidate();  // 세션 무효화
-//        System.out.println("세션 무효화 완료. 로그아웃 처리됨.");
-//
-//        return "redirect:/";  // 로그아웃 후 메인 페이지로 리다이렉트
-//    }
 
     /**
      * 로그아웃
@@ -155,6 +133,7 @@ public class MemberController {
         return "/member/validateForm";  // 비밀번호 입력 페이지로 이동
     }
 
+
     // 비밀번호 확인 후 /modifyForm으로 리다이렉트
     @RequestMapping(value = "/validatePassword", method = RequestMethod.POST)
     @ResponseBody
@@ -171,4 +150,74 @@ public class MemberController {
             return ResponseEntity.status(400).body("invalid");  // 비밀번호가 틀리면 error 반환
         }
     }
+
+    /**
+     * 이메일 찾기
+     *
+     * @return
+     */
+    // 이메일 찾기
+    @RequestMapping(value = "/findEmail", method = RequestMethod.GET)
+    public String findEmailForm() {
+        return "/member/findbyemail";
+    }
+
+    /**
+     * email 찾기 기능
+     *
+     * @param username
+     * @param hp
+     * @return
+     */
+    @RequestMapping(value = "/findEmail", method = RequestMethod.POST)
+    public String findEmail(@RequestParam String username, @RequestParam String hp, Model model) {
+        // 이메일 찾기 서비스 호출
+        String email = memberService.findEmailByUsernameAndHp(username, hp);
+
+        if (email != null) {
+            // 이메일 찾았으면 모델에 이메일을 추가
+            model.addAttribute("email", email);
+            return "/member/findEmailResult";  // 이메일 찾기 결과를 보여줄 JSP 페이지
+        } else {
+            // 회원 정보가 일치하지 않으면 오류 메시지
+            model.addAttribute("error", "회원 정보가 일치하지 않습니다.");
+            return "/member/findbyemail";  // 다시 폼 페이지로 돌아감
+        }
+    }
+
+    // 비밀번호 찾기 페이지로 이동
+    @RequestMapping(value = "/findPassword", method = RequestMethod.GET)
+    public String findPasswordForm() {
+        return "/member/findibypassword";  // 비밀번호 찾기 폼으로 이동
+    }
+
+    /***
+     * 비밀번호 찾기 기능 처리
+     * @param email 사용자 이메일
+     * @return 처리 결과 메시지
+     */
+    @RequestMapping(value = "/findPassword", method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseEntity<String> findPassword(@RequestParam String email) {
+        try {
+            // 새로운 임시 비밀번호 생성
+            String newPassword = memberService.generateTempPassword(email);
+
+            // 새 비밀번호를 데이터베이스에 업데이트
+            boolean isUpdated = memberService.updatePasswordByEmail(email, newPassword);
+
+            if (isUpdated) {
+                // 이메일로 새 비밀번호 전송
+                memberService.sendPasswordToEmail(email, newPassword);
+                return ResponseEntity.ok("새로운 비밀번호가 이메일로 전송되었습니다.");
+            } else {
+                return ResponseEntity.status(400).body("이메일에 해당하는 회원이 존재하지 않습니다.");
+            }
+        } catch (MessagingException e) {
+            // 이메일 전송 중 오류 발생
+            return ResponseEntity.status(500).body("비밀번호 전송 중 오류가 발생했습니다.");
+        }
+    }
+
 }
+

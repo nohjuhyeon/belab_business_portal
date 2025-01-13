@@ -214,7 +214,7 @@
       <h3>환영합니다!</h3>
       <form action="/member/login" method="post">
         <div class="form-group">
-          <label for="email">이메일</label>
+          <label for="email">로그인</label>
           <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
         </div>
         <div class="form-group">
@@ -224,7 +224,8 @@
         <button type="submit">로그인</button>
       </form>
       <div class="links">
-        <a href="/forgot-password">아이디/비밀번호 찾기</a>
+        <a href="/member/findEmail">아이디 찾기</a>
+        <a href="/member/findPassword">비밀번호 찾기</a>
         <a href="/member/userjoin">회원가입</a>
       </div>
     </div>

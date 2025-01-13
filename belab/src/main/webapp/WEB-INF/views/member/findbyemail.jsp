@@ -1,16 +1,10 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ksk07
-  Date: 25. 1. 11.
-  Time: 오후 4:38
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<form action="/member/findEmail" method="post">
+    <label for="username">사용자 이름</label>
+    <input type="text" id="username" name="username" required />
 
-</body>
-</html>
+    <label for="hp">휴대폰 번호</label>
+    <input type="text" id="hp" name="hp" required />
+
+    <button type="submit">이메일 찾기</button>
+</form>

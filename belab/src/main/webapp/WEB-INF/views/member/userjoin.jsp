@@ -193,10 +193,11 @@
         <div class="form-group">
           <label>소속</label>
           <div class="form-group-inline">
-            <input type="radio" id="belab" name="affiliation" value="비이랩" checked>
+            <input type="radio" id="user" name="role" value="user">
+            <label for="user">기타소속</label>
+            <input type="radio" id="belab" name="role" value="belab" checked>
             <label for="belab">비이랩</label>
-            <input type="radio" id="external" name="affiliation" value="외부소속">
-            <label for="external">외부소속</label>
+
           </div>
         </div>
         <button type="submit">회원가입</button>

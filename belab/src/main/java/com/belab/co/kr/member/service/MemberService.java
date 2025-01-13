@@ -1,11 +1,21 @@
 package com.belab.co.kr.member.service;
 
 import com.belab.co.kr.member.vo.MemberVO;
+import jakarta.mail.MessagingException;
 
 public interface MemberService {
 
     // 회원가입
     boolean signup(MemberVO memberVO);
+
+    // 사용자 이름과 휴대폰 번호로 이메일 찾기 (이메일만 반환)
+    String findEmailByUsernameAndHp(String username, String hp);
+
+    // 비밀번호 찾기 (임시 비밀번호 생성)
+    String generateTempPassword(String email);
+
+    // 비밀번호 변경
+    boolean updatePasswordByEmail(String email, String newPassword);
 
     // 개인정보 수정
     boolean updateMember(MemberVO memberVO);
@@ -18,4 +28,7 @@ public interface MemberService {
 
     // 비밀번호 검증
     boolean checkPassword(String email, String inputPassword);
+
+    // 비밀번호 전송
+    void sendPasswordToEmail(String email, String newPassword) throws MessagingException;
 }
