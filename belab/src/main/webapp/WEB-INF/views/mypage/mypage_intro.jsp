@@ -20,8 +20,8 @@
             height: 375px;
         }
         .header-blank {
-          height: 270px;
-      }
+            height: 270px;
+        }
 
         .header-section h2 {
             font-size: 36px;
@@ -68,24 +68,24 @@
         /* 드롭다운 버튼 */
         /* 반응형 디자인 */
         .dropdown-btn {
-          display: none;
-          background-color: #6a1b1b;
-          color: #fff;
-          border: none;
-          padding: 15px 20px;
-          font-size: 16px;
-          cursor: pointer;
-          width: 100%;
-          text-align: left;
-          border-radius: 8px;
-          margin-bottom: 10px;
-      }
+            display: none;
+            background-color: #6a1b1b;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
 
-      .dropdown-btn:hover {
-          background-color: #eae0d5;
-          color: #000;
+        .dropdown-btn:hover {
+            background-color: #eae0d5;
+            color: #000;
 
-      }
+        }
 
         /* 우측 내용 영역 */
         .content {
@@ -125,115 +125,126 @@
 
 
 
-      @media (max-width: 992px) {
-          .container {
-              flex-direction: column;
-          }
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
 
-          .sidebar {
-              width: 100%;
-              border-right: none;
-              border-bottom: none;
-              max-height: 0;
-              overflow: hidden;
-              visibility: hidden;
-          }
-          .sidebar.open {
-              visibility: visible;
-              max-height: 300px; /* 드롭다운 메뉴가 열릴 때 최대 높이 */
-          }
-  
-          .dropdown-btn {
-              display: block;
-          }
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: none;
+                max-height: 0;
+                overflow: hidden;
+                visibility: hidden;
+            }
+            .sidebar.open {
+                visibility: visible;
+                max-height: 300px; /* 드롭다운 메뉴가 열릴 때 최대 높이 */
+            }
 
+<<<<<<< HEAD
           .sidebar.open {
               max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
               margin-bottom: 20px;
           }
+=======
+            .dropdown-btn {
+                display: block;
+            }
+>>>>>>> main
 
-          .content {
-              margin: 0;
-              box-shadow: none;
-              border-radius: 0;
-              padding: 20px;
-          }
+            .sidebar.open {
+                max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
+            }
 
-          .sidebar a {
-              padding: 10px 15px;
-              font-size: 14px;
-          }
+            .content {
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+                padding: 20px;
+            }
 
-          .content h2 {
-              font-size: 20px;
-          }
+            .sidebar a {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
 
-          .welcome-card h3 {
-              font-size: 20px;
-          }
+            .content h2 {
+                font-size: 20px;
+            }
 
-          .welcome-card p {
-              font-size: 14px;
-          }
-      }
+            .welcome-card h3 {
+                font-size: 20px;
+            }
 
-      @media (max-width: 480px) {
-          .header-section h2 {
-              font-size: 28px;
-          }
+            .welcome-card p {
+                font-size: 14px;
+            }
+        }
 
-          .sidebar a {
-              font-size: 12px;
-          }
+        @media (max-width: 480px) {
+            .header-section h2 {
+                font-size: 28px;
+            }
 
-          .content h2 {
-              font-size: 18px;
-          }
+            .sidebar a {
+                font-size: 12px;
+            }
 
-          .welcome-card h3 {
-              font-size: 18px;
-          }
+            .content h2 {
+                font-size: 18px;
+            }
 
-          .welcome-card p {
-              font-size: 12px;
-          }
-      }
+            .welcome-card h3 {
+                font-size: 18px;
+            }
+
+            .welcome-card p {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
-
 <body>
-    <div class="header-section">
-      <div class="header-blank"></div>
-      <h2>마이페이지</h2>
+<div class="header-section">
+    <div class="header-blank"></div>
+    <h2>마이페이지</h2>
+</div>
+
+<div class="container">
+    <!-- 드롭다운 버튼 -->
+    <button class="dropdown-btn" onclick="toggleSidebar()">메뉴</button>
+
+    <!-- 좌측 사이드바 -->
+    <div class="sidebar" id="sidebar">
+        <a href="/member/validateForm">개인정보 수정</a>
+        <a href="/mypage/intro">마이페이지</a>
+        <a href="/member/inquiry">문의내역</a>
+        <form action="/member/delete" method="POST">
+            <button type="submit" style="background-color: transparent; border: none; color: inherit; font-size: inherit;">회원탈퇴</button>
+        </form>
     </div>
 
-    <div class="container">
-        <!-- 드롭다운 버튼 -->
-        <button class="dropdown-btn" onclick="toggleSidebar()">메뉴</button>
+    <!-- 우측 내용 -->
+    <div class="content">
+        <h2>환영합니다!</h2>
+        <div class="welcome-card">
+            <!-- 세션에서 사용자 이름을 가져와서 표시 -->
+            <h3>${loggedInUser.username}님, 반갑습니다!</h3>
 
-        <!-- 좌측 사이드바 -->
-        <div class="sidebar" id="sidebar">
-            <a href="/member/validateForm">개인정보 수정</a>
-            <a href="/member/mypage/intro">마이페이지</a>
-            <a href="/member/inquiry">문의내역 </a>
-        </div>
-
-        <!-- 우측 내용 -->
-        <div class="content">
-            <h2>환영합니다!</h2>
-            <div class="welcome-card">
-                <h3>${loggedInUser.username}님, 반갑습니다!</h3>
-                <p>마이페이지에서 회원님의 정보를 확인하고 관리할 수 있습니다.</p>
-            </div>
+            <p>마이페이지에서 회원님의 정보를 확인하고 관리할 수 있습니다.</p>
         </div>
     </div>
+</div>
 
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('open');
-        }
-    </script>
-    <%@ include file="../common/footer.jsp" %>
-  </body>
-  </html>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('open');
+    }
+</script>
+
+<%@ include file="../common/footer.jsp" %>
+</body>
+</html>

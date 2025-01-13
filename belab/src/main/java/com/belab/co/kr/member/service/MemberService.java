@@ -31,4 +31,9 @@ public interface MemberService {
 
     // 비밀번호 전송
     void sendPasswordToEmail(String email, String newPassword) throws MessagingException;
+
+    // 회원삭제
+    boolean deleteMember(String email);  // 회원 삭제 메소드
+
+    boolean isPasswordCorrect(String currentUsername, String password);
 }
