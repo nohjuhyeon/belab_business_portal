@@ -6,7 +6,7 @@ import jakarta.mail.MessagingException;
 public interface MemberService {
 
     // 회원가입
-    boolean signup(MemberVO memberVO);
+    void signup(MemberVO memberVO);
 
     // 사용자 이름과 휴대폰 번호로 이메일 찾기 (이메일만 반환)
     String findEmailByUsernameAndHp(String username, String hp);

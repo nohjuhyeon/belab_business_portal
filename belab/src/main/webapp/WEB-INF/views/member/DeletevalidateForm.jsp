@@ -5,12 +5,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>비밀번호 확인</title>
+    <title>회원 탈퇴</title>
     <style>
-        .header-blank {
-            height: 270px;
-        }
-
         .header-section {
             background-image: url('../images/universe2.jpg');
             background-size: 100% auto;
@@ -22,7 +18,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             height: 375px;
         }
-
+        .header-blank {
+            height: 270px;
+          }
+      
         .header-section h2 {
             font-size: 36px;
             margin: 0;
@@ -147,84 +146,177 @@
                 padding: 10px;
             }
         }
+        /* Popup Overlay */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            display: none;
+        }
+
+        /* Popup Box */
+        .popup {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .popup h3 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .popup p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .popup button {
+            padding: 12px 20px;
+            background-color: #6a1b1b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .popup button:hover {
+            background-color: #eae0d5;
+            color: #6a1b1b;
+        }
+
+        .popup .cancel-button {
+            background-color: #ccc;
+        }
+
+        .popup .cancel-button:hover {
+            background-color: #bbb;
+        }
     </style>
 </head>
 
 <body>
-<div class="header-section">
-    <div class="header-blank"></div>
-    <h2>비밀번호 확인</h2>
-</div>
-
-<div class="verify-body">
-    <div class="verify-container">
-        <h3>비밀번호를 입력하세요</h3>
-        <form id="validatePasswordForm">
-            <div class="form-group">
-                <label for="password">비밀번호</label>
-                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required>
-            </div>
-            <button type="submit">확인</button>
-            <div id="error-message" class="error-message" style="display: none;"></div>
-        </form>
+    <div class="header-section">
+        <div class="header-blank"></div>
+        <h2>회원 탈퇴</h2>
     </div>
-</div>
 
-<script>
-    document.getElementById("validatePasswordForm").addEventListener("submit", function (event) {
-        event.preventDefault();
+    <div class="verify-body">
+        <div class="verify-container">
+            <h3>비밀번호를 입력하세요</h3>
+            <form id="validatePasswordForm">
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required>
+                </div>
+                <button type="submit">확인</button>
+                <div id="error-message" class="error-message" style="display: none;"></div>
+            </form>
+        </div>
+    </div>
 
-        const password = document.getElementById("password").value;
+    <!-- 팝업 -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup" id="popup-confirm-delete">
+            <h3>정말 회원을 삭제하시겠습니까?</h3>
+            <p>이 작업은 되돌릴 수 없습니다.</p>
+            <button id="confirm-delete-button">삭제</button>
+            <button class="cancel-button" id="cancel-delete-button">취소</button>
+        </div>
 
-        // 비밀번호 확인 요청
-        fetch("/member/validatePassword", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded"
-            },
-            body: "password=" + encodeURIComponent(password)
-        })
-            .then(response => response.text())
-            .then(data => {
-                if (data === "valid") {
-                    // 비밀번호가 유효하면 팝업창을 띄워 삭제 확인
-                    const confirmDelete = confirm("정말 회원을 삭제하시겠습니까?");
+        <div class="popup" id="popup-delete-success" style="display: none;">
+            <h3>회원이 삭제되었습니다.</h3>
+            <p>이용해 주셔서 감사합니다.</p>
+            <button id="close-success-button">닫기</button>
+        </div>
+    </div>
 
-                    if (confirmDelete) {
-                        // 사용자가 삭제를 확인하면 삭제를 진행하고 서버에 삭제 요청
-                        fetch("/member/delete", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/x-www-form-urlencoded"
-                            },
-                            body: "password=" + encodeURIComponent(password)  // 비밀번호를 포함하여 삭제 요청
-                        })
-                            .then(deleteResponse => deleteResponse.json())  // JSON 응답으로 처리
-                            .then(deleteData => {
-                                if (deleteData.status === "success") {
-                                    alert("회원이 삭제되었습니다.");
-                                    window.location.href = "/";  // 메인 페이지로 리디렉션
-                                } else {
-                                    alert("삭제 과정에서 오류가 발생했습니다. 다시 시도해주세요.");
-                                }
-                            })
-                            .catch(deleteError => {
-                                console.error("Error:", deleteError);
-                                alert("삭제 과정에서 오류가 발생했습니다. 다시 시도해주세요.");
-                            });
+    <script>
+        const popupOverlay = document.getElementById("popup-overlay");
+        const confirmDeletePopup = document.getElementById("popup-confirm-delete");
+        const deleteSuccessPopup = document.getElementById("popup-delete-success");
+        const confirmDeleteButton = document.getElementById("confirm-delete-button");
+        const cancelDeleteButton = document.getElementById("cancel-delete-button");
+        const closeSuccessButton = document.getElementById("close-success-button");
+
+        document.getElementById("validatePasswordForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const password = document.getElementById("password").value;
+
+            // 비밀번호 확인 요청
+            fetch("/member/validatePassword", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: "password=" + encodeURIComponent(password)
+            })
+                .then(response => response.text())
+                .then(data => {
+                    if (data === "valid") {
+                        // 팝업 표시
+                        popupOverlay.style.display = "flex";
+                        confirmDeletePopup.style.display = "block";
+                    } else {
+                        document.getElementById("error-message").textContent = "비밀번호가 올바르지 않습니다.";
+                        document.getElementById("error-message").style.display = "block";
                     }
-                } else {
-                    document.getElementById("error-message").textContent = "비밀번호가 올바르지 않습니다.";
-                    document.getElementById("error-message").style.display = "block";
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    alert("서버 오류가 발생했습니다. 다시 시도해주세요.");
+                });
+        });
+
+        confirmDeleteButton.addEventListener("click", function () {
+            // 삭제 요청
+            fetch("/member/delete", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
                 }
             })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("서버 오류가 발생했습니다. 다시 시도해주세요.");
-            });
-    });
-</script>
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === "success") {
+                        confirmDeletePopup.style.display = "none";
+                        deleteSuccessPopup.style.display = "block";
+                    } else {
+                        alert("삭제 과정에서 오류가 발생했습니다. 다시 시도해주세요.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    alert("삭제 과정에서 오류가 발생했습니다. 다시 시도해주세요.");
+                });
+        });
 
+        cancelDeleteButton.addEventListener("click", function () {
+            popupOverlay.style.display = "none";
+        });
+
+        closeSuccessButton.addEventListener("click", function () {
+            popupOverlay.style.display = "none";
+            window.location.href = "/";
+        });
+    </script>
 </body>
 
 <%@ include file="../common/footer.jsp" %>
