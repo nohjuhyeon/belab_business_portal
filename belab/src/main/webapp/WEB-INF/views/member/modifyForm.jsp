@@ -259,14 +259,6 @@
     <div class="content">
         <h2>개인정보 수정</h2>
 
-        <!-- 오류 메시지 출력 -->
-        <c:if test="${not empty passwordError}">
-            <div style="color: red; font-weight: bold;">${passwordError}</div>
-        </c:if>
-        <c:if test="${not empty updateError}">
-            <div style="color: red; font-weight: bold;">${updateError}</div>
-        </c:if>
-
         <form id="modifyForm" action="/member/modify" method="post">
             <div class="form-group">
                 <label for="email">이메일:</label>
