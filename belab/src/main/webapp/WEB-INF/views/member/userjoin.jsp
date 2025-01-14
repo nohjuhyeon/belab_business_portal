@@ -193,10 +193,10 @@
         <div class="form-group">
           <label>소속</label>
           <div class="form-group-inline">
-            <input type="radio" id="user" name="role" value="user">
-            <label for="user">기타소속</label>
-            <input type="radio" id="belab" name="role" value="belab" checked>
+            <input type="radio" id="belab" name="role" value="belab" >
             <label for="belab">비이랩</label>
+            <input type="radio" id="user" name="role" value="user" checked>
+            <label for="user">기타 소속</label>
 
           </div>
         </div>

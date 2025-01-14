@@ -238,6 +238,62 @@
                 font-size: 12px;
             }
         }
+    /* 커스텀 팝업 스타일 */
+.custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+    display: none; /* 기본적으로 숨김 */
+}
+
+.custom-popup h4 {
+    font-size: 20px;
+    color: #6a1b1b;
+    margin-bottom: 15px;
+}
+
+.custom-popup p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.custom-popup button {
+    padding: 10px 20px;
+    background-color: #6a1b1b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-popup button:hover {
+    background-color: #eae0d5;
+    color: #6a1b1b;
+}
+
+/* 팝업 배경 (모달 효과) */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none; /* 기본적으로 숨김 */
+}
     </style>
 </head>
 
@@ -260,12 +316,7 @@
         <h2>개인정보 수정</h2>
 
         <!-- 오류 메시지 출력 -->
-        <c:if test="${not empty passwordError}">
-            <div style="color: red; font-weight: bold;">${passwordError}</div>
-        </c:if>
-        <c:if test="${not empty updateError}">
-            <div style="color: red; font-weight: bold;">${updateError}</div>
-        </c:if>
+
 
         <form id="modifyForm" action="/member/modify" method="post">
             <div class="form-group">
@@ -274,13 +325,18 @@
             </div>
 
             <div class="form-group">
-                <label for="password">비밀번호 수정:</label>
-                <input type="password" id="password" name="password" placeholder="현재 비밀번호를 입력하세요" required/>
+                <label for="oldPassword">현재 비밀번호:</label>
+                <input type="password" id="oldPassword" name="oldPassword" value="${loggedInUser.password}" readonly />
             </div>
-
+        
             <div class="form-group">
-                <label for="passwordConfirm">비밀번호 확인:</label>
-                <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="비밀번호를 한 번 더 입력하세요" required/>
+                <label for="newPassword">새 비밀번호:</label>
+                <input type="password" id="password" name="password" placeholder="새 비밀번호를 입력하세요" required />
+            </div>
+        
+            <div class="form-group">
+                <label for="passwordConfirm">새 비밀번호 확인:</label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="새 비밀번호를 다시 입력하세요" required />
             </div>
 
             <div class="form-group">
@@ -297,32 +353,46 @@
         </form>
     </div>
 </div>
+<div class="popup-overlay" onclick="closePopup()"></div>
+<div class="custom-popup">
+    <h4>알림</h4>
+    <p>비밀번호가 일치하지 않습니다.</p>
+    <button onclick="closePopup()">확인</button>
+</div>
 
 <script>
-    function toggleSidebar() {
-        const sidebar = document.getElementById("sidebar");
-        sidebar.classList.toggle("open");
-    }
+    // 팝업 표시 함수
+function showPopup(message) {
+    const popup = document.querySelector('.custom-popup');
+    const overlay = document.querySelector('.popup-overlay');
+    popup.querySelector('p').innerText = message;
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+}
 
+function closePopup() {
+    const popup = document.querySelector('.custom-popup');
+    const overlay = document.querySelector('.popup-overlay');
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+    // 비밀번호 확인 로직
     document.getElementById("modifyForm").addEventListener("submit", function (e) {
         e.preventDefault(); // 폼 제출 방지
-
-        const password = document.getElementById("password").value; // 현재 비밀번호
+    
+        const currentPassword = document.getElementById("oldPassword").value; // 현재 비밀번호
+        const newPassword = document.getElementById("password").value; // 새 비밀번호
         const passwordConfirm = document.getElementById("passwordConfirm").value; // 새 비밀번호 확인
-
-        // 비밀번호 확인
-        if (password !== passwordConfirm) {
-            alert("비밀번호가 일치하지 않습니다. 다시 확인해주세요.");
-            return; // 비밀번호가 일치하지 않으면 폼 제출을 막음
+    
+        // 비밀번호 확인 로직
+        if (newPassword === currentPassword) {
+            showPopup("새 비밀번호는 현재 비밀번호와 동일할 수 없습니다.");
+        } else if (newPassword !== passwordConfirm) {
+            showPopup("새 비밀번호와 비밀번호 확인이 일치하지 않습니다.");
+        } else {
+            this.submit(); // 모든 조건이 만족되면 폼 제출
         }
-
-        // 새 비밀번호 검증 처리
-        const modifyButton = document.querySelector(".modify-btn");
-        modifyButton.disabled = true;
-        modifyButton.innerHTML = "검증 중...";
-
-        // 수정 폼 제출
-        document.getElementById("modifyForm").submit();
     });
 </script>
 </body>

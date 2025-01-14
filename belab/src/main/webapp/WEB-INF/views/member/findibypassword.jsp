@@ -184,7 +184,7 @@
       popup.style.display = 'block';
       overlay.style.display = 'block';
     }
-
+  
     // 커스텀 팝업 닫기
     function closePopup() {
       const popup = document.querySelector('.custom-popup');
@@ -192,11 +192,14 @@
       popup.style.display = 'none';
       overlay.style.display = 'none';
     }
-
+  
     // 페이지 로드 시 실행
     window.onload = function () {
-      const errorMessage = "<%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>";
-      if (errorMessage) {
+      const successMessage = '<%= request.getAttribute("message") != null ? request.getAttribute("message") : "" %>';
+      const errorMessage = '<%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>';
+      if (successMessage) {
+        showPopup(successMessage);
+      } else if (errorMessage) {
         showPopup(errorMessage);
       }
     };
@@ -212,7 +215,7 @@
   <div class="find-password-body">
     <div class="find-password-container">
       <h3>비밀번호 찾기</h3>
-      <form action="/member/DeletefindPassword" method="post">
+      <form action="/member/findPassword" method="post">
         <div class="form-group">
           <label for="email">이메일</label>
           <input type="email" id="email" name="email" placeholder="등록된 이메일을 입력하세요" required>
