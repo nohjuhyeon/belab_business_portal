@@ -23,33 +23,33 @@ public class MemberServiceImpl implements MemberService {
     private static final AtomicInteger userIdGenerator = new AtomicInteger(1); // ID 자동 증가
 
     @Override
-    public boolean signup(MemberVO memberVO) {
+    public void signup(MemberVO memberVO) {
         // 입력값 유효성 검증
         if (memberVO.getEmail() == null || memberVO.getEmail().isEmpty()) {
             throw new IllegalArgumentException("이메일은 필수 입력값입니다.");
         }
-
+    
         if (memberVO.getPassword() == null || memberVO.getPassword().isEmpty()) {
             throw new IllegalArgumentException("비밀번호는 필수 입력값입니다.");
         }
-
+    
         if (memberVO.getUsername() == null || memberVO.getUsername().isEmpty()) {
             throw new IllegalArgumentException("사용자 이름은 필수 입력값입니다.");
         }
-
+    
         // 이메일 중복 체크
         MemberVO existingMember = memberMapper.findMemberByEmail(memberVO.getEmail());
         if (existingMember != null) {
-            return false; // 중복된 이메일이 있을 경우 가입 실패
+            throw new IllegalStateException("이미 존재하는 이메일입니다."); // 중복 이메일 예외 처리
         }
-
+    
         // 사용자 ID 설정 (자동 증가)
         memberVO.setUserId(userIdGenerator.getAndIncrement());
-
+    
         // 회원가입 처리 (비밀번호 암호화 없이 평문 저장)
         memberMapper.insertMember(memberVO);
-        return true; // 회원가입 성공
     }
+    
 
     @Override
     public String findEmailByUsernameAndHp(String username, String hp) {
