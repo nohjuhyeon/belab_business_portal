@@ -12,7 +12,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = "com.belab.co.kr.member.dao")  // 특정 패키지를 지정하여 DAO 클래스만 스캔하도록 설정
+@MapperScan(basePackages = "com.belab.co.kr.**.dao")  // 특정 패키지를 지정하여 DAO 클래스만 스캔하도록 설정
 public class MyBatisConfig {
 
     @Bean
