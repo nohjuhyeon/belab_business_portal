@@ -218,9 +218,8 @@
         <a href="/member/validateForm">개인정보 수정</a>
         <a href="/mypage/intro">마이페이지</a>
         <a href="/member/inquiry">문의내역</a>
-        <form action="/member/delete_validateForm" method="POST">
-            <button type="submit" style="background-color: transparent; border: none; color: inherit; font-size: inherit;">회원탈퇴</button>
-        </form>
+        <a href="/member/DeletevalidateForm">회원 탈퇴</a>
+
     </div>
 
     <!-- 우측 내용 -->

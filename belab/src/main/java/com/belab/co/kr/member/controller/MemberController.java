@@ -3,7 +3,6 @@ package com.belab.co.kr.member.controller;
 import com.belab.co.kr.member.service.MemberService;
 import com.belab.co.kr.member.vo.MemberVO;
 import jakarta.mail.MessagingException;
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +15,9 @@ import org.springframework.web.bind.support.SessionStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Controller
 @RequestMapping("/member")  // 부모 URL 경로를 여기서 먼저 설정
 @SessionAttributes("loggedInUser")
@@ -24,6 +26,7 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
+    // 회원가입 페이지로 이동
     // 회원가입 페이지로 이동
     @RequestMapping(value = "/userjoin", method = RequestMethod.GET)
     public String signupForm() {
@@ -48,9 +51,8 @@ public class MemberController {
     }
 
     // 로그인 처리
-// 로그인 처리
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String login(MemberVO memberVO, HttpSession session, Model model,HttpServletRequest request) {
+    public String login(MemberVO memberVO, HttpSession session) {
         // 로그인 처리: 이메일과 비밀번호로 사용자 정보 조회
         MemberVO loginMember = memberService.login(memberVO);
 
@@ -61,13 +63,11 @@ public class MemberController {
 
             // 로그인 후 메인 페이지로 리다이렉트
             return "redirect:/main";
-        }else{
-            // 로그인 실패 시 error 페이지로 리다이렉트
-            request.setAttribute("error", "로그인 실패: 이메일 또는 비밀번호가 잘못되었습니다.");
-            return "redirect:/member/login";  // error 페이지로 이동
         }
-    }
 
+        // 로그인 실패 시 로그인 페이지로 돌아가기
+        return "redirect:/member/login";  // 로그인 실패 시 에러 파라미터를 추가하여 다시 로그인 페이지로 이동
+    }
     /**
      * 로그아웃
      *
@@ -166,6 +166,33 @@ public class MemberController {
         }
     }
 
+    /***
+     *
+     * @return
+     */
+    @RequestMapping(value = "/DeletevalidateForm", method = RequestMethod.GET)
+    public String DeletevalidateForm() {
+        return "/member/DeletevalidateForm";  // 회원 탈퇴전 확인 페이지로 이동.
+    }
+
+    // 비밀번호 확인 API (비밀번호 유효성 검사)
+    // 비밀번호 확인 후 /modifyForm으로 리다이렉트
+    @RequestMapping(value = "/DeletevalidatePassword", method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseEntity<String> DeletevalidatePassword(@RequestParam String password, HttpSession session) {
+        MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
+
+        // 비밀번호 검증
+        boolean isPasswordValid = memberService.checkPassword(loggedInUser.getEmail(), password);
+
+        if (isPasswordValid) {
+            return ResponseEntity.ok("valid");  // 비밀번호가 맞으면 success를 반환
+
+        } else {
+            return ResponseEntity.status(400).body("invalid");  // 비밀번호가 틀리면 error 반환
+        }
+    }
+
     /**
      * 이메일 찾기
      *
@@ -236,8 +263,10 @@ public class MemberController {
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
-    public String deleteMember(HttpSession session, SessionStatus sessionStatus, Model model) {
+    public ResponseEntity<Map<String, String>> deleteMember(HttpSession session, SessionStatus sessionStatus) {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
+
+        Map<String, String> response = new HashMap<>();
 
         if (loggedInUser != null) {
             String email = loggedInUser.getEmail();
@@ -249,16 +278,15 @@ public class MemberController {
                 // 세션 종료
                 sessionStatus.setComplete();  // 세션 초기화
 
-                // 탈퇴 완료 메시지 전달
-                model.addAttribute("message", "회원탈퇴가 완료되었습니다.");
-                return "redirect:/";  // 홈 페이지로 리다이렉트
+                response.put("status", "success");
+                return ResponseEntity.ok(response);  // 성공 응답
             } else {
-                // 삭제 실패 시 메시지 전달
-                model.addAttribute("error", "회원 탈퇴에 실패했습니다.");
-                return "redirect:/mypage/intro";  // 마이페이지로 리다이렉트
+                response.put("status", "failure");
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);  // 실패 응답
             }
         }
 
-        return "redirect:/member/login";  // 로그인되지 않은 경우 로그인 페이지로 리다이렉트
+        response.put("status", "failure");
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);  // 로그인되지 않은 경우 응답
     }
 }

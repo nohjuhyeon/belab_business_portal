@@ -212,7 +212,7 @@
   <div class="find-password-body">
     <div class="find-password-container">
       <h3>비밀번호 찾기</h3>
-      <form action="/member/findPassword" method="post">
+      <form action="/member/DeletefindPassword" method="post">
         <div class="form-group">
           <label for="email">이메일</label>
           <input type="email" id="email" name="email" placeholder="등록된 이메일을 입력하세요" required>

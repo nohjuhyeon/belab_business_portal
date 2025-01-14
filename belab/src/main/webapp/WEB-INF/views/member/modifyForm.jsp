@@ -253,7 +253,7 @@
     <div class="sidebar" id="sidebar">
         <a href="/member/modifyForm">개인정보 수정</a>
         <a href="/mypage/intro">마이페이지</a>
-        <a href="/member/inquiry">문의내역 수정</a>
+        <a href="/member/inquiry">문의내역 수정</a>\
     </div>
 
     <div class="content">
