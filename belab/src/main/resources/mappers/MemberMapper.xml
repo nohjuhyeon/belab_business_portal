@@ -15,6 +15,12 @@
         WHERE email = #{email}
     </select>
 
+    <select id="findUserNameByEmail" resultType="com.belab.co.kr.member.vo.MemberVO">
+        SELECT username
+        FROM user
+        WHERE email = #{email}
+    </select>
+
     <!-- 로그인 쿼리 (이메일과 비밀번호로 회원 조회) -->
     <select id="loginMember" resultType="com.belab.co.kr.member.vo.MemberVO">
         SELECT user_id    AS userId,

@@ -79,6 +79,12 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
+    public MemberVO findUserNameByEmail(String email) {
+        return memberMapper.findUserNameByEmail(email);
+    }
+
+
+    @Override
     public boolean checkPassword(String email, String inputPassword) {
         // 이메일로 사용자 조회
         MemberVO member = memberMapper.findMemberByEmail(email);

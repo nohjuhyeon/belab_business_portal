@@ -12,6 +12,10 @@ public interface MemberMapper {
     // 이메일로 회원 정보 조회
     MemberVO findMemberByEmail(String email);
 
+    MemberVO findUserNameByEmail(String email);
+
+
+
     // 로그인 (이메일과 비밀번호로 회원 정보 조회)
     MemberVO loginMember(@Param("email") String email, @Param("password") String password);
 
