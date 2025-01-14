@@ -177,14 +177,22 @@
   </style>
   <script>
     // 커스텀 팝업 열기
-    function showPopup(message) {
+    function showPopup(message, redirect = false) {
       const popup = document.querySelector('.custom-popup');
       const overlay = document.querySelector('.popup-overlay');
       popup.querySelector('p').innerText = message;
       popup.style.display = 'block';
       overlay.style.display = 'block';
+
+      // 성공 메시지일 경우 확인 버튼 클릭 시 리다이렉트
+      if (redirect) {
+        const confirmButton = popup.querySelector('button');
+        confirmButton.onclick = function () {
+          window.location.href = '/member/login';
+        };
+      }
     }
-  
+
     // 커스텀 팝업 닫기
     function closePopup() {
       const popup = document.querySelector('.custom-popup');
@@ -192,13 +200,13 @@
       popup.style.display = 'none';
       overlay.style.display = 'none';
     }
-  
+
     // 페이지 로드 시 실행
     window.onload = function () {
       const successMessage = '<%= request.getAttribute("message") != null ? request.getAttribute("message") : "" %>';
       const errorMessage = '<%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>';
       if (successMessage) {
-        showPopup(successMessage);
+        showPopup(successMessage, true); // 성공 메시지일 경우 리다이렉트 설정
       } else if (errorMessage) {
         showPopup(errorMessage);
       }

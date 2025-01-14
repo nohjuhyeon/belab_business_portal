@@ -35,6 +35,7 @@
         .container {
             display: flex;
             flex-wrap: wrap;
+            padding: 20px;
             min-height: 100vh;
         }
 
@@ -68,7 +69,7 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
-            margin: 20px;
+            margin: 0px 20px;
         }
 
         .content h2 {
@@ -306,10 +307,13 @@
 <div class="container">
     <button class="dropdown-btn" onclick="toggleSidebar()">메뉴</button>
 
+    <!-- 좌측 사이드바 -->
     <div class="sidebar" id="sidebar">
-        <a href="/member/modifyForm">개인정보 수정</a>
+        <a href="/member/validateForm">개인정보 수정</a>
         <a href="/mypage/intro">마이페이지</a>
-        <a href="/member/inquiry">문의내역 수정</a>\
+        <a href="/member/inquiry">문의내역</a>
+        <a href="/member/DeletevalidateForm">회원 탈퇴</a>
+
     </div>
 
     <div class="content">
@@ -361,21 +365,24 @@
 </div>
 
 <script>
-    // 팝업 표시 함수
-function showPopup(message) {
-    const popup = document.querySelector('.custom-popup');
-    const overlay = document.querySelector('.popup-overlay');
-    popup.querySelector('p').innerText = message;
-    popup.style.display = 'block';
-    overlay.style.display = 'block';
-}
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('open');
+    }    // 팝업 표시 함수
+    function showPopup(message) {
+        const popup = document.querySelector('.custom-popup');
+        const overlay = document.querySelector('.popup-overlay');
+        popup.querySelector('p').innerText = message;
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+    }
 
-function closePopup() {
-    const popup = document.querySelector('.custom-popup');
-    const overlay = document.querySelector('.popup-overlay');
-    popup.style.display = 'none';
-    overlay.style.display = 'none';
-}
+    function closePopup() {
+        const popup = document.querySelector('.custom-popup');
+        const overlay = document.querySelector('.popup-overlay');
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+    }
 
     // 비밀번호 확인 로직
     document.getElementById("modifyForm").addEventListener("submit", function (e) {
@@ -395,5 +402,6 @@ function closePopup() {
         }
     });
 </script>
+<%@ include file="../common/footer.jsp" %>
 </body>
 </html>

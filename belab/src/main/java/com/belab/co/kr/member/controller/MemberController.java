@@ -36,13 +36,18 @@ public class MemberController {
 
     // 회원가입 처리
     @RequestMapping(value = "/userjoin", method = RequestMethod.POST)
-    public String signup(MemberVO memberVO) {
-        boolean isSuccess = memberService.signup(memberVO);
-        if (isSuccess) {
-            return "redirect:/member/login"; // 로그인 페이지로 리다이렉트
-// 회원가입 성공 후 로그인 페이지로 이동
+    public String signup(MemberVO memberVO, Model model) {
+        try {
+            memberService.signup(memberVO);
+            return "redirect:/member/login"; // 회원가입 성공 시 로그인 페이지로 리다이렉트
+        } catch (IllegalStateException e) {
+            // 이메일 중복 예외 처리
+            model.addAttribute("error", e.getMessage());
+        } catch (IllegalArgumentException e) {
+            // 입력값 검증 실패 예외 처리
+            model.addAttribute("error", e.getMessage());
         }
-        return "member/userjoin";  // 실패 시 다시 회원가입 페이지로 이동
+        return "member/userjoin"; // 실패 시 다시 회원가입 페이지로 이동
     }
 
     // 로그인 페이지로 이동
@@ -255,7 +260,7 @@ public String login(MemberVO memberVO, HttpSession session, RedirectAttributes r
     
             // 입력된 이름과 이메일로 조회한 이름이 다를 경우
             if (!user.getUsername().equals(username)) {
-                redirectAttributes.addFlashAttribute("error", "입력한 이름이 이메일에 등록된 이름과 일치하지 않습니다.");
+                redirectAttributes.addFlashAttribute("error", "사용자 정보가 일치하지 않습니다.");
                 return "redirect:/member/findPassword";
             }
     

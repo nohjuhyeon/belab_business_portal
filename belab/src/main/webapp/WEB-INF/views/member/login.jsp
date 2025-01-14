@@ -38,7 +38,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 60vh;
+      height: 500px;
       background-color: #f4f4f4;
       font-family: Arial, sans-serif;
       padding: 20px;
