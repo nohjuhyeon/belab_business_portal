@@ -27,8 +27,12 @@ public class ContactBoardController {
     // 게시판 목록
     @GetMapping("/boardList")
     public String getBoardList(HttpSession session, Model model) {
+        // 현재 로그인한 사용자 정보 가져오기
+        MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser"); // 로그인 사용자 정보
+        
         List<ContactBoardVO> boards = boardService.getAllBoards();
         model.addAttribute("boards", boards);
+        model.addAttribute("loggedInUser", loggedInUser); // 로그인 사용자 정보 모델에 추가
         return "/contact/boardList";
     }
 
@@ -66,9 +70,10 @@ public class ContactBoardController {
     @PostMapping("/editBoard")
     public String editBoard(@ModelAttribute ContactBoardVO board) {
         boardService.updateBoard(board);
-        return "redirect:/contact/boardList";
+        // 수정된 게시글의 상세 페이지로 이동
+        return "redirect:/contact/viewBoard/" + board.getDashboard_id();
     }
-
+    
     // 게시판 삭제 처리
     @PostMapping("/deleteBoard")
     public String deleteBoard(@RequestParam int dashboard_id, HttpSession session, Model model) {

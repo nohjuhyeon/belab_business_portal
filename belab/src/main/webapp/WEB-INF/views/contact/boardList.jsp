@@ -19,7 +19,7 @@
       }
   
       .header-section {
-        background-image: url('../images/universe2.jpg');
+        background-image: url('/images/universe2.jpg');
         background-size: cover;
         background-position: center;
         color: #fff;
@@ -155,10 +155,12 @@
             <tr>
               <td>${board.dashboard_id}</td>
               <td class="title-column">
-                <c:if test="${not empty sessionScope.loggedInUser}">
+                <!-- 본인이 작성한 게시글일 경우에만 링크 활성화 -->
+                <c:if test="${not empty loggedInUser && loggedInUser.username == board.username}">
                   <a href="/contact/viewBoard/${board.dashboard_id}">${board.title}</a>
                 </c:if>
-                <c:if test="${empty sessionScope.loggedInUser}">
+                <!-- 본인이 작성하지 않은 게시글은 링크 비활성화 -->
+                <c:if test="${empty loggedInUser || loggedInUser.username != board.username}">
                   <span class="text-muted">${board.title}</span>
                 </c:if>
               </td>
