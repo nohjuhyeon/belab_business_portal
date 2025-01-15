@@ -27,8 +27,12 @@ public class ContactBoardController {
     // 게시판 목록
     @GetMapping("/boardList")
     public String getBoardList(HttpSession session, Model model) {
+        // 현재 로그인한 사용자 정보 가져오기
+        MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser"); // 로그인 사용자 정보
+        
         List<ContactBoardVO> boards = boardService.getAllBoards();
         model.addAttribute("boards", boards);
+        model.addAttribute("loggedInUser", loggedInUser); // 로그인 사용자 정보 모델에 추가
         return "/contact/boardList";
     }
 

@@ -16,25 +16,21 @@
     .header-blank {
       height: 270px;
     }
-    .header-section {
-      background-image: url('../images/universe2.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      height: 375px;
-    }
 
-    .header-section h2 {
-      font-size: 36px;
-      margin: 0;
-      font-weight: bold;
+    .header-section {
+        background-image: url('/images/universe2.jpg');
+        background-size: 100% auto;
+        background-position: top;
+        background-repeat: no-repeat;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        height: 375px;
     }
 
     .container {
-      margin: 30px auto;
+      margin: 40px auto;
       max-width: 800px;
       background: #fff;
       padding: 30px;
@@ -43,16 +39,10 @@
     }
 
     h1 {
+      font-size: 28px;
       text-align: center;
       margin-bottom: 20px;
-      font-size: 28px;
       color: #333;
-      margin-top: 20px;
-      background-color: #f9f9f9; /* 배경색 추가 */
-      padding: 15px 20px; /* 패딩 추가 */
-      border-radius: 8px; /* 둥근 모서리 */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
-      display: inline-block; /* 텍스트 크기에 맞게 박스 크기 조정 */
     }
 
     .form-group {
@@ -62,8 +52,9 @@
     .form-group label {
       display: block;
       font-weight: bold;
-      margin-bottom: 5px;
-      color: #333;
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: #555;
     }
 
     .form-control {
@@ -72,29 +63,51 @@
       font-size: 16px;
       border: 1px solid #ddd;
       border-radius: 5px;
-      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+      transition: border-color 0.3s ease;
     }
 
     .form-control:focus {
-      border-color: #6a1b1b;
+      border-color: #007bff;
       outline: none;
-      box-shadow: 0 0 5px rgba(106, 27, 27, 0.5);
+      background-color: #fff;
     }
 
-    .btn-primary {
-      background-color: #eae0d5;
-      color: #6a1b1b;
-      border: none;
+    textarea.form-control {
+      resize: none;
+    }
+
+    .btn {
+      display: inline-block;
       font-weight: bold;
+      text-align: center;
       padding: 10px 20px;
       border-radius: 5px;
-      cursor: pointer;
+      text-decoration: none;
       transition: background-color 0.3s ease, color 0.3s ease;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      color: #333;
+      cursor: pointer;
     }
 
-    .btn-primary:hover {
-      background-color: #6a1b1b;
-      color: #fff;
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn-danger {
+      background-color: #f9f9f9;
+      border-color: #ddd;
+      color: #333;
+    }
+
+    .btn-danger:hover {
+      background-color: #ddd;
+    }
+
+    .text-right {
+      text-align: right;
     }
   </style>
 </head>
@@ -118,6 +131,8 @@
       </div>
       <div class="text-right">
         <button type="submit" class="btn btn-primary">저장</button>
+        <a href="/contact/boardList" class="btn">취소</a>
+
       </div>
     </form>
   </div>
