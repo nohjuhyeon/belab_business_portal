@@ -309,8 +309,8 @@
 
     <!-- 좌측 사이드바 -->
     <div class="sidebar" id="sidebar">
-        <a href="/member/validateForm">개인정보 수정</a>
         <a href="/mypage/intro">마이페이지</a>
+        <a href="/member/validateForm">개인정보 수정</a>
         <a href="/member/inquiry">문의내역</a>
         <a href="/member/DeletevalidateForm">회원 탈퇴</a>
 
@@ -318,13 +318,6 @@
 
     <div class="content">
         <h2>개인정보 수정</h2>
-
-<<<<<<< HEAD
-=======
-        <!-- 오류 메시지 출력 -->
-
-
->>>>>>> 4a7b168490f3a77a30dbf129cc34df8af0f2c768
         <form id="modifyForm" action="/member/modify" method="post">
             <div class="form-group">
                 <label for="email">이메일:</label>
