@@ -66,9 +66,10 @@ public class ContactBoardController {
     @PostMapping("/editBoard")
     public String editBoard(@ModelAttribute ContactBoardVO board) {
         boardService.updateBoard(board);
-        return "redirect:/contact/boardList";
+        // 수정된 게시글의 상세 페이지로 이동
+        return "redirect:/contact/viewBoard/" + board.getDashboard_id();
     }
-
+    
     // 게시판 삭제 처리
     @PostMapping("/deleteBoard")
     public String deleteBoard(@RequestParam int dashboard_id, HttpSession session, Model model) {
