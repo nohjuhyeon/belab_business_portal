@@ -11,19 +11,19 @@
     }
 
     .header-blank {
-      height: 270px;
+      height:700px;
     }
 
     .header-section {
-        background-image: url('images/universe2.jpg');
-        background-size: 100% auto; /* 너비를 100%로 설정하고 높이는 자동으로 조정 */
-        background-position: top; /* 이미지의 아래쪽이 보이도록 설정 */
+        background-image: url('images/belab_main.jpg');
+        background-size: 100% 100%; /* 너비를 100%로 설정하고 높이는 자동으로 조정 */
+        background-position:center; /* 이미지의 아래쪽이 보이도록 설정 */
         background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
         color: #fff;
         text-align: center;
         padding: 20px 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        height: 375px; /* 컨테이너 높이 고정 */
+        height: 900px; /* 컨테이너 높이 고정 */
       }
 
     .header-section h1 {
@@ -187,7 +187,10 @@
   <!-- 메인 이미지 섹션 -->
   <div class="header-section">
     <div class="header-blank"></div>
-    <h1>Welcome to Our Services</h1>
+    <h1>Lower Risk Higher Value</h1>
+    <br>
+    <h1>BeLAB이 고객의 행복을 함께 만들어 가겠습니다.</h1>
+    
   </div>
 
   <!-- 서비스 섹션 -->
