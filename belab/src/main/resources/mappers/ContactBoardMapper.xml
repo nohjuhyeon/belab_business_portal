@@ -32,12 +32,6 @@
         WHERE c.dashboard_id = #{dashboard_id}
     </select>
 
-    <!-- 게시글 생성 -->
-    <insert id="insertBoard" parameterType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
-        INSERT INTO contact_info_board (user_id, title, content, created_at, updated_at)
-        VALUES (#{user_id}, #{title}, #{content}, NOW(), NOW())
-    </insert>
-
     <!-- 게시글 수정 -->
     <update id="updateBoard" parameterType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
         UPDATE contact_info_board

@@ -1,19 +1,19 @@
 package com.belab.co.kr.ConTact.service;
 
 import com.belab.co.kr.ConTact.dao.BoardMapper;
+import com.belab.co.kr.ConTact.service.BoardService;
 import com.belab.co.kr.ConTact.vo.ContactBoardVO;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.List;
 
 @Service
 public class BoardServiceImpl implements BoardService {
 
-    private static final Logger logger = LoggerFactory.getLogger(BoardServiceImpl.class);
-
+    Logger logger = LoggerFactory.getLogger(getClass());
     @Autowired
     private BoardMapper boardMapper;
 
@@ -41,6 +41,17 @@ public class BoardServiceImpl implements BoardService {
     public void createBoard(ContactBoardVO board) {
         logger.info("Creating new board: {}", board);
         try {
+            // username을 통해 user_id를 조회하여 설정
+            if (board.getUsername() != null) {
+                Integer userId = boardMapper.getUserIdByUsername(board.getUsername());
+                System.out.println("User ID: " + userId);  // 로그 추가
+                if (userId != null) {
+                    board.setUser_id(userId);  // user_id 설정
+                } else {
+                    logger.warn("User not found with username: {}", board.getUsername());
+                    throw new RuntimeException("User not found with username: " + board.getUsername());
+                }
+            }
             boardMapper.insertBoard(board);
             logger.info("Board created successfully.");
         } catch (Exception e) {
@@ -80,4 +91,5 @@ public class BoardServiceImpl implements BoardService {
             throw e;
         }
     }
+
 }
