@@ -44,7 +44,7 @@ public class MemberServiceImpl implements MemberService {
         }
     
         // 사용자 ID 설정 (자동 증가)
-        memberVO.setUserId(userIdGenerator.getAndIncrement());
+        memberVO.setUser_id(userIdGenerator.getAndIncrement());
     
         // 회원가입 처리 (비밀번호 암호화 없이 평문 저장)
         memberMapper.insertMember(memberVO);

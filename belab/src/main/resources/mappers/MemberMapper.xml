@@ -23,7 +23,7 @@
 
     <!-- 로그인 쿼리 (이메일과 비밀번호로 회원 조회) -->
     <select id="loginMember" resultType="com.belab.co.kr.member.vo.MemberVO">
-        SELECT user_id    AS userId,
+        SELECT user_id    AS user_id,
                email,
                username,
                password,
