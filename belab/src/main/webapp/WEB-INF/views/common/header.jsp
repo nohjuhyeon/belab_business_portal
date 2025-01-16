@@ -1,259 +1,339 @@
-<%@ page language="java" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html lang="ko">
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>비이랩 홈페이지</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* top-bar 스타일 */
-        .top-bar {
-            padding: 5px 20px;
-            font-size: 15px;
-            margin-right: 30px;
-            margin-top: 10px;
-        }
-
-        .top-bar a {
-            text-decoration: none;
-            margin-left: 15px;
-            transition: color 0.3s ease; /* 색상 전환 효과 */
-        }
-
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath fill='white' stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }
-
-        .top-bar a:hover {
-            text-decoration: underline;
-        }
-
-        /* 네비게이션 바 기본 설정 */
-        .navbar {
-            margin-bottom: 10px;
-        }
-
-        @media (min-width: 992px) {
-            .headerbar {
-                position: absolute;
-                top: 0;
-                width: 100%;
-                z-index: 1000; /* 헤더가 항상 위에 보이도록 설정 */
-                background-color: transparent; /* 기본 배경 제거 */
-                transition: background-color 0.3s ease; /* 배경 전환 효과 */
-            }
-
-            .headerbar * {
-                color: #fff;
-            }
-
-            .headerbar:hover {
-                background-color: #fff; /* 배경 흰색으로 변경 */
-                color: #000;
-            }
-
-            .headerbar:hover * {
-                color: #000; /* 자식 태그들의 글씨 색 모두 검정색으로 변경 */
-            }
-        }
-
-        @media (max-width: 992px) {
-            .headerbar {
-                position: absolute;
-                z-index: 1000; /* 헤더가 항상 위에 보이도록 설정 */
-                top: 0;
-                width: 100%;
-                background-color: #fff; /* 기본 배경 제거 */
-            }
-
-            .headerbar * {
-                color: #000;
-            }
-        }
-
-        /* 로고 이미지 크기 조정 */
-        .navbar-brand img {
-            max-width: 100%; /* 부모 요소의 크기를 초과하지 않음 */
-            height: auto; /* 비율을 유지하며 높이를 자동 조정 */
-            max-height: 50px; /* 최대 높이 제한 */
-        }
-
-        /* 메인 메뉴 글씨 크기 조정 */
-        .navbar-nav .nav-link {
-            font-size: clamp(1.0rem, 1.2vw, 1.5rem); /* 메인 메뉴 글씨 크기 */
-            font-weight: bold; /* 글씨를 굵게 설정 */
-            margin: 0 25px; /* 좌우 간격 추가 */
-        }
-
-        /* 드롭다운 메뉴 글씨 크기 조정 */
-        .dropdown-menu .dropdown-item {
-            font-size: 16px; /* 드롭다운 메뉴 글씨 크기 */
-        }
-
-        /* 드롭다운 메뉴를 hover로 표시 */
-        @media (min-width: 992px) {
-            /* 데스크톱 화면에서만 적용 */
-            .navbar .dropdown:hover .dropdown-menu {
-                display: block; /* hover 시 드롭다운 메뉴 표시 */
-                margin-top: 0; /* 기본 간격 제거 */
-            }
-        }
-
-        /* 로그인 상태에 따른 클래스 */
-        .hidden {
-            display: none;
-        }
-        .logged-in .hidden {
-            display: inline-block;
-        }
-        .logged-out .hidden {
-            display: inline-block;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="/css/setting.css" />
+  <link rel="stylesheet" href="/css/plugin.css" />
+  <link rel="stylesheet" href="/css/templatehouse.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body class="<c:choose>
-    <c:when test="${sessionScope.loggedInUser != null}">
-        logged-in
-    </c:when>
-    <c:otherwise>
-        logged-out
-    </c:otherwise>
+  <c:when test="${sessionScope.loggedInUser != null}">
+      logged-in
+  </c:when>
+  <c:otherwise>
+      logged-out
+  </c:otherwise>
 </c:choose>">
-<div class="headerbar">
-    <div class="top-bar d-flex justify-content-end">
-        <c:choose>
-    <c:when test="${sessionScope.loggedInUser != null}">
-        <!-- 로그인된 경우 -->
-        <a href="/member/logout">LOGOUT</a>
-        <a href="/mypage/intro">My Page</a>
-        <c:if test="${sessionScope.loggedInUser.role == 'admin'}">
-            <a href="/admin">Admin</a>
-        </c:if>
-    </c:when>
-    <c:otherwise>
-        <!-- 로그인되지 않은 경우 -->
-        <a href="/member/login">LOGIN</a>
-        <a href="/member/userjoin">회원가입</a>
-    </c:otherwise>
-</c:choose>
-    </div>
-
-<!-- 네비게이션 바 -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid d-flex align-items-center">
-        <!-- 로고 -->
-        <a class="navbar-brand me-3" href="/">
-            <img src="/images/logo.png" alt="Logo" class="img-fluid">
-        </a>
-
-        <!-- 햄버거 버튼 -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- 메뉴 -->
-        <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        회사 소개
+  <div class="th-layout-header">
+    <div class="basic-N3" id="QYm5xjJO4K">
+      <div class="header-container container-lg">
+        <div class="header-left">
+          <h1 class="header-title">
+            <a href="/">
+              <img src="/images/logo.png" alt="로고" />
+            </a>
+          </h1>
+          <div class="header-gnb">
+            <ul class="header-gnblist">
+              <li class="header-gnbitem">
+                <a class="p1 header-gnblink" href="/Greeting">
+                  <span>회사 소개</span>
+                </a>
+                <ul class="header-sublist">
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="/Greeting">
+                      <span>인사말</span>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <li><a class="dropdown-item" href="/Greeting">인사말</a></li>
-                        <li><a class="dropdown-item" href="/Directions">오시는 길</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Data Service
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="/Directions">
+                      <span>오시는 길</span>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <li><a class="dropdown-item" href="#">DB</a></li>
-                        <li><a class="dropdown-item" href="#">Web</a></li>
-                        <li><a class="dropdown-item" href="#">WAS</a></li>
-                        <li><a class="dropdown-item" href="#">DataHubPlatForm</a></li>
-                        <li><a class="dropdown-item" href="#">Data Analysis</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Platform Service
+                  </li>
+                </ul>
+              </li>
+              <li class="header-gnbitem">
+                <a class="p1 header-gnblink" href="#">
+                  <span>Data Service</span>
+                </a>
+                <ul class="header-sublist">
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>DB</span>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <li><a class="dropdown-item" href="#">MSP(cloud)</a></li>
-                        <li><a class="dropdown-item" href="#">Hosting</a></li>
-                        <li><a class="dropdown-item" href="#">K-PaaS</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Content Service
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>WEB</span>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                        <li><a class="dropdown-item" href="#">BeLog</a></li>
-                        <li><a class="dropdown-item" href="#">BeMON</a></li>
-                        <li><a class="dropdown-item" href="#">BePET</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        고객 센터
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>WAS</span>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                        <li><a class="dropdown-item" href="#">공지사항</a></li>
-                        <li><a class="dropdown-item" href="/contact/boardList">문의게시판</a></li>
-                        <li><a class="dropdown-item" href="#">자료실</a></li>
-                    </ul>
-                </li>
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>Data Hub Platform</span>
+                    </a>
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>Data Analysis</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-gnbitem">
+                <a class="p1 header-gnblink" href="#">
+                  <span>Platform Service</span>
+                </a>
+                <ul class="header-sublist">
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>MSP(cloud)</span>
+                    </a>
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>Hosting</span>
+                    </a>
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>K-PaaS</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-gnbitem">
+                <a class="p1 header-gnblink" href="#">
+                  <span>Content Service</span>
+                </a>
+                <ul class="header-sublist">
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>BeLOG</span>
+                    </a>
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>BeMON</span>
+                    </a>
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>BePET</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-gnbitem">
+                <a class="p1 header-gnblink" href="#">
+                  <span>고객 센터</span>
+                </a>
+                <ul class="header-sublist">
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="/contact/boardList">
+                      <span>공지 사항</span>
+                    </a>
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>고객의 소리</span>
+                    </a>
+                  </li>
+                  <li class="header-subitem">
+                    <a class="p2 header-sublink" href="#">
+                      <span>자료실</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
+          </div>
         </div>
+        <div class="header-right">
+          <div class="header-utils">
+            <ul>
+              <c:choose>
+                <c:when test="${sessionScope.loggedInUser != null}">
+                    <!-- 로그인된 경우 -->
+                    <li class="">
+                      <a class="header-sublink" href="/member/logout">LOGOUT</a>
+                    </li>
+                    <li class="">
+                    <a class="header-sublink"href="/mypage/intro">My Page</a>
+                    </li>
+                    <c:if test="${sessionScope.loggedInUser.role == 'admin'}">
+                    <li class="">
+                      <a href="/admin">Admin</a>
+                    </li>
+                    </c:if>
+                </c:when>
+                <c:otherwise>
+                    <!-- 로그인되지 않은 경우 -->
+                    <li class="">
+                      <a class="header-sublink" href="/member/login">LOGIN</a>
+                    </li>
+                    <li class="">
+                    <a class="header-sublink" href="/member/userjoin">회원가입</a>
+                    </li>
+                </c:otherwise>
+            </c:choose>
+              <li class="allmenu">
+                <button class="btn-allmenu">
+                  <i class="ico-hamburger"></i>
+                  <i class="ico-hamburger"></i>
+                  <i class="ico-hamburger"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-momenu">
+            <i class="ico-hamburger"></i>
+            <i class="ico-hamburger"></i>
+            <i class="ico-hamburger"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header-fullmenu fullmenu-top">
+        <div class="fullmenu-wrapper">
+          <div class="fullmenu-head">
+            <h4 class="fullmenu-title">
+              <a href="#">
+                <img src="/image/img_logo_white.png" alt="로고" />
+              </a>
+            </h4>
+          </div>
+          <ul class="fullmenu-gnblist">
+            <li class="fullmenu-gnbitem">
+              <a class="h6 fullmenu-gnblink" href="/Greeting">
+                <span>회사 소개</span>
+              </a>
+              <ul class="fullmenu-sublist">
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="/Greeting">
+                    <span>인사말</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="/Directions">
+                    <span>오시는 길</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fullmenu-gnbitem">
+              <a class="h6 fullmenu-gnblink" href="#">
+                <span>Data Service</span>
+              </a>
+              <ul class="fullmenu-sublist">
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>DB</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>WEB</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>WAS</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>Data Hub Platform</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>Data Analysis</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fullmenu-gnbitem">
+              <a class="h6 fullmenu-gnblink" href="#">
+                <span>Platform Service</span>
+              </a>
+              <ul class="fullmenu-sublist">
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>MSP(cloud)</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>Hosting</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>K-PaaS</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fullmenu-gnbitem">
+              <a class="h6 fullmenu-gnblink" href="#">
+                <span>Content Service</span>
+              </a>
+              <ul class="fullmenu-sublist">
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>BeLOG</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>BeMON</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>BePET</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fullmenu-gnbitem">
+              <a class="h6 fullmenu-gnblink" href="#">
+                <span>고객 센터</span>
+              </a>
+              <ul class="fullmenu-sublist">
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="/contact/boardList">
+                    <span>공지 사항</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>고객의 소리</span>
+                  </a>
+                </li>
+                <li class="fullmenu-subitem">
+                  <a class="p1 fullmenu-sublink" href="#">
+                    <span>자료실</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <button class="fullmenu-close">
+          <img src="/icons/ico_close_white.svg" alt="닫기" />
+        </button>
+      </div>
     </div>
-</nav>
-</div>
-
-<!-- 부트스트랩 JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // 햄버거 메뉴 닫기 기능
-  const navbarCollapse = document.querySelector('#navbarSupportedContent');
-  const navbarToggler = document.querySelector('.navbar-toggler');
-
-  // 메뉴 외부 클릭 시 닫기
-  document.addEventListener('click', function (event) {
-    if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
-      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-      bsCollapse.hide();
-    }
-  });
-
-  // 메뉴에서 커서가 나갔을 때 닫기
-  navbarCollapse.addEventListener('mouseleave', function () {
-    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-    bsCollapse.hide();
-  });
-  // 스크롤 시 닫기
-  window.addEventListener('scroll', function() {
-    const navbarCollapse = document.querySelector('#navbarSupportedContent');
-    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-    bsCollapse.hide();
-  });
-  // 창 밖으로 커서가 나갔을 때 닫기
-  window.addEventListener('mouseout', (event) => {
-    // 창 밖으로 나갔는지 확인
-    if (event.relatedTarget === null || event.relatedTarget === window) {
-      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-      bsCollapse.hide(); // 메뉴 닫기
-    }
-  });
-
-</script>
+  </div>
+  <script src="/js/setting.js"></script>
+  <script src="/js/plugin.js"></script>
+  <script src="/js/templatehouse.js"></script>
+  <script src="/js/style.js"></script>
 </body>
+
 </html>
