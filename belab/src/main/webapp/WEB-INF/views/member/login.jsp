@@ -1,220 +1,99 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../common/header.jsp" %>
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <title>로그인</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    .header-blank {
-      height: 270px;
-    }
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="/css/setting.css" />
+  <link rel="stylesheet" href="/css/plugin.css" />
+  <link rel="stylesheet" href="/css/templatehouse.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
 
-    .header-section {
-      background-image: url('../images/universe2.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      height: 375px;
-    }
+<body>
 
-    .header-section h2 {
-      font-size: 36px;
-      margin: 0;
-      font-weight: bold;
-    }
+  <main class="th-layout-main">
+    <div class="th-layout-sideleft"></div>
+    <div class="th-layout-stickyleft"></div>
+    <div class="th-layout-content">
+      <div class="mypage-N10" id="HtM5yS8Tf5">
+        <div class="contents-container container-full">
+          <div class="contents-inner">
+            <div class="contents-visual">
+              <picture>
+                <source srcset="/images/img_subvisual_mobile.png" media="(max-width: 992px)" />
+                <img src="/images/img_subvisual.png" alt="비주얼 이미지" />
+              </picture>
+            </div>
+            <div class="contents-body">
+              <div class="textset">
+                <h2 class="h1 textset-tit">로그인</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="basic-N55" id="pFM5yS8tiD">
+        <div class="contents-container container-md">
+          <div class="tabset tabset-solid border-bottom">
+          </div>
+        </div>
+      </div>
+      <div class="mypage-N24" id="Vgm5ys8tOU">
+        <div class="contents-container container-sm">
+          <div class="contents-inner">
+            <form action="/member/login" method="post">
+              <div class="form-group">
+                <div class="textset">
+                  <h2 class="h2 textset-tit">환영합니다!</h2>
+                </div>
+                <div class="form-box">
+                  <div class="inputset">
+                    <label for="email" class="form-tit h6" >이메일</label>
+                    <input class="inputset-input form-control" type="email" id="email" name="email" placeholder="이메일을 입력하세요">
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="inputset">
+                    <label for="password" class="form-tit h6" >비밀번호</label>
+                    <input class="inputset-input form-control" type="password" id="password" name="password" placeholder="비밀번호를 입력하세요">
+                  </div>
+                </div>
+                <div class="form-btn">
+                  <button class="btnset btnset-primary" type="submit">제출하기</button>
+                </div>
+                <div class="links-container">
+                  <div class="left-links">
+                    <a href="/member/findEmail">아이디 찾기</a>
+                    /
+                    <a href="/member/findPassword">비밀번호 찾기</a>
+                  </div>
+                  <a href="/member/userjoin" class="right-link">회원가입</a>
+                </div>          
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="th-layout-stickyright"></div>
+    <div class="th-layout-sideright"></div>
+        <!-- 커스텀 팝업 -->
+        <div class="mypage-N66">
+          <div class="popup-overlay" onclick="closePopup()"></div>
+          <div class="custom-popup">
+            <h4>알림</h4>
+            <p></p>
+            <button class="btnset btnset-primary" onclick="closePopup()">확인</button>
+          </div>
+        </div>
+  </main>
 
-    .login-body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 500px;
-      background-color: #f4f4f4;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-
-    .login-container {
-      width: 100%;
-      max-width: 600px;
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .login-container h3 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 24px;
-      color: #333;
-    }
-
-    .login-container .form-group {
-      margin-bottom: 20px;
-    }
-
-    .login-container label {
-      font-weight: bold;
-      margin-bottom: 5px;
-      display: block;
-      color: #555;
-    }
-
-    .login-container input[type="email"],
-    .login-container input[type="password"] {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    .login-container button {
-      width: 100%;
-      padding: 14px;
-      background-color: #eae0d5;
-      border: none;
-      border-radius: 5px;
-      font-size: 18px;
-      font-weight: bold;
-      color: #6a1b1b;
-      cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .login-container button:hover {
-      background-color: #6a1b1b;
-      color: #fff;
-    }
-
-    .links-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    .links-container .left-links {
-      display: flex;
-      gap: 10px;
-    }
-
-    .links-container a {
-      font-size: 14px;
-      color: #6a1b1b;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .links-container a:hover {
-      color: #333;
-      text-decoration: underline;
-    }
-
-    /* 반응형 디자인 */
-    @media (max-width: 768px) {
-      .header-section h2 {
-        font-size: 24px;
-      }
-
-      .login-body {
-        padding: 10px;
-        height: 500px;
-      }
-
-      .login-container {
-        padding: 20px;
-      }
-
-      .login-container h3 {
-        font-size: 20px;
-      }
-
-      .login-container input[type="email"],
-      .login-container input[type="password"] {
-        padding: 10px;
-        font-size: 14px;
-      }
-
-      .login-container button {
-        padding: 12px;
-        font-size: 16px;
-      }
-
-      .links-container a {
-        font-size: 12px;
-      }
-    }
-
-    /* 커스텀 팝업 스타일 */
-    .custom-popup {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      width: 90%;
-      max-width: 400px;
-      padding: 20px;
-      z-index: 1000;
-      text-align: center;
-      display: none; /* 기본적으로 숨김 */
-    }
-
-    .custom-popup h4 {
-      font-size: 20px;
-      color: #6a1b1b;
-      margin-bottom: 15px;
-    }
-
-    .custom-popup p {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-
-    .custom-popup button {
-      padding: 10px 20px;
-      background-color: #6a1b1b;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .custom-popup button:hover {
-      background-color: #eae0d5;
-      color: #6a1b1b;
-    }
-
-    /* 팝업 배경 (모달 효과) */
-    .popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 999;
-      display: none; /* 기본적으로 숨김 */
-    }
-  </style>
   <script>
     function showPopup(message) {
       const popup = document.querySelector('.custom-popup');
@@ -240,45 +119,6 @@
       }
     };
   </script>
-</head>
-
-<body>
-  <div class="header-section">
-    <div class="header-blank"></div>
-    <h2>로그인</h2>
-  </div>
-
-  <div class="login-body">
-    <div class="login-container">
-      <h3>환영합니다!</h3>
-      <form action="/member/login" method="post">
-        <div class="form-group">
-          <label for="email">이메일</label>
-          <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
-        </div>
-        <div class="form-group">
-          <label for="password">비밀번호</label>
-          <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요">
-        </div>
-        <button type="submit">로그인</button>
-      </form>
-      <div class="links-container">
-        <div class="left-links">
-          <a href="/member/findEmail">아이디 찾기</a>
-          /
-          <a href="/member/findPassword">비밀번호 찾기</a>
-        </div>
-        <a href="/member/userjoin" class="right-link">회원가입</a>
-      </div>
-    </div>
-  </div>
-  <!-- 커스텀 팝업 -->
-  <div class="popup-overlay" onclick="closePopup()"></div>
-  <div class="custom-popup">
-    <h4>알림</h4>
-    <p></p>
-    <button onclick="closePopup()">확인</button>
-  </div>
 </body>
 <%@ include file="../common/footer.jsp" %>
 

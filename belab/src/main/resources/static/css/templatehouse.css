@@ -388,6 +388,10 @@ progress { vertical-align: baseline; }
 /* ========== */
 /* 가로 Layout */
 .container-full { position: relative; max-width: 100%; margin: 0 auto; padding: 0 4rem; } 
+.container-header { position: relative; max-width: 100%; margin: 0 auto; padding: 0 8rem; } 
+.container-main-img { position: relative; max-width: 100%; margin: 0 auto; padding: 0 0; } 
+.container-valid-box { position: relative; max-width: 900px; margin: 0 auto; padding: 0 8rem; } 
+
 .container-lg { position: relative; max-width: calc(1440px + 16rem); margin: 0 auto; padding: 0 8rem; } 
 .container-md { position: relative; max-width: calc(1280px + 16rem); margin: 0 auto; padding: 0 8rem; } 
 .container-sm { position: relative; max-width: calc(1024px + 16rem); margin: 0 auto; padding: 0 8rem; } 

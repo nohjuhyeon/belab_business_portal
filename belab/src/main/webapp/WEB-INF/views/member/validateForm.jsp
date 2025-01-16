@@ -1,176 +1,78 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../common/header.jsp" %>
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <title>비밀번호 확인</title>
-    <style>
-        .header-blank {
-            height: 270px;
-        }
-
-        .header-section {
-            background-image: url('../images/universe2.jpg');
-            background-size: 100% auto;
-            background-position: top;
-            background-repeat: no-repeat;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            height: 375px;
-        }
-
-        .header-section h2 {
-            font-size: 36px;
-            margin: 0;
-            font-weight: bold;
-        }
-
-        .verify-body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(50vh);
-            background-color: #f4f4f4;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .verify-container {
-            width: 100%;
-            max-width: 600px;
-            background: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .verify-container h3 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 24px;
-            color: #333;
-        }
-
-        .verify-container .form-group {
-            margin-bottom: 20px;
-        }
-
-        .verify-container label {
-            font-weight: bold;
-            margin-bottom: 5px;
-            display: block;
-            color: #555;
-        }
-
-        .verify-container input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .verify-container button {
-            width: 100%;
-            padding: 14px;
-            background-color: #eae0d5;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #6a1b1b;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .verify-container button:hover {
-            background-color: #6a1b1b;
-            color: #fff;
-        }
-
-        .verify-container .error-message {
-            color: #d9534f;
-            font-size: 14px;
-            margin-top: 10px;
-            text-align: center;
-        }
-
-        @media (max-width: 992px) {
-            .header-section h2 {
-                font-size: 28px;
-            }
-
-            .verify-container {
-                padding: 30px;
-            }
-
-            .verify-container h3 {
-                font-size: 20px;
-            }
-
-            .verify-container input[type="password"] {
-                font-size: 14px;
-                padding: 10px;
-            }
-
-            .verify-container button {
-                font-size: 16px;
-                padding: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header-section h2 {
-                font-size: 24px;
-            }
-
-            .verify-container {
-                padding: 20px;
-            }
-
-            .verify-container h3 {
-                font-size: 18px;
-            }
-
-            .verify-container input[type="password"] {
-                font-size: 12px;
-                padding: 8px;
-            }
-
-            .verify-container button {
-                font-size: 14px;
-                padding: 10px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="/css/setting.css" />
+  <link rel="stylesheet" href="/css/plugin.css" />
+  <link rel="stylesheet" href="/css/templatehouse.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
-<div class="header-section">
-    <div class="header-blank"></div>
-    <h2>비밀번호 확인</h2>
-</div>
 
-<div class="verify-body">
-    <div class="verify-container">
-        <h3>비밀번호를 입력하세요</h3>
-        <form id="validatePasswordForm">
-            <div class="form-group">
-                <label for="password">비밀번호</label>
-                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required>
+  <main class="th-layout-main">
+    <div class="th-layout-sideleft"></div>
+    <div class="th-layout-stickyleft"></div>
+    <div class="th-layout-content">
+      <div class="mypage-N10" id="HtM5yS8Tf5">
+        <div class="contents-container container-full">
+          <div class="contents-inner">
+            <div class="contents-visual">
+              <picture>
+                <source srcset="/images/img_subvisual_mobile.png" media="(max-width: 992px)" />
+                <img src="/images/img_subvisual.png" alt="비주얼 이미지" />
+              </picture>
             </div>
-            <button type="submit">확인</button>
-            <div id="error-message" class="error-message" style="display: none;"></div>
-        </form>
+            <div class="contents-body">
+              <div class="textset">
+                <h2 class="h1 textset-tit">비밀번호 확인</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="basic-N55" id="pFM5yS8tiD">
+        <div class="contents-container container-md">
+          <div class="tabset tabset-solid border-bottom">
+          </div>
+        </div>
+      </div>
+      <div class="mypage-N24" id="Vgm5ys8tOU">
+        <div class="contents-container container-valid-box">
+          <div class="contents-inner">
+            <form id="validatePasswordForm">
+              <div class="form-group">
+                <div class="textset">
+                  <h2 class="h2 textset-tit">비밀번호를 입력하세요.</h2>
+                </div>
+                <div class="form-box">
+                  <div class="inputset">
+                    <label for="password" class="form-tit h6" >비밀번호</label>
+                    <input class="inputset-input form-control" type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required="">
+                  </div>
+                </div>
+                <div class="form-btn">
+                  <button class="btnset btnset-primary" type="submit">확인</button>
+                </div>
+                <div id="error-message" class="error-message" style="display: none;"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+    <div class="th-layout-stickyright"></div>
+    <div class="th-layout-sideright"></div>
+  </main>
 
-<script>
+  <script>
     document.getElementById("validatePasswordForm").addEventListener("submit", function(event) {
         event.preventDefault();
 
@@ -196,6 +98,6 @@
     });
 </script>
 </body>
-
 <%@ include file="../common/footer.jsp" %>
+
 </html>

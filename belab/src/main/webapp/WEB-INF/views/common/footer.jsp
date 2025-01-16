@@ -24,7 +24,7 @@
         <div class="footer-top">
           <h2 class="footer-logo">
             <a href="/">
-              <img src="/image/img_logo_lightgray.png" alt="로고" />
+              <img src="/images/logo.png" alt="로고" />
             </a>
           </h2>
           <ul class="footer-menulist">
