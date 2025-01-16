@@ -2,31 +2,72 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.belab.co.kr.ConTact.dao.BoardMapper">
 
+    <resultMap id="contactBoardResultMap" type="com.belab.co.kr.ConTact.vo.ContactBoardVO">
+        <id property="dashboard_id" column="dashboard_id"/>
+        <result property="user_id" column="user_id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="created_at" column="created_at"/>
+        <result property="updated_at" column="updated_at"/>
+
+        <!-- uservo 필드 매핑 (MemberVO) -->
+        <association property="uservo" javaType="com.belab.co.kr.member.vo.MemberVO">
+            <result property="user_id" column="user_id"/>
+            <result property="email" column="email"/>
+            <result property="username" column="username"/>
+            <result property="password" column="password"/>
+            <result property="hp" column="hp"/>
+            <result property="affiliation" column="affiliation"/>
+            <result property="isActive" column="isActive"/>
+            <result property="role" column="role"/>
+            <result property="join_at" column="join_at"/>
+            <result property="updated_at" column="updated_at"/>
+        </association>
+    </resultMap>
+
+    <select id="getUserById" resultType="com.belab.co.kr.member.vo.MemberVO">
+        SELECT * FROM user WHERE user_id = #{userId}
+    </select>
+
     <!-- 게시글 목록 조회 -->
-    <select id="selectAllBoards" resultType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
-        SELECT
-            c.dashboard_id,
-            c.user_id,
-            u.username AS username,
-            c.title,
-            c.content,
-            c.created_at,
-            c.updated_at
+    <select id="selectAllBoards" resultMap="contactBoardResultMap">
+        SELECT c.dashboard_id,
+               c.user_id,
+               u.username   AS username,
+               u.email,
+               u.password,
+               u.hp,
+               u.affiliation,
+               u.is_active  AS is_active,
+               u.role,
+               u.join_at    AS join_at,
+               u.updated_at AS updated_at,
+               c.title,
+               c.content,
+               c.created_at,
+               c.updated_at
         FROM contact_info_board c
                  LEFT JOIN user u ON c.user_id = u.user_id
-        ORDER BY c.created_at DESC
+        ORDER BY c.created_at desc
     </select>
 
     <!-- 특정 게시글 조회 -->
-    <select id="selectBoardById" parameterType="int" resultType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
-        SELECT
-            c.dashboard_id,
-            c.user_id,
-            u.username AS username,
-            c.title,
-            c.content,
-            c.created_at,
-            c.updated_at
+    <select id="selectBoardById" parameterType="int" resultMap="contactBoardResultMap">
+        SELECT c.dashboard_id,
+               c.user_id,
+               u.username   AS username,
+               u.email,
+               u.password,
+               u.hp,
+               u.affiliation,
+               u.is_active  AS is_active,
+               u.role,
+               u.join_at    AS join_at,
+               u.updated_at AS updated_at,
+               c.title,
+               c.content,
+               c.created_at,
+               c.updated_at
         FROM contact_info_board c
                  LEFT JOIN user u ON c.user_id = u.user_id
         WHERE c.dashboard_id = #{dashboard_id}
@@ -35,13 +76,39 @@
     <!-- 게시글 수정 -->
     <update id="updateBoard" parameterType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
         UPDATE contact_info_board
-        SET title = #{title}, content = #{content}, updated_at = NOW()
+        SET title      = #{title},
+            content    = #{content},
+            updated_at = NOW()
         WHERE dashboard_id = #{dashboard_id}
     </update>
 
     <!-- 게시글 삭제 -->
     <delete id="deleteBoard" parameterType="int">
-        DELETE FROM contact_info_board WHERE dashboard_id = #{dashboard_id}
+        DELETE
+        FROM contact_info_board
+        WHERE dashboard_id = #{dashboard_id}
     </delete>
+    <select id="selectTotalBoardCount" resultType="int">
+        SELECT COUNT(*)
+        FROM contact_info_board
+    </select>
+
+    <select id="selectBoardList" resultType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
+        SELECT *
+        FROM contact_info_board
+        ORDER BY created_at DESC
+            LIMIT #{offset}, #{limit}
+    </select>
+    <!-- 게시글 생성 -->
+    <insert id="insertBoard" parameterType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
+        INSERT INTO contact_info_board (user_id, title, content, created_at, updated_at)
+        VALUES (#{user_id}, #{title}, #{content}, NOW(), NOW())
+    </insert>
+
+    <select id="getUserIdByUsername" resultType="int" parameterType="string">
+        SELECT user_id
+        FROM user
+        WHERE username = #{username}
+    </select>
 
 </mapper>

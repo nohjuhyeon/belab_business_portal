@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../common/header.jsp" %>
 
 <!DOCTYPE html>
@@ -19,15 +19,15 @@
     }
 
     .header-section {
-        background-image: url('/images/universe2.jpg');
-        background-size: 100% auto;
-        background-position: top;
-        background-repeat: no-repeat;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        height: 375px;
+      background-image: url('/images/universe2.jpg');
+      background-size: 100% auto;
+      background-position: top;
+      background-repeat: no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 375px;
     }
 
     .header-section h2 {
@@ -146,53 +146,63 @@
   </script>
 </head>
 <body>
-  <div class="header-section">
-    <div class="header-blank"></div>
-    <h2>문의 게시판</h2>
+<div class="header-section">
+  <div class="header-blank"></div>
+  <h2>문의 게시판</h2>
+</div>
+
+<div class="container">
+
+  <table>
+    <tr>
+      <th>제목</th>
+      <td  colspan="3">${board.title}</td>
+    </tr>
+    <tr>
+      <th style="width: 10%">작성자</th>
+      <td style="width: 40%">${board.username}</td>
+      <th style="width: 10%">작성일</th>
+      <td style="width: 40%">${board.formattedCreatedAt}</td>
+    </tr>
+  </table>
+
+  <!-- 본문 내용 -->
+  <div class="content-section">
+    <h3>본문 내용</h3>
+    <pre>${board.content}</pre>
   </div>
 
-  <div class="container">
-
-    <table>
-      <tr>
-        <th>제목</th>
-        <td  colspan="3">${board.title}</td>
-      </tr>
-      <tr>
-        <th style="width: 10%">작성자</th>
-        <td style="width: 40%">${board.username}</td>
-        <th style="width: 10%">작성일</th>
-        <td style="width: 40%">${board.formattedCreatedAt}</td>
-      </tr>
-    </table>
-
-    <!-- 본문 내용 -->
-    <div class="content-section">
-      <h3>본문 내용</h3>
-      <pre>${board.content}</pre>
-    </div>
-
-    <!-- 답변 내용 -->
-    <div class="reply-section">
-      <h3>답변 내용</h3>
-      <pre>${board.content}</pre>
-    </div>
-
-    <div class="button-container">
-      <!-- 목록 버튼 -->
-      <button type="button" class="btn" onclick="navigateTo('/contact/boardList')">목록</button>
-      
-      <!-- 수정 버튼 -->
-      <button type="button" class="btn" onclick="navigateTo('/contact/editBoard/${board.dashboard_id}')">수정</button>
-      
-      <!-- 삭제 버튼 -->
-      <form action="/contact/deleteBoard" method="post" style="margin-bottom: 0px;">
-        <input type="hidden" name="dashboard_id" value="${board.dashboard_id}">
-        <button type="submit" class="btn btn-danger">삭제</button>
-      </form>
-    </div>
+  <!-- 답변 내용 -->
+  <div class="reply-section">
+    <h3>답변 내용</h3>
+    <pre>${board.content}</pre>
   </div>
 
-  <%@ include file="../common/footer.jsp" %>
+  <div class="button-container">
+    <!-- 목록 버튼 -->
+    <button type="button" class="btn" onclick="navigateTo('/contact/boardList')">목록</button>
+
+    <!-- 수정 버튼 -->
+    <button type="button" class="btn" onclick="navigateTo('/contact/editBoard/${board.dashboard_id}')">수정</button>
+
+    <!-- 삭제 버튼 -->
+    <form action="/contact/deleteBoard" method="post" style="margin-bottom: 0px;">
+      <input type="hidden" name="dashboard_id" value="${board.dashboard_id}">
+      <button type="submit" class="btn btn-danger">삭제</button>
+    </form>
+  </div>
+</div>
+
+<%@ include file="../common/footer.jsp" %>
 </body>
 </html>
+
+<%--   <!-- 수정 및 삭제 버튼 -->--%>
+<%--    <div class="d-flex justify-content-end mb-3">--%>
+<%--      <c:if test="${loggedInUser != null && loggedInUser.username == board.username}">--%>
+<%--        <a href="/contact/editBoard/${board.dashboard_id}" class="btn btn-primary">수정</a>--%>
+<%--        <button class="btn btn-primary" onclick="deleteBoard(${board.dashboard_id})">삭제</button>--%>
+<%--      </c:if>--%>
+<%--    </div>--%>
+<%--  </div>--%>
+
