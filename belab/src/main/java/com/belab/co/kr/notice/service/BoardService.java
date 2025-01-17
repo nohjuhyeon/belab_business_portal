@@ -1,8 +1,8 @@
-package com.belab.co.kr.ConTact.service;
-
-import com.belab.co.kr.ConTact.vo.ContactBoardVO;
+package com.belab.co.kr.notice.service;
 
 import java.util.List;
+
+import com.belab.co.kr.notice.vo.ContactBoardVO;
 
 public interface BoardService {
 

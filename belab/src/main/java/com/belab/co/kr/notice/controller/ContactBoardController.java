@@ -1,9 +1,10 @@
-package com.belab.co.kr.ConTact.controller;
+package com.belab.co.kr.notice.controller;
 
-import com.belab.co.kr.ConTact.service.BoardService;
-import com.belab.co.kr.ConTact.service.BoardServiceImpl;
-import com.belab.co.kr.ConTact.vo.ContactBoardVO;
 import com.belab.co.kr.member.vo.MemberVO;
+import com.belab.co.kr.notice.service.BoardService;
+import com.belab.co.kr.notice.service.BoardServiceImpl;
+import com.belab.co.kr.notice.vo.ContactBoardVO;
+
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

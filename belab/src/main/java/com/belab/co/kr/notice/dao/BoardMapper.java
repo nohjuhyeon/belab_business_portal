@@ -1,7 +1,8 @@
-package com.belab.co.kr.ConTact.dao;
+package com.belab.co.kr.notice.dao;
 
-import com.belab.co.kr.ConTact.vo.ContactBoardVO;
 import com.belab.co.kr.member.vo.MemberVO;
+import com.belab.co.kr.notice.vo.ContactBoardVO;
+
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

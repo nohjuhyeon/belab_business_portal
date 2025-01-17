@@ -59,19 +59,24 @@ public class MemberController {
     // 로그인 처리
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(MemberVO memberVO, HttpSession session, RedirectAttributes redirectAttributes) {
-        // 로그인 처리: 이메일과 비밀번호로 사용자 정보 조회
+        // 로그인 처리
         MemberVO loginMember = memberService.login(memberVO);
-
-        // 로그인 성공 시
+    
         if (loginMember != null) {
-            // 로그인된 사용자 정보를 세션에 저장
             session.setAttribute("loggedInUser", loginMember);
-
-            // 로그인 후 메인 페이지로 리다이렉트
-            return "redirect:/main";
+    
+            // 세션에서 redirectURL 가져오기
+            String redirectURL = (String) session.getAttribute("redirectURL");
+    
+            // 이전 URL로 리다이렉트 (없으면 기본적으로 메인 페이지로 이동)
+            if (redirectURL != null) {
+                session.removeAttribute("redirectURL"); // 사용 후 삭제
+                return "redirect:" + redirectURL;
+            }
+    
+            return "redirect:/main"; // 기본 메인 페이지로 이동
         }
-
-        // 로그인 실패 시 에러 메시지를 설정하고 로그인 페이지로 리다이렉트
+    
         redirectAttributes.addFlashAttribute("error", "이메일 또는 비밀번호가 올바르지 않습니다.");
         return "redirect:/member/login";
     }
