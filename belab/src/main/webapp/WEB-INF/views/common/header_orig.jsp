@@ -209,7 +209,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
                         <li><a class="dropdown-item" href="#">공지사항</a></li>
-                        <li><a class="dropdown-item" href="/contact/boardList">문의게시판</a></li>
+                        <li><a class="dropdown-item" href="/notice/boardList">문의게시판</a></li>
                         <li><a class="dropdown-item" href="#">자료실</a></li>
                     </ul>
                 </li>

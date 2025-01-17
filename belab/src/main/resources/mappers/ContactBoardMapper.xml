@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.belab.co.kr.ConTact.dao.BoardMapper">
+<mapper namespace="com.belab.co.kr.notice.dao.BoardMapper">
 
-    <resultMap id="contactBoardResultMap" type="com.belab.co.kr.ConTact.vo.ContactBoardVO">
+    <resultMap id="contactBoardResultMap" type="com.belab.co.kr.notice.vo.ContactBoardVO">
         <id property="dashboard_id" column="dashboard_id"/>
         <result property="user_id" column="user_id"/>
         <result property="title" column="title"/>
@@ -74,7 +74,7 @@
     </select>
 
     <!-- 게시글 수정 -->
-    <update id="updateBoard" parameterType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
+    <update id="updateBoard" parameterType="com.belab.co.kr.notice.vo.ContactBoardVO">
         UPDATE contact_info_board
         SET title      = #{title},
             content    = #{content},
@@ -93,14 +93,14 @@
         FROM contact_info_board
     </select>
 
-    <select id="selectBoardList" resultType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
+    <select id="selectBoardList" resultType="com.belab.co.kr.notice.vo.ContactBoardVO">
         SELECT *
         FROM contact_info_board
         ORDER BY created_at DESC
             LIMIT #{offset}, #{limit}
     </select>
     <!-- 게시글 생성 -->
-    <insert id="insertBoard" parameterType="com.belab.co.kr.ConTact.vo.ContactBoardVO">
+    <insert id="insertBoard" parameterType="com.belab.co.kr.notice.vo.ContactBoardVO">
         INSERT INTO contact_info_board (user_id, title, content, created_at, updated_at)
         VALUES (#{user_id}, #{title}, #{content}, NOW(), NOW())
     </insert>

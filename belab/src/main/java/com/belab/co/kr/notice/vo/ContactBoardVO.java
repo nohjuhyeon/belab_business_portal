@@ -1,4 +1,4 @@
-package com.belab.co.kr.ConTact.vo;
+package com.belab.co.kr.notice.vo;
 
 import com.belab.co.kr.member.vo.MemberVO;
 import lombok.Data;

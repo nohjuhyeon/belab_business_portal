@@ -1,9 +1,10 @@
-package com.belab.co.kr.ConTact.service;
+package com.belab.co.kr.notice.service;
 
-import com.belab.co.kr.ConTact.dao.BoardMapper;
-import com.belab.co.kr.ConTact.service.BoardService;
-import com.belab.co.kr.ConTact.vo.ContactBoardVO;
 import com.belab.co.kr.member.vo.MemberVO;
+import com.belab.co.kr.notice.dao.BoardMapper;
+import com.belab.co.kr.notice.service.BoardService;
+import com.belab.co.kr.notice.vo.ContactBoardVO;
+
 import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
