@@ -164,4 +164,5 @@ public class MemberServiceImpl implements MemberService {
         MemberVO member = memberMapper.findMemberByEmail(currentUsername);
         return member != null && member.getPassword().equals(password);
     }
+
 }

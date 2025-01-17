@@ -71,13 +71,8 @@ public class BoardServiceImpl implements BoardService {
 
         try {
             if (member != null && member.getUsername() != null) {
-                Integer userId = boardMapper.getUserIdByUsername(member.getUsername());
-                if (userId != null) {
-                    board.setUser_id(userId);
-                } else {
-                    logger.warn("User not found with username: {}", member.getUsername());
-                    throw new RuntimeException("User not found with username: " + member.getUsername());
-                }
+                Integer userId = member.getUser_id();
+                board.setUser_id(userId);
             } else {
                 logger.warn("No logged-in user found.");
                 throw new RuntimeException("No logged-in user.");

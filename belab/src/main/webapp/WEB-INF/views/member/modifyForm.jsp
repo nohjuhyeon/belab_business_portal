@@ -32,7 +32,7 @@
                 </div>
                 <div class="contents-body">
                   <div class="textset">
-                    <h2 class="h1 textset-tit">로그인</h2>
+                    <h2 class="h1 textset-tit">개인정보 수정</h2>
                   </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@
                 <div class="contents-container container-md">
                   <div class="contents-inner">
                     <div class="form-group">
-<form id="modifyForm" action="/member/modify" method="post" onsubmit="return validateForm(event)">
+                      <form id="modifyForm" action="/member/modify" method="post" onsubmit="return changepassword(event)">
                         <div class="form-box">
                           <div class="inputset inputset-line">
                             <label for="username" class="form-tit h6">이름 <span>*</span>
@@ -77,13 +77,14 @@
                             <label for="email" class="form-tit h6">E-mail <span>*</span>
                             </label>
                             <input id="email" type="email" name="email" class="inputset-input form-control"
-                            value="${loggedInUser.email}" readonly required />
+                              value="${loggedInUser.email}" readonly required />
                           </div>
                         </div>
                         <div class="form-box">
                           <div class="inputset inputset-line">
                             <label for="oldPassword" class="form-tit h6">현재 비밀번호 <span>*</span></label>
-                            <input id="oldPassword" type="password" name="oldPassword" class="inputset-input form-control"  value="${loggedInUser.password}" readonly />
+                            <input id="oldPassword" type="password" name="oldPassword"
+                              class="inputset-input form-control" value="${loggedInUser.password}" readonly />
                           </div>
                         </div>
                         <div class="form-box">
@@ -104,8 +105,8 @@
                           <div class="inputset inputset-line">
                             <label for="hp" class="form-tit h6">전화번호 <span>*</span>
                             </label>
-                            <input id="hp" type="hp" name="hp" class="inputset-input form-control" value="${loggedInUser.hp}"
-                              placeholder="전화번호를 입력해주세요." required="" />
+                            <input id="hp" type="hp" name="hp" class="inputset-input form-control"
+                              value="${loggedInUser.hp}" placeholder="전화번호를 입력해주세요." required="" />
                           </div>
                         </div>
                         <div class="form-box">
@@ -113,11 +114,27 @@
                           </legend>
                           <div class="checkset-wrap">
                             <div class="checkset checkset-fill">
-                              <input id="belab" name="role" class="checkset-input" type="radio" value="belab" />
+                              <c:choose>
+                                <c:when test="${not empty loggedInUser && loggedInUser.role == 'belab'}">
+                                  <input id="belab" name="role" class="checkset-input" type="radio" value="belab"
+                                    checked />
+                                </c:when>
+                                <c:otherwise>
+                                  <input id="belab" name="role" class="checkset-input" type="radio" value="belab" />
+                                </c:otherwise>
+                              </c:choose>
                               <label for="belab" class="checkset-label">비이랩</label>
                             </div>
                             <div class="checkset checkset-fill">
-                              <input id="user" name="role" class="checkset-input" type="radio" value="user" checked />
+                              <c:choose>
+                                <c:when test="${not empty loggedInUser && loggedInUser.role == 'user'}">
+                                  <input id="user" name="role" class="checkset-input" type="radio" value="user"
+                                    checked />
+                                </c:when>
+                                <c:otherwise>
+                                  <input id="user" name="role" class="checkset-input" type="radio" value="user" />
+                                </c:otherwise>
+                              </c:choose>
                               <label for="user" class="checkset-label">기타 소속</label>
                             </div>
                           </div>
@@ -127,8 +144,8 @@
                           </div>
                         </div>
                         <div class="form-btn">
-                            <button id="submitButton" class="btnset btnset-primary" type="submit" disabled>수정하기</button>
-                            <a id="cancleButton" class="btnset cancel-button" href="/mypage/intro" >취소하기</a>
+                          <button id="submitButton" class="btnset btnset-primary" type="submit" disabled>수정하기</button>
+                          <a id="cancleButton" class="btnset cancel-button" href="/mypage/intro">취소하기</a>
                         </div>
                       </form>
                     </div>
@@ -148,32 +165,32 @@
           <%@ include file="../common/footer.jsp" %>
     </body>
     <script>
-        function toggleSubmitButton() {
-            const username = document.getElementById('username').value.trim();
-            const password = document.getElementById('password').value.trim();
-            const confirmPassword = document.getElementById('confirmPassword').value.trim();
-            const phone = document.getElementById('hp').value.trim();
-            const role = document.querySelector('input[name="role"]:checked');
-        
-            const submitButton = document.getElementById('submitButton');
-        
-            // 모든 필수 입력 필드가 채워지고, 체크박스가 체크되었을 경우 버튼 활성화
-            if (username && password && confirmPassword && phone && role) {
-              submitButton.disabled = false;
-            } else {
-              submitButton.disabled = true;
-            }
-          }
+      function toggleSubmitButton() {
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const confirmPassword = document.getElementById('confirmPassword').value.trim();
+        const phone = document.getElementById('hp').value.trim();
+        const role = document.querySelector('input[name="role"]:checked');
 
-          document.querySelectorAll('input').forEach(input => {
-            input.addEventListener('input', toggleSubmitButton);
-          });
-        
-          document.querySelectorAll('input[type="radio"]').forEach(input => {
-            input.addEventListener('change', toggleSubmitButton);
-          });
-    
-        function toggleSidebar() {
+        const submitButton = document.getElementById('submitButton');
+
+        // 모든 필수 입력 필드가 채워지고, 체크박스가 체크되었을 경우 버튼 활성화
+        if (username && password && confirmPassword && phone && role) {
+          submitButton.disabled = false;
+        } else {
+          submitButton.disabled = true;
+        }
+      }
+
+      document.querySelectorAll('input').forEach(input => {
+        input.addEventListener('input', toggleSubmitButton);
+      });
+
+      document.querySelectorAll('input[type="radio"]').forEach(input => {
+        input.addEventListener('change', toggleSubmitButton);
+      });
+
+      function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');
         sidebar.classList.toggle('open');
       }    // 팝업 표시 함수
@@ -184,32 +201,32 @@
         popup.querySelector('p').innerText = message;
         popup.style.display = 'block';
         overlay.style.display = 'block';
-    }
+      }
 
-    function closePopup() {
+      function closePopup() {
         const popup = document.querySelector('.custom-popup');
         const overlay = document.querySelector('.popup-overlay');
         popup.style.display = 'none';
         overlay.style.display = 'none';
-    }
+      }
 
-    // 비밀번호 확인 로직
-    document.getElementById("modifyForm").addEventListener("submit", function (e) {
+      // 비밀번호 확인 로직
+      document.getElementById("modifyForm").addEventListener("submit", function (e) {
         e.preventDefault(); // 폼 제출 방지
-    
+
         const currentPassword = document.getElementById("oldPassword").value; // 현재 비밀번호
         const newPassword = document.getElementById("password").value; // 새 비밀번호
         const confirmPassword = document.getElementById("confirmPassword").value; // 새 비밀번호 확인
-    
+
         // 비밀번호 확인 로직
         if (newPassword === currentPassword) {
-            showPopup("새 비밀번호는 현재 비밀번호와 동일할 수 없습니다.");
+          showPopup("새 비밀번호는 현재 비밀번호와 동일할 수 없습니다.");
         } else if (newPassword !== confirmPassword) {
-            showPopup("새 비밀번호와 비밀번호 확인이 일치하지 않습니다.");
+          showPopup("새 비밀번호와 비밀번호 확인이 일치하지 않습니다.");
         } else {
-            this.submit(); // 모든 조건이 만족되면 폼 제출
+          this.submit(); // 모든 조건이 만족되면 폼 제출
         }
-    });
+      });
     </script>
 
     </html>
