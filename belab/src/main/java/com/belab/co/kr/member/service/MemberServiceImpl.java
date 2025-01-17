@@ -153,9 +153,14 @@ public class MemberServiceImpl implements MemberService {
      */
     @Override
     public boolean deleteMember(String email) {
-        // 이메일로 회원 삭제
+        // 1. contact_info_board 테이블에서 user_id를 4로 업데이트
+        memberMapper.updateUserReferenceToDefault(email);
+    
+        // 2. user 테이블에서 해당 유저 삭제
         int rowsAffected = memberMapper.deleteMemberByEmail(email);
-        return rowsAffected > 0;  // 삭제된 행이 있으면 true 반환
+    
+        // 3. 삭제된 행이 있으면 true 반환
+        return rowsAffected > 0;
     }
 
     @Override
