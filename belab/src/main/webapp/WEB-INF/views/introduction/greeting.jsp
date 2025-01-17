@@ -59,10 +59,6 @@
           </div>
         </div>
       </div>
-      <div class="basic-N24" id="WwM5xkrhmo">
-        <div class="contents-container container-md">
-        </div>
-      </div>
     </div>
     <div class="th-layout-stickyright"></div>
     <div class="th-layout-sideright"></div>

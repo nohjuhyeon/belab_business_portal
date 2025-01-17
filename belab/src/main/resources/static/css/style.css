@@ -576,7 +576,7 @@
 
 .basic-N10 .contents-body {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -877,7 +877,7 @@
 
 .mypage-N10 .contents-body {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -985,9 +985,9 @@
 
 .mypage-N37 .inputset .inputset-textarea {
     height: 10rem;
-    padding: 1.6rem 0;
+    padding: 1.6rem;
     border: 0;
-    border-bottom: 1px solid var(--border-color)
+    border: 1px solid var(--border-color)
 }
 
 .mypage-N37 .contents-agree {
@@ -1592,7 +1592,7 @@
     justify-content: flex-end;
 }
 .mypage-N38 .form-btn button{
-    margin-right: 40px;
+    margin-right: 4px;
 }
 
 .mypage-N38 .checkset-wrap .checkset+.checkset {
@@ -1618,9 +1618,11 @@
 
 .mypage-N38 .inputset .inputset-textarea {
     height: 10rem;
-    padding: 1.6rem 0;
+    padding: 1.6rem;
     border: 0;
-    border-bottom: 1px solid var(--border-color)
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-color)
+    
 }
 
 
@@ -2812,4 +2814,310 @@
     margin: 0 10px;
     transition: background-color 0.3s ease;
 
+}
+
+
+.contact-N32 .container {
+    margin: 30px auto;
+    max-width: 1200px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-N32 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+
+  .contact-N32 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  .contact-N32 table th,
+  .contact-N32 table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+
+  .contact-N32 table th {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .contact-N32 pre {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #444;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    min-height: 300px;
+  }
+
+  .contact-N32 .content-section{
+    margin-bottom: 20px;
+  }
+
+  .contact-N32 .content-section h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    /* 제목 크기 */
+    font-weight: bold;
+    /* 제목 굵기 */
+    color: #444;
+    /* 제목 색상 */
+  }
+
+  .contact-N32 .content-section pre{
+    font-size: 16px;
+    /* 본문 및 답변 텍스트 크기 */
+    line-height: 1.6;
+    /* 줄 간격 */
+    color: #333;
+    /* 텍스트 색상 */
+    padding: 20px;
+    /* 텍스트 내부 여백 */
+    background-color: #f9f9f9;
+    /* 배경색 */
+    border: 1px solid #ddd;
+    /* 테두리 */
+    border-radius: 8px;
+    /* 모서리 둥글게 */
+  }
+
+  .contact-N32 .button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .contact-N32 .btn {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .contact-N32 .btn:hover {
+    background-color: #ddd;
+  }
+
+  .contact-N32 .btn-danger {
+    background-color: #f9f9f9;
+    border-color: #ddd;
+    color: #333;
+  }
+
+  .contact-N32 .btn-danger:hover {
+    background-color: #ddd;
+  }
+
+  /* contact-N37 */
+.contact-N37 {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: hidden
+}
+
+.contact-N37 .contents-inner {
+    display: flex;
+    width: 100%
+}
+
+.contact-N37 .imageset {
+    width: calc(50% - 12rem);
+    height: 95rem;
+    border-radius: 2rem;
+    overflow: hidden
+}
+
+.contact-N37 .form-group {
+    width: calc(50% + 6rem);
+    margin-left: 6rem
+}
+
+.contact-N37 .form-group .form-tit {
+    margin-bottom: 0.8rem
+}
+
+.contact-N37 .form-group .form-tit+.checkset-wrap {
+    margin-top: 1.6rem
+}
+
+.contact-N37 .form-group .form-tit span {
+    display: inline-block;
+    margin-left: 0.4rem;
+    color: #dc0000
+}
+
+.contact-N37 .form-box+.form-box {
+    margin-top: 4rem
+}
+
+.contact-N37 .checkset-wrap .checkset+.checkset {
+    margin-top: 0;
+    margin-left: 6rem
+}
+
+.contact-N37 .inputset+.inputset {
+    margin-top: 4rem
+}
+
+.contact-N37 .inputset .inputset-tit {
+    margin-bottom: 0.8rem
+}
+
+.contact-N37 .inputset .inputset-label {
+    width: 100%
+}
+
+.contact-N37 .inputset .inputset-input {
+    border-bottom: 1px solid var(--border-color)
+}
+
+.contact-N37 .inputset .inputset-textarea {
+    height: 20rem;
+    padding: 1.6rem;
+    border: 0;
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-color)
+}
+
+.contact-N37 .contents-agree {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    line-height: 1
+}
+
+.contact-N37 .contents-agree .btnset {
+    min-width: auto;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--text-color3)
+}
+
+.contact-N37 .contents-agree .btnset::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../icons/ico_chevron_gray.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+}
+
+.contact-N37 .form-btn {
+    margin-top: 6rem;
+    text-align: right
+}
+
+.contact-N37 .form-btn .btnset {
+    min-width: 18rem
+}
+
+.contact-N37 .info-area {
+    overflow-y: auto
+}
+
+.contact-N37 .info-group+.info-group {
+    margin-top: 2.4rem
+}
+
+.contact-N37 .info-group strong {
+    padding-bottom: 1.2rem;
+    display: block
+}
+
+.contact-N37 .info-desc {
+    max-height: 20.7rem;
+    padding: 1.6rem;
+    background: #f8f8fa;
+    border-radius: 1.6rem;
+    overflow-y: auto;
+    scrollbar-width: none
+}
+
+.contact-N37 .info-desc p.fw-medium {
+    font-weight: var(--fw-medium)
+}
+
+.contact-N37 .info-desc .mtb {
+    margin: 2.4rem 0
+}
+
+.contact-N37 .info-desc em {
+    font-style: normal;
+    font-weight: 600;
+    margin: 2.4rem 0 1rem;
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.contact-N37 .info-list em::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    background: var(--black);
+    border-radius: 50%;
+    margin-right: 0.8rem
+}
+
+.contact-N37 .info-list p {
+    padding-left: 1.2rem
+}
+
+@media (max-width: 992px) {
+    .contact-N37 {
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
+
+    .contact-N37 .contents-inner {
+        flex-direction: column
+    }
+
+    .contact-N37 .imageset {
+        width: 100%;
+        height: 40rem
+    }
+
+    .contact-N37 .form-group {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 4rem
+    }
+
+    .contact-N37 .form-btn {
+        text-align: center
+    }
+
+    .contact-N37 .form-btn .btnset {
+        min-width: 16rem;
+        padding: 0 1.6rem
+    }
 }

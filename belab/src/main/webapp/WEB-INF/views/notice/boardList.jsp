@@ -67,7 +67,7 @@
                       <!-- 글 작성 버튼 (로그인한 사용자만 보임) -->
                       <c:if test="${not empty loggedInUser && loggedInUser.role == 'belab'}">
                         <div class="d-flex justify-content-end mb-3">
-                          <a href="/contact/createBoard" class="btnset btnset-primary">글 작성</a>
+                          <a href="/notice/createBoard" class="btnset btnset-primary">글 작성</a>
                         </div>
                       </c:if>
                     </div>
@@ -92,7 +92,7 @@
                           <tr>
                           <td class="p2 tableset-mobile">${board.dashboard_id}</td>
                           <td class="p2 text-left tableset tableset-tit-ellipsis tableset-tit">
-                              <a href="/contact/viewBoard/${board.dashboard_id}">${board.title}</a>
+                              <a href="/notice/viewBoard/${board.dashboard_id}">${board.title}</a>
                           </td>
                           <td>${board.username}</td>
                           <td class="p2">${board.formattedUpdatedAt}</td>
@@ -106,7 +106,7 @@
                     <!-- 이전 버튼 -->
                     <div class="pagiset-ctrl">
                       <c:if test="${currentPage > 1}">
-                        <a href="/contact/boardList?page=${currentPage - 1}&size=${size}" class="pagiset-link pagiset-prev"
+                        <a href="/notice/boardList?page=${currentPage - 1}&size=${size}" class="pagiset-link pagiset-prev"
                           style="margin-right: 5px;"></a>
                       </c:if>
                     </div>
@@ -121,7 +121,7 @@
                             </c:when>
 
                             <c:otherwise>
-                              <a href="/contact/boardList?page=${pageNum}&size=${size}" class="pagiset-link"
+                              <a href="/notice/boardList?page=${pageNum}&size=${size}" class="pagiset-link"
                                 style="margin-right: 5px;">${pageNum}</a>
                             </c:otherwise>
                         </c:choose>
@@ -132,7 +132,7 @@
                     <div class="pagiset-ctrl">
                       <c:if test="${currentPage < totalPages}">
       
-                        <a href="/contact/boardList?page=${currentPage + 1}&size=${size}" class="pagiset-link pagiset-next"
+                        <a href="/notice/boardList?page=${currentPage + 1}&size=${size}" class="pagiset-link pagiset-next"
                           style="margin-left: 5px;"></a>
                       </c:if>
                     </div>

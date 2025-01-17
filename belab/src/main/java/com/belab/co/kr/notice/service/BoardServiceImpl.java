@@ -5,7 +5,10 @@ import com.belab.co.kr.notice.dao.BoardMapper;
 import com.belab.co.kr.notice.service.BoardService;
 import com.belab.co.kr.notice.vo.ContactBoardVO;
 
+import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +20,11 @@ public class BoardServiceImpl implements BoardService {
     private static final Logger logger = LoggerFactory.getLogger(BoardServiceImpl.class);
 
     @Autowired
+    private JavaMailSender mailSender; // JavaMailSender 주입
+
+    @Autowired
     private BoardMapper boardMapper;
+
 
     private MemberVO member;
 
@@ -51,6 +58,24 @@ public class BoardServiceImpl implements BoardService {
         return totalBoardCount;
     }
 
+    @Override
+    public void sendEmail(String to, String subject, String content) {
+        try {
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
+
+            helper.setFrom("sk.kim@belab.co.kr"); // 발신자 이메일 명시적으로 설정
+            helper.setTo(to);
+            helper.setSubject(subject);
+            helper.setText(content, true); // HTML 콘텐츠 허용
+
+            mailSender.send(message);
+            logger.info("Email sent successfully to: {}", to);
+        } catch (Exception e) {
+            logger.error("Error while sending email: {}", e.getMessage(), e);
+            throw new RuntimeException("Email sending failed.", e);
+        }
+    }
     @Override
     public ContactBoardVO getBoardById(int dashboard_id) {
         logger.info("Fetching board with ID: {}", dashboard_id);

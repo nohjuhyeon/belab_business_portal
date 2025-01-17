@@ -131,17 +131,17 @@
                 </ul>
               </li>
               <li class="header-gnbitem on">
-                <a class="header-gnblink" href="/contact/boardList">
+                <a class="header-gnblink" href="/notice/boardList">
                   <span>고객 센터</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="/contact/boardList">
+                    <a class="header-sublink p3" href="/notice/boardList">
                       <span>공지사항</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/notice/customers">
                       <span>고객의 소리</span>
                     </a>
                   </li>
@@ -307,12 +307,12 @@
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="/contact/boardList">
+                    <a class="p1 fullmenu-sublink" href="/notice/boardList">
                       <span>공지 사항</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/notice/customers">
                       <span>고객의 소리</span>
                     </a>
                   </li>

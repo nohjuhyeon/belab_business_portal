@@ -46,24 +46,26 @@
           <div class="contact-N24" id="uFM5Z21BnK">
             <div class="contents-container container-md">
               <div class="contents-inner">
-                <form action="/contact/createBoard" method="post">
+                <form action="/notice/editBoard" method="post">
+                  <input type="hidden" name="dashboard_id" value="${board.dashboard_id}">
                   <div class="form-group">
                     <div class="textset">
                       <h2 class="h2 textset-tit">공지사항 작성하기</h2>
                     </div>
                     <div class="form-box">
                       <div class="inputset" th-hoverbox="true">
+                
                         <label for="contact-N24-inputset-a-1" class="form-tit h6" data-listener-added_05080d17="true">글
-                          제목</label>
-                          <input id="contact-N24-inputset-a-1" type="text" name="title"
-                          class="inputset-input form-control" placeholder="제목을 입력하세요" required />
+                          제목</label><input id="contact-N24-inputset-a-1" type="text" name="title" id="title"
+                          class="inputset-input form-control" placeholder="제목을 입력하세요." value="${board.title}"
+                          required />
                       </div>
                     </div>
                     <div class="form-box">
                       <div class="inputset">
                         <label for="contact-N24-textarea-a-1" class="form-tit h6">내용</label>
-                        <textarea id="contact-N24-textarea-a-1" name="content" class="inputset-textarea form-control"
-                          placeholder="내용을 입력해주세요." required></textarea>
+                        <textarea id="contact-N24-textarea-a-1" name="content" class="inputset-textarea form-control" 
+                          placeholder="내용을 입력해주세요." required>${board.content}</textarea>
                         <div class="inputset-langth">
                           <span class="p1 inputset-count">0</span>
                           <span class="p1 inputset-total">/4000</span>
@@ -71,8 +73,8 @@
                       </div>
                     </div>
                     <div class="form-btn">
-                      <button class="btnset btnset-primary" type="submit">저장</button><a href="/contact/boardList"
-                        class="btnset cancel-button">취소</a>
+                      <button class="btnset btnset-primary" type="submit">저장</button><a
+                        href="/notice/viewBoard/${board.dashboard_id}" class="btnset cancel-button">취소</a>
                     </div>
                   </div>
                 </form>
