@@ -45,7 +45,6 @@
         SET
         username = #{username},           <!-- 이름 수정 -->
         hp = #{hp},                       <!-- 휴대전화 번호 수정 -->
-        password = #{password},           <!-- 비밀번호 수정 -->
         role= #{role},                      <!-- 권한 수정 -->
         updated_at = CURRENT_TIMESTAMP      <!-- 수정 일시 -->
         WHERE email = #{email}                <!-- 이메일을 기준으로 수정 -->

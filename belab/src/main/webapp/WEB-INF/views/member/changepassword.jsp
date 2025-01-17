@@ -47,17 +47,15 @@
           <div class="mypage-N24" id="Vgm5ys8tOU">
             <div class="contents-container container-valid-box">
               <div class="contents-inner">
-                <form id="changePasswordForm" action="/member/modify" method="post" onsubmit="return validateForm(event)">
+                <form id="changePasswordForm" action="/member/changepassword" method="post">
                   <div class="form-group">
                     <div class="textset">
                       <h2 class="h2 textset-tit">새 비밀번호를 입력하세요.</h2>
                     </div>
                     <div class="form-box">
                       <div class="inputset">
-                        <label for="oldPassword" class="form-tit h6">현재 비밀번호</label>
-                        <input class="inputset-input form-control" type="password" id="oldPassword" name="oldPassword"
-                          placeholder="현재 비밀번호를 입력하세요" required="">
                       </div>
+
                       <div class="inputset">
                         <label for="password" class="form-tit h6">새 비밀번호</label>
                         <input class="inputset-input form-control" type="password" id="password" name="password"
@@ -112,20 +110,22 @@
         document.getElementById("changePasswordForm").addEventListener("submit", function (e) {
           e.preventDefault(); // 폼 제출 방지
 
-          const currentPassword = document.getElementById("oldPassword").value; // 현재 비밀번호
           const newPassword = document.getElementById("password").value; // 새 비밀번호
           const confirmPassword = document.getElementById("confirmPassword").value; // 새 비밀번호 확인
 
           // 비밀번호 확인 로직
-          if (newPassword === currentPassword) {
-            showPopup("새 비밀번호는 현재 비밀번호와 동일할 수 없습니다.");
-          } else if (newPassword !== confirmPassword) {
+          if (newPassword !== confirmPassword) {
             showPopup("새 비밀번호와 비밀번호 확인이 일치하지 않습니다.");
           } else {
             this.submit(); // 모든 조건이 만족되면 폼 제출
           }
         });
-
+        window.onload = function () {
+          const errorMessage = '<%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>';
+          if (errorMessage) {
+            showPopup(errorMessage);
+          }
+        };
       </script>
     </body>
     <%@ include file="../common/footer.jsp" %>

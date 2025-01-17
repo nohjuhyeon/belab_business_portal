@@ -316,6 +316,11 @@ public class MemberController {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response); // 로그인되지 않은 경우 응답
     }
 
+    @RequestMapping(value = "/validatePasswordForm", method = RequestMethod.GET)
+    public String validatePasswordForm() {
+        return "/member/validatePasswordForm"; // 비밀번호 입력 페이지로 이동
+    }
+
     // 비밀번호 변경 페이지로 이동
     @RequestMapping(value = "/changepassword", method = RequestMethod.GET)
     public String changePasswordForm() {
@@ -324,10 +329,9 @@ public class MemberController {
 
     // 비밀번호 변경 처리
     @RequestMapping(value = "/changepassword", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, String>> changePassword(
-            @RequestParam String currentPassword,
-            @RequestParam String newPassword,
-            HttpSession session) {
+    public String changePassword(
+            @RequestParam String password, MemberVO memberVO,
+            HttpSession session, Model model, RedirectAttributes redirectAttributes) {
 
         // 현재 로그인된 사용자 정보 가져오기
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
@@ -335,34 +339,37 @@ public class MemberController {
 
         if (loggedInUser == null) {
             // 로그인되지 않은 경우
-            response.put("status", "error");
+            model.addAttribute("error", "로그인이 필요합니다.");
             response.put("message", "로그인이 필요합니다.");
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
+            return "redirect:/member/login"; //
         }
-
-        // 현재 비밀번호 검증
-        boolean isPasswordValid = memberService.checkPassword(loggedInUser.getEmail(), currentPassword);
-
-        if (!isPasswordValid) {
-            // 현재 비밀번호가 올바르지 않은 경우
-            response.put("status", "error");
-            response.put("message", "현재 비밀번호가 올바르지 않습니다.");
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
-        }
-
-        // 비밀번호 변경 처리
-        boolean isPasswordChanged = memberService.updatePasswordByEmail(loggedInUser.getEmail(), newPassword);
-
-        if (isPasswordChanged) {
-            // 비밀번호 변경 성공
-            response.put("status", "success");
-            response.put("message", "비밀번호가 성공적으로 변경되었습니다.");
-            return ResponseEntity.ok(response);
+        else if (loggedInUser.getPassword().equals(password)) {
+            // 로그인되지 않은 경우
+            model.addAttribute("error", "새로운 비밀번호가 현재 비밀번호와 동일합니다.");
+            redirectAttributes.addFlashAttribute("error", "새로운 비밀번호가 현재 비밀번호와 동일합니다.");
+            return "redirect:/member/changepassword"; //
         } else {
-            // 비밀번호 변경 실패
-            response.put("status", "error");
-            response.put("message", "비밀번호 변경에 실패했습니다.");
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
+
+            // 비밀번호 변경 처리
+            boolean isPasswordChanged = memberService.updatePasswordByEmail(loggedInUser.getEmail(), password);
+            loggedInUser.setPassword(password);
+
+            if (isPasswordChanged) {
+                // 비밀번호 변경 성공
+
+                // 갱신된 사용자 정보를 세션에 저장
+                session.setAttribute("loggedInUser", loggedInUser);
+
+                // 갱신 후 마이페이지로 리다이렉트
+                model.addAttribute("loggedInUser", loggedInUser); // 모델에 추가하여 새로 고침 시 반영됨
+                // 갱신 후 마이페이지로 리다이렉트
+                return "redirect:/mypage/intro"; // 수정된 이름을 마이페이지에서 반영
+            } else {
+                // 비밀번호 변경 실패
+                model.addAttribute("error", "비밀번호 변경에 실패했습니다.");
+                response.put("message", "비밀번호 변경에 실패했습니다.");
+                return "redirect:/member/changepassword"; // 수정 페이지로 돌아갑니다.
+            }
         }
     }
 

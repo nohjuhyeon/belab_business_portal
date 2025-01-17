@@ -63,7 +63,7 @@
                 <div class="contents-container container-md">
                   <div class="contents-inner">
                     <div class="form-group">
-                      <form id="modifyForm" action="/member/modify" method="post" onsubmit="return changepassword(event)">
+                      <form id="modifyForm" action="/member/modify" method="post" onsubmit="return validateForm(event)">
                         <div class="form-box">
                           <div class="inputset inputset-line">
                             <label for="username" class="form-tit h6">이름 <span>*</span>
@@ -78,27 +78,6 @@
                             </label>
                             <input id="email" type="email" name="email" class="inputset-input form-control"
                               value="${loggedInUser.email}" readonly required />
-                          </div>
-                        </div>
-                        <div class="form-box">
-                          <div class="inputset inputset-line">
-                            <label for="oldPassword" class="form-tit h6">현재 비밀번호 <span>*</span></label>
-                            <input id="oldPassword" type="password" name="oldPassword"
-                              class="inputset-input form-control" value="${loggedInUser.password}" readonly />
-                          </div>
-                        </div>
-                        <div class="form-box">
-                          <div class="inputset inputset-line">
-                            <label for="password" class="form-tit h6">새 비밀번호 <span>*</span></label>
-                            <input id="password" type="password" name="password" class="inputset-input form-control"
-                              placeholder="비밀번호를 입력해주세요." required="" />
-                          </div>
-                        </div>
-                        <div class="form-box">
-                          <div class="inputset inputset-line">
-                            <label for="confirmPassword" class="form-tit h6"> 새 비밀번호 확인<span>*</span> </label>
-                            <input id="confirmPassword" type="password" name="confirmPassword"
-                              class="inputset-input form-control" placeholder="비밀번호를 다시 입력하세요." required="" />
                           </div>
                         </div>
                         <div class="form-box">
@@ -144,7 +123,7 @@
                           </div>
                         </div>
                         <div class="form-btn">
-                          <button id="submitButton" class="btnset btnset-primary" type="submit" disabled>수정하기</button>
+                          <button id="submitButton" class="btnset btnset-primary" type="submit">수정하기</button>
                           <a id="cancleButton" class="btnset cancel-button" href="/mypage/intro">취소하기</a>
                         </div>
                       </form>
@@ -167,15 +146,13 @@
     <script>
       function toggleSubmitButton() {
         const username = document.getElementById('username').value.trim();
-        const password = document.getElementById('password').value.trim();
-        const confirmPassword = document.getElementById('confirmPassword').value.trim();
         const phone = document.getElementById('hp').value.trim();
         const role = document.querySelector('input[name="role"]:checked');
 
         const submitButton = document.getElementById('submitButton');
 
         // 모든 필수 입력 필드가 채워지고, 체크박스가 체크되었을 경우 버튼 활성화
-        if (username && password && confirmPassword && phone && role) {
+        if (username && phone && role) {
           submitButton.disabled = false;
         } else {
           submitButton.disabled = true;
@@ -210,23 +187,6 @@
         overlay.style.display = 'none';
       }
 
-      // 비밀번호 확인 로직
-      document.getElementById("modifyForm").addEventListener("submit", function (e) {
-        e.preventDefault(); // 폼 제출 방지
-
-        const currentPassword = document.getElementById("oldPassword").value; // 현재 비밀번호
-        const newPassword = document.getElementById("password").value; // 새 비밀번호
-        const confirmPassword = document.getElementById("confirmPassword").value; // 새 비밀번호 확인
-
-        // 비밀번호 확인 로직
-        if (newPassword === currentPassword) {
-          showPopup("새 비밀번호는 현재 비밀번호와 동일할 수 없습니다.");
-        } else if (newPassword !== confirmPassword) {
-          showPopup("새 비밀번호와 비밀번호 확인이 일치하지 않습니다.");
-        } else {
-          this.submit(); // 모든 조건이 만족되면 폼 제출
-        }
-      });
     </script>
 
     </html>
