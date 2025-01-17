@@ -14,8 +14,6 @@ public interface MemberMapper {
 
     MemberVO findUserNameByEmail(String email);
 
-
-
     // 로그인 (이메일과 비밀번호로 회원 정보 조회)
     MemberVO loginMember(@Param("email") String email, @Param("password") String password);
 
@@ -28,6 +26,7 @@ public interface MemberMapper {
     // 비밀번호 확인
     boolean checkPassword(@Param("email") String email, @Param("password") String password);
     // 비밀번호 변경
+
     @Update("UPDATE user SET password = #{newPassword}, updated_at = CURRENT_TIMESTAMP WHERE email = #{email}")
     int updatePasswordByEmail(@Param("email") String email, @Param("newPassword") String newPassword);
 
@@ -35,7 +34,15 @@ public interface MemberMapper {
     @Select("SELECT password FROM user WHERE email = #{email}")
     String findPasswordByEmail(@Param("email") String email);
 
-    // 회원 삭제
+    // contact_info_board의 user_id를 4로 업데이트
+    @Update({
+        "UPDATE contact_info_board",
+        "SET user_id = 4",
+        "WHERE user_id = (SELECT user_id FROM user WHERE email = #{email})"
+    })
+    int updateUserReferenceToDefault(@Param("email") String email);
+
+    // user 테이블에서 유저 삭제
     @Delete("DELETE FROM user WHERE email = #{email}")
-    int deleteMemberByEmail(@Param("email") String email);  // 이메일로 회원 삭제
+    int deleteMemberByEmail(@Param("email") String email);
 }

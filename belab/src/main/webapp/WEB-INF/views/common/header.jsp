@@ -24,127 +24,129 @@
       logged-out
   </c:otherwise>
 </c:choose>">
-  <div class="th-layout-header">
-    <div class="basic-N3" id="QYm5xjJO4K">
-      <div class="header-container container-lg">
+<div class="th-layout-header">
+    <header class="butti-N1" id="unm5z1y12U">
+      <div class="header-container container-full">
         <div class="header-left">
           <h1 class="header-title">
             <a href="/">
               <img src="/images/logo.png" alt="로고" />
             </a>
           </h1>
+        </div>
+        <div class="header-center">
           <div class="header-gnb">
             <ul class="header-gnblist">
-              <li class="header-gnbitem">
-                <a class="p1 header-gnblink" href="/Greeting">
+              <li class="header-gnbitem on">
+                <a class="p2 header-gnblink" href="/Greeting">
                   <span>회사 소개</span>
                 </a>
                 <ul class="header-sublist">
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="/Greeting">
+                  <li class="header-subitem on">
+                    <a class="p3 header-sublink" href="/Greeting">
                       <span>인사말</span>
                     </a>
                   </li>
                   <li class="header-subitem">
-                    <a class="p2 header-sublink" href="/Directions">
-                      <span>오시는 길</span>
+                    <a class="p3 header-sublink" href="/Directions">
+                      <span>오시는길</span>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="header-gnbitem">
-                <a class="p1 header-gnblink" href="#">
+              <li class="header-gnbitem on">
+                <a class="p2 header-gnblink" href="#">
                   <span>Data Service</span>
                 </a>
                 <ul class="header-sublist">
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="p3 header-sublink" href="#">
                       <span>DB</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="p3 header-sublink" href="#">
                       <span>WEB</span>
                     </a>
                   </li>
                   <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                    <a class="p3 header-sublink" href="#">
                       <span>WAS</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>Data Hub Platform</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>Data Analysis</span>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="header-gnbitem">
-                <a class="p1 header-gnblink" href="#">
+              <li class="header-gnbitem on">
+                <a class="header-gnblink" href="#">
                   <span>Platform Service</span>
                 </a>
                 <ul class="header-sublist">
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>MSP(cloud)</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>Hosting</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>K-PaaS</span>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="header-gnbitem">
-                <a class="p1 header-gnblink" href="#">
+              <li class="header-gnbitem on">
+                <a class="header-gnblink" href="#">
                   <span>Content Service</span>
                 </a>
                 <ul class="header-sublist">
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>BeLOG</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>BeMON</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>BePET</span>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="header-gnbitem">
-                <a class="p1 header-gnblink" href="#">
+              <li class="header-gnbitem on">
+                <a class="header-gnblink" href="/contact/boardList">
                   <span>고객 센터</span>
                 </a>
                 <ul class="header-sublist">
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="/contact/boardList">
-                      <span>공지 사항</span>
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="/contact/boardList">
+                      <span>공지사항</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="/contact/customers">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>고객의 소리</span>
                     </a>
                   </li>
-                  <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                  <li class="header-subitem on">
+                    <a class="header-sublink p3" href="#">
                       <span>자료실</span>
                     </a>
                   </li>
@@ -167,17 +169,17 @@
                     </li>
                     <c:if test="${sessionScope.loggedInUser.role == 'admin'}">
                     <li class="">
-                      <a href="/admin">Admin</a>
+                      <a class= "header-sublink" href="/admin">Admin</a>
                     </li>
-                    </c:if>
+                  </c:if>
                 </c:when>
                 <c:otherwise>
                     <!-- 로그인되지 않은 경우 -->
                     <li class="">
-                      <a class="header-sublink" href="/member/login">LOGIN</a>
+                      <a class="p1 header-sublink" href="/member/login">LOGIN</a>
                     </li>
                     <li class="">
-                    <a class="header-sublink" href="/member/userjoin">회원가입</a>
+                    <a class="p1 header-sublink" href="/member/userjoin">회원가입</a>
                     </li>
                 </c:otherwise>
             </c:choose>
@@ -196,140 +198,141 @@
             <i class="ico-hamburger"></i>
           </button>
         </div>
-      </div>
-      <div class="header-fullmenu fullmenu-top">
-        <div class="fullmenu-wrapper">
-          <div class="fullmenu-head">
-            <h4 class="fullmenu-title">
-              <a href="#">
-                <img src="/image/img_logo_white.png" alt="로고" />
-              </a>
-            </h4>
+        <div class="header-fullmenu fullmenu-top">
+          <div class="fullmenu-wrapper">
+            <div class="fullmenu-head">
+              <h4 class="fullmenu-title">
+                <a href="/">
+                  <img src="/images/logo.png" alt="로고" />
+                  </a>
+              </h4>
+            </div>
+            <ul class="fullmenu-gnblist">
+              <li class="fullmenu-gnbitem">
+                <a class="h6 fullmenu-gnblink" href="/Greeting">
+                  <span>회사 소개</span>
+                </a>
+                <ul class="fullmenu-sublist">
+                  <li class="fullmenu-subitem">
+                    <a class="p2 fullmenu-sublink" href="/Greeting">
+                      <span>인사말</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p2 fullmenu-sublink" href="/Directions">
+                      <span>오시는 길</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="fullmenu-gnbitem">
+                <a class="h6 fullmenu-gnblink" href="#">
+                  <span>Data Service</span>
+                </a>
+                <ul class="fullmenu-sublist">
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>DB</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>WEB</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>WAS</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>Data Hub Platform</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>Data Analysis</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="fullmenu-gnbitem">
+                <a class="h6 fullmenu-gnblink" href="#">
+                  <span>Platform Service</span>
+                </a>
+                <ul class="fullmenu-sublist">
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>MSP(cloud)</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>Hosting</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>K-PaaS</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="fullmenu-gnbitem">
+                <a class="h6 fullmenu-gnblink" href="#">
+                  <span>Content Service</span>
+                </a>
+                <ul class="fullmenu-sublist">
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>BeLOG</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>BeMON</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>BePET</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="fullmenu-gnbitem">
+                <a class="h6 fullmenu-gnblink" href="#">
+                  <span>고객 센터</span>
+                </a>
+                <ul class="fullmenu-sublist">
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="/contact/boardList">
+                      <span>공지 사항</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>고객의 소리</span>
+                    </a>
+                  </li>
+                  <li class="fullmenu-subitem">
+                    <a class="p1 fullmenu-sublink" href="#">
+                      <span>자료실</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <ul class="fullmenu-gnblist">
-            <li class="fullmenu-gnbitem">
-              <a class="h6 fullmenu-gnblink" href="/Greeting">
-                <span>회사 소개</span>
-              </a>
-              <ul class="fullmenu-sublist">
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="/Greeting">
-                    <span>인사말</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="/Directions">
-                    <span>오시는 길</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="fullmenu-gnbitem">
-              <a class="h6 fullmenu-gnblink" href="#">
-                <span>Data Service</span>
-              </a>
-              <ul class="fullmenu-sublist">
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>DB</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>WEB</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>WAS</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>Data Hub Platform</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>Data Analysis</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="fullmenu-gnbitem">
-              <a class="h6 fullmenu-gnblink" href="#">
-                <span>Platform Service</span>
-              </a>
-              <ul class="fullmenu-sublist">
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>MSP(cloud)</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>Hosting</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>K-PaaS</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="fullmenu-gnbitem">
-              <a class="h6 fullmenu-gnblink" href="#">
-                <span>Content Service</span>
-              </a>
-              <ul class="fullmenu-sublist">
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>BeLOG</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>BeMON</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>BePET</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="fullmenu-gnbitem">
-              <a class="h6 fullmenu-gnblink" href="#">
-                <span>고객 센터</span>
-              </a>
-              <ul class="fullmenu-sublist">
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="/contact/boardList">
-                    <span>공지 사항</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="/contact/customers">
-                    <span>고객의 소리</span>
-                  </a>
-                </li>
-                <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
-                    <span>자료실</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <button class="fullmenu-close">
+            <img src="/icons/ico_close_white.svg" alt="닫기" />
+          </button>
         </div>
-        <button class="fullmenu-close">
-          <img src="/icons/ico_close_white.svg" alt="닫기" />
-        </button>
       </div>
-    </div>
+    </header>
   </div>
+
   <script src="/js/setting.js"></script>
   <script src="/js/plugin.js"></script>
   <script src="/js/templatehouse.js"></script>
