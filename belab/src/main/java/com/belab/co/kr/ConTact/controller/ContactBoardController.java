@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("/contact")
+@RequestMapping("/notice")
 public class ContactBoardController {
     private MemberVO loggedInUser;  // 전역변수로 선언
     @Autowired
@@ -57,8 +57,9 @@ public class ContactBoardController {
         model.addAttribute("startBoardNo", startBoardNo);
         model.addAttribute("endBoardNo", endBoardNo);
 
-        return "/contact/boardList";
+        return "/notice/boardList";
     }
+
     // 게시판 작성 페이지
     @GetMapping("/createBoard")
     public String createBoardForm(HttpSession session, Model model) {
@@ -72,7 +73,7 @@ public class ContactBoardController {
         // 서비스에 로그인된 사용자 정보 주입
         ((BoardServiceImpl) boardService).setMember(loggedInUser);
 
-        return "/contact/createBoard";
+        return "/notice/createBoard";
     }
 
     @PostMapping("/createBoard")
@@ -87,7 +88,7 @@ public class ContactBoardController {
         ((BoardServiceImpl) boardService).setMember(loggedInUser);
 
         boardService.createBoard(board);
-        return "redirect:/contact/boardList";
+        return "redirect:/notice/boardList";
     }
 
 
@@ -101,7 +102,7 @@ public class ContactBoardController {
 
         ContactBoardVO board = boardService.getBoardById(dashboard_id);
         model.addAttribute("board", board);
-        return "/contact/editBoard";
+        return "/notice/editBoard";
     }
 
     // 게시판 수정 처리
@@ -109,7 +110,7 @@ public class ContactBoardController {
     public String editBoard(@ModelAttribute ContactBoardVO board) {
         boardService.updateBoard(board);
         // 수정된 게시글의 상세 페이지로 이동
-        return "redirect:/contact/viewBoard/" + board.getDashboard_id();
+        return "redirect:/notice/viewBoard/" + board.getDashboard_id();
     }
 
     // 게시판 삭제 처리
@@ -121,7 +122,7 @@ public class ContactBoardController {
         }
 
         boardService.deleteBoard(dashboard_id);
-        return "redirect:/contact/boardList";  // 게시판 목록으로 리다이렉트
+        return "redirect:/notice/boardList";  // 게시판 목록으로 리다이렉트
     }
 
     // 게시판 상세 보기 (로그인 여부와 관계없이 조회 가능)
@@ -134,6 +135,43 @@ public class ContactBoardController {
             model.addAttribute("info", "로그인 후 수정, 삭제가 가능합니다.");
         }
 
-        return "/contact/viewBoard";
+        return "/notice/viewBoard";
+    }
+
+    // 게시판 관련 컨트롤러
+    @GetMapping("/customers")
+    public String customers() {
+        return "/notice/customers";
+    }
+
+    @PostMapping("/sendInquiryEmail")
+    public String sendInquiryEmail(@RequestParam("type") String type,
+                                   @RequestParam("email") String email,
+                                   @RequestParam("name") String name,
+                                   @RequestParam("phone") String phone,
+                                   @RequestParam("subject") String subject,
+                                   @RequestParam("content") String content,
+                                   Model model) {
+        // 이메일 주소 조합
+
+        // 이메일 내용 구성
+        String mailContent = "유형: " + type + "\n"
+                + "이름: " + name + "\n"
+                + "전화번호: " + phone + "\n"
+                + "제목: " + subject + "\n"
+                + "내용:\n" + content;
+
+        try {
+            // 이메일 발송
+            boardService.sendEmail("sk.kim@belab.co.kr", "고객 문의 - " + subject, mailContent);
+
+            model.addAttribute("success", "문의가 성공적으로 접수되었습니다. 이메일로 알림을 전송했습니다.");
+        } catch (Exception e) {
+            model.addAttribute("error", "문의 접수 중 오류가 발생했습니다: " + e.getMessage());
+        }
+
+        return "/main";
     }
 }
+
+

@@ -134,12 +134,12 @@
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem">
-                    <a class="p2 header-sublink" href="/contact/boardList">
+                    <a class="p2 header-sublink" href="/notice/boardList">
                       <span>공지 사항</span>
                     </a>
                   </li>
                   <li class="header-subitem">
-                    <a class="p2 header-sublink" href="#">
+                    <a class="p2 header-sublink" href="/notice/customers">
                       <span>고객의 소리</span>
                     </a>
                   </li>
@@ -306,12 +306,12 @@
               </a>
               <ul class="fullmenu-sublist">
                 <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="/contact/boardList">
+                  <a class="p1 fullmenu-sublink" href="/notice/boardList">
                     <span>공지 사항</span>
                   </a>
                 </li>
                 <li class="fullmenu-subitem">
-                  <a class="p1 fullmenu-sublink" href="#">
+                  <a class="p1 fullmenu-sublink" href="/notice/customers">
                     <span>고객의 소리</span>
                   </a>
                 </li>

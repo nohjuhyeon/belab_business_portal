@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 import jakarta.mail.internet.InternetAddress;
+
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -28,28 +29,28 @@ public class MemberServiceImpl implements MemberService {
         if (memberVO.getEmail() == null || memberVO.getEmail().isEmpty()) {
             throw new IllegalArgumentException("이메일은 필수 입력값입니다.");
         }
-    
+
         if (memberVO.getPassword() == null || memberVO.getPassword().isEmpty()) {
             throw new IllegalArgumentException("비밀번호는 필수 입력값입니다.");
         }
-    
+
         if (memberVO.getUsername() == null || memberVO.getUsername().isEmpty()) {
             throw new IllegalArgumentException("사용자 이름은 필수 입력값입니다.");
         }
-    
+
         // 이메일 중복 체크
         MemberVO existingMember = memberMapper.findMemberByEmail(memberVO.getEmail());
         if (existingMember != null) {
             throw new IllegalStateException("이미 존재하는 이메일입니다."); // 중복 이메일 예외 처리
         }
-    
+
         // 사용자 ID 설정 (자동 증가)
         memberVO.setUser_id(userIdGenerator.getAndIncrement());
-    
+
         // 회원가입 처리 (비밀번호 암호화 없이 평문 저장)
         memberMapper.insertMember(memberVO);
     }
-    
+
 
     @Override
     public String findEmailByUsernameAndHp(String username, String hp) {
@@ -100,11 +101,11 @@ public class MemberServiceImpl implements MemberService {
         message.setSubject("임시 비밀번호 발급 안내");
 
         // 이메일 본문 설정
-        String content = "안녕하세요. 요청하신 임시 비밀번호는 다음과 같습니다:\n\n" + newPassword + "\n\n로그인 후 비밀번호를 변경해 주세요.";
+        String content = "안녕하세요. 요청하신 임시 비밀번호는 다음과 같습니다.\n\n" + newPassword + "\n\n새 비밀번호로 로그인 해주세요.";
         message.setText(content);
 
-        // 발신자 주소 설정 (네이버 SMTP 인증된 주소)
-        message.setFrom(new InternetAddress("kskj0760@naver.com")); // 발신자 이메일 설정
+        // 발신자 주소 설정 (메일플러그)
+        message.setFrom(new InternetAddress("sk.kim@belab.co.kr")); // 발신자 이메일 설정
 
         // 수신자 설정
         message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress(email));
