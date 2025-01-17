@@ -33,7 +33,7 @@ public class DdataServiceController {
         return "/dataservice/dataAnalsis";
     }
 
-    @GetMapping("/dataAnalsis")
+    @GetMapping("/dataHub")
     public String dataHubService() {
         return "/dataservice/dataHubPlatform";
     }
