@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("/notice")
+@RequestMapping("/contact")
 public class ContactBoardController {
     private MemberVO loggedInUser;  // 전역변수로 선언
     @Autowired
@@ -57,7 +57,7 @@ public class ContactBoardController {
         model.addAttribute("startBoardNo", startBoardNo);
         model.addAttribute("endBoardNo", endBoardNo);
 
-        return "/notice/boardList";
+        return "/contact/boardList";
     }
 
     // 게시판 작성 페이지
@@ -73,7 +73,7 @@ public class ContactBoardController {
         // 서비스에 로그인된 사용자 정보 주입
         ((BoardServiceImpl) boardService).setMember(loggedInUser);
 
-        return "/notice/createBoard";
+        return "/contact/createBoard";
     }
 
     @PostMapping("/createBoard")
@@ -88,7 +88,7 @@ public class ContactBoardController {
         ((BoardServiceImpl) boardService).setMember(loggedInUser);
 
         boardService.createBoard(board);
-        return "redirect:/notice/boardList";
+        return "redirect:/contact/boardList";
     }
 
 
@@ -102,7 +102,7 @@ public class ContactBoardController {
 
         ContactBoardVO board = boardService.getBoardById(dashboard_id);
         model.addAttribute("board", board);
-        return "/notice/editBoard";
+        return "/contact/editBoard";
     }
 
     // 게시판 수정 처리
@@ -110,7 +110,7 @@ public class ContactBoardController {
     public String editBoard(@ModelAttribute ContactBoardVO board) {
         boardService.updateBoard(board);
         // 수정된 게시글의 상세 페이지로 이동
-        return "redirect:/notice/viewBoard/" + board.getDashboard_id();
+        return "redirect:/contact/viewBoard/" + board.getDashboard_id();
     }
 
     // 게시판 삭제 처리
@@ -122,7 +122,7 @@ public class ContactBoardController {
         }
 
         boardService.deleteBoard(dashboard_id);
-        return "redirect:/notice/boardList";  // 게시판 목록으로 리다이렉트
+        return "redirect:/contact/boardList";  // 게시판 목록으로 리다이렉트
     }
 
     // 게시판 상세 보기 (로그인 여부와 관계없이 조회 가능)
@@ -135,13 +135,13 @@ public class ContactBoardController {
             model.addAttribute("info", "로그인 후 수정, 삭제가 가능합니다.");
         }
 
-        return "/notice/viewBoard";
+        return "/contact/viewBoard";
     }
 
     // 게시판 관련 컨트롤러
     @GetMapping("/customers")
     public String customers() {
-        return "/notice/customers";
+        return "/contact/customers";
     }
 
     @PostMapping("/sendInquiryEmail")

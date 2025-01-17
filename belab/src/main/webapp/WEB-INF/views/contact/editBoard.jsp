@@ -120,7 +120,7 @@
   <div class="container">
     <h1>게시글 수정</h1>
 
-    <form action="/notice/editBoard" method="post" class="p-4">
+    <form action="/contact/editBoard" method="post" class="p-4">
       <input type="hidden" name="dashboard_id" value="${board.dashboard_id}">
       <div class="form-group">
         <label for="title">제목</label>
@@ -132,7 +132,7 @@
       </div>
       <div class="text-right">
         <button type="submit" class="btn">저장</button>
-        <a href="/notice/viewBoard/${board.dashboard_id}" class="btn">취소</a>
+        <a href="/contact/viewBoard/${board.dashboard_id}" class="btn">취소</a>
       </div>
     </form>
   </div>

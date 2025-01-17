@@ -174,13 +174,13 @@
 
     <div class="button-container">
     <!-- 목록 버튼 -->
-    <button type="button" class="btn" onclick="navigateTo('/notice/boardList')">목록</button>
+    <button type="button" class="btn" onclick="navigateTo('/contact/boardList')">목록</button>
 
     <!-- 수정 버튼 -->
-    <button type="button" class="btn" onclick="navigateTo('/notice/editBoard/${board.dashboard_id}')">수정</button>
+    <button type="button" class="btn" onclick="navigateTo('/contact/editBoard/${board.dashboard_id}')">수정</button>
 
     <!-- 삭제 버튼 -->
-    <form action="/notice/deleteBoard" method="post" style="margin-bottom: 0px;">
+    <form action="/contact/deleteBoard" method="post" style="margin-bottom: 0px;">
       <input type="hidden" name="dashboard_id" value="${board.dashboard_id}">
       <button type="submit" class="btn btn-danger">삭제</button>
     </form>
@@ -194,7 +194,7 @@
 <%--   <!-- 수정 및 삭제 버튼 -->--%>
 <%--    <div class="d-flex justify-content-end mb-3">--%>
 <%--      <c:if test="${loggedInUser != null && loggedInUser.username == board.username}">--%>
-<%--        <a href="/notice/editBoard/${board.dashboard_id}" class="btn btn-primary">수정</a>--%>
+<%--        <a href="/contact/editBoard/${board.dashboard_id}" class="btn btn-primary">수정</a>--%>
 <%--        <button class="btn btn-primary" onclick="deleteBoard(${board.dashboard_id})">삭제</button>--%>
 <%--      </c:if>--%>
 <%--    </div>--%>

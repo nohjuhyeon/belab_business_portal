@@ -113,7 +113,7 @@
 <body>
 <div class="container">
     <h1>고객문의</h1>
-    <form action="/notice/sendInquiryEmail" method="post">
+    <form action="/contact/sendInquiryEmail" method="post">
         <label for="type">유형</label>
         <select id="type" name="type">
             <option value="불만">문의</option>

@@ -137,7 +137,7 @@
     <!-- 글 작성 버튼 (로그인한 사용자만 보임) -->
     <c:if test="${not empty loggedInUser}">
         <div class="d-flex justify-content-end mb-3">
-            <a href="/notice/createBoard" class="btn btn-primary">글 작성</a>
+            <a href="/contact/createBoard" class="btn btn-primary">글 작성</a>
         </div>
     </c:if>
 
@@ -159,7 +159,7 @@
                     <td class="title-column">
                         <!-- 본인이 작성한 게시글일 경우에만 링크 활성화 -->
                         <c:if test="${not empty loggedInUser && loggedInUser.username == board.username}">
-                            <a href="/notice/viewBoard/${board.dashboard_id}">${board.title}</a>
+                            <a href="/contact/viewBoard/${board.dashboard_id}">${board.title}</a>
                         </c:if>
                         <!-- 본인이 작성하지 않은 게시글은 링크 비활성화 -->
                         <c:if test="${empty loggedInUser || loggedInUser.username != board.username}">
@@ -174,7 +174,7 @@
         </table>
         <!-- 이전 버튼 -->
         <c:if test="${currentPage > 1}">
-            <a href="/notice/boardList?page=${currentPage - 1}&size=${size}" class="btn btn-primary"
+            <a href="/contact/boardList?page=${currentPage - 1}&size=${size}" class="btn btn-primary"
                style="margin-right: 5px;">&laquo; 이전</a>
         </c:if>
 
@@ -185,7 +185,7 @@
                     <span class="btn btn-secondary" style="margin-right: 5px;">${pageNum}</span>
                 </c:when>
                 <c:otherwise>
-                    <a href="/notice/boardList?page=${pageNum}&size=${size}" class="btn btn-primary"
+                    <a href="/contact/boardList?page=${pageNum}&size=${size}" class="btn btn-primary"
                        style="margin-right: 5px;">${pageNum}</a>
                 </c:otherwise>
             </c:choose>
@@ -193,7 +193,7 @@
 
         <!-- 다음 버튼 -->
         <c:if test="${currentPage < totalPages}">
-            <a href="/notice/boardList?page=${currentPage + 1}&size=${size}" class="btn btn-primary"
+            <a href="/contact/boardList?page=${currentPage + 1}&size=${size}" class="btn btn-primary"
                style="margin-left: 5px;">다음 &raquo;</a>
         </c:if>
 

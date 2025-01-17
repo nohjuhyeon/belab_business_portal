@@ -120,7 +120,7 @@
   <div class="container">
     <h1>글 작성</h1>
 
-    <form action="/notice/createBoard" method="post" class="p-4">
+    <form action="/contact/createBoard" method="post" class="p-4">
       <div class="form-group">
         <label for="title">제목</label>
         <input type="text" class="form-control" id="title" name="title" placeholder="제목을 입력하세요" required>
@@ -131,7 +131,7 @@
       </div>
       <div class="text-right">
         <button type="submit" class="btn btn-primary">저장</button>
-        <a href="/notice/boardList" class="btn">취소</a>
+        <a href="/contact/boardList" class="btn">취소</a>
 
       </div>
     </form>
