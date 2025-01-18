@@ -1,21 +1,24 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="../common/header.jsp" %>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="imagetoolbar" content="no" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="/css/setting.css" />
-  <link rel="stylesheet" href="/css/plugin.css" />
-  <link rel="stylesheet" href="/css/templatehouse.css" />
-  <link rel="stylesheet" href="/css/style.css" />
-</head>
+    <%@ include file="../common/header.jsp" %>
 
-<body>
+      <!DOCTYPE html>
+      <html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="/css/setting.css" />
+        <link rel="stylesheet" href="/css/plugin.css" />
+        <link rel="stylesheet" href="/css/templatehouse.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+      </head>
+
+      <body>
 
   <main class="th-layout-main">
     <div class="th-layout-sideleft"></div>
@@ -121,5 +124,11 @@
   </script>
 </body>
 <%@ include file="../common/footer.jsp" %>
+
+<script src="/js/setting.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/templatehouse.js"></script>
+<script src="/js/style.js"></script>
+</body>
 
 </html>

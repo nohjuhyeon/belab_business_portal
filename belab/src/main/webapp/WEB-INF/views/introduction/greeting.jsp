@@ -63,6 +63,10 @@
     <div class="th-layout-stickyright"></div>
     <div class="th-layout-sideright"></div>
   </main>
-
+  <script src="/js/setting.js"></script>
+  <script src="/js/plugin.js"></script>
+  <script src="/js/templatehouse.js"></script>
+  <script src="/js/style.js"></script>
+  
 <%@ include file="../common/footer.jsp" %>
 </html>

@@ -76,5 +76,9 @@
         </main>
       <%@ include file="../common/footer.jsp" %>
     </body>
-
+    <script src="/js/setting.js"></script>
+    <script src="/js/plugin.js"></script>
+    <script src="/js/templatehouse.js"></script>
+    <script src="/js/style.js"></script>
+    
     </html>

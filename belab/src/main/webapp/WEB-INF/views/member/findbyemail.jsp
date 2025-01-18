@@ -91,7 +91,11 @@
         </div>
   </main>
 
-  <script>
+  <script src="/js/setting.js"></script>
+  <script src="/js/plugin.js"></script>
+  <script src="/js/templatehouse.js"></script>
+  <script src="/js/style.js"></script>
+    <script>
     // 커스텀 팝업 열기
     function showPopup(message) {
       const popup = document.querySelector('.custom-popup');

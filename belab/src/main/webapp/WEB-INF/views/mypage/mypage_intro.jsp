@@ -69,7 +69,11 @@
             </div>
         </div>
     </div>
-<script>
+    <script src="/js/setting.js"></script>
+    <script src="/js/plugin.js"></script>
+    <script src="/js/templatehouse.js"></script>
+    <script src="/js/style.js"></script>
+    <script>
     function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');
         sidebar.classList.toggle('open');
