@@ -89,7 +89,11 @@
               </div>
             </div>
       </main>
-
+      <script src="/js/setting.js"></script>
+      <script src="/js/plugin.js"></script>
+      <script src="/js/templatehouse.js"></script>
+      <script src="/js/style.js"></script>
+      
       <script>
         const popupOverlay = document.getElementById("popup-overlay");
         const confirmDeletePopup = document.getElementById("popup-confirm-delete");

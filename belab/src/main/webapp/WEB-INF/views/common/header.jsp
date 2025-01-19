@@ -56,76 +56,132 @@
                 </ul>
               </li>
               <li class="header-gnbitem on">
+<<<<<<< HEAD
                 <a class="p2 header-gnblink" href="/main">
+=======
+                <a class="p2 header-gnblink" href="/dataservice/main">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                   <span>Data Service</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="p3 header-sublink" href="/main">
+=======
+                    <a class="p3 header-sublink" href="/dataservice/db">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>DB</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="p3 header-sublink" href="/main">
+=======
+                    <a class="p3 header-sublink" href="/dataservice/web">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>WEB</span>
                     </a>
                   </li>
                   <li class="header-subitem">
+<<<<<<< HEAD
                     <a class="p3 header-sublink" href="/main">
+=======
+                    <a class="p3 header-sublink" href="/dataservice/was">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>WAS</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="header-sublink p3" href="/main">
+=======
+                    <a class="header-sublink p3" href="/dataservice/dataHub">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>Data Hub Platform</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="header-sublink p3" href="/main">
+=======
+                    <a class="header-sublink p3" href="/dataservice/dataAnalsis">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>Data Analysis</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="header-gnbitem on">
+<<<<<<< HEAD
                 <a class="header-gnblink" href="/main">
+=======
+                <a class="header-gnblink" href="/platformservice/main">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                   <span>Platform Service</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="header-sublink p3" href="/main">
+=======
+                    <a class="header-sublink p3" href="/platformservice/msp">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>MSP(cloud)</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="header-sublink p3" href="/main">
+=======
+                    <a class="header-sublink p3" href="/platformservice/hosting">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>Hosting</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="header-sublink p3" href="/main">
+=======
+                    <a class="header-sublink p3" href="/platformservice/kpaas">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>K-PaaS</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="header-gnbitem on">
+<<<<<<< HEAD
                 <a class="header-gnblink" href="/main">
+=======
+                <a class="header-gnblink" href="/contentservice/main">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                   <span>Content Service</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="header-sublink p3" href="/main">
+=======
+                    <a class="header-sublink p3" href="/contentservice/belog">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>BeLOG</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="header-sublink p3" href="/main">
+=======
+                    <a class="header-sublink p3" href="/contentservice/bemon">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>BeMON</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
+<<<<<<< HEAD
                     <a class="header-sublink p3" href="/main">
+=======
+                    <a class="header-sublink p3" href="/contentservice/bepet">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>BePET</span>
                     </a>
                   </li>
@@ -227,76 +283,132 @@
                 </ul>
               </li>
               <li class="fullmenu-gnbitem">
+<<<<<<< HEAD
                 <a class="h6 fullmenu-gnblink" href="/main">
+=======
+                <a class="h6 fullmenu-gnblink" href="/dataservice/main">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                   <span>Data Service</span>
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/dataservice/db">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>DB</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/dataservice/web">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>WEB</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/dataservice/was">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>WAS</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/dataservice/dataHub">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>Data Hub Platform</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/dataservice/dataAnalysis">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>Data Analysis</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="fullmenu-gnbitem">
+<<<<<<< HEAD
                 <a class="h6 fullmenu-gnblink" href="/main">
+=======
+                <a class="h6 fullmenu-gnblink" href="/platformservice/main">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                   <span>Platform Service</span>
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/platformservice/msp">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>MSP(cloud)</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/platformservice/hosting">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>Hosting</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/platformservice/kpaas">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>K-PaaS</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="fullmenu-gnbitem">
+<<<<<<< HEAD
                 <a class="h6 fullmenu-gnblink" href="/main">
+=======
+                <a class="h6 fullmenu-gnblink" href="/contentservice/main">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                   <span>Content Service</span>
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/contentservice/belog">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>BeLOG</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/contentservice/bemon">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>BeMON</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
+<<<<<<< HEAD
                     <a class="p1 fullmenu-sublink" href="/main">
+=======
+                    <a class="p1 fullmenu-sublink" href="/contentservice/bepet">
+>>>>>>> 63fe6647ced04a98d5a71f0486dd012efbc821e8
                       <span>BePET</span>
                     </a>
                   </li>

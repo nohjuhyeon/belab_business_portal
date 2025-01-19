@@ -123,6 +123,10 @@
   // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
   // marker.setMap(null);    
   </script>
+<script src="/js/setting.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/templatehouse.js"></script>
+<script src="/js/style.js"></script>
 
 <%@ include file="../common/footer.jsp" %>
 </html>

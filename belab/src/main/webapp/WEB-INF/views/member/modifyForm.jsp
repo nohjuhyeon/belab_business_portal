@@ -143,7 +143,12 @@
           </div>
           <%@ include file="../common/footer.jsp" %>
     </body>
-    <script>
+    <script src="/js/setting.js"></script>
+    <script src="/js/plugin.js"></script>
+    <script src="/js/templatehouse.js"></script>
+    <script src="/js/style.js"></script>
+    
+<script>
       function toggleSubmitButton() {
         const username = document.getElementById('username').value.trim();
         const phone = document.getElementById('hp').value.trim();

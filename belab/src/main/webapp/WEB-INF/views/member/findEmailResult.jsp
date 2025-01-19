@@ -82,5 +82,9 @@
 
 </body>
 <%@ include file="../common/footer.jsp" %>
+<script src="/js/setting.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/templatehouse.js"></script>
+<script src="/js/style.js"></script>
 
 </html>

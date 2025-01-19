@@ -666,7 +666,7 @@ progress { vertical-align: baseline; }
 .tabset.tabset-solid .tabset-link.active::after,
 .tabset.tabset-solid .tabset-link:hover::after { content: ''; } 
 @media (max-width: 992px){
- .tabset.tabset-solid .tabset-list { overflow-x: auto; padding-bottom: 1px; } 
+ .tabset.tabset-solid .tabset-list { overflow-x: auto; padding-bottom: 1px; justify-content: center;} 
  .tabset.tabset-solid .tabset-item { white-space: nowrap; } 
  }
 /* Tabset: Text */

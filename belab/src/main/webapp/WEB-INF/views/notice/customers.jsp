@@ -204,7 +204,11 @@
           </main>
       <%@ include file="../common/footer.jsp" %>
     </body>
-    <script>
+    <script src="/js/setting.js"></script>
+    <script src="/js/plugin.js"></script>
+    <script src="/js/templatehouse.js"></script>
+    <script src="/js/style.js"></script>
+        <script>
         document.addEventListener('DOMContentLoaded', () => {
             const toggleButton = document.getElementById('currentSelection'); // 현재 선택된 값 표시 버튼
             const dropdownList = document.getElementById('dropdownList'); // 드롭다운 리스트

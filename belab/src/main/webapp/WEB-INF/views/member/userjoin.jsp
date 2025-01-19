@@ -204,7 +204,11 @@
       </main>
       <%@ include file="../common/footer.jsp" %>
 
-        <script>
+      <script src="/js/setting.js"></script>
+      <script src="/js/plugin.js"></script>
+      <script src="/js/templatehouse.js"></script>
+      <script src="/js/style.js"></script>
+              <script>
           function toggleSubmitButton() {
             const agreeCheckbox = document.getElementById('checkset-mypage-N37-b-1');
             const username = document.getElementById('username').value.trim();
