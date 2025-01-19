@@ -158,7 +158,7 @@
         <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                    <a class="nav-link dropdown-toggle" href="/main" id="navbarDropdown1" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         회사 소개
                     </a>
@@ -168,49 +168,49 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                    <a class="nav-link dropdown-toggle" href="/main" id="navbarDropdown2" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         Data Service
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <li><a class="dropdown-item" href="#">DB</a></li>
-                        <li><a class="dropdown-item" href="#">Web</a></li>
-                        <li><a class="dropdown-item" href="#">WAS</a></li>
-                        <li><a class="dropdown-item" href="#">DataHubPlatForm</a></li>
-                        <li><a class="dropdown-item" href="#">Data Analysis</a></li>
+                        <li><a class="dropdown-item" href="/main">DB</a></li>
+                        <li><a class="dropdown-item" href="/main">Web</a></li>
+                        <li><a class="dropdown-item" href="/main">WAS</a></li>
+                        <li><a class="dropdown-item" href="/main">DataHubPlatForm</a></li>
+                        <li><a class="dropdown-item" href="/main">Data Analysis</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                    <a class="nav-link dropdown-toggle" href="/main" id="navbarDropdown3" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         Platform Service
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <li><a class="dropdown-item" href="#">MSP(cloud)</a></li>
-                        <li><a class="dropdown-item" href="#">Hosting</a></li>
-                        <li><a class="dropdown-item" href="#">K-PaaS</a></li>
+                        <li><a class="dropdown-item" href="/main">MSP(cloud)</a></li>
+                        <li><a class="dropdown-item" href="/main">Hosting</a></li>
+                        <li><a class="dropdown-item" href="/main">K-PaaS</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                    <a class="nav-link dropdown-toggle" href="/main" id="navbarDropdown4" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         Content Service
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                        <li><a class="dropdown-item" href="#">BeLog</a></li>
-                        <li><a class="dropdown-item" href="#">BeMON</a></li>
-                        <li><a class="dropdown-item" href="#">BePET</a></li>
+                        <li><a class="dropdown-item" href="/main">BeLog</a></li>
+                        <li><a class="dropdown-item" href="/main">BeMON</a></li>
+                        <li><a class="dropdown-item" href="/main">BePET</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                    <a class="nav-link dropdown-toggle" href="/main" id="navbarDropdown5" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         고객 센터
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                        <li><a class="dropdown-item" href="#">공지사항</a></li>
+                        <li><a class="dropdown-item" href="/main">공지사항</a></li>
                         <li><a class="dropdown-item" href="/notice/boardList">문의게시판</a></li>
-                        <li><a class="dropdown-item" href="#">자료실</a></li>
+                        <li><a class="dropdown-item" href="/files/boardList">자료실</a></li>
                     </ul>
                 </li>
             </ul>

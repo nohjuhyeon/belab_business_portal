@@ -56,76 +56,76 @@
                 </ul>
               </li>
               <li class="header-gnbitem on">
-                <a class="p2 header-gnblink" href="#">
+                <a class="p2 header-gnblink" href="/main">
                   <span>Data Service</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
-                    <a class="p3 header-sublink" href="#">
+                    <a class="p3 header-sublink" href="/main">
                       <span>DB</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="p3 header-sublink" href="#">
+                    <a class="p3 header-sublink" href="/main">
                       <span>WEB</span>
                     </a>
                   </li>
                   <li class="header-subitem">
-                    <a class="p3 header-sublink" href="#">
+                    <a class="p3 header-sublink" href="/main">
                       <span>WAS</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/main">
                       <span>Data Hub Platform</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/main">
                       <span>Data Analysis</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="header-gnbitem on">
-                <a class="header-gnblink" href="#">
+                <a class="header-gnblink" href="/main">
                   <span>Platform Service</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/main">
                       <span>MSP(cloud)</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/main">
                       <span>Hosting</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/main">
                       <span>K-PaaS</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="header-gnbitem on">
-                <a class="header-gnblink" href="#">
+                <a class="header-gnblink" href="/main">
                   <span>Content Service</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/main">
                       <span>BeLOG</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/main">
                       <span>BeMON</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/main">
                       <span>BePET</span>
                     </a>
                   </li>
@@ -147,7 +147,7 @@
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="#">
+                    <a class="header-sublink p3" href="/files/boardList">
                       <span>자료실</span>
                     </a>
                   </li>
@@ -227,83 +227,83 @@
                 </ul>
               </li>
               <li class="fullmenu-gnbitem">
-                <a class="h6 fullmenu-gnblink" href="#">
+                <a class="h6 fullmenu-gnblink" href="/main">
                   <span>Data Service</span>
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>DB</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>WEB</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>WAS</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>Data Hub Platform</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>Data Analysis</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="fullmenu-gnbitem">
-                <a class="h6 fullmenu-gnblink" href="#">
+                <a class="h6 fullmenu-gnblink" href="/main">
                   <span>Platform Service</span>
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>MSP(cloud)</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>Hosting</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>K-PaaS</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="fullmenu-gnbitem">
-                <a class="h6 fullmenu-gnblink" href="#">
+                <a class="h6 fullmenu-gnblink" href="/main">
                   <span>Content Service</span>
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>BeLOG</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>BeMON</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/main">
                       <span>BePET</span>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="fullmenu-gnbitem">
-                <a class="h6 fullmenu-gnblink" href="#">
+                <a class="h6 fullmenu-gnblink" href="/main">
                   <span>고객 센터</span>
                 </a>
                 <ul class="fullmenu-sublist">
@@ -318,7 +318,7 @@
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-                    <a class="p1 fullmenu-sublink" href="#">
+                    <a class="p1 fullmenu-sublink" href="/files/boardList">
                       <span>자료실</span>
                     </a>
                   </li>

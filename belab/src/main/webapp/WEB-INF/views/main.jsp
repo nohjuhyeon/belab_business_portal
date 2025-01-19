@@ -66,7 +66,7 @@
                     <div class="cardset-body">
                       <div class="cardset-tit row">
                         <h5 class="h3 col">데이터 서비스</h5>
-                        <a href="#" class="col" style="text-align: right;">More</a>
+                        <a href="/main" class="col" style="text-align: right;">More</a>
                       </div>
                       <p class="cardset-desc h6" style="color: var(--primary);">최적의 데이터베이스 운영 방안을 제공합니다.</p>
                       <p class="p1 cardset-desc">오라클 소프트웨어 전 제품을 공급하며, 데이터베이스 설계, 진단, 컨설팅을 통해 최적의 운영 방안을 제시합니다. </p>
@@ -79,7 +79,7 @@
                     <div class="cardset-body">
                       <div class="cardset-tit row">
                         <h5 class="h3 col">플랫폼 서비스</h5>
-                        <a href="#" class="col" style="text-align: right;">More</a>
+                        <a href="/main" class="col" style="text-align: right;">More</a>
                       </div>
                       <p class="cardset-desc h6" data-listener-added_8e4bce3e="true" th-hoverbox="true"
                         style="color: var(--primary);">지능형 데이터센터 설계 및 구축</p>
@@ -96,7 +96,7 @@
                     <div class="cardset-body">
                       <div class="cardset-tit row">
                         <h5 class="h3 col">컨텐츠 서비스</h5>
-                        <a href="#" class="col" style="text-align: right;">More</a>
+                        <a href="/main" class="col" style="text-align: right;">More</a>
                       </div>
                       <p class="cardset-desc h6" style="color: var(--primary);">최적의 IT 솔루션 제공</p>
                       <p class="p1 cardset-desc">웹로그 분석, IT 정보 통합 검색 플랫폼 등을 설계 및 공급하여 고객에게 최적의 서비스를 제공합니다.</p>

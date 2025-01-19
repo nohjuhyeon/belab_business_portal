@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.belab.co.kr.files.dao.ReferBoardMapper">
+
+    <!-- 게시글 목록 조회 -->
+    <select id="selectBoardList" parameterType="map" resultType="com.belab.co.kr.files.vo.ReferenceBoardVO">
+        SELECT
+            rb.refer_board_id,
+            rb.user_id,
+            rb.title,
+            rb.content,
+            rb.created_at,
+            rb.updated_at,
+            u.username AS username
+        FROM reference_board rb
+                 LEFT JOIN user u ON rb.user_id = u.user_id
+        ORDER BY rb.created_at DESC
+            LIMIT #{offset}, #{limit}
+    </select>
+
+    <!-- 전체 게시글 수 조회 -->
+    <select id="selectTotalBoardCount" resultType="int">
+        SELECT COUNT(*)
+        FROM reference_board
+    </select>
+
+    <!-- 게시글 상세 조회 -->
+    <select id="selectBoardById" parameterType="long" resultType="com.belab.co.kr.files.vo.ReferenceBoardVO">
+        SELECT
+            rb.refer_board_id,
+            rb.user_id,
+            rb.title,
+            rb.content,
+            rb.created_at,
+            rb.updated_at,
+            u.username AS username
+        FROM reference_board rb
+                 LEFT JOIN user u ON rb.user_id = u.user_id
+        WHERE rb.refer_board_id = #{refer_board_id}
+    </select>
+
+    <!-- 게시글 삽입 -->
+    <insert id="insertBoard" useGeneratedKeys="true" keyProperty="refer_board_id" keyColumn="refer_board_id">
+        INSERT INTO reference_board (user_id, title, content, created_at, updated_at)
+        VALUES (#{user_id}, #{title}, #{content}, NOW(), NOW())
+    </insert>
+
+    <!-- 게시글 업데이트 -->
+    <update id="updateBoard" parameterType="com.belab.co.kr.files.vo.ReferenceBoardVO">
+        UPDATE reference_board
+        SET
+            title = #{title},
+            content = #{content},
+            updated_at = NOW()
+        WHERE refer_board_id = #{refer_board_id}
+    </update>
+
+    <!-- 게시글 삭제 -->
+    <delete id="deleteBoard" parameterType="long">
+        DELETE FROM reference_board
+        WHERE refer_board_id = #{refer_board_id}
+    </delete>
+
+    <!-- 사용자 정보 조회 (user_id 기준) -->
+    <select id="getUserById" parameterType="long" resultType="com.belab.co.kr.member.vo.MemberVO">
+        SELECT
+            user_id,
+            username,
+            email,
+            affiliation,
+            is_active,
+            role,
+            join_at,
+            updated_at
+        FROM user
+        WHERE user_id = #{user_id}
+    </select>
+
+    <!-- 사용자 ID 조회 (username 기준) -->
+    <select id="getUserIdByUsername" parameterType="string" resultType="long">
+        SELECT user_id
+        FROM user
+        WHERE username = #{username}
+    </select>
+
+    <!-- 게시글 ID로 첨부파일 목록 조회 -->
+    <select id="selectFilesByBoardId" parameterType="long" resultType="com.belab.co.kr.files.vo.ReferenceFileInfoVO">
+        SELECT
+            file_id,
+            refer_board_id,
+            file_name,
+            file_path,
+            file_size,
+            created_at,
+            updated_at
+        FROM reference_file_info
+        WHERE refer_board_id = #{refer_board_id}
+        ORDER BY created_at ASC
+    </select>
+
+    <!-- 첨부파일 삽입 -->
+    <insert id="insertFile" parameterType="com.belab.co.kr.files.vo.ReferenceFileInfoVO">
+        INSERT INTO reference_file_info (refer_board_id, file_name, file_path, file_size, created_at, updated_at)
+        VALUES (#{refer_board_id}, #{file_name}, #{file_path}, #{file_size}, NOW(), NOW())
+    </insert>
+
+    <!-- 첨부파일 ID로 파일 정보 조회 -->
+    <select id="selectFileById" parameterType="long" resultType="com.belab.co.kr.files.vo.ReferenceFileInfoVO">
+        SELECT
+            file_id,
+            refer_board_id,
+            file_name,
+            file_path,
+            file_size,
+            created_at,
+            updated_at
+        FROM reference_file_info
+        WHERE file_id = #{file_id}
+    </select>
+
+    <!-- 첨부파일 삭제 (게시글 ID 기준) -->
+    <delete id="deleteFilesByBoardId" parameterType="long">
+        DELETE FROM reference_file_info
+        WHERE refer_board_id = #{refer_board_id}
+    </delete>
+
+</mapper>
