@@ -56,9 +56,6 @@
                 </ul>
               </li>
               <li class="header-gnbitem on">
-
-                <a class="p2 header-gnblink" href="/main">
-
                 <a class="p2 header-gnblink" href="/dataservice/main">
 
                   <span>Data Service</span>
@@ -66,7 +63,7 @@
                 <ul class="header-sublist">
                   <li class="header-subitem on">
 
-                    <a class="p3 header-sublink" href="/main">
+                    
 
                     <a class="p3 header-sublink" href="/dataservice/db">
 
@@ -75,7 +72,7 @@
                   </li>
                   <li class="header-subitem on">
 
-                    <a class="p3 header-sublink" href="/main">
+                    
 
                     <a class="p3 header-sublink" href="/dataservice/web">
 
@@ -84,7 +81,7 @@
                   </li>
                   <li class="header-subitem">
 
-                    <a class="p3 header-sublink" href="/main">
+                    
 
                     <a class="p3 header-sublink" href="/dataservice/was">
 
@@ -92,18 +89,12 @@
                     </a>
                   </li>
                   <li class="header-subitem on">
-
-                    <a class="header-sublink p3" href="/main">
-
                     <a class="header-sublink p3" href="/dataservice/dataHub">
 
                       <span>Data Hub Platform</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-
-                    <a class="header-sublink p3" href="/main">
-
                     <a class="header-sublink p3" href="/dataservice/dataAnalsis">
 
                       <span>Data Analysis</span>
@@ -112,29 +103,22 @@
                 </ul>
               </li>
               <li class="header-gnbitem on">
-
-                <a class="header-gnblink" href="/main">
-
                 <a class="header-gnblink" href="/platformservice/main">
 
                   <span>Platform Service</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="/main">
-
                     <a class="header-sublink p3" href="/platformservice/msp">
                       <span>MSP(cloud)</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="/main">
                     <a class="header-sublink p3" href="/platformservice/hosting">
                       <span>Hosting</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="/main">
                     <a class="header-sublink p3" href="/platformservice/kpaas">
                       <span>K-PaaS</span>
                     </a>
@@ -142,25 +126,21 @@
                 </ul>
               </li>
               <li class="header-gnbitem on">
-                <a class="header-gnblink" href="/main">
                 <a class="header-gnblink" href="/contentservice/main">
                   <span>Content Service</span>
                 </a>
                 <ul class="header-sublist">
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="/main">
                     <a class="header-sublink p3" href="/contentservice/belog">
                       <span>BeLOG</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="/main">
                     <a class="header-sublink p3" href="/contentservice/bemon">
                       <span>BeMON</span>
                     </a>
                   </li>
                   <li class="header-subitem on">
-                    <a class="header-sublink p3" href="/main">
                     <a class="header-sublink p3" href="/contentservice/bepet">
                       <span>BePET</span>
                     </a>
@@ -264,7 +244,7 @@
               </li>
               <li class="fullmenu-gnbitem">
 
-                <a class="h6 fullmenu-gnblink" href="/main">
+                
 
                 <a class="h6 fullmenu-gnblink" href="/dataservice/main">
 
@@ -273,7 +253,7 @@
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/dataservice/db">
 
@@ -282,7 +262,7 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/dataservice/web">
 
@@ -291,7 +271,7 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/dataservice/was">
 
@@ -300,7 +280,7 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/dataservice/dataHub">
 
@@ -309,7 +289,7 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/dataservice/dataAnalysis">
 
@@ -320,7 +300,7 @@
               </li>
               <li class="fullmenu-gnbitem">
 
-                <a class="h6 fullmenu-gnblink" href="/main">
+                
 
                 <a class="h6 fullmenu-gnblink" href="/platformservice/main">
 
@@ -329,7 +309,7 @@
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/platformservice/msp">
 
@@ -338,7 +318,7 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/platformservice/hosting">
 
@@ -347,7 +327,7 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/platformservice/kpaas">
 
@@ -358,7 +338,7 @@
               </li>
               <li class="fullmenu-gnbitem">
 
-                <a class="h6 fullmenu-gnblink" href="/main">
+                
 
                 <a class="h6 fullmenu-gnblink" href="/contentservice/main">
 
@@ -367,7 +347,7 @@
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/contentservice/belog">
 
@@ -376,7 +356,7 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/contentservice/bemon">
 
@@ -385,7 +365,7 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-                    <a class="p1 fullmenu-sublink" href="/main">
+                    
 
                     <a class="p1 fullmenu-sublink" href="/contentservice/bepet">
 
@@ -395,7 +375,7 @@
                 </ul>
               </li>
               <li class="fullmenu-gnbitem">
-                <a class="h6 fullmenu-gnblink" href="/main">
+                <a class="h6 fullmenu-gnblink" href="/notice/boardList">
                   <span>고객 센터</span>
                 </a>
                 <ul class="fullmenu-sublist">
