@@ -63,11 +63,6 @@
                 <ul class="header-sublist">
                   <li class="header-subitem on">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p3 header-sublink" href="/dataservice/db">
 
@@ -76,11 +71,6 @@
                   </li>
                   <li class="header-subitem on">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p3 header-sublink" href="/dataservice/web">
 
@@ -89,11 +79,6 @@
                   </li>
                   <li class="header-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p3 header-sublink" href="/dataservice/was">
 
@@ -122,11 +107,7 @@
                 <ul class="header-sublist">
                   <li class="header-subitem on">
                     <a class="header-sublink p3" href="/platformservice/msp">
-<<<<<<< HEAD
-                      <span>MSP(구름)</span>
-=======
                       <span>MSP(cloud)</span>
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
                     </a>
                   </li>
                   <li class="header-subitem on">
@@ -260,11 +241,6 @@
               </li>
               <li class="fullmenu-gnbitem">
 
-<<<<<<< HEAD
-
-=======
-                
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                 <a class="h6 fullmenu-gnblink" href="/dataservice/main">
 
@@ -272,26 +248,12 @@
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
-
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
-
                     <a class="p1 fullmenu-sublink" href="/dataservice/db">
 
                       <span>DB</span>
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
-
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
-
                     <a class="p1 fullmenu-sublink" href="/dataservice/web">
 
                       <span>WEB</span>
@@ -299,11 +261,6 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p1 fullmenu-sublink" href="/dataservice/was">
 
@@ -312,11 +269,6 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p1 fullmenu-sublink" href="/dataservice/dataHub">
 
@@ -325,11 +277,6 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p1 fullmenu-sublink" href="/dataservice/dataAnalysis">
 
@@ -340,11 +287,6 @@
               </li>
               <li class="fullmenu-gnbitem">
 
-<<<<<<< HEAD
-
-=======
-                
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                 <a class="h6 fullmenu-gnblink" href="/platformservice/main">
 
@@ -352,29 +294,13 @@
                 </a>
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
-
-<<<<<<< HEAD
-
-
-                    <a class="p1 fullmenu-sublink" href="/platformservice/msp">
-
-                      <span>MSP(구름)</span>
-=======
-                    
-
                     <a class="p1 fullmenu-sublink" href="/platformservice/msp">
 
                       <span>MSP(cloud)</span>
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
                     </a>
                   </li>
                   <li class="fullmenu-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p1 fullmenu-sublink" href="/platformservice/hosting">
 
@@ -383,11 +309,6 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p1 fullmenu-sublink" href="/platformservice/kpaas">
 
@@ -398,11 +319,6 @@
               </li>
               <li class="fullmenu-gnbitem">
 
-<<<<<<< HEAD
-
-=======
-                
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                 <a class="h6 fullmenu-gnblink" href="/contentservice/main">
 
@@ -411,11 +327,6 @@
                 <ul class="fullmenu-sublist">
                   <li class="fullmenu-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p1 fullmenu-sublink" href="/contentservice/belog">
 
@@ -424,11 +335,6 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p1 fullmenu-sublink" href="/contentservice/bemon">
 
@@ -437,11 +343,6 @@
                   </li>
                   <li class="fullmenu-subitem">
 
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> 2cdd371a817e502f449f9fb041f2e9ea428b7c1a
 
                     <a class="p1 fullmenu-sublink" href="/contentservice/bepet">
 
