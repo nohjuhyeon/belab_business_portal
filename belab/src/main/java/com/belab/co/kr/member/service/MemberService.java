@@ -40,6 +40,4 @@ public interface MemberService {
     boolean deleteMember(String email);  // 회원 삭제 메소드
 
     boolean isPasswordCorrect(String currentUsername, String password);
-
-    
 }

@@ -47,7 +47,7 @@
       <div class="mypage-N58">
         <!-- 드롭다운 버튼 -->
         <button class="dropdown-btn btnset-primary" onclick="toggleSidebar()">메뉴</button>
-    
+
         <!-- 좌측 사이드바 -->
         <div class="sidebar" id="sidebar">
             <a href="/mypage/intro">마이페이지</a>
@@ -55,16 +55,16 @@
             <a href="/member/validatePasswordForm">비밀번호 변경</a>
             <a href="/member/inquiry">문의내역</a>
             <a href="/member/DeletevalidateForm">회원 탈퇴</a>
-    
+
         </div>
-    
+
         <!-- 우측 내용 -->
         <div class="content">
             <h2>환영합니다!</h2>
             <div class="welcome-card">
                 <!-- 세션에서 사용자 이름을 가져와서 표시 -->
                 <h3>${loggedInUser.username}님, 반갑습니다!</h3>
-    
+
                 <p>마이페이지에서 회원님의 정보를 확인하고 관리할 수 있습니다.</p>
             </div>
         </div>
