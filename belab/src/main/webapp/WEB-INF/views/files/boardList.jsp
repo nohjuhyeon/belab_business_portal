@@ -23,6 +23,7 @@
 </head>
 
 <body>
+<%@ include file="../common/header.jsp" %>
 
 <main class="th-layout-main">
     <div class="th-layout-sideleft"></div>
@@ -142,8 +143,8 @@
                     </div>
                 </div>
             </section>
-            <%@ include file="../common/footer.jsp" %>
 </body>
 
+<%@ include file="/WEB-INF/views/common/footer.jsp" %>
 
 </html>
