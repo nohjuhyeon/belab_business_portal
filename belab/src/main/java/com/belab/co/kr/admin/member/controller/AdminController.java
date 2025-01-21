@@ -102,7 +102,7 @@ public class AdminController {
             logger.error("회원 정보 수정 중 예외 발생: userId={}, error={}", memberVO.getUser_id(), e.getMessage(), e);
             redirectAttributes.addFlashAttribute("error", "회원 정보 수정 중 오류가 발생했습니다.");
         }
-        return "redirect:/admin/memberList";
+        return "redirect:/member/login";
     }
 
     // 회원 삭제 처리
