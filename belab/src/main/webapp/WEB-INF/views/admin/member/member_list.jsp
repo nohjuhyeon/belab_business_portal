@@ -107,8 +107,8 @@
 <div class="main-container">
     <div class="sidebar">
         <a href="/admin/memberList">회원 관리</a>
-        <a href="/admin/notice">공지사항 관리</a>
-        <a href="/admin/files">자료실 관리</a>
+        <a href="/notice/boardList">공지사항 관리</a>
+        <a href="/files/boardList">자료실 관리</a>
     </div>
 
     <div class="content">
