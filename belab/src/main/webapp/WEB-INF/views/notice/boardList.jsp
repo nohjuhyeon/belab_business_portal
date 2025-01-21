@@ -65,7 +65,7 @@
                     <span class="p2"></span>
                     <div class="inputset inputset-line inputset-lg">
                       <!-- 글 작성 버튼 (로그인한 사용자만 보임) -->
-                      <c:if test="${not empty loggedInUser && loggedInUser.role == 'belab'}">
+                      <c:if test="${not empty loggedInUser && loggedInUser.role == 'admin'}">
                         <div class="d-flex justify-content-end mb-3">
                           <a href="/notice/createBoard" class="btnset btnset-primary">글 작성</a>
                         </div>

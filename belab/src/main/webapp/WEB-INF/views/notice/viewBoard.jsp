@@ -59,7 +59,7 @@
             <div class="button-container">
               <!-- 목록 버튼 -->
               <button type="button" class="btn" onclick="navigateTo('/notice/boardList')">목록</button>
-              <c:if test="${loggedInUser != null && loggedInUser.role == 'belab'}">
+              <c:if test="${loggedInUser != null && loggedInUser.role == 'admin'}">
                 <!-- 수정 버튼 -->
                 <button type="button" class="btn"
                   onclick="navigateTo('/notice/editBoard/${board.dashboard_id}')">수정</button>

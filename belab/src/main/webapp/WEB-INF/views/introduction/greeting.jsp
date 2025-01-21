@@ -52,7 +52,7 @@
               </p>
             </div>
             <div class="imageset">
-              <img class="imageset-img" src="/images/img_basic_N23_1.png" alt="이미지" />
+              <img class="imageset-img" src="/images/introduce/img_basic_N23_1.png" alt="이미지" />
             </div>
             <ul class="row contents-list">
             </ul>

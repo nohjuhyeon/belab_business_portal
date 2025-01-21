@@ -74,14 +74,14 @@
             </ul>
             <section class="transport">
               <div>
-                  <img src="/images/car.png" alt="Car Icon">
+                  <img src="/images/introduce/car.png" alt="Car Icon">
                   <h3>[자가용 이용시]</h3>
                   <ul>
                       <li>사이룩스 동관 지하주차장 무료 주차</li>
                   </ul>
               </div>
               <div>
-                  <img src="/images/bus.png" alt="Transfer Icon">
+                  <img src="/images/introduce/bus.png" alt="Transfer Icon">
                   <h3>[대중교통 이용시]</h3>
                   <ul>
                       <li>3호선: 수서지하철역 하차, 3번 출구와 인접</li>

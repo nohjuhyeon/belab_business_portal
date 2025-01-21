@@ -41,172 +41,98 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="service-N54" id="KlM61VgJPZ">
-                            <div class="contents-container container-md">
+                        <div class="service-N34" id="dPM64BM4jF">
                                 <div class="contents-inner">
-                                    <div class="tabset tabset-brick">
-                                        <ul class="tabset-list tabset-fill tabset-lg" style="background: #f7f7fb;">
-                                            <li class="tabset-item">
-                                                <a class="tabset-btn active" href="#dPM64BM4jF">
-                                                    <span>Database 소개</span>
-                                                </a>
-                                            </li>
-                                            <li class="tabset-item">
-                                                <a class="tabset-btn" href="#nLM64CpD0M">
-                                                    <span>오픈 소스 Database</span>
-                                                </a>
-                                            </li>
-                                            <li class="tabset-item">
-                                                <a class="tabset-btn" href="#nLM64CpD1M">
-                                                    <span>상용 Database</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="row row-cols-3 row-md-cols-2 row-sm-cols-1 gutter-5 contents-group">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-N14" id="dPM64BM4jF">
-                                <div class="contents-inner">
-                                    <div class="textset">
-                                        <h2 class="h2 textset-tit">ICC(Interactive Call Center) 운영</h2>
-                                        <p class="h6 textset-desc">긴급 장애 지원, 예방 점검, 성능 점검, 운영 지원, 안정화 지원 등을 통해
-                                            데이터베이스의
-                                            안정적인 운영이 되도록 지원합니다. 
-                                    </div>
-                                    <div class="row row-cols-3 row-md-cols-2 row-sm-cols-1">
+                                    <div class="imageset">
+                                        <picture>
+                                          <source srcset="/images/dataservice/web/web_architecture.png" media="(max-width: 992px)">
+                                          <img class="imageset-img" src="/images/dataservice/web/web_architecture.png" alt="이미지">
+                                        </picture>
+                                      </div>
+                                      <div class="row row-cols-3 row-md-cols-1">
                                         <div class="col cardset">
-                                            <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/setting-4.svg" alt="이미지" />
-                                            </figure>
-                                            <div class="cardset-body">
-                                                <h2 class="h5">DB Migration</h2>
-                                                <ul class="contents-list">
-                                                    <li class="contents-item p2">
-                                                        시스템 변경 및 증성에 따른 DBMS Version Upgrade 지원
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        Major
-                                                        Version Upgrade 및 Patch 지원
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                          <div class="cardset-body">
+                                            <h5 class="h5 cardset-tit">HTML(Hyper Text Markup Language)</h5>
+                                            <p class="p1 cardset-desc">
+                                              웹 페이지의 구조와 내용을
+                                              정의하는 마크업 언어
+                                            </p>
+                                          </div>
                                         </div>
                                         <div class="col cardset">
-                                            <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/3d-cube-scan.svg" alt="이미지" />
-                                            </figure>
-                                            <div class="cardset-body">
-                                                <h2 class="h5">DBMS 표준화</h2>
-                                                <ul class="contents-list">
-                                                    <li class="contents-item p2">
-                                                        각 DBMS 별 표준
-                                                        설정 및 환경 정립
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        표준 설정 및
-                                                        Architecture 정립
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        H/W 산정 표준
-                                                        정립(용량 계획)
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        표준화 가이드 제공
-
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                          <div class="cardset-body">
+                                            <h5 class="h5 cardset-tit">CSS (Cascading Style Sheets)
+                                            </h5>
+                                            <p class="p1">
+                                              HTML로 작성된 웹 페이지의 디자인과 스타일을 지정
+                                            </p>
+                                          </div>
                                         </div>
                                         <div class="col cardset">
-                                            <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/monitor.svg" alt="이미지" />
-                                            </figure>
-                                            <div class="cardset-body">
-                                                <h2 class="h5">Data Modeling</h2>
-                                                <ul class="contents-list">
-                                                    <li class="contents-item p2">
-                                                        요구사항 분석 및
-                                                        데이터 모델링
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        DB 구조 설계 및
-                                                        성능 최적화 설계
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        각 단계별 산출물
-                                                        제공
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                          <div class="cardset-body">
+                                            <h5 class="h5 cardset-tit">JavaScript
+                                            </h5>
+                                            <p class="p1">
+                                              웹 페이지에 동적 기능을
+                                              추가하는 스크립트 언어
+                                            </p>
+                                          </div>
                                         </div>
                                         <div class="col cardset">
-                                            <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/setting-2.svg" alt="이미지" />
-                                            </figure>
-                                            <div class="cardset-body">
-                                                <h2 class="h5">SQL Tuning</h2>
-                                                <ul class="contents-list">
-                                                    <li class="contents-item p2">
-                                                        SQL Tuning
-
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        개발, 운영 중인
-                                                        Slow Query Tuning
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                          <div class="cardset-body">
+                                            <h5 class="h5 cardset-tit">
+                                              웹 서버와 클라이언트
+                                            </h5>
+                                            <p class="p1">
+                                              사용자의 요청을 받아 HTML, CSS 파일 등을 전달하는 서버 소프트웨어
+                                            </p>
+                                          </div>
                                         </div>
                                         <div class="col cardset">
-                                            <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/edit.svg" alt="이미지" />
-                                            </figure>
-                                            <div class="cardset-body">
-                                                <h2 class="h5">
-                                                    성능 이슈 지원 및 측정
-                                                </h2>
-                                                <ul class="contents-list">
-                                                    <li class="contents-item p2">
-                                                        SQL 성능
-                                                        분석(성능 진단)
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        Database 성능
-                                                        분석, Index 설계 지원
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        Engine
-                                                        Status 확인 및 구성 권고(구조 진단)
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                          <div class="cardset-body">
+                                            <h5 class="h5 cardset-tit">
+                                              프론트 엔드와 백 엔드
+                                            </h5>
+                                            <p class="p1" style="">
+                                              사용자가 직접 보는 웹
+                                              페이지의 시각적 요소와 사용자 인터페이스(UI)는 프론트 엔드이며 서버, 데이터베이스, 비즈니스 로직을 포함
+                                            </p>
+                                          </div>
                                         </div>
                                         <div class="col cardset">
-                                            <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/security-safe.svg" alt="이미지" />
-                                            </figure>
-                                            <div class="cardset-body">
-                                                <h2 class="h5">Data 보안 및 운영 관리</h2>
-                                                <ul class="contents-list">
-                                                    <li class="contents-item p2">
-                                                        암호화, 접근제어,
-                                                        감사 및 모니터링
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        SQL
-                                                        Injection 방지
-                                                    </li>
-                                                    <li class="contents-item p2">
-                                                        데이터 마스킹 및
-                                                        기타 운영 보고
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                          <div class="cardset-body">
+                                            <h5 class="h5 cardset-tit">
+                                              데이터베이스
+                                            </h5>
+                                            <p class="p1">
+                                              웹 애플리케이션이 데이터를
+                                              저장하고 관리하는 데 사용
+                                            </p>
+                                          </div>
                                         </div>
-                                    </div>
+                                        <div class="col cardset">
+                                          <div class="cardset-body">
+                                            <h5 class="h5 cardset-tit">
+                                              RESTful API
+                                            </h5>
+                                            <p class="p1">
+                                              웹 애플리케이션이 데이터를
+                                              주고받기 위해 사용하는 아키텍처 스타일
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div class="col cardset">
+                                          <div class="cardset-body">
+                                            <h5 class="h5 cardset-tit" th-hoverbox="true">
+                                              웹 표준
+                                            </h5>
+                                            <p class="p1">
+                                              W3C(World Wide Web Consortium)와 같은 기관에서 정의한
+                                              표준을 기반으로 웹 기술이 개발
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
                             </div>
                         <section class="service-N22" id="nLM64CpD0M">

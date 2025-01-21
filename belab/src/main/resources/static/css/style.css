@@ -59,6 +59,7 @@
         height: 62rem
     }
 }
+
 /* basic-N46 */
 .basic-N46 {
     position: relative;
@@ -150,6 +151,7 @@
         padding: 0
     }
 }
+
 /* basic-N6 */
 .basic-N6 {
     position: relative;
@@ -185,6 +187,7 @@
         display: none
     }
 }
+
 /* basic-N47 */
 .basic-N47 {
     position: relative;
@@ -259,6 +262,7 @@
         display: none
     }
 }
+
 /* basic-N49 */
 .basic-N49 {
     position: relative;
@@ -322,6 +326,7 @@
         display: none
     }
 }
+
 /* basic-N4 */
 .basic-N4 {
     position: relative;
@@ -616,6 +621,7 @@
         padding: 0 1.6rem
     }
 }
+
 /* . */
 .basic-N55 {
     border-bottom: 1px solid var(--border-color)
@@ -656,7 +662,7 @@
 .basic-N23 .contents-inner {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .basic-N23 .contents-item+.contents-item {
@@ -696,6 +702,7 @@
         padding-left: 0
     }
 }
+
 /* basic-N24 */
 .basic-N24 {
     position: relative;
@@ -812,45 +819,53 @@
     border-radius: 5px;
     background-color: #f0f0f0;
 }
+
 .transport {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin: 30px 10px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  flex-wrap: wrap;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    width: 100%;
 }
+
 .transport div {
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
 }
+
 .transport div img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
 }
+
 .transport div h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
+
 .transport div ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
+
 .transport div ul li {
-  margin: 5px 0;
+    margin: 5px 0;
 }
+
 @media (min-width: 992px) {
-  .transport {
-      flex-wrap: nowrap;
-  }
-  .transport div {
-      width: 40%;
-  }
+    .transport {
+        flex-wrap: nowrap;
+    }
+
+    .transport div {
+        width: 40%;
+    }
 }
 
 /* mypage-N10 */
@@ -1179,11 +1194,13 @@
     width: 90%;
     margin: 0 auto
 }
-.mypage-N24 .form-group{
+
+.mypage-N24 .form-group {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .mypage-N24 .form-box+.form-box {
     width: 90%;
     margin-top: 2.4rem
@@ -1271,210 +1288,219 @@
     align-items: center;
     margin-top: 20px;
     width: 90%;
-  }
+}
 
-  .mypage-N24 .links-container .left-links {
+.mypage-N24 .links-container .left-links {
     display: flex;
     gap: 10px;
-  }
+}
 
-  .mypage-N24 .links-container a {
+.mypage-N24 .links-container a {
     font-size: 14px;
     color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
+}
 
-  .mypage-N24 .links-container a:hover {
+.mypage-N24 .links-container a:hover {
     color: #333;
     text-decoration: underline;
-  }
+}
 
-      /* 전체 레이아웃 */
-      .mypage-N58 {
+/* 전체 레이아웃 */
+.mypage-N58 {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(60vh);
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: hidden;
+    justify-content: center;
+}
+
+/* 좌측 네비게이션 바 */
+.mypage-N58 .sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding-top: 20px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.mypage-N58 .sidebar a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mypage-N58 .sidebar a:hover {
+    background-color: #eaeaea;
+    /* 로그인 페이지 색상 */
+    color: #000;
+}
+
+/* 드롭다운 버튼 */
+/* 반응형 디자인 */
+.mypage-N58 .dropdown-btn {
+    display: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.mypage-N58 .dropdown-btn:hover {
+    background-color: #eae0d5;
+    color: #000;
+
+}
+
+/* 우측 내용 영역 */
+.mypage-N58 .content {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin: 0px 20px;
+    width: 50%;
+}
+
+.mypage-N58 .content h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.mypage-N58 .welcome-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mypage-N58 .welcome-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.mypage-N58 .welcome-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+
+
+@media (max-width: 992px) {
+    .mypage-N58 .mypage-N58 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* 추가: 모든 자식 요소를 가운데 정렬 */
         display: flex;
         flex-wrap: wrap;
-        min-height: calc(60vh);
-        position: relative;
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-        overflow: hidden;
-        justify-content: center;
     }
 
-    /* 좌측 네비게이션 바 */
     .mypage-N58 .sidebar {
-        width: 250px;
-        background-color: #fff;
-        padding-top: 20px;
-        border-right: 1px solid #ddd;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+        width: 90%;
+        border-right: none;
+        border-bottom: none;
+        max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        visibility: hidden;
+    }
+
+    .mypage-N58 .sidebar.open {
+        visibility: visible;
+        max-height: 300px;
+        /* 드롭다운 메뉴가 열릴 때 최대 높이 */
+    }
+
+    .mypage-N58 .sidebar.open {
+        max-height: 300px;
+        /* 사이드바가 열렸을 때 최대 높이 */
+        margin-bottom: 20px;
+    }
+
+    .mypage-N58 .dropdown-btn {
+        width: 90%;
+        display: block;
+    }
+
+    .mypage-N58 .sidebar.open {
+        max-height: 300px;
+        /* 사이드바가 열렸을 때 최대 높이 */
+    }
+
+    .mypage-N58 .content {
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 20px;
+        width: 90%;
     }
 
     .mypage-N58 .sidebar a {
-        display: block;
-        padding: 15px 20px;
-        text-decoration: none;
-        color: #333;
-        font-size: 16px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .mypage-N58 .sidebar a:hover {
-        background-color: #eaeaea; /* 로그인 페이지 색상 */
-        color: #000;
-    }
-
-    /* 드롭다운 버튼 */
-    /* 반응형 디자인 */
-    .mypage-N58 .dropdown-btn {
-        display: none;
-        border: none;
-        padding: 15px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        width: 100%;
-        text-align: center;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-
-    .mypage-N58 .dropdown-btn:hover {
-        background-color: #eae0d5;
-        color: #000;
-
-    }
-
-    /* 우측 내용 영역 */
-    .mypage-N58 .content {
-        padding: 40px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        border-radius: 8px;
-        margin: 0px 20px;
-        width: 50%;
+        padding: 10px 15px;
+        font-size: 14px;
     }
 
     .mypage-N58 .content h2 {
-        font-size: 28px;
-        color: #444;
-        margin-bottom: 10px;
-    }
-
-    .mypage-N58 .welcome-card {
-        background-color: #f9f9f9;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
+        font-size: 20px;
     }
 
     .mypage-N58 .welcome-card h3 {
-        font-size: 24px;
-        color: #333;
-        margin: 0 0 10px;
+        font-size: 20px;
     }
 
     .mypage-N58 .welcome-card p {
-        font-size: 16px;
-        color: #666;
-        margin: 0;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mypage-N58 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* 추가: 모든 자식 요소를 가운데 정렬 */
+        display: flex;
+        flex-wrap: wrap;
     }
 
-
-
-    @media (max-width: 992px) {
-        .mypage-N58 .mypage-N58 {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; /* 추가: 모든 자식 요소를 가운데 정렬 */
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .mypage-N58 .sidebar {
-            width: 90%;
-            border-right: none;
-            border-bottom: none;
-            max-height: 0;
-            overflow: hidden;
-            visibility: hidden;
-        }
-        .mypage-N58 .sidebar.open {
-            visibility: visible;
-            max-height: 300px; /* 드롭다운 메뉴가 열릴 때 최대 높이 */
-        }
-
-        .mypage-N58 .sidebar.open {
-          max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
-          margin-bottom: 20px;
-      }
-      .mypage-N58 .dropdown-btn {
-            width: 90%;
-            display: block;
-        }
-
-        .mypage-N58 .sidebar.open {
-            max-height: 300px; /* 사이드바가 열렸을 때 최대 높이 */
-        }
-
-        .mypage-N58 .content {
-            margin: 0;
-            box-shadow: none;
-            border-radius: 0;
-            padding: 20px;
-            width: 90%;
-        }
-
-        .mypage-N58 .sidebar a {
-            padding: 10px 15px;
-            font-size: 14px;
-        }
-
-        .mypage-N58 .content h2 {
-            font-size: 20px;
-        }
-
-        .mypage-N58 .welcome-card h3 {
-            font-size: 20px;
-        }
-
-        .mypage-N58 .welcome-card p {
-            font-size: 14px;
-        }
+    .mypage-N58 .header-section h2 {
+        font-size: 28px;
     }
 
-    @media (max-width: 480px) {
-        .mypage-N58 {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; /* 추가: 모든 자식 요소를 가운데 정렬 */
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .mypage-N58 .header-section h2 {
-            font-size: 28px;
-        }
-
-        .mypage-N58 .sidebar a {
-            font-size: 12px;
-        }
-
-        .mypage-N58 .content h2 {
-            font-size: 18px;
-        }
-
-        .mypage-N58 .welcome-card h3 {
-            font-size: 18px;
-        }
-
-        .mypage-N58 .welcome-card p {
-            font-size: 12px;
-        }
+    .mypage-N58 .sidebar a {
+        font-size: 12px;
     }
+
+    .mypage-N58 .content h2 {
+        font-size: 18px;
+    }
+
+    .mypage-N58 .welcome-card h3 {
+        font-size: 18px;
+    }
+
+    .mypage-N58 .welcome-card p {
+        font-size: 12px;
+    }
+}
 
 
 .mypage-N68 .popup-overlay {
@@ -1579,7 +1605,7 @@
     color: #dc0000
 }
 
-.mypage-N38 .form-box{
+.mypage-N38 .form-box {
     width: 100%;
 }
 
@@ -1587,11 +1613,12 @@
     margin-top: 4rem
 }
 
-.mypage-N38 .form-btn{
+.mypage-N38 .form-btn {
     display: flex;
     justify-content: flex-end;
 }
-.mypage-N38 .form-btn button{
+
+.mypage-N38 .form-btn button {
     margin-right: 4px;
 }
 
@@ -1622,7 +1649,6 @@
     border: 0;
     border-radius: 0.6rem;
     border: 1px solid var(--border-color)
-    
 }
 
 
@@ -2480,6 +2506,7 @@
         display: none
     }
 }
+
 /* butti-N10 */
 .butti-N10 {
     overflow: hidden;
@@ -2506,6 +2533,7 @@
         height: 62rem
     }
 }
+
 /* butti-N11 */
 .butti-N11 {
     position: relative
@@ -2824,35 +2852,35 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .contact-N32 h1 {
+.contact-N32 h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
     color: #333;
-  }
+}
 
-  .contact-N32 table {
+.contact-N32 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-  }
+}
 
-  .contact-N32 table th,
-  .contact-N32 table td {
+.contact-N32 table th,
+.contact-N32 table td {
     text-align: left;
     padding: 12px;
     border: 1px solid #ddd;
-  }
+}
 
-  .contact-N32 table th {
+.contact-N32 table th {
     background-color: #f1f1f1;
     color: #333;
     font-weight: bold;
-  }
+}
 
-  .contact-N32 pre {
+.contact-N32 pre {
     background-color: #f7f7f7;
     padding: 15px;
     border-radius: 8px;
@@ -2863,13 +2891,13 @@
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     min-height: 300px;
-  }
+}
 
-  .contact-N32 .content-section{
+.contact-N32 .content-section {
     margin-bottom: 20px;
-  }
+}
 
-  .contact-N32 .content-section h3 {
+.contact-N32 .content-section h3 {
     margin-bottom: 10px;
     font-size: 20px;
     /* 제목 크기 */
@@ -2877,9 +2905,9 @@
     /* 제목 굵기 */
     color: #444;
     /* 제목 색상 */
-  }
+}
 
-  .contact-N32 .content-section pre{
+.contact-N32 .content-section pre {
     font-size: 16px;
     /* 본문 및 답변 텍스트 크기 */
     line-height: 1.6;
@@ -2894,16 +2922,16 @@
     /* 테두리 */
     border-radius: 8px;
     /* 모서리 둥글게 */
-  }
+}
 
-  .contact-N32 .button-container {
+.contact-N32 .button-container {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
     margin-top: 20px;
-  }
+}
 
-  .contact-N32 .btn {
+.contact-N32 .btn {
     display: inline-block;
     font-weight: bold;
     text-align: center;
@@ -2915,23 +2943,23 @@
     background-color: #f9f9f9;
     color: #333;
     cursor: pointer;
-  }
+}
 
-  .contact-N32 .btn:hover {
+.contact-N32 .btn:hover {
     background-color: #ddd;
-  }
+}
 
-  .contact-N32 .btn-danger {
+.contact-N32 .btn-danger {
     background-color: #f9f9f9;
     border-color: #ddd;
     color: #333;
-  }
+}
 
-  .contact-N32 .btn-danger:hover {
+.contact-N32 .btn-danger:hover {
     background-color: #ddd;
-  }
+}
 
-  /* contact-N37 */
+/* contact-N37 */
 .contact-N37 {
     position: relative;
     padding-top: 8rem;
@@ -3128,7 +3156,16 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     background: #f7f7fb;
-    overflow: hidden
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.service-N14 .contents-inner {
+    width: 90%;
+    padding: 4rem 19rem;
+    border-radius: 2rem;
+    background: #fff;
 }
 
 .service-N14 .textset {
@@ -3144,8 +3181,39 @@
     color: var(--text-color3)
 }
 
+.service-N14 .contents-list {
+    margin-top: 2rem
+}
+
+
+.service-N14 .contents-item {
+    position: relative;
+    padding-left: 1.2rem;
+    color: #777777;
+    text-align: left;
+}
+
+.service-N14 .contents-item+.contents-item {
+    margin-top: 1.2rem
+}
+
+.service-N14 .contents-item::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: #242424
+}
+
+
+
 .service-N14 .cardset {
-    padding: 5rem 6rem
+    padding: 5rem 6rem;
+    width: 35rem;
+
 }
 
 .service-N14 .cardset .cardset-body {
@@ -3175,13 +3243,14 @@
     margin-top: 1.5rem;
     letter-spacing: -0.1rem
 }
+
 .service-N14 .contents-inner .row {
     justify-content: center;
 }
+
 @media (max-width: 1200px) {
-    .service-N14 .cardset {
-        padding: 1rem;
-        width: 35rem;
+    .service-N14 .contents-inner {
+        padding: 4rem 1rem;
     }
 }
 
@@ -3190,7 +3259,8 @@
     position: relative;
     padding-top: 1rem;
     padding-bottom: 3rem;
-    overflow: hidden
+    overflow: hidden;
+    background: #f7f7fb;
 }
 
 .service-N54 .tabset {
@@ -3200,7 +3270,28 @@
 .service-N54 .tabset .tabset-list .tabset-item {
     flex-grow: 0;
     min-width: 18.4rem;
+    width: 30rem;
     overflow: hidden
+}
+
+.service-N54 .tabset .tabset-list .tabset-item .tabset-btn {
+    min-height: 6.4rem;
+    height: 6.4rem;
+    padding-left: 2.6rem;
+    padding-right: 2.6rem;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+
+}
+
+.service-N54 .tabset .tabset-list .tabset-item .tabset-btn:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .service-N54 .tabset .tabset-list .tabset-item:first-child {
@@ -3391,7 +3482,7 @@
 .service-N42 .cardset-tit {
     height: 10rem;
     align-items: flex-start;
-    margin-bottom:0rem;
+    margin-bottom: 0rem;
 }
 
 .service-N42 .cardset .cardset-tit+.cardset-desc {
@@ -3429,17 +3520,21 @@
 .service-N22 {
     overflow: hidden;
     position: relative;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
     background: #f7f7fb;
+    display: flex;
+    justify-content: center;
 
 }
-
+.service-N22 .textset .textset-desc {
+    color: var(--text-color3)
+}
 .service-N22 .contents-container {
     display: flex;
     gap: 7rem;
-    margin-bottom: 2rem;    
-    height: 20rem;
+    margin-bottom: 5rem;
+    height: 25rem;
 }
 
 .service-N22 .contents-group {
@@ -3478,31 +3573,43 @@
 }
 
 .service-N22 .contents-container .cardset-figure {
-    width: 30%; /* 필요에 따라 조정 */
+    width: 30%;
+    /* 필요에 따라 조정 */
     display: flex;
-    justify-content: center; /* 가로 방향 가운데 정렬 */
-    align-items: center; /* 세로 방향 가운데 정렬 */
-    height: auto; /* 필요에 따라 높이 설정 */
+    justify-content: center;
+    /* 가로 방향 가운데 정렬 */
+    align-items: center;
+    /* 세로 방향 가운데 정렬 */
+    height: auto;
+    /* 필요에 따라 높이 설정 */
 }
 
 
 .service-N22 .contents-container .cardset-figure .cardset-img {
     max-height: 100%;
-    max-width: 100%;
-    display: block; /* 인라인 속성 제거 */
+    max-width: 80%;
+    display: block;
+    /* 인라인 속성 제거 */
+}
+
+.service-N22 .contents-inner {
+    width: 90%;
+    padding: 4rem 4rem;
+    border-radius: 2rem;
+    background: #fff;
 }
 
 
 @media (max-width: 992px) {
     .service-N22 {
-        padding-top: 5rem;
-        padding-bottom: 5rem
+        padding-top: 2rem;
+        padding-bottom: 2rem
     }
 
     .service-N22 .contents-container {
         flex-direction: column;
         gap: 0;
-        height: 100%;
+        height: auto;
         max-width: 75%;
     }
 
@@ -3518,24 +3625,233 @@
     .service-N22 .contents-item+.contents-item {
         margin-top: 0.8rem
     }
+
     .service-N22 .contents-container .cardset-figure {
-        width: 100%; /* 필요에 따라 조정 */
+        width: 100%;
+        /* 필요에 따라 조정 */
         display: flex;
-        justify-content: center; /* 가로 방향 가운데 정렬 */
-        align-items: center; /* 세로 방향 가운데 정렬 */
-        height: auto; /* 필요에 따라 높이 설정 */
+        justify-content: center;
+        /* 가로 방향 가운데 정렬 */
+        align-items: center;
+        /* 세로 방향 가운데 정렬 */
+        height: auto;
+        /* 필요에 따라 높이 설정 */
     }
-    
-    
+
+
     .service-N22 .contents-container .cardset-figure .cardset-img {
-        max-height: 100%;
-        max-width: 50%;
-        display: block; /* 인라인 속성 제거 */
+        max-height: 20rem;
+        max-width: 80%;
+        display: block;
+        /* 인라인 속성 제거 */
     }
+
     .service-N22 .contents-cont {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
 }
+
+.mediastock-N8 {
+    overflow: hidden;
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: #fafafa;
+    width: 100%;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+}
+
+.mediastock-N8 .contents-inner {
+    width: 100%;
+    container-type: inline-size;
+}
+
+.mediastock-N8 .title-area h2 {
+    margin-bottom: 4rem;
+    color: #000;
+    text-align: center;
+}
+
+.mediastock-N8 .list-wrap {
+    display: flex;
+    align-items: center;
+    min-height: 20rem;
+}
+
+.mediastock-N8 .list-area {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.mediastock-N8 .list-area li {
+    flex: 1;
+}
+
+.mediastock-N8 .thumb {
+    text-align: center;
+}
+
+.mediastock-N8 .thumb img {
+    max-height: 12rem;
+    max-width: 100%;
+}
+
+.mediastock-N8 .desc {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.mediastock-N8 .desc strong {
+    color: #000;
+    font-weight: var(--fw-bold);
+}
+
+.mediastock-N8 .desc p {
+    margin-top: 1.6rem;
+    color: #95969d;
+}
+
+@container (max-width: 1280px) {
+    .mediastock-N8 .list-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .mediastock-N8 .list-area li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 20rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .mediastock-N8 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .mediastock-N8 .contents-inner h2 {
+        margin-bottom: 5rem;
+    }
+
+    .mediastock-N8 .list-wrap {
+        min-height: 0;
+    }
+
+    .mediastock-N8 .list-area {
+        display: flex;
+        flex-direction: column;
+        gap: 5.8rem;
+    }
+
+    .mediastock-N8 .list-area li {
+        flex: none;
+        width: 100%;
+        min-height: 0;
+    }
+
+    .mediastock-N8 .thumb img {
+        max-height: 12rem;
+    }
+
+    .mediastock-N8 .desc {
+        margin-top: 1rem;
+    }
+
+    .mediastock-N8 .desc p {
+        margin-top: 1rem;
+    }
+}
+
+
+.service-N34 {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #f7f7fb;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.service-N34 .contents-inner {
+    width: 90%;
+    padding: 4rem 4rem;
+    border-radius: 2rem;
+    background: #fff;
+}
+
+  .service-N34 .imageset {
+    max-height: 42rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .service-N34 .imageset .imageset-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;;
+  }
+
+  .service-N34 .row {
+    flex-wrap: wrap;
+    gap: 10rem;
+  }
+  
+  .service-N34 .col {
+    flex: 0 1 auto;
+  }
+  
+  .service-N34 .cardset .cardset-figure {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .service-N34 .cardset .cardset-figure+.cardset-body {
+    margin-top: 2rem;
+  }
+  
+  .service-N34 .cardset .cardset-body {
+    padding: 0;
+  }
+  
+  .service-N34 .cardset .cardset-tit+.p1 {
+    margin-top: 1.6rem;
+  }
+  
+  .service-N34 .cardset .p1 {
+    color: var(--text-color3);
+  }
+  
+  @media (max-width: 992px) {
+    .service-N34 {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  
+    .service-N34 .row {
+      flex-wrap: wrap;
+      gap: 0;
+    }
+  
+    .service-N34 .cardset {
+      width: 100%;
+    }
+  
+    .service-N34 .cardset+.cardset {
+      margin-top: 4rem;
+    }
+  }
