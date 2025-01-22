@@ -68,14 +68,16 @@
         </div>
         <div class="button-container">
           <!-- 목록 버튼 -->
-          <button type="button" class="btn" onclick="navigateTo('/files/boardList')">목록</button>
+          <a type="button" class="btn" href='/files/boardList'>목록</a>
           <c:if test="${loggedInUser != null && loggedInUser.role == 'admin'}">
             <!-- 수정 버튼 -->
-            <button type="button" class="btn" onclick="navigateTo('/files/editBoard/${board.refer_board_id}')">수정</button>
-
+            <form action="/files/editBoard/${board.refer_board_id}" method="get" style="margin-bottom: 0px;">
+              <input type="hidden" name="referBoardId" value="${board.refer_board_id}">
+              <button type="submit" class="btn">수정</button>
+            </form>
             <!-- 삭제 버튼 -->
             <form action="/files/deleteBoard" method="post" style="margin-bottom: 0px;">
-              <input type="hidden" name="refer_board_id" value="${board.refer_board_id}">
+              <input type="hidden" name="referBoardId" value="${board.refer_board_id}">
               <button type="submit" class="btn btn-danger">삭제</button>
             </form>
           </c:if>

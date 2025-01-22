@@ -15,9 +15,9 @@ public interface ReferBoardService {
     ReferenceBoardVO getBoardById(Long referBoardId);
     void saveFile(ReferenceFileInfoVO fileInfo); void saveFile(MultipartFile file, Long referBoardId);
     void createBoard(ReferenceBoardVO board, MemberVO member, List<MultipartFile> files);
-    void updateBoard(ReferenceBoardVO board);
-
+    void updateBoard(ReferenceBoardVO board, MemberVO member, List<MultipartFile> newFiles, List<Long> filesToDelete);
     void deleteBoard(Long referBoardId);
+    void deleteFile(Long fileId);
 
     List<ReferenceFileInfoVO> getFilesByBoardId(Long referBoardId);
 

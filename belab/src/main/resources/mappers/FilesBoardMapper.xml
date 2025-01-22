@@ -121,9 +121,9 @@
     </select>
 
     <!-- 첨부파일 삭제 (게시글 ID 기준) -->
-    <delete id="deleteFilesByBoardId" parameterType="long">
+    <delete id="deleteFile" parameterType="long">
         DELETE FROM reference_file_info
-        WHERE refer_board_id = #{refer_board_id}
+        WHERE file_id = #{file_id}
     </delete>
 
 </mapper>
