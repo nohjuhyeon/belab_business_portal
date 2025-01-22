@@ -33,7 +33,7 @@
           </div>
           <div class="contents-body">
             <div class="textset">
-              <h2 class="h1 textset-tit">관리자 마이페이지</h2>
+              <h2 class="h1 textset-tit">관리자 페이지</h2>
             </div>
           </div>
         </div>
@@ -47,8 +47,8 @@
 
       <!-- 좌측 사이드바 -->
       <div class="sidebar" id="sidebar">
-        <a href="/admin/memberList">회원정보 수정</a>
-        <a href="/admin/users">공지 게시판 관리</a>
+        <a href="/admin/memberList">회원 관리</a>
+        <a href="/admin/users">공지사항 관리</a>
         <a href="/admin/validatePasswordForm">자료실 관리</a>
       </div>
 
@@ -58,7 +58,7 @@
         <div class="welcome-card">
           <!-- 세션에서 사용자 이름을 가져와서 표시 -->
           <h3>${loggedInUser.username}님, 반갑습니다!</h3>
-          <p>마이페이지에서 회원님의 정보를 확인하고 관리할 수 있습니다.</p>
+          <p>관리자 페이지에서 회원정보를 확인하고 관리할 수 있습니다.</p>
         </div>
       </div>
     </div>

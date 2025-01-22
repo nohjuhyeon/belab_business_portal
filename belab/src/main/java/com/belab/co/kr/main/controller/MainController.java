@@ -16,4 +16,10 @@ public class MainController {
     public String mainPage() {
         return "main"; // main.jsp를 가리킵니다.
     }
+
+    @GetMapping("/errorpage")
+    public String error() {
+        return "errorPage"; // main.jsp를 가리킵니다.
+    }
+
 }

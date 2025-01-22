@@ -14,11 +14,10 @@
       <link rel="stylesheet" href="/css/templatehouse.css" />
       <link rel="stylesheet" href="/css/style.css" />
       <style>
-        
-        .table th.title-column, .table td.title-column {
-            width: 60%;
+        .table th.title-column,
+        .table td.title-column {
+          width: 60%;
         }
-
       </style>
     </head>
 
@@ -84,21 +83,21 @@
                           <th scope="col" class="p2">번호</th>
                           <th scope="col" class="p2 title-column">제목</th>
                           <th>작성자</th>
-                          <th scope="col" class="p2">작성일</th>
+                          <th scope="col" class="p2" style="min-width: 158px;">작성일</th>
                         </tr>
                       </thead>
                       <tbody>
                         <c:forEach var="board" items="${boards}">
-                          <tr>
-                          <td class="p2 tableset-mobile">${board.dashboard_id}</td>
-                          <td class="p2 text-left tableset tableset-tit-ellipsis tableset-tit">
-                              <a href="/notice/viewBoard/${board.dashboard_id}">${board.title}</a>
-                          </td>
-                          <td>${board.username}</td>
-                          <td class="p2">${board.formattedUpdatedAt}</td>
-                        </tr>
-                      </c:forEach>
-      
+                          <tr onclick="window.location.href='/notice/viewBoard/${board.dashboard_id}'">
+                            <td class="p2 tableset-mobile">${board.dashboard_id}</td>
+                            <td class="p2 text-left tableset tableset-tit-ellipsis tableset-tit">
+                              ${board.title}
+                            </td>
+                            <td>${board.username}</td>
+                            <td class="p2 date">${board.formattedUpdatedAt}</td>
+                          </tr>
+                        </c:forEach>
+
                       </tbody>
                     </table>
                   </div>
@@ -106,46 +105,45 @@
                     <!-- 이전 버튼 -->
                     <div class="pagiset-ctrl">
                       <c:if test="${currentPage > 1}">
-                        <a href="/notice/boardList?page=${currentPage - 1}&size=${size}" class="pagiset-link pagiset-prev"
-                          style="margin-right: 5px;"></a>
+                        <a href="/notice/boardList?page=${currentPage - 1}&size=${size}"
+                          class="pagiset-link pagiset-prev" style="margin-right: 5px;"></a>
                       </c:if>
                     </div>
-      
+
                     <!-- 페이지 번호 -->
                     <div class="pagiset-list">
                       <c:forEach begin="${startPage}" end="${endPage}" var="pageNum">
                         <c:choose>
                           <c:when test="${pageNum == currentPage}">
-                            <span class="pagiset-link active-fill"
-                              style="margin-right: 5px;">${pageNum}</span>
-                            </c:when>
+                            <span class="pagiset-link active-fill" style="margin-right: 5px;">${pageNum}</span>
+                          </c:when>
 
-                            <c:otherwise>
-                              <a href="/notice/boardList?page=${pageNum}&size=${size}" class="pagiset-link"
-                                style="margin-right: 5px;">${pageNum}</a>
-                            </c:otherwise>
+                          <c:otherwise>
+                            <a href="/notice/boardList?page=${pageNum}&size=${size}" class="pagiset-link"
+                              style="margin-right: 5px;">${pageNum}</a>
+                          </c:otherwise>
                         </c:choose>
                       </c:forEach>
                     </div>
-      
+
                     <!-- 다음 버튼 -->
                     <div class="pagiset-ctrl">
                       <c:if test="${currentPage < totalPages}">
-      
-                        <a href="/notice/boardList?page=${currentPage + 1}&size=${size}" class="pagiset-link pagiset-next"
-                          style="margin-left: 5px;"></a>
+
+                        <a href="/notice/boardList?page=${currentPage + 1}&size=${size}"
+                          class="pagiset-link pagiset-next" style="margin-left: 5px;"></a>
                       </c:if>
                     </div>
                   </nav>
                 </div>
               </div>
             </section>
-          <%@ include file="../common/footer.jsp" %>
+            <%@ include file="../common/footer.jsp" %>
     </body>
 
     <script src="/js/setting.js"></script>
     <script src="/js/plugin.js"></script>
     <script src="/js/templatehouse.js"></script>
     <script src="/js/style.js"></script>
-    
+
     </html>

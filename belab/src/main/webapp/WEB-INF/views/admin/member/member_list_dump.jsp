@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-  <%@ include file="../../common/header.jsp" %>
+  <%@ include file="../common/header.jsp" %>
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
 
@@ -50,9 +50,11 @@
 
             <!-- 좌측 사이드바 -->
             <div class="sidebar" id="sidebar">
-              <a href="/admin/memberList">회원 관리</a>
-              <a href="/admin/users">공지사항 관리</a>
-              <a href="/admin/validatePasswordForm">자료실 관리</a>
+              <a href="/mypage/intro">마이페이지</a>
+              <a href="/member/validateForm">개인정보 수정</a>
+              <a href="/member/inquiry">문의내역</a>
+              <a href="/member/DeletevalidateForm">회원 탈퇴</a>
+
             </div>
 
             <!-- 우측 내용 -->
@@ -62,8 +64,6 @@
                   <div class="contents-inner">
                     <div class="form-group">
                       <form id="modifyForm" action="/admin/modify" method="post" onsubmit="return validateForm(event)">
-                        <input id="user_id" type="hidden" name="user_id" value="${member.user_id}" />
-
                         <div class="form-box">
                           <div class="inputset inputset-line">
                             <label for="username" class="form-tit h6">이름 <span>*</span>
@@ -78,14 +78,6 @@
                             </label>
                             <input id="email" type="email" name="email" class="inputset-input form-control"
                               value="${member.email}" readonly required />
-                          </div>
-                        </div>
-                        <div class="form-box">
-                          <div class="inputset inputset-line">
-                            <label for="password" class="form-tit h6">password <span>*</span>
-                            </label>
-                            <input id="password" type="text" name="password" class="inputset-input form-control"
-                              value="${member.password}" placeholder="비밀번호를 입력해주세요." required />
                           </div>
                         </div>
                         <div class="form-box">
@@ -134,7 +126,7 @@
                                   <input id="admin" name="role" class="checkset-input" type="radio" value="admin" />
                                 </c:otherwise>
                               </c:choose>
-                              <label for="admin" class="checkset-label">관리자</label>
+                              <label for="user" class="checkset-label">관리자</label>
                             </div>
                           </div>
                         </div>
@@ -144,7 +136,7 @@
                         </div>
                         <div class="form-btn">
                           <button id="submitButton" class="btnset btnset-primary" type="submit">수정하기</button>
-                          <a id="cancleButton" class="btnset cancel-button" href="/admin/memberList">취소하기</a>
+                          <a id="cancleButton" class="btnset cancel-button" href="/mypage/intro">취소하기</a>
                         </div>
                       </form>
                     </div>
@@ -161,7 +153,7 @@
               <button class="btnset btnset-primary" onclick="closePopup()">확인</button>
             </div>
           </div>
-          <%@ include file="../../common/footer.jsp" %>
+          <%@ include file="../common/footer.jsp" %>
     </body>
     <script src="/js/setting.js"></script>
     <script src="/js/plugin.js"></script>

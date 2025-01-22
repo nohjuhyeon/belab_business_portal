@@ -1361,7 +1361,7 @@
 }
 
 .mypage-N58 .dropdown-btn:hover {
-    background-color: #eae0d5;
+    background-color: #ddd;
     color: #000;
 
 }
@@ -2709,7 +2709,7 @@
     }
 
     .butti-N25 .tableset.tableset-fract tbody tr td {
-        padding: 0;
+        padding: 10px;
         border: 0
     }
 
@@ -3527,9 +3527,11 @@
     justify-content: center;
 
 }
+
 .service-N22 .textset .textset-desc {
     color: var(--text-color3)
 }
+
 .service-N22 .contents-container {
     display: flex;
     gap: 7rem;
@@ -3786,72 +3788,309 @@
     padding: 4rem 4rem;
     border-radius: 2rem;
     background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-  .service-N34 .imageset {
+.service-N34 .imageset {
     max-height: 42rem;
     border-radius: 2rem;
     overflow: hidden;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
-  }
-  
+}
 
-  .service-N34 .imageset .imageset-img{
+
+.service-N34 .imageset .imageset-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;;
-  }
+    object-fit: contain;
+    ;
+}
 
-  .service-N34 .row {
+.service-N34 .row {
     flex-wrap: wrap;
-    gap: 10rem;
-  }
-  
-  .service-N34 .col {
+    gap: 2rem;
+}
+
+.service-N34 .col {
     flex: 0 1 auto;
-  }
-  
-  .service-N34 .cardset .cardset-figure {
+    width: 23%;
+
+}
+
+.service-N34 .cardset .cardset-tit {
+    margin-bottom: 2rem;
+}
+
+.service-N34 .cardset .cardset-figure {
     width: 6rem;
     height: 6rem;
     border-radius: 1rem;
     overflow: hidden;
-  }
-  
-  .service-N34 .cardset .cardset-figure+.cardset-body {
+}
+
+.service-N34 .textset {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.service-N34 .cardset .cardset-figure+.cardset-body {
     margin-top: 2rem;
-  }
-  
-  .service-N34 .cardset .cardset-body {
+}
+
+.service-N34 .cardset .cardset-body {
     padding: 0;
-  }
-  
-  .service-N34 .cardset .cardset-tit+.p1 {
+}
+
+.service-N34 .cardset .cardset-tit+.p1 {
     margin-top: 1.6rem;
-  }
-  
-  .service-N34 .cardset .p1 {
+}
+
+.service-N34 .cardset .p1 {
     color: var(--text-color3);
-  }
-  
-  @media (max-width: 992px) {
+}
+
+.service-N34 .contents-box {
+    background: #fafafa;
+    width: 100%;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+
+.service-N34 .contents-box .textset-tit {
+    margin-bottom: 3rem;
+}
+
+.service-N34 .textset .textset-desc {
+    color: var(--text-color3);
+}
+@media (max-width: 992px) {
     .service-N34 {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
-  
+
     .service-N34 .row {
-      flex-wrap: wrap;
-      gap: 0;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
-  
+
     .service-N34 .cardset {
-      width: 100%;
+        width: 48%;
     }
-  
-    .service-N34 .cardset+.cardset {
-      margin-top: 4rem;
+
+}
+
+@media (max-width: 650px) {
+    .service-N34 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
-  }
+
+    .service-N34 .row {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .service-N34 .cardset {
+        width: 100%;
+    }
+    .service-N34 .imageset {
+        max-height: 20rem;
+    }    
+}
+
+
+/* admin-N25 */
+.admin-N25 {
+    overflow: hidden;
+    position: relative;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+}
+
+.admin-N25 .contents-inner {
+    width: 100%;
+}
+
+.admin-N25 .title-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.btnset-icon .title-area span {
+    font-weight: var(--fw-bold);
+}
+
+.admin-N25 .title-area .btnset-icon {
+    position: absolute;
+    right: 0;
+    background: none;
+    min-width: 2.4rem;
+    padding: 0;
+}
+
+.admin-N25 .btnset.btnset-icon.ico-left::before {
+    color: #111;
+}
+
+.admin-N25 .tableset {
+    text-align: center;
+    overflow-x: auto; /* 작은 화면에서 테이블 스크롤 가능 */
+}
+
+.admin-N25 .tableset .tableset-table {
+    width: 100%; /* 테이블이 컨테이너의 너비에 맞게 조정 */
+    table-layout: auto; /* 열 너비를 콘텐츠에 따라 자동 조정 */
+    border-collapse: collapse;
+}
+
+.admin-N25 .tableset .tableset-table>colgroup>.width-120 {
+    width: 120px;
+}
+
+.admin-N25 .tableset .tableset-table>thead.thead-light>*>* {
+    background: #fff;
+}
+
+.admin-N25 .tableset .tableset-table>thead.thead-border-top>*>* {
+    border-top: 1px solid #111;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.admin-N25 .tableset .tableset-table> :not(caption):not(colgroup)>*>* {
+    text-align: center;
+}
+
+.admin-N25 .tableset .tableset-table>tbody>*>td.text-left {
+    text-align: left;
+}
+
+.admin-N25 .tableset tbody {
+    border-top: 1px solid var(--border-color);
+}
+
+.admin-N25 .tableset tbody tr:hover {
+    background-color: #fafafa;
+}
+
+.admin-N25 .tableset tbody td.date {
+    color: #bbbbbb;
+}
+
+@media (max-width: 992px) {
+    .admin-N25 {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .admin-N25 .title-area {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .admin-N25 .textset {
+        margin-bottom: 2rem;
+    }
+
+    .admin-N25 .tableset .tableset-table>thead.thead-border-top>*>* {
+        font-size: 14px; /* 작은 화면에서 글자 크기 조정 */
+    }
+
+    .admin-N25 .tableset .tableset-table>tbody>*>* {
+        font-size: 14px; /* 작은 화면에서 글자 크기 조정 */
+        padding: 6px; /* 작은 화면에서 셀 내부 여백 축소 */
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-N25 .tableset {
+        overflow-x: auto; /* 작은 화면에서 테이블 스크롤 가능 */
+    }
+
+    .admin-N25 .tableset .tableset-table {
+        font-size: 12px; /* 더 작은 화면에서 글자 크기 조정 */
+    }
+}
+
+/* campland-N18 */
+.campland-N18 {
+    overflow: hidden;
+    position: relative;
+    background-color: #fafafa;
+    padding-top: 5rem;
+    padding-bottom: 5rem
+}
+
+.campland-N18 .contents-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 65.7rem
+}
+
+.campland-N18 .iconset {
+    width: 8rem;
+    height: 8rem;
+    text-align: center
+}
+
+.campland-N18 .iconset .iconset-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.campland-N18 .textset {
+    margin-top: 6rem;
+    text-align: center
+}
+
+.campland-N18 .textset .textset-tit {
+    font-weight: var(--fw-bold);
+    color: var(--primary)
+}
+
+.campland-N18 .textset .textset-tit+.textset-desc {
+    margin-top: 2.8rem
+}
+
+.campland-N18 .textset-tit+.textset-desc {
+    margin-top: 2rem
+}
+
+.campland-N18 .btnset {
+    margin-top: 6rem;
+    font-weight: var(--fw-medium)
+}
+
+@media (max-width: 992px) {
+
+    .campland-N18 .contents-inner {
+        height: 36rem
+    }
+
+    .campland-N18 .iconset {
+        width: 5.2rem;
+        height: 5.2rem
+    }
+
+    .campland-N18 .textset-tit+.textset-desc {
+        margin-top: 1.6rem
+    }
+
+    .campland-N18 .btnset {
+        margin-top: 4rem
+    }
+}
