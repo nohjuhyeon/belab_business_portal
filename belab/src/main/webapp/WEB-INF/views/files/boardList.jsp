@@ -90,7 +90,7 @@
                                 </thead>
                                 <tbody>
                                 <c:forEach var="board" items="${boards}">
-                                    <tr>
+                                    <tr onclick="window.location.href='/files/viewBoard/${board.refer_board_id}'">
                                         <td class="p2 tableset-mobile">${board.refer_board_id}</td>
                                         <td class="p2 text-left tableset tableset-tit-ellipsis tableset-tit">
                                             <a href="/files/viewBoard/${board.refer_board_id}">${board.title}</a>

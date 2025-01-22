@@ -121,8 +121,6 @@ public class AdminController {
             response.put("status", "failure");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);  // 로그인되지 않은 경우 응답
             }
-
-
         {
 
             // 회원 삭제 처리

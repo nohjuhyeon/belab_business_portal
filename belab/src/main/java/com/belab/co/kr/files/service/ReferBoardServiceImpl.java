@@ -172,17 +172,31 @@ public class ReferBoardServiceImpl implements ReferBoardService {
      * 게시글 삭제
      */
     @Override
-    public void deleteBoard(Long referBoardId) {
+    public boolean deleteBoard(Long referBoardId) {
+        // 1. 게시판에 연결된 파일 정보 가져오기
         List<ReferenceFileInfoVO> files = getFilesByBoardId(referBoardId);
+    
+        // 2. 파일 삭제 처리
         files.forEach(file -> {
             File physicalFile = new File(file.getFile_path());
-            if (physicalFile.exists() && physicalFile.delete()) {
-                System.out.println("Deleted file: " + file.getFile_path());
+            if (physicalFile.exists()) {
+                if (physicalFile.delete()) {
+                    System.out.println("Deleted file: " + file.getFile_path());
+                } else {
+                    System.err.println("Failed to delete file: " + file.getFile_path());
+                }
+            } else {
+                System.err.println("File does not exist: " + file.getFile_path());
             }
         });
-        referBoardMapper.deleteBoard(referBoardId);
+    
+        // 3. 게시판 삭제 처리
+        int rowsAffected = referBoardMapper.deleteBoard(referBoardId);
+    
+        // 4. 삭제 성공 여부 반환
+        return rowsAffected > 0;
     }
-
+    
     /**
      * 게시글 ID로 파일 목록 조회
      */

@@ -1,22 +1,32 @@
 package com.belab.co.kr.notice.controller;
 
+import com.belab.co.kr.admin.member.controller.AdminController;
 import com.belab.co.kr.member.vo.MemberVO;
 import com.belab.co.kr.notice.service.BoardService;
 import com.belab.co.kr.notice.service.BoardServiceImpl;
 import com.belab.co.kr.notice.vo.ContactBoardVO;
 
 import jakarta.servlet.http.HttpSession;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/notice")
 public class ContactBoardController {
-    private MemberVO loggedInUser;  // 전역변수로 선언
+    private MemberVO loggedInUser; // 전역변수로 선언
+    private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
     @Autowired
     private BoardService boardService;
 
@@ -28,8 +38,8 @@ public class ContactBoardController {
 
     @GetMapping("/boardList")
     public String getBoardList(@RequestParam(defaultValue = "1") int page,
-                               @RequestParam(defaultValue = "10") int size,
-                               Model model) {
+            @RequestParam(defaultValue = "10") int size,
+            Model model) {
         // 페이징 처리를 위한 offset 계산
         int offset = (page - 1) * size;
 
@@ -92,13 +102,12 @@ public class ContactBoardController {
         return "redirect:/notice/boardList";
     }
 
-
     // 게시판 수정 페이지
     @GetMapping("/editBoard/{dashboard_id}")
     public String editBoardForm(@PathVariable int dashboard_id, HttpSession session, Model model) {
         if (!checkLoginStatus(session, model)) {
             model.addAttribute("error", "잘못된 접근");
-            return "redirect:/member/login";  // 로그인되지 않으면 로그인 페이지로 리다이렉트
+            return "redirect:/member/login"; // 로그인되지 않으면 로그인 페이지로 리다이렉트
         }
 
         ContactBoardVO board = boardService.getBoardById(dashboard_id);
@@ -114,16 +123,34 @@ public class ContactBoardController {
         return "redirect:/notice/viewBoard/" + board.getDashboard_id();
     }
 
+
     // 게시판 삭제 처리
     @PostMapping("/deleteBoard")
-    public String deleteBoard(@RequestParam int dashboard_id, HttpSession session, Model model) {
-        if (!checkLoginStatus(session, model)) {
-            model.addAttribute("error", "잘못된 접근");
-            return "redirect:/member/login";  // 로그인되지 않으면 로그인 페이지로 리다이렉트
+    public ResponseEntity<Map<String, String>> deleteBoard(@RequestParam int dashboard_id, HttpSession session) {
+        Map<String, String> response = new HashMap<>();
+
+        // 로그인 사용자 확인
+        MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
+        if (loggedInUser == null || !"admin".equals(loggedInUser.getRole())) {
+            logger.warn("권한이 없는 사용자가 게시판 삭제를 시도했습니다.");
+            response.put("status", "failure");
+            response.put("message", "권한이 없습니다.");
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(response); // 권한 없음 응답
         }
 
-        boardService.deleteBoard(dashboard_id);
-        return "redirect:/notice/boardList";  // 게시판 목록으로 리다이렉트
+        // 게시판 삭제 처리
+        boolean isDeleted = boardService.deleteBoard(dashboard_id);
+
+        if (isDeleted) {
+            response.put("status", "success");
+            response.put("message", "게시판이 성공적으로 삭제되었습니다.");
+            return ResponseEntity.ok(response); // 성공 응답
+        } else {
+            logger.error("게시판 삭제 실패: referBoardId={}", dashboard_id);
+            response.put("status", "failure");
+            response.put("message", "게시판 삭제에 실패했습니다.");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response); // 실패 응답
+        }
     }
 
     // 게시판 상세 보기 (로그인 여부와 관계없이 조회 가능)
@@ -147,12 +174,12 @@ public class ContactBoardController {
 
     @PostMapping("/sendInquiryEmail")
     public String sendInquiryEmail(@RequestParam("type") String type,
-                                   @RequestParam("email") String email,
-                                   @RequestParam("name") String name,
-                                   @RequestParam("phone") String phone,
-                                   @RequestParam("subject") String subject,
-                                   @RequestParam("content") String content,
-                                   Model model) {
+            @RequestParam("email") String email,
+            @RequestParam("name") String name,
+            @RequestParam("phone") String phone,
+            @RequestParam("subject") String subject,
+            @RequestParam("content") String content,
+            Model model) {
         // 이메일 주소 조합
 
         // 이메일 내용 구성
@@ -174,5 +201,3 @@ public class ContactBoardController {
         return "/main";
     }
 }
-
-

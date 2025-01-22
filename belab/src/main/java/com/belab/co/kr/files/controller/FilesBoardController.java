@@ -1,5 +1,6 @@
 package com.belab.co.kr.files.controller;
 
+import com.belab.co.kr.admin.member.controller.AdminController;
 import com.belab.co.kr.files.service.ReferBoardService;
 import com.belab.co.kr.files.vo.ReferenceBoardVO;
 import com.belab.co.kr.files.vo.ReferenceFileInfoVO;
@@ -8,6 +9,9 @@ import com.belab.co.kr.notice.vo.ContactBoardVO;
 
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,13 +23,16 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.*;
 import java.net.URLEncoder;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Controller
 @RequestMapping("/files")
 public class FilesBoardController {
     private MemberVO loggedInUser; // 전역변수로 선언
+    private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
 
     @Autowired
     private ReferBoardService referBoardService;
@@ -177,16 +184,34 @@ public class FilesBoardController {
 
     // 게시판 삭제 처리
     @PostMapping("/deleteBoard")
-    public String deleteBoard(@RequestParam Long referBoardId, HttpSession session, Model model) {
-        if (!checkLoginStatus(session, model)) {
-            model.addAttribute("error", "잘못된 접근");
-            return "redirect:/member/login"; // 로그인되지 않으면 로그인 페이지로 리다이렉트
+    public ResponseEntity<Map<String, String>> deleteBoard(@RequestParam Long referBoardId, HttpSession session) {
+        Map<String, String> response = new HashMap<>();
+
+        // 로그인 사용자 확인
+        MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
+        if (loggedInUser == null || !"admin".equals(loggedInUser.getRole())) {
+            logger.warn("권한이 없는 사용자가 게시판 삭제를 시도했습니다.");
+            response.put("status", "failure");
+            response.put("message", "권한이 없습니다.");
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(response); // 권한 없음 응답
         }
 
-        referBoardService.deleteBoard(referBoardId);
-        return "redirect:/files/boardList"; // 게시판 목록으로 리다이렉트
+        // 게시판 삭제 처리
+        boolean isDeleted = referBoardService.deleteBoard(referBoardId);
+
+        if (isDeleted) {
+            response.put("status", "success");
+            response.put("message", "게시판이 성공적으로 삭제되었습니다.");
+            return ResponseEntity.ok(response); // 성공 응답
+        } else {
+            logger.error("게시판 삭제 실패: referBoardId={}", referBoardId);
+            response.put("status", "failure");
+            response.put("message", "게시판 삭제에 실패했습니다.");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response); // 실패 응답
+        }
     }
 
+    
     // 게시판 수정 페이지
     @GetMapping("/editBoard/{dashboard_id}")
     public String editBoardForm(@RequestParam Long referBoardId, HttpSession session, Model model) {

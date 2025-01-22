@@ -37,48 +37,114 @@
             </div>
           </div>
           <div class="contact-N32">
-          <div class="container">
-            <table>
-              <tr>
-                <th>제목</th>
-                <td colspan="3">${board.title}</td>
-              </tr>
-              <tr>
-                <th style="width: 10%">작성자</th>
-                <td style="width: 40%">${board.username}</td>
-                <th style="width: 10%">작성일</th>
-                <td style="width: 40%">${board.formattedCreatedAt}</td>
-              </tr>
-            </table>
+            <div class="container">
+              <table>
+                <tr>
+                  <th>제목</th>
+                  <td colspan="3">${board.title}</td>
+                </tr>
+                <tr>
+                  <th style="width: 10%">작성자</th>
+                  <td style="width: 40%">${board.username}</td>
+                  <th style="width: 10%">작성일</th>
+                  <td style="width: 40%">${board.formattedCreatedAt}</td>
+                </tr>
+              </table>
 
-            <!-- 본문 내용 -->
-            <div class="content-section">
-              <h3>본문 내용</h3>
-              <pre>${board.content}</pre>
-            </div>
-            <div class="button-container">
-              <!-- 목록 버튼 -->
-              <button type="button" class="btn" onclick="navigateTo('/notice/boardList')">목록</button>
-              <c:if test="${loggedInUser != null && loggedInUser.role == 'admin'}">
-                <!-- 수정 버튼 -->
-                <button type="button" class="btn"
-                  onclick="navigateTo('/notice/editBoard/${board.dashboard_id}')">수정</button>
+              <!-- 본문 내용 -->
+              <div class="content-section">
+                <pre>${board.content}</pre>
+              </div>
+              <div class="button-container">
+                <!-- 목록 버튼 -->
+                <button type="button" class="btn" onclick="navigateTo('/notice/boardList')">목록</button>
+                <c:if test="${loggedInUser != null && loggedInUser.role == 'admin'}">
+                  <!-- 수정 버튼 -->
+                  <button type="button" class="btn"
+                    onclick="navigateTo('/notice/editBoard/${board.dashboard_id}')">수정</button>
 
-                <!-- 삭제 버튼 -->
-                <form action="/notice/deleteBoard" method="post" style="margin-bottom: 0px;">
-                  <input type="hidden" name="dashboard_id" value="${board.dashboard_id}">
-                  <button type="submit" class="btn btn-danger">삭제</button>
-                </form>
-              </c:if>
+                  <!-- 삭제 버튼 -->
+                  <form id="deleteboard-${board.dashboard_id}" style="display:inline;">
+                    <button type="button" class="btn" onclick="showDeletePopup('${board.dashboard_id}')">삭제</button>
+                  </form>
+                </c:if>
+              </div>
             </div>
           </div>
-        </div>
-        </main>
+          <div class="mypage-N68">
+            <div class="popup-overlay" id="popup-overlay">
+              <div class="popup" id="popup-confirm-delete">
+                <h3>정말 게시글을 삭제하시겠습니까?</h3>
+                <p>이 작업은 되돌릴 수 없습니다.</p>
+                <button id="confirm-delete-button" class="btnset btnset-primary">삭제</button>
+                <button class="btnset cancel-button" id="cancel-delete-button">취소</button>
+              </div>
+              <div class="popup" id="popup-delete-success" style="display: none;">
+                <h3>게시글이 삭제되었습니다.</h3>
+                <button id="close-success-button" class="btnset btnset-primary">닫기</button>
+              </div>
+            </div>
+          </div>
+      </main>
       <%@ include file="../common/footer.jsp" %>
     </body>
     <script src="/js/setting.js"></script>
     <script src="/js/plugin.js"></script>
     <script src="/js/templatehouse.js"></script>
     <script src="/js/style.js"></script>
-    
+    <script>
+      const popupOverlay = document.getElementById("popup-overlay");
+      const confirmDeletePopup = document.getElementById("popup-confirm-delete");
+      const deleteSuccessPopup = document.getElementById("popup-delete-success");
+      const confirmDeleteButton = document.getElementById("confirm-delete-button");
+      const cancelDeleteButton = document.getElementById("cancel-delete-button");
+      const closeSuccessButton = document.getElementById("close-success-button");
+
+      let targetUserId = null;
+
+      function showDeletePopup(userId) {
+        // userId를 받아와 팝업에 표시
+        targetUserId = userId;
+
+        // 팝업 표시
+        popupOverlay.style.display = "flex";
+        confirmDeletePopup.style.display = "block";
+      }
+
+      // 삭제 확인 버튼 클릭 시
+      confirmDeleteButton.addEventListener("click", function () {
+        if (targetUserId) {
+          fetch(`/notice/deleteBoard`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: "dashboard_id=" + encodeURIComponent(targetUserId)
+          })
+            .then(response => response.json())
+            .then(data => {
+              if (data.status === "success") {
+                confirmDeletePopup.style.display = "none";
+                deleteSuccessPopup.style.display = "block";
+              }
+            })
+            .catch(error => console.error("Error:", error));
+        }
+      });
+
+      // 삭제 취소 버튼 클릭 시 팝업 닫기
+      cancelDeleteButton.addEventListener("click", function () {
+        popupOverlay.style.display = "none";
+        confirmDeletePopup.style.display = "none";
+      });
+
+      closeSuccessButton.addEventListener("click", function () {
+        popupOverlay.style.display = "none";
+        deleteSuccessPopup.style.display = "none";
+        // 페이지를 새로고침하거나 삭제된 데이터를 UI에서 제거
+        window.location.href = "/files/boardList";
+      });
+
+    </script>
+
     </html>
