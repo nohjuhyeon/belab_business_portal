@@ -176,7 +176,7 @@
                       <div class="inputset">
                         <label for="title" class="form-tit h6">글 제목</label>
                         <input id="title" type="text" name="title" class="inputset-input form-control"
-                          placeholder="제목을 입력하세요." value="${board.title}" required />
+                          placeholder="제목을 입력하세요." required="" />
                       </div>
                     </div>
                     <div class="form-box">
@@ -220,5 +220,8 @@
 
       <%@ include file="../common/footer.jsp" %>
     </body>
+    <script>
+      document.getElementById('title').value = `${board.title}`;
+    </script>
 
     </html>
