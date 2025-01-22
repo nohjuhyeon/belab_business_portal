@@ -567,7 +567,6 @@
 }
 
 .basic-N10 .contents-inner {
-    width: calc(100% + 16rem);
     height: 400px;
     margin-left: -8rem
 }
@@ -1820,7 +1819,8 @@
 .butti-N1 .header-left {
     display: flex;
     align-items: center;
-    gap: 3rem
+    gap: 3rem;
+    padding-left: 3rem;
 }
 
 .butti-N1 .header-title {
@@ -1944,7 +1944,8 @@
 
 .butti-N1 .header-right {
     display: flex;
-    align-items: center
+    align-items: center;
+    padding-right: 4rem;
 }
 
 .butti-N1 .header-right .header-gnb {
@@ -2242,7 +2243,7 @@
 
 .butti-N1 .fullmenu-close {
     position: fixed;
-    right: 8rem;
+    right: 3rem;
     top: 2.4rem;
     width: 3.2rem;
     height: 3.2rem;

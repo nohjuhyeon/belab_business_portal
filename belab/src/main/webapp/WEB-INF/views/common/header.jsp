@@ -26,7 +26,7 @@
       </c:choose>">
       <div class="th-layout-header">
         <header class="butti-N1" id="unm5z1y12U">
-          <div class="header-container container-full">
+          <div class="header-container ">
             <div class="header-left">
               <h1 class="header-title">
                 <a href="/">
@@ -120,22 +120,22 @@
                     </ul>
                   </li>
                   <li class="header-gnbitem on">
-                    <a class="header-gnblink" href="/errorpage">
+                    <a class="header-gnblink" href="/notice/boardList">
                       <span>고객 센터</span>
                     </a>
                     <ul class="header-sublist">
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/notice/boardList">
                           <span>공지사항</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/notice/customers">
                           <span>고객의 소리</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/files/boardList">
                           <span>자료실</span>
                         </a>
                       </li>

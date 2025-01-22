@@ -23,7 +23,7 @@
   <div class="th-layout-content">
     <!-- 상단 비주얼 -->
     <div class="mypage-N10">
-      <div class="contents-container container-full">
+      <div class="contents-container ">
         <div class="contents-inner">
           <div class="contents-visual">
             <picture>

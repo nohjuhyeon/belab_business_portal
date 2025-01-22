@@ -22,7 +22,7 @@
         <div class="th-layout-stickyleft"></div>
         <div class="th-layout-content">
           <div class="mypage-N10" id="HtM5yS8Tf5">
-            <div class="contents-container container-full">
+            <div class="contents-container ">
               <div class="contents-inner">
                 <div class="contents-visual">
                   <picture>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="contents-body">
                   <div class="textset">
-                    <h2 class="h1 textset-tit">개인정보 수정</h2>
+                    <h2 class="h1 textset-tit">회원 정보 수정</h2>
                   </div>
                 </div>
               </div>
