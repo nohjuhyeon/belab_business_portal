@@ -17,17 +17,6 @@
                 <link rel="stylesheet" href="/css/templatehouse.css" />
                 <link rel="stylesheet" href="/css/style.css" />
                 <style>
-                    .img-box {
-                        height: 60%;
-                        max-width: 80%;
-                    }
-
-                    .technical-box {
-                        position: relative;
-                        background: #fafafa;
-                        padding: 2rem 0rem;
-                        border-radius: 2rem;
-                    }
                 </style>
             </head>
 
@@ -48,7 +37,7 @@
                                     </div>
                                     <div class="contents-body">
                                         <div class="textset">
-                                            <h2 class="h1 textset-tit">데이터 서비스</h2>
+                                            <h2 class="h1 textset-tit">AI 비즈니스 혁신 서비스</h2>
                                         </div>
                                     </div>
                                 </div>
