@@ -86,7 +86,7 @@
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/platform/ai">
                           <span>응용데이터 사업</span>
                         </a>
                       </li>
