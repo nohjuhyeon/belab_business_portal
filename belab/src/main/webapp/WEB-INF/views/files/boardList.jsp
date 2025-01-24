@@ -30,7 +30,7 @@
     <div class="th-layout-stickyleft"></div>
     <div class="th-layout-content">
         <div class="mypage-N10" id="HtM5yS8Tf5">
-            <div class="contents-container container-full">
+            <div class="contents-container ">
                 <div class="contents-inner">
                     <div class="contents-visual">
                         <picture>
@@ -90,7 +90,7 @@
                                 </thead>
                                 <tbody>
                                 <c:forEach var="board" items="${boards}">
-                                    <tr>
+                                    <tr onclick="window.location.href='/files/viewBoard/${board.refer_board_id}'">
                                         <td class="p2 tableset-mobile">${board.refer_board_id}</td>
                                         <td class="p2 text-left tableset tableset-tit-ellipsis tableset-tit">
                                             <a href="/files/viewBoard/${board.refer_board_id}">${board.title}</a>

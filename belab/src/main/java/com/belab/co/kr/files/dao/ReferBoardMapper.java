@@ -42,4 +42,6 @@ public interface ReferBoardMapper {
 
     // 첨부파일 ID로 파일 정보 조회
     ReferenceFileInfoVO selectFileById(@Param("file_id") Long file_id);
-}
+
+    // 첨부파일 ID로 파일 정보 삭제
+    int deleteFile(@Param("file_id") Long file_id);}

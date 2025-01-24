@@ -6,12 +6,17 @@ import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/admin")
@@ -102,31 +107,36 @@ public class AdminController {
             logger.error("회원 정보 수정 중 예외 발생: userId={}, error={}", memberVO.getUser_id(), e.getMessage(), e);
             redirectAttributes.addFlashAttribute("error", "회원 정보 수정 중 오류가 발생했습니다.");
         }
-        return "redirect:/member/login";
+        return "redirect:/admin/memberList";
     }
 
-    // 회원 삭제 처리
-    @PostMapping("/delete")
-    public String deleteMember(@RequestParam("user_id") String userId, HttpSession session, RedirectAttributes redirectAttributes) {
+
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, String>> deleteMember(@RequestParam("user_id") String userId, HttpSession session, SessionStatus sessionStatus) {
+        Map<String, String> response = new HashMap<>();
+
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
         if (loggedInUser == null || !"admin".equals(loggedInUser.getRole())) {
             logger.warn("권한이 없는 사용자가 접근했습니다.");
-            return "redirect:/member/login";
-        }
-
-        try {
-            boolean isDeleted = adminService.deleteMemberById(userId);
-            if (isDeleted) {
-                logger.info("회원 삭제 성공: userId={}", userId);
-                redirectAttributes.addFlashAttribute("success", "회원이 성공적으로 삭제되었습니다.");
-            } else {
-                logger.error("회원 삭제 실패: userId={}", userId);
-                redirectAttributes.addFlashAttribute("error", "회원 삭제에 실패했습니다.");
+            response.put("status", "failure");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);  // 로그인되지 않은 경우 응답
             }
-        } catch (Exception e) {
-            logger.error("회원 삭제 중 예외 발생: userId={}, error={}", userId, e.getMessage(), e);
-            redirectAttributes.addFlashAttribute("error", "회원 삭제 중 오류가 발생했습니다.");
+        {
+
+            // 회원 삭제 처리
+            boolean isDeleted = adminService.deleteMemberById(userId);
+
+            if (isDeleted) {
+                // 세션 종료
+                sessionStatus.setComplete();  // 세션 초기화
+
+                response.put("status", "success");
+                return ResponseEntity.ok(response);  // 성공 응답
+            } else {
+                response.put("status", "failure");
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);  // 실패 응답
+            }
         }
-        return "redirect:/admin/memberList";
     }
+
 }

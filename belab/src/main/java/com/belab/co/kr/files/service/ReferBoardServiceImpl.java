@@ -28,7 +28,6 @@ public class ReferBoardServiceImpl implements ReferBoardService {
      * 초기화: 파일 저장 디렉토리 생성
      */
 
-
     /**
      * 게시글 목록 조회
      */
@@ -131,25 +130,73 @@ public class ReferBoardServiceImpl implements ReferBoardService {
      * 게시글 수정
      */
     @Override
-    public void updateBoard(ReferenceBoardVO board) {
+    public void updateBoard(ReferenceBoardVO board, MemberVO member, List<MultipartFile> newFiles, List<Long> filesToDelete) {
+        validateMember(member);
+    
+        // 게시글 업데이트
         referBoardMapper.updateBoard(board);
+    
+        // 파일 삭제 처리
+        if (filesToDelete != null && !filesToDelete.isEmpty()) {
+            filesToDelete.forEach(this::deleteFile);
+        }
+    
+        // 새 파일 업로드 처리
+        if (newFiles != null && !newFiles.isEmpty()) {
+            uploadFiles(newFiles, board.getRefer_board_id());
+        }
+    }
+
+    @Override
+    public void deleteFile(Long fileId) {
+        // 파일 정보 조회
+        ReferenceFileInfoVO fileInfo = referBoardMapper.selectFileById(fileId);
+        if (fileInfo != null) {
+            // 실제 파일 삭제
+            File physicalFile = new File(fileInfo.getFile_path());
+            if (physicalFile.exists() && physicalFile.delete()) {
+                System.out.println("삭제된 파일: " + fileInfo.getFile_path());
+            } else {
+                System.err.println("파일 삭제 실패 또는 파일이 존재하지 않음: " + fileInfo.getFile_path());
+            }
+
+            // 데이터베이스에서 파일 정보 삭제
+            referBoardMapper.deleteFile(fileId);
+            System.out.println("데이터베이스에서 파일 정보 삭제 완료. 파일 ID: " + fileId);
+        } else {
+            System.err.println("파일 정보를 찾을 수 없습니다. 파일 ID: " + fileId);
+        }
     }
 
     /**
      * 게시글 삭제
      */
     @Override
-    public void deleteBoard(Long referBoardId) {
+    public boolean deleteBoard(Long referBoardId) {
+        // 1. 게시판에 연결된 파일 정보 가져오기
         List<ReferenceFileInfoVO> files = getFilesByBoardId(referBoardId);
+    
+        // 2. 파일 삭제 처리
         files.forEach(file -> {
             File physicalFile = new File(file.getFile_path());
-            if (physicalFile.exists() && physicalFile.delete()) {
-                System.out.println("Deleted file: " + file.getFile_path());
+            if (physicalFile.exists()) {
+                if (physicalFile.delete()) {
+                    System.out.println("Deleted file: " + file.getFile_path());
+                } else {
+                    System.err.println("Failed to delete file: " + file.getFile_path());
+                }
+            } else {
+                System.err.println("File does not exist: " + file.getFile_path());
             }
         });
-        referBoardMapper.deleteBoard(referBoardId);
+    
+        // 3. 게시판 삭제 처리
+        int rowsAffected = referBoardMapper.deleteBoard(referBoardId);
+    
+        // 4. 삭제 성공 여부 반환
+        return rowsAffected > 0;
     }
-
+    
     /**
      * 게시글 ID로 파일 목록 조회
      */
@@ -193,4 +240,5 @@ public class ReferBoardServiceImpl implements ReferBoardService {
             throw new IllegalStateException("로그인 정보가 없습니다.");
         }
     }
+
 }

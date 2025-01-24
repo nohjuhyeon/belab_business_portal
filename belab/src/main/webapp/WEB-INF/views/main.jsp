@@ -66,7 +66,7 @@
                     <div class="cardset-body">
                       <div class="cardset-tit row">
                         <h5 class="h3 col">데이터 서비스</h5>
-                        <a href="/main" class="col" style="text-align: right;">More</a>
+                        <a href="/dataservice/main" class="col" style="text-align: right;">More</a>
                       </div>
                       <p class="cardset-desc h6" style="color: var(--primary);">최적의 데이터베이스 운영 방안을 제공합니다.</p>
                       <p class="p1 cardset-desc">오라클 소프트웨어 전 제품을 공급하며, 데이터베이스 설계, 진단, 컨설팅을 통해 최적의 운영 방안을 제시합니다. </p>
@@ -110,14 +110,14 @@
 
 
           <section class="mediastock-N7" id="Sxm5YNOwkd">
-            <div class="contents-container container-full">
+            <div class="contents-container ">
               <div class="contents-inner">
                 <h2 class="h3">                  (주) 비이랩은 항상 고객과의 소통을 위해 노력합니다.
 
                   <br />
                   언제든지 문의해주셔도 됩니다. 항상 고객의 입장에서 생각합니다.
                 </h2>
-                <a href="javascript:void(0)" class="btnset btnset-light btnset-lg">CONTACT US</a>
+                <a href="/notice/customers" class="btnset btnset-light btnset-lg">CONTACT US</a>
               </div>
             </div>
           </section>

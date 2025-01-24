@@ -1,5 +1,6 @@
 package com.belab.co.kr.notice.service;
 
+import com.belab.co.kr.files.vo.ReferenceFileInfoVO;
 import com.belab.co.kr.member.vo.MemberVO;
 import com.belab.co.kr.notice.dao.BoardMapper;
 import com.belab.co.kr.notice.service.BoardService;
@@ -11,6 +12,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.File;
 import java.util.List;
 
 @Service
@@ -134,20 +136,11 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public void deleteBoard(int dashboard_id) {
-        System.out.println("Deleting board with ID: " + dashboard_id);
-
-        try {
-            int rowsDeleted = boardMapper.deleteBoard(dashboard_id);
-            if (rowsDeleted > 0) {
-                System.out.println("Board deleted successfully.");
-            } else {
-                System.out.println("No board found with ID: " + dashboard_id);
-            }
-        } catch (Exception e) {
-            System.out.println("Error while deleting board: " + e.getMessage());
-            e.printStackTrace();
-            throw e;
-        }
+    public boolean deleteBoard(int dashboard_id) {
+        int rowsAffected = boardMapper.deleteBoard(dashboard_id);
+    
+        // 4. 삭제 성공 여부 반환
+        return rowsAffected > 0;
     }
+
 }

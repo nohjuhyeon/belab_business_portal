@@ -27,7 +27,7 @@
         <div class="th-layout-stickyleft"></div>
         <div class="th-layout-content">
           <div class="basic-N10" id="ytM5Z21bIr">
-            <div class="contents-container container-full">
+            <div class="contents-container ">
               <div class="contents-inner">
                 <div class="contents-visual">
                   <picture>
@@ -54,17 +54,17 @@
                     </div>
                     <div class="form-box">
                       <div class="inputset" th-hoverbox="true">
-                
-                        <label for="contact-N24-inputset-a-1" class="form-tit h6" data-listener-added_05080d17="true">글
-                          제목</label><input id="contact-N24-inputset-a-1" type="text" name="title" id="title"
-                          class="inputset-input form-control" placeholder="제목을 입력하세요." value="${board.title}"
-                          required />
+
+                        <label for="title" class="form-tit h6" data-listener-added_05080d17="true">글
+                          제목</label>
+                          <input id="title" type="text" name="title" class="inputset-input form-control"
+                          placeholder="제목을 입력하세요." required="" />
                       </div>
                     </div>
                     <div class="form-box">
                       <div class="inputset">
                         <label for="contact-N24-textarea-a-1" class="form-tit h6">내용</label>
-                        <textarea id="contact-N24-textarea-a-1" name="content" class="inputset-textarea form-control" 
+                        <textarea id="contact-N24-textarea-a-1" name="content" class="inputset-textarea form-control"
                           placeholder="내용을 입력해주세요." required>${board.content}</textarea>
                         <div class="inputset-langth">
                           <span class="p1 inputset-count">0</span>
@@ -88,10 +88,13 @@
 
       <%@ include file="../common/footer.jsp" %>
     </body>
+    <script>
+      document.getElementById('title').value = `${board.title}`;
+    </script>
     <script src="/js/setting.js"></script>
     <script src="/js/plugin.js"></script>
     <script src="/js/templatehouse.js"></script>
     <script src="/js/style.js"></script>
-    
+
 
     </html>

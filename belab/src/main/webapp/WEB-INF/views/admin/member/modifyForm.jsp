@@ -1,125 +1,217 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="/WEB-INF/views/common/header.jsp" %>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="format-detection" content="telephone=no"/>
-  <link rel="stylesheet" href="/css/style.css"/>
-  <style>
-    /* 스타일 정의 */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-    }
-    .dropdown-btn {
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .sidebar {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 200px;
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      z-index: 1000;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    }
-    .sidebar.open {
-      display: block;
-    }
-    .sidebar a {
-      color: #fff;
-      text-decoration: none;
-      display: block;
-      margin: 10px 0;
-    }
-    .form-box {
-      margin: 20px 0;
-    }
-    .form-box label {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-    }
-    .form-box input, .form-box select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-    .form-btn button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .form-btn .cancel-button {
-      background-color: #dc3545;
-      margin-left: 10px;
-    }
-  </style>
-</head>
-<body>
-<main>
-  <div>
-    <h2>회원정보 수정</h2>
-    <form id="modifyForm" action="/member/modify" method="post">
-      <div class="form-box">
-        <label for="username">이름</label>
-        <input id="username" type="text" name="username" value="${member.username}" required/>
-      </div>
-      <div class="form-box">
-        <label for="email">E-mail</label>
-        <input id="email" type="email" name="email" value="${member.email}" readonly required/>
-      </div>
-      <div class="form-box">
-        <label for="hp">전화번호</label>
-        <input id="hp" type="tel" name="hp" value="${member.hp}" required/>
-      </div>
-      <div class="form-box">
-        <label for="password">패스워드</label>
-        <input id="password" type="text" name="password" value="${member.password}" required/>
-      </div>
-      <div class="form-box">
-        <label for="role">소속</label>
-        <div>
-          <input type="radio" id="belab" name="role" value="belab" ${member.role == 'belab' ? 'checked' : ''}>
-          <label for="belab">비이랩</label>
-          <input type="radio" id="user" name="role" value="user" ${member.role == 'user' ? 'checked' : ''}>
-          <label for="user">기타 소속</label>
-          <input type="radio" id="admin" name="role" value="admin" ${member.role == 'admin' ? 'checked' : ''}>
-          <label for="admin">관리자</label>
-        </div>
-      </div>
-      <div class="form-btn">
-        <button type="submit">수정</button>
-        <a class="cancel-button" href="/mypage/intro">취소</a>
-      </div>
-    </form>
-  </div>
-</main>
+  <%@ include file="../../common/header.jsp" %>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta http-equiv="imagetoolbar" content="no" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="stylesheet" href="/css/setting.css" />
+      <link rel="stylesheet" href="/css/plugin.css" />
+      <link rel="stylesheet" href="/css/templatehouse.css" />
+      <link rel="stylesheet" href="/css/style.css" />
+    </head>
+
+    <body>
+
+      <main class="th-layout-main">
+        <div class="th-layout-sideleft"></div>
+        <div class="th-layout-stickyleft"></div>
+        <div class="th-layout-content">
+          <div class="mypage-N10" id="HtM5yS8Tf5">
+            <div class="contents-container ">
+              <div class="contents-inner">
+                <div class="contents-visual">
+                  <picture>
+                    <source srcset="/images/img_subvisual_mobile.png" media="(max-width: 992px)" />
+                    <img src="/images/img_subvisual.png" alt="비주얼 이미지" />
+                  </picture>
+                </div>
+                <div class="contents-body">
+                  <div class="textset">
+                    <h2 class="h1 textset-tit">회원 정보 수정</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="basic-N55" id="pFM5yS8tiD">
+            <div class="contents-container container-md">
+              <div class="tabset tabset-solid border-bottom">
+              </div>
+            </div>
+          </div>
+          <div class="mypage-N58">
+            <!-- 드롭다운 버튼 -->
+            <button class="dropdown-btn btnset-primary" onclick="toggleSidebar()">메뉴</button>
+
+            <!-- 좌측 사이드바 -->
+            <div class="sidebar" id="sidebar">
+              <a href="/admin/memberList">회원 관리</a>
+              <a href="/admin/users">공지사항 관리</a>
+              <a href="/admin/validatePasswordForm">자료실 관리</a>
+            </div>
+
+            <!-- 우측 내용 -->
+            <div class="content">
+              <div class="mypage-N38" id="xxm5yRsU3Q">
+                <div class="contents-container container-md">
+                  <div class="contents-inner">
+                    <div class="form-group">
+                      <form id="modifyForm" action="/admin/modify" method="post" onsubmit="return validateForm(event)">
+                        <input id="user_id" type="hidden" name="user_id" value="${member.user_id}" />
+
+                        <div class="form-box">
+                          <div class="inputset inputset-line">
+                            <label for="username" class="form-tit h6">이름 <span>*</span>
+                            </label>
+                            <input id="username" type="text" name="username" class="inputset-input form-control"
+                              placeholder="이름을 입력해주세요." value="${member.username}" required="" />
+                          </div>
+                        </div>
+                        <div class="form-box">
+                          <div class="inputset inputset-line">
+                            <label for="email" class="form-tit h6">E-mail <span>*</span>
+                            </label>
+                            <input id="email" type="email" name="email" class="inputset-input form-control"
+                              value="${member.email}" readonly required />
+                          </div>
+                        </div>
+                        <div class="form-box">
+                          <div class="inputset inputset-line">
+                            <label for="password" class="form-tit h6">password <span>*</span>
+                            </label>
+                            <input id="password" type="text" name="password" class="inputset-input form-control"
+                              value="${member.password}" placeholder="비밀번호를 입력해주세요." required />
+                          </div>
+                        </div>
+                        <div class="form-box">
+                          <div class="inputset inputset-line">
+                            <label for="hp" class="form-tit h6">전화번호 <span>*</span>
+                            </label>
+                            <input id="hp" type="hp" name="hp" class="inputset-input form-control"
+                              value="${member.hp}" placeholder="전화번호를 입력해주세요." required="" />
+                          </div>
+                        </div>
+                        <div class="form-box">
+                          <legend class="form-tit h6">소속<span>*</span>
+                          </legend>
+                          <div class="checkset-wrap">
+                            <div class="checkset checkset-fill">
+                              <c:choose>
+                                <c:when test="${not empty member && member.role == 'belab'}">
+                                  <input id="belab" name="role" class="checkset-input" type="radio" value="belab"
+                                    checked />
+                                </c:when>
+                                <c:otherwise>
+                                  <input id="belab" name="role" class="checkset-input" type="radio" value="belab" />
+                                </c:otherwise>
+                              </c:choose>
+                              <label for="belab" class="checkset-label">비이랩</label>
+                            </div>
+                            <div class="checkset checkset-fill">
+                              <c:choose>
+                                <c:when test="${not empty member && member.role == 'user'}">
+                                  <input id="user" name="role" class="checkset-input" type="radio" value="user"
+                                    checked />
+                                </c:when>
+                                <c:otherwise>
+                                  <input id="user" name="role" class="checkset-input" type="radio" value="user" />
+                                </c:otherwise>
+                              </c:choose>
+                              <label for="user" class="checkset-label">기타 소속</label>
+                            </div>
+                            <div class="checkset checkset-fill">
+                              <c:choose>
+                                <c:when test="${not empty member && member.role == 'admin'}">
+                                  <input id="admin" name="role" class="checkset-input" type="radio" value="admin"
+                                    checked />
+                                </c:when>
+                                <c:otherwise>
+                                  <input id="admin" name="role" class="checkset-input" type="radio" value="admin" />
+                                </c:otherwise>
+                              </c:choose>
+                              <label for="admin" class="checkset-label">관리자</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-box">
+                          <div class="inputset">
+                          </div>
+                        </div>
+                        <div class="form-btn">
+                          <button id="submitButton" class="btnset btnset-primary" type="submit">수정하기</button>
+                          <a id="cancleButton" class="btnset cancel-button" href="/admin/memberList">취소하기</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mypage-N66">
+            <div class="popup-overlay" onclick="closePopup()"></div>
+            <div class="custom-popup">
+              <h4>알림</h4>
+              <p>비밀번호가 일치하지 않습니다.</p>
+              <button class="btnset btnset-primary" onclick="closePopup()">확인</button>
+            </div>
+          </div>
+          <%@ include file="../../common/footer.jsp" %>
+    </body>
+    <script src="/js/setting.js"></script>
+    <script src="/js/plugin.js"></script>
+    <script src="/js/templatehouse.js"></script>
+    <script src="/js/style.js"></script>
+    
 <script>
-  function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('open');
-  }
-</script>
-</body>
-</html>
+      function toggleSubmitButton() {
+        const username = document.getElementById('username').value.trim();
+        const phone = document.getElementById('hp').value.trim();
+        const role = document.querySelector('input[name="role"]:checked');
+
+        const submitButton = document.getElementById('submitButton');
+
+        // 모든 필수 입력 필드가 채워지고, 체크박스가 체크되었을 경우 버튼 활성화
+        if (username && phone && role) {
+          submitButton.disabled = false;
+        } else {
+          submitButton.disabled = true;
+        }
+      }
+
+      document.querySelectorAll('input').forEach(input => {
+        input.addEventListener('input', toggleSubmitButton);
+      });
+
+      document.querySelectorAll('input[type="radio"]').forEach(input => {
+        input.addEventListener('change', toggleSubmitButton);
+      });
+
+      function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('open');
+      }    // 팝업 표시 함수
+
+      function showPopup(message) {
+        const popup = document.querySelector('.custom-popup');
+        const overlay = document.querySelector('.popup-overlay');
+        popup.querySelector('p').innerText = message;
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+      }
+
+      function closePopup() {
+        const popup = document.querySelector('.custom-popup');
+        const overlay = document.querySelector('.popup-overlay');
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+      }
+
+    </script>
+
+    </html>

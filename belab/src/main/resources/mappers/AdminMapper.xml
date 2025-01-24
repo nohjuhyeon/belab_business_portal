@@ -38,7 +38,6 @@
             email      = #{email},
             password   = #{password},
             hp         = #{hp},
-            is_active  = #{isActive},
             role       = #{role},
             updated_at = NOW()
         WHERE user_id = #{user_id}
