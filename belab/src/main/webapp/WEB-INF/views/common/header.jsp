@@ -55,51 +55,51 @@
                     </ul>
                   </li>
                   <li class="header-gnbitem on">
-                    <a class="header-gnblink" href="/dataservice/main"> <span>Data Service</span>
+                    <a class="header-gnblink" href="/errorpage"> <span>SI 사업부</span>
                     </a>
                     <ul class="header-sublist">
                       <li class="header-subitem on">
-                        <a class="p3 header-sublink" href="/dataservice/db"> <span>DB</span>
+                        <a class="header-sublink p3" href="/errorpage">
+                          <span>SI</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="p3 header-sublink" href="/dataservice/web"> <span>WEB</span>
-                        </a>
-                      </li>
-                      <li class="header-subitem">
-                        <a class="p3 header-sublink" href="/dataservice/was"> <span>WAS</span>
+                        <a class="header-sublink p3" href="/errorpage">
+                          <span>SM</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/dataservice/dataHub"> <span>Data Hub Platform</span>
+                        <a class="header-sublink p3" href="/errorpage">
+                          <span>NI</span>
                         </a>
                       </li>
+
                     </ul>
                   </li>
                   <li class="header-gnbitem on">
-                    <a class="header-gnblink" href="/errorpage"> <span>Platform Service</span>
+                    <a class="header-gnblink" href="/platform/main"> <span>플랫폼 사업부</span>
                     </a>
                     <ul class="header-sublist">
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
-                          <span>MSP(cloud)</span>
+                        <a class="header-sublink p3" href="/platform/data">
+                          <span>기반 데이터 사업</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
                         <a class="header-sublink p3" href="/errorpage">
-                          <span>Hosting</span>
+                          <span>응용데이터 사업</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
                         <a class="header-sublink p3" href="/errorpage">
-                          <span>K-PaaS</span>
+                          <span>클라우드 사업</span>
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li class="header-gnbitem on">
                     <a class="header-gnblink" href="/errorpage">
-                      <span>Content Service</span>
+                      <span>미래전략 사업부부</span>
                     </a>
                     <ul class="header-sublist">
                       <li class="header-subitem on">
@@ -115,6 +115,26 @@
                       <li class="header-subitem on">
                         <a class="header-sublink p3" href="/errorpage">
                           <span>BePET</span>
+                        </a>
+                      </li>
+                      <li class="header-subitem on">
+                        <a class="header-sublink p3" href="/errorpage">
+                          <span>BeSCHOOL</span>
+                        </a>
+                      </li>
+                      <li class="header-subitem on">
+                        <a class="header-sublink p3" href="/errorpage">
+                          <span>BeGREEN</span>
+                        </a>
+                      </li>
+                      <li class="header-subitem on">
+                        <a class="header-sublink p3" href="/errorpage">
+                          <span>BeYOTTA</span>
+                        </a>
+                      </li>
+                      <li class="header-subitem on">
+                        <a class="header-sublink p3" href="/errorpage">
+                          <span>BeCARE</span>
                         </a>
                       </li>
                     </ul>
