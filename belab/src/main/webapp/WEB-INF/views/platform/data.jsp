@@ -1018,7 +1018,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/was/weblogic.jpg" alt="이미지" />
+                                                            src="/images/dataservice/was/weblogic.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -1064,26 +1064,13 @@
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
-                                                    <h2 class="h5">JBoss</h2>
+                                                    <h2 class="h5">JBoss&Wildfly</h2>
                                                     <ul class="contents-list">
                                                         <li class="contents-item p2">
-                                                            Java EE 기반 오픈소스 애플리케이션 서버로, 안정성과 확장성이 뛰어난 서버 환경을 제공.
+                                                            JBoss: Java EE 기반 오픈소스 애플리케이션 서버로, 안정성과 확장성이 뛰어난 서버 환경을 제공.
                                                         </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col cardset">
-                                                <div class="img-box">
-                                                    <figure class="cardset-figure">
-                                                        <img class="cardset-img"
-                                                            src="/images/dataservice/was/wildfly.png" alt="이미지" />
-                                                    </figure>
-                                                </div>
-                                                <div class="cardset-body">
-                                                    <h2 class="h5">Wildfly</h2>
-                                                    <ul class="contents-list">
                                                         <li class="contents-item p2">
-                                                            JBoss의 후속 프로젝트로, 경량화와 빠른 성능을 목표로 설계된 최신 Java 애플리케이션 서버임.
+                                                            Wildfly: JBoss의 후속 프로젝트로, 경량화와 빠른 성능을 목표로 설계된 최신 Java 애플리케이션 서버임.
                                                         </li>
                                                     </ul>
                                                 </div>

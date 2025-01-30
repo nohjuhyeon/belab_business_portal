@@ -229,66 +229,93 @@
                       </li>
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="/Directions">
-                          <span>오시는 길</span>
+                          <span>오시는길</span>
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li class="fullmenu-gnbitem">
-                    <a class="h6 fullmenu-gnblink" href="/dataservice/main"> <span>Data Service</span>
-                    </a>
-                    <ul class="fullmenu-sublist">
-                      <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/dataservice/db"> <span>DB</span>
-                        </a>
-                      </li>
-                      <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/dataservice/web"> <span>WEB</span>
-                        </a>
-                      </li>
-                      <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/dataservice/was"> <span>WAS</span>
-                        </a>
-                      </li>
-                      <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/dataservice/dataHub"> <span>Data Hub Platform</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="fullmenu-gnbitem">
-                    <a class="h6 fullmenu-gnblink" href="/errorpage"> <span>Platform Service</span>
+                    <a class="h6 fullmenu-gnblink" href="/errorpage">
+                      <span>SI 사업부</span>
                     </a>
                     <ul class="fullmenu-sublist">
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="/errorpage">
-                          <span>MSP(cloud)</span>
+                          <span>SI</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage"> <span>Hosting</span>
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>SM</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage"> <span>K-PaaS</span>
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>NI</span>
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li class="fullmenu-gnbitem">
-                    <a class="h6 fullmenu-gnblink" href="/errorpage"> <span>Content Service</span>
+                    <a class="h6 fullmenu-gnblink" href="/platform/main">
+                      <span>플랫폼 사업부</span>
                     </a>
                     <ul class="fullmenu-sublist">
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage"> <span>BeLOG</span>
+                        <a class="p1 fullmenu-sublink" href="/platform/data">
+                          <span>기반 데이터 사업</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage"> <span>BeMON</span>
+                        <a class="p1 fullmenu-sublink" href="/platform/ai">
+                          <span>응용데이터 사업</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage"> <span>BePET</span>
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>클라우드 사업</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="fullmenu-gnbitem">
+                    <a class="h6 fullmenu-gnblink" href="/errorpage">
+                      <span>미래전략 사업부부</span>
+                    </a>
+                    <ul class="fullmenu-sublist">
+                      <li class="fullmenu-subitem">
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>BeLOG</span>
+                        </a>
+                      </li>
+                      <li class="fullmenu-subitem">
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>BeMON</span>
+                        </a>
+                      </li>
+                      <li class="fullmenu-subitem">
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>BePET</span>
+                        </a>
+                      </li>
+                      <li class="fullmenu-subitem">
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>BeSCHOOL</span>
+                        </a>
+                      </li>
+                      <li class="fullmenu-subitem">
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>BeGREEN</span>
+                        </a>
+                      </li>
+                      <li class="fullmenu-subitem">
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>BeYOTTA</span>
+                        </a>
+                      </li>
+                      <li class="fullmenu-subitem">
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>BeCARE</span>
                         </a>
                       </li>
                     </ul>
@@ -300,7 +327,7 @@
                     <ul class="fullmenu-sublist">
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="/notice/boardList">
-                          <span>공지 사항</span>
+                          <span>공지사항</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
