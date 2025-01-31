@@ -40,79 +40,68 @@
                 </div>
               </div>
             </div>
-            <div class="service-N42" id="cvM64D6q1q">
+            <div class="service-N28" id="cvM64D6q1q">
               <div class="contents-container container-md">
                 <div class="contents-inner">
-                  <div class="textset">
-                  </div>
-                  <div class="swiper contents-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="/dataservice/db" class="cardset">
-                          <figure class="cardset-figure">
-                            <img class="cardset-img" src="/images/img_basic_N42_1.png" alt="스와이퍼 이미지" />
-                          </figure>
-                          <div class="cardset-body">
-                            <span class="h6">Database 소개</span>
-                            <h2 class="p2 cardset-tit">데이터베이스는 안정적이고 확장 가능한 데이터 저장 및 관리 인프라로, 모든 애플리케이션과 시스템의 중심 역할을 합니다.</h2>
-                            <a href="/dataservice/db" class="h6 cardset-desc btnset btnset-primary">바로가기</a>
-                          </div>
-                        </a>
+                  <div class="row row-cols-3 row-md-cols-1 gutter-2 contents-group">
+                    <div class="col">
+                      <div class="cardset cardset-hover cardset-border">
+                        <figure class="cardset-figure">
+                          <img class="cardset-img" src="/images/img_basic_N42_1.png" alt="카드 이미지">
+                        </figure>
+                        <div class="cardset-cont">
+                          <h2 class="h5 cardset-tit">기반 데이터 사업부</h2>
+                          <p class="p1 cardset-desc">기반 데이터 사업부는 데이터 수집, 분석, 활용을 통해 고객 맞춤형 솔루션을 제공합니다.</p>
+                        </div>
+                        <div class="cardset-btn">
+                          <a class="btnset btnset-sm" href="/platform/data">자세히보기</a>
+                        </div>
                       </div>
-                      <div class="swiper-slide">
-                        <a href="/dataservice/web" class="cardset">
-                          <figure class="cardset-figure">
-                            <img class="cardset-img" src="/images/img_basic_N42_2.png" alt="스와이퍼 이미지" />
-                          </figure>
-                          <div class="cardset-body">
-                            <span class="h6">WEB 소개</span>
-                            <h2 class="p2 cardset-tit">웹 요청을 처리하고 정적 및 동적 콘텐츠를 효율적으로 제공하는 고성능 웹 서버 소프트웨어입니다.</h2>
-                            <a href="/dataservice/web" class="h6 cardset-desc btnset btnset-primary">바로가기</a>
-                          </div>
-                        </a>
+                    </div>
+                    <div class="col">
+                      <div class="cardset cardset-hover cardset-border">
+                        <figure class="cardset-figure">
+                          <img class="cardset-img" src="/images/img_basic_N42_2.png" alt="카드 이미지">
+                        </figure>
+                        <div class="cardset-cont">
+                          <h2 class="h5 cardset-tit">응용 데이터 사업부</h2>
+                          <p class="p1 cardset-desc">AI 기술을 활용하여 데이터 분석과 예측 모델을 개발하며, 고객에게 맞춤형 인공지능 솔루션을 제공합니다.&nbsp;
+                          </p>
+                        </div>
+                        <div class="cardset-btn">
+                          <a class="btnset btnset-sm" href="/platform/ai">자세히보기</a>
+                        </div>
                       </div>
-                      <div class="swiper-slide">
-                        <a href="/dataservice/was" class="cardset">
-                          <figure class="cardset-figure">
-                            <img class="cardset-img" src="/images/img_basic_N42_3.png" alt="스와이퍼 이미지" />
-                          </figure>
-                          <div class="cardset-body">
-                            <span class="h6">WAS 소개</span>
-                            <h2 class="p2 cardset-tit">동적 웹 애플리케이션을 실행하고 클라이언트 요청과 서버 간의 비즈니스 로직을 처리하는 핵심 미들웨어 플랫폼입니다.</h2>
-                            <a href="/dataservice/was" class="h6 cardset-desc btnset btnset-primary">바로가기</a>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="/dataservice/dataHub" class="cardset">
-                          <figure class="cardset-figure">
-                            <img class="cardset-img" src="/images/img_basic_N42_4.png" alt="스와이퍼 이미지" />
-                          </figure>
-                          <div class="cardset-body">
-                            <span class="h6">DataHubPlatform 소개</span>
-                            <h2 class="p2 cardset-tit">데이터 허브 플랫폼은 분산되 데이터를 통합, 관리 분석하여 데이터 기반 의사결정을 지원하는 중앙화된 데이터 관리 인프라입니다.</h2>
-                            <a href="/dataservice/dataHub" class="h6 cardset-desc btnset btnset-primary">바로가기</a>
-                          </div>
-                        </a>
+                    </div>
+                    <div class="col">
+                      <div class="cardset cardset-hover cardset-border">
+                        <figure class="cardset-figure">
+                          <img class="cardset-img" src="/images/img_basic_N42_3.png" alt="카드 이미지">
+                        </figure>
+                        <div class="cardset-cont">
+                          <h2 class="h5 cardset-tit">클라우드 사업부</h2>
+                          <p class="p1 cardset-desc">다양한 클라우드 플랫폼을 활용하여 효율적이고, 유연한 인프라 IT 솔루션을 제공합니다.</p>
+                        </div>
+                        <div class="cardset-btn">
+                          <a class="btnset btnset-sm" href="/platform/data">자세히보기</a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
-      
-            </div>
-            <div class="th-layout-stickyright"></div>
-            <div class="th-layout-sideright"></div>
-        <%@ include file="../common/footer.jsp" %>
+          </div>
 
-          <script src="/js/setting.js"></script>
-          <script src="/js/plugin.js"></script>
-          <script src="/js/templatehouse.js"></script>
-          <script src="/js/style.js"></script>
+          </div>
+          <div class="th-layout-stickyright"></div>
+          <div class="th-layout-sideright"></div>
+          <%@ include file="../common/footer.jsp" %>
+
+            <script src="/js/setting.js"></script>
+            <script src="/js/plugin.js"></script>
+            <script src="/js/templatehouse.js"></script>
+            <script src="/js/style.js"></script>
       </body>
 
       </html>

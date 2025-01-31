@@ -99,7 +99,7 @@
                   </li>
                   <li class="header-gnbitem on">
                     <a class="header-gnblink" href="/errorpage">
-                      <span>미래전략 사업부부</span>
+                      <span>미래전략 사업부</span>
                     </a>
                     <ul class="header-sublist">
                       <li class="header-subitem on">
@@ -280,8 +280,8 @@
                   </li>
                   <li class="fullmenu-gnbitem">
                     <a class="h6 fullmenu-gnblink" href="/errorpage">
-                      <span>미래전략 사업부부</span>
-                    </a>
+                      <span>미래전략 사업부</span>
+                    </a>qnq
                     <ul class="fullmenu-sublist">
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="/errorpage">
