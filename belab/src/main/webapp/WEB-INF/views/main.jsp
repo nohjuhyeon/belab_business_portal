@@ -65,11 +65,25 @@
                     </figure>
                     <div class="cardset-body">
                       <div class="cardset-tit row">
-                        <h5 class="h3 col">데이터 서비스</h5>
-                        <a href="/dataservice/main" class="col" style="text-align: right;">More</a>
+                        <h5 class="h3 col-10">데이터 서비스</h5>
+                        <a href="/platform/data" class="col-2" style="text-align: right;">More</a>
                       </div>
-                      <p class="cardset-desc h6" style="color: var(--primary);">최적의 데이터베이스 운영 방안을 제공합니다.</p>
-                      <p class="p1 cardset-desc">오라클 소프트웨어 전 제품을 공급하며, 데이터베이스 설계, 진단, 컨설팅을 통해 최적의 운영 방안을 제시합니다. </p>
+                      <h6 class="h6">데이터베이스를 포함한 미들웨어 기술지원 통합 서비스 제공
+                      </h2>
+                      <ul class="contents-list">
+                        <li class="contents-item p2">
+                          DB 컨설팅 및 아키텍처 설계
+                        </li>
+                        <li class="contents-item p2">
+                          WEB 및 WAS 운영 및 튜닝
+                        </li>
+                        <li class="contents-item p2">
+                          데이터 통합 및 Migration
+                        </li>
+                        <li class="contents-item p2">
+                          빅데이터 플랫폼 구축 및 분석
+                        </li>
+                      </ul>
                     </div>
                   </div>
                   <div class="cardset cardset-hor">
@@ -78,13 +92,25 @@
                     </figure>
                     <div class="cardset-body">
                       <div class="cardset-tit row">
-                        <h5 class="h3 col">플랫폼 서비스</h5>
-                        <a href="/main" class="col" style="text-align: right;">More</a>
+                        <h5 class="h3 col-10">AI 비즈니스 혁신서비스</h5>
+                        <a href="/platform/ai" class="col-2" style="text-align: right;">More</a>
                       </div>
-                      <p class="cardset-desc h6" data-listener-added_8e4bce3e="true" th-hoverbox="true"
-                        style="color: var(--primary);">지능형 데이터센터 설계 및 구축</p>
-                      <p class="p1 cardset-desc" data-listener-added_8e4bce3e="true" th-hoverbox="true">클라우드 데이터센터 설계,
-                        구축 및 전산 시스템 이전을 담당하며, 고객의 전산 자원을 보호합니다.</p>
+                      <h6 class="h6">AI 플랫폼 구축 및 효율적인 통합 서비스 제공
+                      </h2>
+                      <ul class="contents-list">
+                        <li class="contents-item p2">
+                          AI 모델 개발 및 커스터마이징
+                        </li>
+                        <li class="contents-item p2">
+                          데이터 수집, 전처리, 머신러닝 트레이닝 및 배포
+                        </li>
+                        <li class="contents-item p2">
+                          AI 기반 예측 및 분석 서비스
+                        </li>
+                        <li class="contents-item p2">
+                          자연어 처리 및 이미지 분석
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -95,11 +121,25 @@
                     </figure>
                     <div class="cardset-body">
                       <div class="cardset-tit row">
-                        <h5 class="h3 col">컨텐츠 서비스</h5>
-                        <a href="/main" class="col" style="text-align: right;">More</a>
+                        <h5 class="h3 col-10">운영관제 서비스 </h5>
+                        <a href="/errorpage" class="col-2" style="text-align: right;">More</a>
                       </div>
-                      <p class="cardset-desc h6" style="color: var(--primary);">최적의 IT 솔루션 제공</p>
-                      <p class="p1 cardset-desc">웹로그 분석, IT 정보 통합 검색 플랫폼 등을 설계 및 공급하여 고객에게 최적의 서비스를 제공합니다.</p>
+                      <h6 class="h6">고객의 비즈니스 업무 관리 수행을 안정적으로 지원
+                      </h2>
+                      <ul class="contents-list">
+                        <li class="contents-item p2">
+                          클라우드 인프라 구축 컨설팅
+                        </li>
+                        <li class="contents-item p2">
+                          클라우드 자원 모니터링 및 최적화 (보안관리 포함)
+                        </li>
+                        <li class="contents-item p2">
+                          24/7 운영 지원 및 장애 대응
+                        </li>
+                        <li class="contents-item p2">
+                          클라우드 비용 관리 및 최적화
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -112,7 +152,7 @@
           <section class="mediastock-N7" id="Sxm5YNOwkd">
             <div class="contents-container ">
               <div class="contents-inner">
-                <h2 class="h3">                  (주) 비이랩은 항상 고객과의 소통을 위해 노력합니다.
+                <h2 class="h3"> (주) 비이랩은 항상 고객과의 소통을 위해 노력합니다.
 
                   <br />
                   언제든지 문의해주셔도 됩니다. 항상 고객의 입장에서 생각합니다.
