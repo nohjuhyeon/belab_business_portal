@@ -208,30 +208,3 @@
     });
   });
 })();
-
-/* service-N42 */
-(function() {
-  $(function() {
-    $(".service-N42[id=\'cvM64D6q1q\']").each(function() {
-      const $block = $(this);
-      // Swiper
-      const swiper = new Swiper(".service-N42[id=\'cvM64D6q1q\'] .contents-swiper", {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-        },
-        navigation: {
-          nextEl: ".service-N42[id=\'cvM64D6q1q\'] .swiper-button-next",
-          prevEl: ".service-N42[id=\'cvM64D6q1q\'] .swiper-button-prev",
-        },
-        pagination: {
-          type: "progressbar",
-          el: ".service-N42[id=\'cvM64D6q1q\'] .swiper-pagination",
-          clickable: true,
-        },
-      });
-    });
-  });
-})();
