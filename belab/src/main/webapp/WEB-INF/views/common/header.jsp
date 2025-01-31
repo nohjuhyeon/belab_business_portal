@@ -91,7 +91,7 @@
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/platform/cloud">
                           <span>클라우드 사업</span>
                         </a>
                       </li>
@@ -272,7 +272,7 @@
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                        <a class="p1 fullmenu-sublink" href="/platform/cloud">
                           <span>클라우드 사업</span>
                         </a>
                       </li>
@@ -281,7 +281,7 @@
                   <li class="fullmenu-gnbitem">
                     <a class="h6 fullmenu-gnblink" href="/errorpage">
                       <span>미래전략 사업부</span>
-                    </a>qnq
+                    </a>
                     <ul class="fullmenu-sublist">
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="/errorpage">
