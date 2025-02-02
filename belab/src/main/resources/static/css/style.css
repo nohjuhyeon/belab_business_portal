@@ -3291,6 +3291,13 @@
     }
 }
 
+@media (max-width: 850px) {
+    .service-N14 .cardset {
+        width: 100%;
+    }
+}
+
+
 /* service-N54 */
 .service-N54 {
     position: relative;
@@ -4642,7 +4649,7 @@
 }
 
 .service-N74 .title-line {
-    margin-top: 2rem ;
+    margin-top: 2rem;
 }
 
 .service-N74 .textset .textset-tit+.textset-desc {
@@ -4979,7 +4986,7 @@
     overflow: hidden
 }
 
-.service-N13 .contents-inner .tableset{
+.service-N13 .contents-inner .tableset {
     background: #fafafa;
     border-radius: 3rem;
 }
