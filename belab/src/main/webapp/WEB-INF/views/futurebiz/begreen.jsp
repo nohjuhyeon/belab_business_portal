@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="contents-body">
                                         <div class="textset">
-                                            <h2 class="h1 textset-tit">BePET</h2>
+                                            <h2 class="h1 textset-tit">BeGreen</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -45,50 +45,50 @@
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <figure class="cardset-figure">
-                                        <img class="cardset-img" src="/images/futurebiz/bepet_logo.png"
+                                        <img class="cardset-img" src="/images/futurebiz/begreen_logo.png"
                                             alt="스와이퍼 이미지" />
                                     </figure>
                                     <div class="textset">
-                                        <h2 class="textset-tit h2">BePet</h2>
+                                        <h2 class="textset-tit h2">BeGreen</h2>
                                     </div>
                                 </div>
                                 <hr class="title-line">
                             </div>
                         </div>
-
-                        <div class="futurebiz-N32" id="hjm6oGx7HO">
+                        <div class="futurebiz-N32" id="JuM6oIvVHI">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="imageset">
-                                        <img class="imageset-img" src="/images/futurebiz/bepet.png" alt="이미지" />
+                                        <img class="imageset-img" src="/images/futurebiz/begreen.jpg" alt="이미지" />
                                     </div>
                                     <div class="textset">
-                                        <h2 class="h2 textset-tit">
-                                            반려동물 이미지 분석을
-                                            통한 질병 예측 및 조치 안내 챗봇 서비스
+                                        <h2 class="h2 textset-tit" data-listener-added_995d6ccb="true">
+                                            AI를 활용한 발전소 모니터링
+                                            시스템
                                         </h2>
                                         <p class="textset-desc h3" style="color: var(--primary);">사업 배경</p>
                                         <ul class="contents-list">
                                             <li class="contents-item p1">
-                                                ​반려동물의 건강관리에 대한 수요 증가 : 반려동물을 가족의 일원으로 여기는 문화가 자리잡으면서
-                                                반려동물의 건강 관리에 대한 관심과 투자가 지속적으로 증가 </li>
+                                                에너지 사업의 디지털 전환 : 발전소의 운영 효율을 높이기
+                                                위해 디지털 기술 등 AI를 활용한 스마트 관리에
+                                                대한 수요 증가</li>
                                             <li class="contents-item p1">
-                                                질병 조기 진단의 중요성 : 초기 단계에서 발견되지 않으면 상태가 악화되고 치료비용이 급증할 가능성이 있음 
+                                                예방 정비 및 사고 방지의 필요성 : 기존 발전소의 모니터링 시스템은 데이터 분석이 제한적이며 주로 사후 대응에 집중되어
+                                                있기때문에
+                                                AI를 활용한 실시간 데이터 분석을 통해 문제를 사전에 감지하고 대응 가능​ </li>
+                                            <li class="contents-item p1">
+                                                데이터 활용 확대 : 발전소에서 생성되는 방대한 양의 데이터를 AI를 통해 분석함으로써, 데이터 기반의 의사결정을 지원 ​
                                             </li>
                                             <li class="contents-item p1">
-                                                반려동물 진료 접근성의 한계 : 반려인이 동물병원으로 데려가기에 물리적 거리, 시간 비용 등으로 어려운 경우가 많음 ​
-                                            </li>
-                                            <li class="contents-item p1">
-                                                전문적인 건강 관리에 대한 보호자의 부담 완화 : 동물 병원의 진료비 부담, 검사 대기 시간 등의 문제로 인해 보호자들이 전문적인
-                                                건강
-                                                관리를 어려워하는 경우가 많음
+                                                환경 규제 및 지속 가능성 : 환경 규제와 탈탄소화 요구에 강화되는 상황에서 AI를 통해 발전소의 에너지 효율성을 높이고 환경
+                                                영향을
+                                                최소화 할 수 있음
                                             </li>
                                         </ul>
                                         <div class="btn-block">
                                             <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -101,39 +101,74 @@
                                     <div class="row row-cols-3 row-md-cols-2 row-sm-cols-1">
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/clipboard-tick.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/monitor.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    이미지 및 설문을 통한 질병 예측 
+                                                    실시간 데이터 모니터링 및 분석
                                                 </h2>
-                                                <p class="p1 cardset-desc">반려인이 이미지를 업로드 및 설문을 작성하면 이미지 분석 모델과 설문 판단
-                                                    인공지능 모델을 통해
-                                                    질병을 예측
+                                                <p class="p1 cardset-desc">발전소 내부의 온도, 압력, 전력 생산량 등 주요 데이터를 실시간으로 모니터링하여
+                                                    인공지능 알고리즘을 통해 비정상적 데이터
+                                                    패턴 탐지
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/24-support.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/calendar-search.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
-                                                <h2 class="h5 cardset-tit">
-                                                    반려동물 진료 접근성 강화</h2>
-                                                <p class="p1 cardset-desc">사용자가 질병에 대한 궁금한 사항을 챗봇을 통해 24/7 대응이 가능
+                                                <h2 class="h5 cardset-tit">예측 유지보수</h2>
+                                                <p class="p1 cardset-desc">발전소 설비의 고장 가능성을 AI 모델로 사전 예측 및 사전 정비 스케줄 알림
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/messages-2.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/alarm.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    챗봇을 통한 질병 정보 제공
+                                                    이상 감지 및 알림 시스템 
                                                 </h2>
-                                                <p class="p1 cardset-desc">인공지능 모델을 통해
-                                                    예측된 질병을 바탕으로 관련 정보를 제공해주며, 각 질병에 대한 원인, 증상 관리 방법, 응급 처치법 등을 설명
+                                                <p class="p1 cardset-desc">비정상적인 상태 변화를 탐지하고 실시간 경고 제공
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col cardset">
+                                            <figure class="cardset-figure">
+                                                <img class="cardset-img" src="/icons/wallet-check.svg" alt="이미지" />
+                                            </figure>
+                                            <div class="cardset-body">
+                                                <h2 class="h5 cardset-tit">
+                                                    효율성 최적화
+                                                </h2>
+                                                <p class="p1 cardset-desc">AI를 통해 발전소의 에너지 생산 및 소비 패턴 분석
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col cardset">
+                                            <figure class="cardset-figure">
+                                                <img class="cardset-img" src="/icons/receipt-edit.svg" alt="이미지" />
+                                            </figure>
+                                            <div class="cardset-body">
+                                                <h2 class="h5 cardset-tit">
+                                                    환경 데이터 관리
+                                                </h2>
+                                                <p class="p1 cardset-desc">CO2 배출량, 폐열 방출 등 환경 영향을
+                                                    모니터링 및 분석하여 환경 규제를 준수하기 위한 데이터 보고서 작성
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col cardset">
+                                            <figure class="cardset-figure">
+                                                <img class="cardset-img" src="/icons/chart-square.svg" alt="이미지" />
+                                            </figure>
+                                            <div class="cardset-body">
+                                                <h2 class="h5 cardset-tit">
+                                                    사용자 친화적 대시보드 제공
+                                                </h2>
+                                                <p class="p1 cardset-desc">데이터 시각화 및 주요 지표를 한눈에 확인할 수 있는 대시보드 제공
                                                 </p>
                                             </div>
                                         </div>

@@ -98,43 +98,43 @@
                     </ul>
                   </li>
                   <li class="header-gnbitem on">
-                    <a class="header-gnblink" href="/errorpage">
+                    <a class="header-gnblink" href="/futurebiz/main">
                       <span>미래전략 사업부</span>
                     </a>
                     <ul class="header-sublist">
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/futurebiz/belog">
                           <span>BeLOG</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/futurebiz/bemon">
                           <span>BeMON</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/futurebiz/bepet">
                           <span>BePET</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/futurebiz/beschool">
                           <span>BeSCHOOL</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
+                        <a class="header-sublink p3" href="/futurebiz/begreen">
                           <span>BeGREEN</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
-                          <span>BeYOTTA</span>
+                        <a class="header-sublink p3" href="/futurebiz/bespot">
+                          <span>BeSPOT</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/errorpage">
-                          <span>BeCARE</span>
+                        <a class="header-sublink p3" href="/futurebiz/beshop">
+                          <span>BeSHOP</span>
                         </a>
                       </li>
                     </ul>
@@ -279,43 +279,43 @@
                     </ul>
                   </li>
                   <li class="fullmenu-gnbitem">
-                    <a class="h6 fullmenu-gnblink" href="/errorpage">
+                    <a class="h6 fullmenu-gnblink" href="/futurebiz/main">
                       <span>미래전략 사업부</span>
                     </a>
                     <ul class="fullmenu-sublist">
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                        <a class="p1 fullmenu-sublink" href="/futurebiz/belog">
                           <span>BeLOG</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                        <a class="p1 fullmenu-sublink" href="/futurebiz/bemon">
                           <span>BeMON</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                        <a class="p1 fullmenu-sublink" href="bepet">
                           <span>BePET</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                        <a class="p1 fullmenu-sublink" href="/futurebiz/beschool">
                           <span>BeSCHOOL</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                        <a class="p1 fullmenu-sublink" href="/futurebiz/begreen">
                           <span>BeGREEN</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage">
-                          <span>BeYOTTA</span>
+                        <a class="p1 fullmenu-sublink" href="/futurebiz/bespot">
+                          <span>BeSPOT</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/errorpage">
-                          <span>BeCARE</span>
+                        <a class="p1 fullmenu-sublink" href="/futurebiz/beshop">
+                          <span>BeSHOP</span>
                         </a>
                       </li>
                     </ul>

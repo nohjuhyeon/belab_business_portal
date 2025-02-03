@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="contents-body">
                                         <div class="textset">
-                                            <h2 class="h1 textset-tit">BePET</h2>
+                                            <h2 class="h1 textset-tit">BeSchool</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -45,54 +45,49 @@
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <figure class="cardset-figure">
-                                        <img class="cardset-img" src="/images/futurebiz/bepet_logo.png"
+                                        <img class="cardset-img" src="/images/futurebiz/beschool_logo.png"
                                             alt="스와이퍼 이미지" />
                                     </figure>
                                     <div class="textset">
-                                        <h2 class="textset-tit h2">BePet</h2>
+                                        <h2 class="textset-tit h2">BeSchool</h2>
                                     </div>
                                 </div>
                                 <hr class="title-line">
                             </div>
                         </div>
-
-                        <div class="futurebiz-N32" id="hjm6oGx7HO">
+                        <div class="futurebiz-N32" id="jKM6OIDXAf">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="imageset">
-                                        <img class="imageset-img" src="/images/futurebiz/bepet.png" alt="이미지" />
+                                        <img class="imageset-img" src="/images/futurebiz/beschool.png" alt="이미지" />
                                     </div>
                                     <div class="textset">
-                                        <h2 class="h2 textset-tit">
-                                            반려동물 이미지 분석을
-                                            통한 질병 예측 및 조치 안내 챗봇 서비스
-                                        </h2>
+                                        <h2 class="h2 textset-tit" data-listener-added_995d6ccb="true">생성형 AI를 활용한
+                                            Edu-Chatbot</h2>
                                         <p class="textset-desc h3" style="color: var(--primary);">사업 배경</p>
                                         <ul class="contents-list">
                                             <li class="contents-item p1">
-                                                ​반려동물의 건강관리에 대한 수요 증가 : 반려동물을 가족의 일원으로 여기는 문화가 자리잡으면서
-                                                반려동물의 건강 관리에 대한 관심과 투자가 지속적으로 증가 </li>
+                                                IB 교육에 대한 수요 증가 : IB 프로그램을 학습 하는
+                                                학생수가 매년 증가하고 있으며, 이에 따라 효과적인 학습 지원 도구에 대한 수요가 증가</li>
                                             <li class="contents-item p1">
-                                                질병 조기 진단의 중요성 : 초기 단계에서 발견되지 않으면 상태가 악화되고 치료비용이 급증할 가능성이 있음 
+                                                개별 맞춤 지원 부족 : 현재 IB 지원 시스템은 학생과 교사의 개별적 요구에 완벽하게 대응하기 어려우며, 전문 학교, 학원 등
+                                                추가적인
+                                                지원에 많은 시간과 비용이 소요 
                                             </li>
                                             <li class="contents-item p1">
-                                                반려동물 진료 접근성의 한계 : 반려인이 동물병원으로 데려가기에 물리적 거리, 시간 비용 등으로 어려운 경우가 많음 ​
-                                            </li>
-                                            <li class="contents-item p1">
-                                                전문적인 건강 관리에 대한 보호자의 부담 완화 : 동물 병원의 진료비 부담, 검사 대기 시간 등의 문제로 인해 보호자들이 전문적인
-                                                건강
-                                                관리를 어려워하는 경우가 많음
+                                                최근 LLM과 같은 AI 기술이 교육 분야에서 큰 가능성을 보여줌 : 시간과 장소에 구애 받지 않고 사용할 수 있는 학습도구 및
+                                                개인화된
+                                                학습을 제공해주는 AI 기술에 대한 서비스의 수요가 증가
                                             </li>
                                         </ul>
                                         <div class="btn-block">
                                             <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                        <div class="futurebiz-N14" id="BXm6ojOFbX">
+                        <div class="futurebiz-N14" id="oum6Ogweyt">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="textset">
@@ -101,40 +96,58 @@
                                     <div class="row row-cols-3 row-md-cols-2 row-sm-cols-1">
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/clipboard-tick.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/teacher.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    이미지 및 설문을 통한 질병 예측 
+                                                    대화 기반 학습
                                                 </h2>
-                                                <p class="p1 cardset-desc">반려인이 이미지를 업로드 및 설문을 작성하면 이미지 분석 모델과 설문 판단
-                                                    인공지능 모델을 통해
-                                                    질병을 예측
+                                                <p class="p1 cardset-desc">사용자가 설정한 특정 주제에 대해 대화를 유도하고 창의적으로 사고할 수 있도록
+                                                    도와줌. 또한 문맥을 기억함으로써 자연스럽게 대화가 가능
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/24-support.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/messages.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    반려동물 진료 접근성 강화</h2>
-                                                <p class="p1 cardset-desc">사용자가 질병에 대한 궁금한 사항을 챗봇을 통해 24/7 대응이 가능
+                                                    토론 기능
+                                                </h2>
+                                                <p class="p1 cardset-desc">
+                                                    사용자가 선택한 주제에 대해 토론을 이어가며 논리적인 반박과 다양한 관점을 제시하여 비판적인
+                                                    사고를 강화
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/messages-2.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/message-tick.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    챗봇을 통한 질병 정보 제공
+                                                    질문 응답
                                                 </h2>
-                                                <p class="p1 cardset-desc">인공지능 모델을 통해
-                                                    예측된 질병을 바탕으로 관련 정보를 제공해주며, 각 질병에 대한 원인, 증상 관리 방법, 응급 처치법 등을 설명
+                                                <p class="p1 cardset-desc">
+                                                    사용자가 모르는 내용을 물어보면 정확한 정보를 제공
                                                 </p>
+                                            </div>
+                                        </div>
+                                        <div class="col cardset">
+                                            <figure class="cardset-figure">
+                                                <img class="cardset-img" src="/icons/message-question.svg" alt="이미지" />
+                                            </figure>
+                                            <div class="cardset-body">
+                                                <h2 class="h5 cardset-tit">
+                                                    창의적 질문 생성
+                                                </h2>
+                                                <p class="p1 cardset-desc">학습 주제에 대한 창의적인 질문을 생성하여 탐구력을 향상시키고 사고를 확장하도록
+                                                    도와줌
+                                                </p>
+                                                <div class="btn-block">
+                                                    <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
