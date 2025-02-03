@@ -97,8 +97,8 @@
                                             <div class="swiper-slide">
                                                 <a href="/futurebiz/bespot" class="cardset">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img"
-                                                            src="/images/futurebiz/bespot_logo.png" alt="스와이퍼 이미지" />
+                                                        <img class="cardset-img" src="/images/futurebiz/bespot_logo.png"
+                                                            alt="스와이퍼 이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
                                                         <h2 class="h5 cardset-tit">BeSpot</h2>
@@ -108,8 +108,8 @@
                                             <div class="swiper-slide">
                                                 <a href="/futurebiz/beshop" class="cardset">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img"
-                                                            src="/images/futurebiz/beshop_logo.png" alt="스와이퍼 이미지" />
+                                                        <img class="cardset-img" src="/images/futurebiz/beshop_logo.png"
+                                                            alt="스와이퍼 이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
                                                         <h2 class="h5 cardset-tit">BeShop</h2>
@@ -125,16 +125,15 @@
                             </div>
                         </div>
                     </div>
-
-                    </div>
                     <div class="th-layout-stickyright"></div>
                     <div class="th-layout-sideright"></div>
-                    <%@ include file="../common/footer.jsp" %>
+                </main>
+                <%@ include file="../common/footer.jsp" %>
 
-                        <script src="/js/setting.js"></script>
-                        <script src="/js/plugin.js"></script>
-                        <script src="/js/templatehouse.js"></script>
-                        <script src="/js/style.js"></script>
+                    <script src="/js/setting.js"></script>
+                    <script src="/js/plugin.js"></script>
+                    <script src="/js/templatehouse.js"></script>
+                    <script src="/js/style.js"></script>
             </body>
 
             </html>

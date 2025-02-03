@@ -103,8 +103,7 @@
                                                 <div class="cardset">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/platform/cloud/cloud managed.png"
-                                                            alt="이미지" />
+                                                            src="/images/platform/cloud/cloud managed.png" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
                                                         <h2 class="h5 cardset-tit">클라우드 매니지드 서비스</h2>
@@ -214,8 +213,7 @@
                                                         <div class="cardset cardset-hover cardset-border">
                                                             <figure class="cardset-figure">
                                                                 <img class="cardset-img"
-                                                                    src="/images/platform/cloud/kt.png"
-                                                                    alt="카드 이미지" />
+                                                                    src="/images/platform/cloud/kt.png" alt="카드 이미지" />
                                                             </figure>
                                                             <div class="cardset-cont">
                                                                 <h2 class="h5 cardset-tit">KT Cloud Partner</h2>
@@ -430,8 +428,7 @@
                                                 </div>
                                                 <figure class="cardset-figure">
                                                     <img class="cardset-img"
-                                                        src="/images/platform/cloud/maigeureisyeon.png"
-                                                        alt="카드 이미지" />
+                                                        src="/images/platform/cloud/maigeureisyeon.png" alt="카드 이미지" />
                                                 </figure>
                                             </div>
                                         </div>
@@ -448,8 +445,7 @@
                                                     <div class="col cardset">
                                                         <figure class="cardset-figure">
                                                             <img class="cardset-img"
-                                                                src="/images/platform/cloud/geurim16.png"
-                                                                alt="이미지" />
+                                                                src="/images/platform/cloud/geurim16.png" alt="이미지" />
                                                         </figure>
                                                         <div class="cardset-body">
                                                             <h5 class="h5 cardset-tit">서비스 활성화</h5>
@@ -462,8 +458,7 @@
                                                     <div class="col cardset">
                                                         <figure class="cardset-figure">
                                                             <img class="cardset-img"
-                                                                src="/images/platform/cloud/geurim18.png"
-                                                                alt="이미지" />
+                                                                src="/images/platform/cloud/geurim18.png" alt="이미지" />
                                                         </figure>
                                                         <div class="cardset-body">
                                                             <h2 class="h5 cardset-tit">
@@ -478,8 +473,7 @@
                                                     <div class="col cardset">
                                                         <figure class="cardset-figure">
                                                             <img class="cardset-img"
-                                                                src="/images/platform/cloud/geurim17.png"
-                                                                alt="이미지" />
+                                                                src="/images/platform/cloud/geurim17.png" alt="이미지" />
                                                         </figure>
                                                         <div class="cardset-body">
                                                             <h2 class="h5 cardset-tit">
@@ -495,8 +489,7 @@
                                                     <div class="col cardset">
                                                         <figure class="cardset-figure">
                                                             <img class="cardset-img"
-                                                                src="/images/platform/cloud/geurim22.png"
-                                                                alt="이미지" />
+                                                                src="/images/platform/cloud/geurim22.png" alt="이미지" />
                                                         </figure>
                                                         <div class="cardset-body">
                                                             <h2 class="h5 cardset-tit">
@@ -511,8 +504,7 @@
                                                     <div class="col cardset">
                                                         <figure class="cardset-figure">
                                                             <img class="cardset-img"
-                                                                src="/images/platform/cloud/geurim21.png"
-                                                                alt="이미지" />
+                                                                src="/images/platform/cloud/geurim21.png" alt="이미지" />
                                                         </figure>
                                                         <div class="cardset-body">
                                                             <h2 class="h5 cardset-tit">
@@ -528,8 +520,7 @@
                                                     <div class="col cardset">
                                                         <figure class="cardset-figure">
                                                             <img class="cardset-img"
-                                                                src="/images/platform/cloud/geurim19.png"
-                                                                alt="이미지" />
+                                                                src="/images/platform/cloud/geurim19.png" alt="이미지" />
                                                         </figure>
                                                         <div class="cardset-body">
                                                             <h2 class="h5 cardset-tit">
@@ -546,8 +537,7 @@
                                                     <div class="col cardset">
                                                         <figure class="cardset-figure">
                                                             <img class="cardset-img"
-                                                                src="/images/platform/cloud/geurim20.png"
-                                                                alt="이미지" />
+                                                                src="/images/platform/cloud/geurim20.png" alt="이미지" />
                                                         </figure>
                                                         <div class="cardset-body">
                                                             <h2 class="h5 cardset-tit">
@@ -765,8 +755,8 @@
                                             </h3>
                                             <div class="contents-inner sub-contents">
                                                 <div class="imageset">
-                                                    <img class="imageset-img"
-                                                        src="/images/platform/cloud/ai_cloud.png" alt="이미지" />
+                                                    <img class="imageset-img" src="/images/platform/cloud/ai_cloud.png"
+                                                        alt="이미지" />
                                                 </div>
                                                 <div class="textset">
                                                     <h3 class="h5">
@@ -825,8 +815,8 @@
                                                 </h3>
                                                 <div class="contents-inner">
                                                     <div class="imageset">
-                                                        <img class="imageset-img"
-                                                            src="/images/platform/cloud/msp.png" alt="이미지" />
+                                                        <img class="imageset-img" src="/images/platform/cloud/msp.png"
+                                                            alt="이미지" />
                                                     </div>
                                                     <div class="textset">
                                                         <h3 class="h4">
@@ -874,8 +864,8 @@
                                                             일관된 고객 경험 제공, 효율적인 문제 해결, 자원 최적화 및 비용 절감, 데이터 수집 및 분석 용이.
                                                     </div>
                                                     <div class="imageset">
-                                                        <img class="imageset-img"
-                                                            src="/images/platform/cloud/ICC.png" alt="이미지">
+                                                        <img class="imageset-img" src="/images/platform/cloud/ICC.png"
+                                                            alt="이미지">
                                                     </div>
                                                 </div>
                                             </div>
@@ -920,12 +910,13 @@
                     </div>
                     <div class="th-layout-stickyright"></div>
                     <div class="th-layout-sideright"></div>
-                    <%@ include file="../common/footer.jsp" %>
+                </main>
+                <%@ include file="../common/footer.jsp" %>
 
-                        <script src="/js/setting.js"></script>
-                        <script src="/js/plugin.js"></script>
-                        <script src="/js/templatehouse.js"></script>
-                        <script src="/js/style.js"></script>
+                    <script src="/js/setting.js"></script>
+                    <script src="/js/plugin.js"></script>
+                    <script src="/js/templatehouse.js"></script>
+                    <script src="/js/style.js"></script>
             </body>
 
             </html>

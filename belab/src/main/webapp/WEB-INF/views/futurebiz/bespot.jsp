@@ -146,16 +146,15 @@
                         </div>
 
                     </div>
-
-                    </div>
                     <div class="th-layout-stickyright"></div>
                     <div class="th-layout-sideright"></div>
-                    <%@ include file="../common/footer.jsp" %>
+                </main>
+                <%@ include file="../common/footer.jsp" %>
 
-                        <script src="/js/setting.js"></script>
-                        <script src="/js/plugin.js"></script>
-                        <script src="/js/templatehouse.js"></script>
-                        <script src="/js/style.js"></script>
+                    <script src="/js/setting.js"></script>
+                    <script src="/js/plugin.js"></script>
+                    <script src="/js/templatehouse.js"></script>
+                    <script src="/js/style.js"></script>
             </body>
 
             </html>
