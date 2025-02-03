@@ -22,7 +22,7 @@ public class ReferBoardServiceImpl implements ReferBoardService {
     @Autowired
     private ReferBoardMapper referBoardMapper;
 
-    private String uploadDirectory = "C:\\test";
+    private String uploadDirectory = "/opt/test";
 
     /**
      * 초기화: 파일 저장 디렉토리 생성

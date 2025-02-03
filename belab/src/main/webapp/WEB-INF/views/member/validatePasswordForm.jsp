@@ -92,7 +92,7 @@
             .then(response => response.text())
             .then(data => {
                 if (data === "valid") {
-                    window.location.href = "/member/changepassword";  // 비밀번호가 올바르면 수정 페이지로 리다이렉트
+                    window.location.href = "/member/modifyForm";  // 비밀번호가 올바르면 수정 페이지로 리다이렉트
                 } else {
                     document.getElementById("error-message").textContent = "비밀번호가 올바르지 않습니다.";
                     document.getElementById("error-message").style.display = "block";
