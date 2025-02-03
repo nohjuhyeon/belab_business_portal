@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="contents-body">
                                         <div class="textset">
-                                            <h2 class="h1 textset-tit">BePET</h2>
+                                            <h2 class="h1 textset-tit">BeMON</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -45,54 +45,46 @@
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <figure class="cardset-figure">
-                                        <img class="cardset-img" src="/images/futurebiz/bepet_logo.png"
+                                        <img class="cardset-img" src="/images/futurebiz/bemon_logo.png"
                                             alt="스와이퍼 이미지" />
                                     </figure>
                                     <div class="textset">
-                                        <h2 class="textset-tit h2">BePet</h2>
+                                        <h2 class="textset-tit h2">BeMON</h2>
                                     </div>
                                 </div>
                                 <hr class="title-line">
                             </div>
                         </div>
-
-                        <div class="futurebiz-N32" id="hjm6oGx7HO">
+                        <div class="futurebiz-N32" id="QaM6Ojoe2Y">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="imageset">
-                                        <img class="imageset-img" src="/images/futurebiz/bepet.png" alt="이미지" />
+                                        <img class="imageset-img" src="/images/futurebiz/bemon.png" alt="이미지" />
                                     </div>
                                     <div class="textset">
                                         <h2 class="h2 textset-tit">
-                                            반려동물 이미지 분석을
-                                            통한 질병 예측 및 조치 안내 챗봇 서비스
+                                            뉴스 및 나라장터 큐레이팅 서비스
                                         </h2>
                                         <p class="textset-desc h3" style="color: var(--primary);">사업 배경</p>
                                         <ul class="contents-list">
                                             <li class="contents-item p1">
-                                                ​반려동물의 건강관리에 대한 수요 증가 : 반려동물을 가족의 일원으로 여기는 문화가 자리잡으면서
-                                                반려동물의 건강 관리에 대한 관심과 투자가 지속적으로 증가 </li>
+                                                정보 과잉 문제 : IT 분야의 뉴스/보고서와 정부 공고는 방대한 양으로 제공되며, 이를
+                                                효율적으로 탐색하는데 어려움이 존재</li>
                                             <li class="contents-item p1">
-                                                질병 조기 진단의 중요성 : 초기 단계에서 발견되지 않으면 상태가 악화되고 치료비용이 급증할 가능성이 있음 
+                                                디지털 전환 가속화 : IT 관련 산업의 성장과 정부의 디지털 정책 확대에 따라 정보 탐색 및 활용의 중요성이 더욱 높아짐
                                             </li>
                                             <li class="contents-item p1">
-                                                반려동물 진료 접근성의 한계 : 반려인이 동물병원으로 데려가기에 물리적 거리, 시간 비용 등으로 어려운 경우가 많음 ​
-                                            </li>
-                                            <li class="contents-item p1">
-                                                전문적인 건강 관리에 대한 보호자의 부담 완화 : 동물 병원의 진료비 부담, 검사 대기 시간 등의 문제로 인해 보호자들이 전문적인
-                                                건강
-                                                관리를 어려워하는 경우가 많음
+                                                효율성 요구 증가 : 기업 및 개인은 필요한 정보를 신속히 찾고 활용할 수 있는 도구에 대한 수요가 꾸준히 증가
                                             </li>
                                         </ul>
                                         <div class="btn-block">
                                             <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                        <div class="futurebiz-N14" id="BXm6ojOFbX">
+                        <div class="futurebiz-N14" id="oum6Ogweyt">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="textset">
@@ -101,39 +93,51 @@
                                     <div class="row row-cols-3 row-md-cols-2 row-sm-cols-1">
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/clipboard-tick.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/search-status-1.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    이미지 및 설문을 통한 질병 예측 
+                                                    카테고리 분류 및 검색 기능 제공
                                                 </h2>
-                                                <p class="p1 cardset-desc">반려인이 이미지를 업로드 및 설문을 작성하면 이미지 분석 모델과 설문 판단
-                                                    인공지능 모델을 통해
-                                                    질병을 예측
+                                                <p class="p1 cardset-desc">IT 정보를 카테고리별로 분류하고 원하는 자료를 손쉽게 검색할 수 있음
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/24-support.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/keyboard.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    반려동물 진료 접근성 강화</h2>
-                                                <p class="p1 cardset-desc">사용자가 질병에 대한 궁금한 사항을 챗봇을 통해 24/7 대응이 가능
+                                                    뉴스/보고서의 주요 키워드 제공
+                                                </h2>
+                                                <p class="p1 cardset-desc">각 뉴스/보고서에서 자주 언급되는 주요 키워드를 제공해 전체적인 내용을 빠르게
+                                                    파악할 수 있도록 함
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/messages-2.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/presention-chart.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    챗봇을 통한 질병 정보 제공
+                                                    카테고리별 키워드 분석 및 시각화</h2>
+                                                <p class="p1 cardset-desc">카테고리별 뉴스/보고서의 키워드 등장 빈도를 분석하고. 이를 시각화하여 트렌드를
+                                                    쉽게 이해할 수 있음
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col cardset">
+                                            <figure class="cardset-figure">
+                                                <img class="cardset-img" src="/icons/alarm.svg" alt="이미지" />
+                                            </figure>
+                                            <div class="cardset-body">
+                                                <h2 class="h5 cardset-tit">
+                                                    IT 정보 추천 및 알림 기능 제공
                                                 </h2>
-                                                <p class="p1 cardset-desc">인공지능 모델을 통해
-                                                    예측된 질병을 바탕으로 관련 정보를 제공해주며, 각 질병에 대한 원인, 증상 관리 방법, 응급 처치법 등을 설명
+                                                <p class="p1 cardset-desc">사용자가 관심있는 뉴스와
+                                                    공고를 추천하며 알림 서비스를 통해 중요한 정보를 놓치지 않도록 지원
                                                 </p>
                                             </div>
                                         </div>
@@ -141,18 +145,18 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     </div>
                     <div class="th-layout-stickyright"></div>
                     <div class="th-layout-sideright"></div>
-                    <%@ include file="../common/footer.jsp" %>
+                </main>
+                <%@ include file="../common/footer.jsp" %>
 
-                        <script src="/js/setting.js"></script>
-                        <script src="/js/plugin.js"></script>
-                        <script src="/js/templatehouse.js"></script>
-                        <script src="/js/style.js"></script>
+                    <script src="/js/setting.js"></script>
+                    <script src="/js/plugin.js"></script>
+                    <script src="/js/templatehouse.js"></script>
+                    <script src="/js/style.js"></script>
             </body>
 
             </html>

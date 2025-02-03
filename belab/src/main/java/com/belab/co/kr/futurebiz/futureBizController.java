@@ -32,6 +32,16 @@ public class futureBizController {
     public String begreenService() {
         return "/futurebiz/begreen";
     }
+    @GetMapping("/bespot")
+    public String bespotService() {
+        return "/futurebiz/bespot";
+    }
+
+    @GetMapping("/beshop")
+    public String beshopService() {
+        return "/futurebiz/beshop";
+    }
+
 
     @GetMapping("/beschool")
     public String beschoolService() {

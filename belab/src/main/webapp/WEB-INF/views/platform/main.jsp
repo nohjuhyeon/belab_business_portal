@@ -34,7 +34,7 @@
                   </div>
                   <div class="contents-body">
                     <div class="textset">
-                      <h2 class="h1 textset-tit">Data Service</h2>
+                      <h2 class="h1 textset-tit">플랫폼 사업부</h2>
                     </div>
                   </div>
                 </div>

@@ -208,3 +208,30 @@
     });
   });
 })();
+
+/* futurebiz-N42 */
+(function() {
+  $(function() {
+    $(".futurebiz-N42[id=\'bMM6ojerkN\']").each(function() {
+      const $block = $(this);
+      // Swiper
+      const swiper = new Swiper(".futurebiz-N42[id=\'bMM6ojerkN\'] .contents-swiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: ".futurebiz-N42[id=\'bMM6ojerkN\'] .swiper-button-next",
+          prevEl: ".futurebiz-N42[id=\'bMM6ojerkN\'] .swiper-button-prev",
+        },
+        pagination: {
+          type: "progressbar",
+          el: ".futurebiz-N42[id=\'bMM6ojerkN\'] .swiper-pagination",
+          clickable: true,
+        },
+      });
+    });
+  });
+})();

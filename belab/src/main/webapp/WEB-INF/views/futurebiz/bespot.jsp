@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="contents-body">
                                         <div class="textset">
-                                            <h2 class="h1 textset-tit">BePET</h2>
+                                            <h2 class="h1 textset-tit">BeSpot</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -45,54 +45,48 @@
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <figure class="cardset-figure">
-                                        <img class="cardset-img" src="/images/futurebiz/bepet_logo.png"
+                                        <img class="cardset-img" src="/images/futurebiz/bespot_logo.png"
                                             alt="스와이퍼 이미지" />
                                     </figure>
                                     <div class="textset">
-                                        <h2 class="textset-tit h2">BePet</h2>
+                                        <h2 class="textset-tit h2">BeSpot</h2>
                                     </div>
                                 </div>
                                 <hr class="title-line">
                             </div>
                         </div>
-
-                        <div class="futurebiz-N32" id="hjm6oGx7HO">
+                        <div class="futurebiz-N32" id="hFM6OIkfPf">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="imageset">
-                                        <img class="imageset-img" src="/images/futurebiz/bepet.png" alt="이미지" />
+                                        <img class="imageset-img" src="/images/futurebiz/bespot.png" alt="이미지" />
                                     </div>
                                     <div class="textset">
-                                        <h2 class="h2 textset-tit">
-                                            반려동물 이미지 분석을
-                                            통한 질병 예측 및 조치 안내 챗봇 서비스
-                                        </h2>
+                                        <h2 class="h2 textset-tit" data-listener-added_995d6ccb="true">사용자 맞춤형 천문 관측 위치
+                                            추천 서비스</h2>
                                         <p class="textset-desc h3" style="color: var(--primary);">사업 배경</p>
                                         <ul class="contents-list">
                                             <li class="contents-item p1">
-                                                ​반려동물의 건강관리에 대한 수요 증가 : 반려동물을 가족의 일원으로 여기는 문화가 자리잡으면서
-                                                반려동물의 건강 관리에 대한 관심과 투자가 지속적으로 증가 </li>
+                                                천문 관측에 대한 관심 증가 : 별, 천체 관측 등 대중의
+                                                관심이 높아지고 있으며 특히 자연 속에서 특별한 경험을 찾는 여행 트렌드와
+                                                결합되어 인기가 높아지고 있음</li>
                                             <li class="contents-item p1">
-                                                질병 조기 진단의 중요성 : 초기 단계에서 발견되지 않으면 상태가 악화되고 치료비용이 급증할 가능성이 있음 
-                                            </li>
+                                                최적 관측 장소 찾기의 어려움 : 천문 관측에 적합한 장소는 빛 공해, 날씨, 지형 조건 등 다양한 요소에 따라 달라지며 사용자가
+                                                이러한
+                                                정보를 분석하여 관측 위치를 찾는 것이 어려움 </li>
                                             <li class="contents-item p1">
-                                                반려동물 진료 접근성의 한계 : 반려인이 동물병원으로 데려가기에 물리적 거리, 시간 비용 등으로 어려운 경우가 많음 ​
-                                            </li>
-                                            <li class="contents-item p1">
-                                                전문적인 건강 관리에 대한 보호자의 부담 완화 : 동물 병원의 진료비 부담, 검사 대기 시간 등의 문제로 인해 보호자들이 전문적인
-                                                건강
-                                                관리를 어려워하는 경우가 많음
+                                                기술 발전과 데이터 활용 가능성 : 위성 데이터, 기상 데이터, 지리 정보, 빛 공해 데이터를 활용하여 최적의 관측 위치를 데이터
+                                                기반으로 추천할 수 있는 기술적 기반이 마련
                                             </li>
                                         </ul>
                                         <div class="btn-block">
                                             <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                        <div class="futurebiz-N14" id="BXm6ojOFbX">
+                        <div class="futurebiz-N14" id="oum6Ogweyt">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="textset">
@@ -101,40 +95,49 @@
                                     <div class="row row-cols-3 row-md-cols-2 row-sm-cols-1">
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/clipboard-tick.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/location.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
-                                                <h2 class="h5 cardset-tit">
-                                                    이미지 및 설문을 통한 질병 예측 
-                                                </h2>
-                                                <p class="p1 cardset-desc">반려인이 이미지를 업로드 및 설문을 작성하면 이미지 분석 모델과 설문 판단
-                                                    인공지능 모델을 통해
-                                                    질병을 예측
+                                                <h2 class="h5 cardset-tit">관측 장소 추천</h2>
+                                                <p class="p1 cardset-desc">위성, 기상, 지리 정보, 빛 공해 등의 데이터를 분석하여 최적의 관측 장소 추천
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/24-support.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/profile-tick.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
-                                                <h2 class="h5 cardset-tit">
-                                                    반려동물 진료 접근성 강화</h2>
-                                                <p class="p1 cardset-desc">사용자가 질병에 대한 궁금한 사항을 챗봇을 통해 24/7 대응이 가능
+                                                <h2 class="h5 cardset-tit">맞춤형 추천</h2>
+                                                <p class="p1 cardset-desc">개인의 선호도(고도, 풍경, 도시와의 거리) 등에 따라 장소 추천
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col cardset">
                                             <figure class="cardset-figure">
-                                                <img class="cardset-img" src="/icons/messages-2.svg" alt="이미지" />
+                                                <img class="cardset-img" src="/icons/clock.svg" alt="이미지" />
                                             </figure>
                                             <div class="cardset-body">
                                                 <h2 class="h5 cardset-tit">
-                                                    챗봇을 통한 질병 정보 제공
+                                                    실시간 데이터 제공
                                                 </h2>
-                                                <p class="p1 cardset-desc">인공지능 모델을 통해
-                                                    예측된 질병을 바탕으로 관련 정보를 제공해주며, 각 질병에 대한 원인, 증상 관리 방법, 응급 처치법 등을 설명
+                                                <p class="p1 cardset-desc">날씨 변화, 관측 가능 시간 등의 데이터를 제공
                                                 </p>
+                                            </div>
+                                        </div>
+                                        <div class="col cardset">
+                                            <figure class="cardset-figure">
+                                                <img class="cardset-img" src="/icons/share.svg" alt="이미지" />
+                                            </figure>
+                                            <div class="cardset-body">
+                                                <h2 class="h5 cardset-tit">
+                                                    커뮤니티 및 공유 기능
+                                                </h2>
+                                                <p class="p1 cardset-desc">관측 후 리뷰 평가를 통한 사용자의 경험 공유 및 커뮤니티 기능을 활성화
+                                                </p>
+                                                <div class="btn-block">
+                                                    <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -143,16 +146,15 @@
                         </div>
 
                     </div>
-
-                    </div>
                     <div class="th-layout-stickyright"></div>
                     <div class="th-layout-sideright"></div>
-                    <%@ include file="../common/footer.jsp" %>
+                </main>
+                <%@ include file="../common/footer.jsp" %>
 
-                        <script src="/js/setting.js"></script>
-                        <script src="/js/plugin.js"></script>
-                        <script src="/js/templatehouse.js"></script>
-                        <script src="/js/style.js"></script>
+                    <script src="/js/setting.js"></script>
+                    <script src="/js/plugin.js"></script>
+                    <script src="/js/templatehouse.js"></script>
+                    <script src="/js/style.js"></script>
             </body>
 
             </html>
