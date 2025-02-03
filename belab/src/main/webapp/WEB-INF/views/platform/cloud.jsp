@@ -116,7 +116,7 @@
                                                                 24X365 기술지원체계 제공
                                                             </li>
                                                             <li class="contents-item p2">
-                                                                고고객의 인프라 현황 확인을
+                                                                고객의 인프라 현황 확인을
                                                                 위한 월간보고서 제공
                                                             </li>
                                                         </ul>
@@ -806,7 +806,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="cloud_5">
+                        <div class="data-service" id="cloud_">
                             <div class="data-service-inner">
                                 <div class="service-N74" id="EJM6k4ylEY">
                                     <div class="contents-container container-md">
