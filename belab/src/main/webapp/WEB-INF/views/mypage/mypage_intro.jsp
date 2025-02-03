@@ -21,7 +21,7 @@
     <div class="th-layout-sideleft"></div>
     <div class="th-layout-stickyleft"></div>
     <div class="th-layout-content">
-      <div class="mypage-N10" id="HtM5yS8Tf5">
+      <div class="basic-N10" id="HtM5yS8Tf5">
         <div class="contents-container ">
           <div class="contents-inner">
             <div class="contents-visual">
@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div class="mypage-N58">
+      <div class="basic-N58">
         <!-- 드롭다운 버튼 -->
         <button class="dropdown-btn btnset-primary" onclick="toggleSidebar()">메뉴</button>
 

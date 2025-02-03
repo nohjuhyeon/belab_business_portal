@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/css/plugin.css" />
   <link rel="stylesheet" href="/css/templatehouse.css" />
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/member.css" />
   <title>관리자 페이지 </title>
 </head>
 
@@ -22,7 +23,7 @@
   <div class="th-layout-stickyleft"></div>
   <div class="th-layout-content">
     <!-- 상단 비주얼 -->
-    <div class="mypage-N10">
+    <div class="basic-N10">
       <div class="contents-container ">
         <div class="contents-inner">
           <div class="contents-visual">
@@ -41,7 +42,7 @@
     </div>
 
     <!-- 콘텐츠 영역 -->
-    <div class="mypage-N58">
+    <div class="basic-N58">
       <!-- 드롭다운 버튼 -->
       <button class="dropdown-btn btnset-primary" onclick="toggleSidebar()">메뉴</button>
 

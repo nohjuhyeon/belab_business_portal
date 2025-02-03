@@ -5,8 +5,15 @@
     <html lang="en">
 
     <head>
-      <meta charset="UTF-8">
-      <title>게시글 상세보기</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="stylesheet" href="/css/setting.css" />
+      <link rel="stylesheet" href="/css/plugin.css" />
+      <link rel="stylesheet" href="/css/templatehouse.css" />
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/contact.css" />
       <script>
         function navigateTo(url) {
           window.location.href = url;
@@ -84,7 +91,7 @@
               </div>
             </div>
           </div>
-          <div class="mypage-N68">
+          <div class="basic-N68">
             <div class="popup-overlay" id="popup-overlay">
               <div class="popup" id="popup-confirm-delete">
                 <h3>정말 게시글을 삭제하시겠습니까?</h3>

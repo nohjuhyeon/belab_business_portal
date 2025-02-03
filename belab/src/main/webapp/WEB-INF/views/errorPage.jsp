@@ -39,7 +39,7 @@
               </div>
             </div>
           </div>
-          <section class="campland-N18" id="SOM67953k1">
+          <section class="basic-N18" id="SOM67953k1">
             <div class="contents-container container-md">
               <div class="contents-inner">
                 <div class="iconset">

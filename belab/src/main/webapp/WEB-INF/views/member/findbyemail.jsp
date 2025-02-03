@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/css/plugin.css" />
   <link rel="stylesheet" href="/css/templatehouse.css" />
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/member.css" />
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <div class="th-layout-sideleft"></div>
     <div class="th-layout-stickyleft"></div>
     <div class="th-layout-content">
-      <div class="mypage-N10" id="HtM5yS8Tf5">
+      <div class="basic-N10" id="HtM5yS8Tf5">
         <div class="contents-container ">
           <div class="contents-inner">
             <div class="contents-visual">
@@ -44,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="mypage-N24" id="Vgm5ys8tOU">
+      <div class="member-N24" id="Vgm5ys8tOU">
         <div class="contents-container container-sm">
           <div class="contents-inner">
             <form action="/member/findEmail" method="post">
@@ -81,7 +82,7 @@
     <div class="th-layout-stickyright"></div>
     <div class="th-layout-sideright"></div>
         <!-- 커스텀 팝업 -->
-        <div class="mypage-N66">
+        <div class="member-N66">
           <div class="popup-overlay" onclick="closePopup()"></div>
           <div class="custom-popup">
             <h4>알림</h4>

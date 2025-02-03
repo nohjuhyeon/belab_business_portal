@@ -16,6 +16,8 @@
                 <link rel="stylesheet" href="/css/plugin.css" />
                 <link rel="stylesheet" href="/css/templatehouse.css" />
                 <link rel="stylesheet" href="/css/style.css" />
+                <link rel="stylesheet" href="/css/platform.css" />
+                <link rel="stylesheet" href="/css/ai.css" />
                 <style>
                 </style>
             </head>
@@ -43,9 +45,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service">
-                            <div class="data-service-inner">
-                                <div class="service-N44" id="dPM64BM4jF">
+                        <div class="platform-N01">
+                            <div class="platform-inner">
+                                <div class="platform-N44" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">AI 비즈니스 혁신 서비스</h2>
@@ -59,9 +61,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="was">
-                            <div class="data-service-inner">
-                                <div class="service-N64" id="vTm6aExC9W">
+                        <div class="platform-N01" id="was">
+                            <div class="platform-inner">
+                                <div class="ai-N64" id="vTm6aExC9W">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -126,7 +128,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mediastock-N8">
+                                    <div class="platform-N8">
                                         <div class="container-full">
                                             <div class="title-area">
                                                 <h2 class="h4">사용 기술</h2>
@@ -147,9 +149,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="was">
-                            <div class="data-service-inner">
-                                <div class="service-N64" id="vTm6aExC9W">
+                        <div class="platform-N01" id="was">
+                            <div class="platform-inner">
+                                <div class="ai-N64" id="vTm6aExC9W">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -227,7 +229,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mediastock-N8">
+                                    <div class="platform-N8">
                                         <div class="container-full">
                                             <div class="title-area">
                                                 <h2 class="h4">사용 기술</h2>
@@ -251,9 +253,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="was">
-                            <div class="data-service-inner">
-                                <div class="service-N64" id="vTm6aExC9W">
+                        <div class="platform-N01" id="was">
+                            <div class="platform-inner">
+                                <div class="ai-N64" id="vTm6aExC9W">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -318,7 +320,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mediastock-N8">
+                                    <div class="platform-N8">
                                         <div class="container-full">
                                             <div class="title-area">
                                                 <h2 class="h4">사용 기술</h2>
@@ -339,9 +341,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="was">
-                            <div class="data-service-inner">
-                                <div class="service-N64" id="vTm6aExC9W">
+                        <div class="platform-N01" id="was">
+                            <div class="platform-inner">
+                                <div class="ai-N64" id="vTm6aExC9W">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">

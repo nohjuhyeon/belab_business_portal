@@ -1,0 +1,99 @@
+
+/* ai-N64 */
+.ai-N64 {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ai-N64 .contents-container {
+    padding: 0 3rem;
+}
+
+.ai-N64 .textset {
+    margin-bottom: 5rem;
+    text-align: center
+}
+
+.ai-N64 .textset .textset-tit+.textset-desc {
+    margin-top: 2rem
+}
+
+.ai-N64 .ai-box {
+    justify-content: center;
+}
+
+.ai-N64 .textset .textset-desc {
+    color: var(--text-color3)
+}
+
+.ai-N64 .cardset {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ai-N64 .cardset.data-part {
+    width: 24%;
+}
+
+.ai-N64 .cardset.ai-part {
+    width: 32%;
+}
+
+
+.ai-N64 .cardset .cardset-body {
+    padding: 0
+}
+
+.ai-N64 .cardset .cardset-figure {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden
+}
+
+.ai-N64 .cardset .cardset-figure+.cardset-body {
+    margin-top: 2.4rem;
+    text-align: center;
+    max-width: 25rem;
+}
+
+.ai-N64 .cardset .cardset-tit+.cardset-desc {
+    margin-top: 1.5rem
+}
+
+.ai-N64 .cardset .cardset-desc {
+    display: block;
+    color: var(--text-color3);
+    margin-top: 1.5rem;
+    letter-spacing: -0.1rem
+}
+
+@media (max-width: 992px) {
+    .ai-N64 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .ai-N64 .textset {
+        margin-bottom: 8rem
+    }
+
+    .ai-N64 .cardset.data-part,
+    .ai-N64 .cardset.ai-part {
+        width: 33rem;
+        padding: 0
+    }
+
+    .ai-N64 .cardset {
+        margin: 1rem
+    }
+}

@@ -12,6 +12,7 @@
             <link rel="stylesheet" href="/css/plugin.css" />
             <link rel="stylesheet" href="/css/templatehouse.css" />
             <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/contact.css" />
             <style>
                 .uploaded-file-item-list {
                     background-color: #ffffff;

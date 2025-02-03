@@ -1,0 +1,440 @@
+/* futurebiz-N42 */
+.futurebiz-N42 {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: hidden
+}
+
+.futurebiz-N42 .contents-inner {
+    position: relative
+}
+
+.basic_N42 .cardset-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.futurebiz-N42 .cardset-img {
+    object-fit: contain;
+    width: 50%
+}
+
+.futurebiz-N42 .textset {
+    margin-bottom: 4rem;
+    text-align: center
+}
+
+.futurebiz-N42 .textset .textset-desc {
+    margin-top: 0.8rem;
+    color: var(--text-color3)
+}
+
+.futurebiz-N42 .swiper-wrapper {
+    margin-bottom: 4rem
+}
+
+.futurebiz-N42 .swiper-slide {
+    width: calc(100% / 4 - 3rem);
+    margin-right: 4rem
+}
+
+.futurebiz-N42 .swiper-button-prev,
+.futurebiz-N42 .swiper-button-next {
+    flex-shrink: 0;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 1px solid var(--line-color3)
+}
+
+.futurebiz-N42 .swiper-button-prev {
+    left: auto;
+    right: calc(100% + 4rem)
+}
+
+.futurebiz-N42 .swiper-button-next {
+    left: calc(100% + 4rem);
+    right: auto
+}
+
+.futurebiz-N42 .swiper-button-prev::after,
+.futurebiz-N42 .swiper-button-next::after {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+}
+
+.futurebiz-N42 .swiper-button-prev:after {
+    background-image: url(../icons/ico_btnset_arrow_right_black.svg);
+    transform: rotate(180deg)
+}
+
+.futurebiz-N42 .swiper-button-next:after {
+    background-image: url(../icons/ico_btnset_arrow_right_black.svg)
+}
+
+.futurebiz-N42 .swiper-pagination {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    background-color: #e9e9e9;
+    border-radius: 1rem;
+    overflow: hidden
+}
+
+.futurebiz-N42 .swiper-pagination-progressbar-fill {
+    background-color: var(--line-color3);
+    border-radius: 1rem
+}
+
+.futurebiz-N42 .cardset {
+    display: inline-block;
+    width: 100%;
+    background: #fafafa;
+    border-radius: 2rem;
+}
+
+.futurebiz-N42 .cardset .cardset-tit {
+    padding-left: 2rem;
+}
+
+.futurebiz-N42 .cardset .cardset-figure {
+    height: 30rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.futurebiz-N42 .cardset .cardset-body {
+    padding-top: 1.6rem;
+    padding-bottom: 0
+}
+
+.futurebiz-N42 .cardset .cardset-name {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--text-color3)
+}
+
+.futurebiz-N42 .cardset .cardset-tit+.cardset-desc {
+    margin-top: 0.8rem
+}
+
+@media (max-width: 992px) {
+    .futurebiz-N42 {
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
+
+    .futurebiz-N42 .swiper-slide {
+        margin-right: 2rem
+    }
+
+    .futurebiz-N42 .swiper-slide,
+    .futurebiz-N42 .cardset {
+        width: 100%
+    }
+
+    .futurebiz-N42 .swiper-button-prev,
+    .futurebiz-N42 .swiper-button-next {
+        display: none
+    }
+
+    .futurebiz-N42 .cardset .cardset-figure+.cardset-body {
+        margin-top: 0;
+        padding-top: 3rem
+    }
+}
+
+/* futurebiz-N32 */
+.futurebiz-N32 {
+    position: relative;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    overflow: hidden
+}
+
+.futurebiz-N32 .contents-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.futurebiz-N32 .imageset-img {
+    object-fit: contain
+}
+
+.futurebiz-N32 .textset {
+    margin-left: 4rem;
+    margin-bottom: 0
+}
+
+.futurebiz-N32 .textset .textset-tit+.textset-desc {
+    margin-top: 4rem
+}
+
+.futurebiz-N32 .textset .textset-desc {
+    color: var(--text-color3)
+}
+
+.futurebiz-N32 .textset .textset-desc+.textset-desc {
+    margin-top: 2rem
+}
+
+.futurebiz-N32 .imageset {
+    align-self: flex-start;
+    width: 20%;
+    height: 64rem;
+    border-radius: 0 2rem 2rem 0;
+    overflow: hidden
+}
+
+.futurebiz-N32 .textset {
+    width: 80%
+}
+
+.futurebiz-N32 .btn-block {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.futurebiz-N32 .btnset {
+    min-width: 18rem;
+    margin-top: 0;
+    background-color: #f7f7fb;
+    border-color: #f7f7fb;
+    color: var(--text-color1);
+}
+
+.futurebiz-N32 .btnset::after {
+    content: "";
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url("/icons/ico_btnset_arrow_right_black.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.futurebiz-N32 .contents-list {
+    margin-top: 2rem
+}
+
+
+.futurebiz-N32 .contents-item {
+    position: relative;
+    padding-left: 1.2rem;
+    color: #777777;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+
+.futurebiz-N32 .contents-item::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: #242424
+}
+
+
+.futurebiz-N32[id='QaM6Ojoe2Y'] .imageset {
+    align-self: flex-start;
+    width: 50%;
+    height: 64rem;
+    border-radius: 0 2rem 2rem 0;
+    overflow: hidden
+}
+
+.futurebiz-N32[id='QaM6Ojoe2Y'] .textset {
+    width: 50%
+}
+
+@media (max-width: 1080px) {
+    .futurebiz-N32 {
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
+
+    .futurebiz-N32 .container-sm .imageset {
+        width: calc(100% + 1.6rem);
+        margin-left: -1.6rem
+    }
+
+    .futurebiz-N32[id='QaM6Ojoe2Y'] .imageset {
+        width: calc(100% + 1.6rem);
+        margin-left: -1.6rem
+    }
+
+
+    .futurebiz-N32 .contents-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start
+    }
+
+    .futurebiz-N32 .imageset {
+        width: calc(100% + 1.6rem);
+        height: 56rem;
+        margin-left: -1.6rem
+    }
+
+    .futurebiz-N32 .textset {
+        width: 100%;
+        margin-top: 4rem;
+        margin-left: 0
+    }
+
+    .futurebiz-N32 .textset br.pc-br {
+        display: none
+    }
+}
+
+/* futurebiz-N14 */
+.futurebiz-N14 {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #f7f7fb;
+    overflow: hidden
+}
+
+.futurebiz-N14 .textset {
+    margin-bottom: 5rem;
+    text-align: center
+}
+
+.futurebiz-N14 .textset .textset-tit+.textset-desc {
+    margin-top: 2rem
+}
+
+.futurebiz-N14 .textset .textset-desc {
+    color: var(--text-color3)
+}
+
+.futurebiz-N14 .cardset .cardset-body {
+    padding: 0
+}
+
+.futurebiz-N14 .cardset .cardset-tit {
+    justify-content: center;
+}
+
+.futurebiz-N14 .cardset .cardset-figure {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden
+}
+
+.futurebiz-N14 .cardset .cardset-figure+.cardset-body {
+    margin-top: 2.4rem;
+    text-align: center
+}
+
+.futurebiz-N14 .cardset .cardset-tit+.cardset-desc {
+    margin-top: 1.5rem
+}
+
+.futurebiz-N14 .cardset .cardset-desc {
+    display: block;
+    color: var(--text-color3);
+    margin-top: 1.5rem;
+    letter-spacing: -0.1rem
+}
+
+/* futurebiz-N14 [skM6KAz5IG] */
+.futurebiz-N14[id='skM6KAz5IG'] .cardset {
+    padding: 5rem 6rem
+}
+
+.futurebiz-N14 .row {
+    justify-content: space-around;
+}
+
+/* futurebiz-N14 [oum6Ogweyt] */
+.futurebiz-N14 .cardset {
+    padding: 2rem 2rem;
+    width: 24%
+}
+
+.futurebiz-N14[id='BXm6ojOFbX'] .cardset {
+    padding: 2rem 2rem;
+    width: 33%
+}
+
+@media (max-width: 992px) {
+    .futurebiz-N14 {
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
+
+    .futurebiz-N14 .textset {
+        margin-bottom: 8rem
+    }
+
+    .futurebiz-N14 .cardset {
+        width: 100%;
+        padding: 0
+    }
+
+    .futurebiz-N14[id='BXm6ojOFbX'] .cardset {
+        width: 100%;
+        padding: 0
+    }
+
+    .futurebiz-N14 .cardset+.cardset {
+        margin-top: 4rem
+    }
+}
+
+/* service-74 */
+.futurebiz-N74 {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    overflow: hidden
+}
+
+.futurebiz-N74 .textset {
+    margin-bottom: 0
+}
+
+.futurebiz-N74 .title-line {
+    margin-top: 2rem;
+}
+
+.futurebiz-N74 .textset .textset-tit+.textset-desc {
+    margin-top: 0.8rem
+}
+
+.futurebiz-N74 .textset .textset-desc {
+    color: var(--text-color3)
+}
+
+.futurebiz-N74 .contents-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 992px) {
+    .futurebiz-N74 {
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
+}

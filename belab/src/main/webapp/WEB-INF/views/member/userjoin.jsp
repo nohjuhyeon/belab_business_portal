@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="/css/plugin.css" />
       <link rel="stylesheet" href="/css/templatehouse.css" />
       <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/member.css" />
     </head>
 
     <body>
@@ -20,7 +21,7 @@
         <div class="th-layout-sideleft"></div>
         <div class="th-layout-stickyleft"></div>
         <div class="th-layout-content">
-          <div class="mypage-N10" id="aWm5xKrhew">
+          <div class="basic-N10" id="aWm5xKrhew">
             <div class="contents-container ">
               <div class="contents-inner">
                 <div class="contents-visual">
@@ -43,7 +44,7 @@
               </div>
             </div>
           </div>
-          <div class="mypage-N37" id="xxm5yRsU3Q">
+          <div class="member-N37" id="xxm5yRsU3Q">
             <div class="contents-container container-md">
               <div class="contents-inner">
                 <div class="imageset">
@@ -109,9 +110,9 @@
                     </div>
                     <div class="contents-agree">
                       <div class="checkset checkset-fill">
-                        <input id="checkset-mypage-N37-b-1" name="개인정보 수집동의" class="checkset-input" type="checkbox"
+                        <input id="checkset-member-N37-b-1" name="개인정보 수집동의" class="checkset-input" type="checkbox"
                           required="" value="개인정보 수집동의" onchange="toggleSubmitButton()" />
-                        <label for="checkset-mypage-N37-b-1" class="checkset-label">개인정보 수집동의</label>
+                        <label for="checkset-member-N37-b-1" class="checkset-label">개인정보 수집동의</label>
                       </div>
                       <a href="javascript:void(0);" class="btnset btnset-link modalset-open-btn modal-privacy-btn"
                         data-modal-target="modalset-N37-1">보기</a>
@@ -192,7 +193,7 @@
         <div class="th-layout-stickyright"></div>
         <div class="th-layout-sideright"></div>
         <!-- 커스텀 팝업 -->
-        <div class="mypage-N66">
+        <div class="member-N66">
           <div class="popup-overlay" onclick="closePopup()"></div>
           <div class="custom-popup">
             <h4>알림</h4>
@@ -210,7 +211,7 @@
       <script src="/js/style.js"></script>
               <script>
           function toggleSubmitButton() {
-            const agreeCheckbox = document.getElementById('checkset-mypage-N37-b-1');
+            const agreeCheckbox = document.getElementById('checkset-member-N37-b-1');
             const username = document.getElementById('username').value.trim();
             const email = document.getElementById('email').value.trim();
             const password = document.getElementById('password').value.trim();
@@ -247,8 +248,8 @@
           });
 
           function showPopup(message) {
-            const popup = document.querySelector('.mypage-N66 .custom-popup');
-            const overlay = document.querySelector('.mypage-N66 .popup-overlay');
+            const popup = document.querySelector('.member-N66 .custom-popup');
+            const overlay = document.querySelector('.member-N66 .popup-overlay');
             popup.querySelector('p').innerText = message;
             popup.style.display = 'block';
             overlay.style.display = 'block';

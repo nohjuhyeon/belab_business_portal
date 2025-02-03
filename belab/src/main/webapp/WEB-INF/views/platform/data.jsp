@@ -16,6 +16,8 @@
                 <link rel="stylesheet" href="/css/plugin.css" />
                 <link rel="stylesheet" href="/css/templatehouse.css" />
                 <link rel="stylesheet" href="/css/style.css" />
+                <link rel="stylesheet" href="/css/platform.css" />
+                <link rel="stylesheet" href="/css/data.css" />
                 <style>
                     .img-box {
                         height: 60%;
@@ -54,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="service-N54" id="KlM61VgJPZ">
+                        <div class="data-N54" id="KlM61VgJPZ">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="tabset tabset-brick">
@@ -84,9 +86,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="databse">
-                            <div class="data-service-inner">
-                                <div class="service-N14" id="dPM64BM4jF">
+                        <div class="platform-N01" id="databse">
+                            <div class="platform-inner">
+                                <div class="data-N14" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">Database Technical Support</h2>
@@ -226,7 +228,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <section class="service-N24" id="dPM64BM4jF">
+                                <section class="data-N24" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">상용 Database</h2>
@@ -386,7 +388,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section class="service-N24" id="dPM64BM4jF">
+                                <section class="data-N24" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">오픈소스 Database</h2>
@@ -480,7 +482,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="mediastock-N8">
+                                        <div class="platform-N8">
                                             <div class="container-full">
                                                 <div class="title-area">
                                                     <h2 class="h4">기타 기술 지원 제품군</h2>
@@ -502,9 +504,9 @@
                                 </section>
                             </div>
                         </div>
-                        <div class="data-service" id="bigdataplatform">
-                            <div class="data-service-inner">
-                                <div class="service-N34" id="dPM64BM4jF">
+                        <div class="platform-N01" id="bigdataplatform">
+                            <div class="platform-inner">
+                                <div class="data-N34" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">Big Data Platform</h2>
@@ -514,7 +516,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <section class="service-N24" id="dPM64BM4jF">
+                                <section class="data-N24" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="row row-cols-3 row-md-cols-2 row-sm-cols-1 technical-box">
                                             <div class="col cardset">
@@ -635,9 +637,9 @@
                                 </section>
                             </div>
                         </div>
-                        <div class="data-service" id="web">
-                            <div class="data-service-inner">
-                                <div class="service-N34" id="dPM64BM4jF">
+                        <div class="platform-N01" id="web">
+                            <div class="platform-inner">
+                                <div class="data-N34" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">WEB</h2>
@@ -736,7 +738,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <section class="service-N24" id="dPM64BM4jF">
+                                <section class="data-N24" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">WEB Products</h2>
@@ -886,9 +888,9 @@
                                 </section>
                             </div>
                         </div>
-                        <div class="data-service" id="was">
-                            <div class="data-service-inner">
-                                <div class="service-N34" id="dPM64BM4jF">
+                        <div class="platform-N01" id="was">
+                            <div class="platform-inner">
+                                <div class="data-N34" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">WAS</h2>
@@ -983,7 +985,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <section class="service-N24" id="dPM64BM4jF">
+                                <section class="data-N24" id="dPM64BM4jF">
                                     <div class="contents-inner">
                                         <div class="textset">
                                             <h2 class="h2 textset-tit">WAS Products</h2>

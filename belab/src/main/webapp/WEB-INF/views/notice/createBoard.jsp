@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="/css/plugin.css" />
       <link rel="stylesheet" href="/css/templatehouse.css" />
       <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/contact.css" />
       <style>
         .table th.title-column,
         .table td.title-column {
