@@ -154,23 +154,28 @@
                                     <div class="tabset tabset-brick">
                                         <ul class="tabset-list tabset-fill tabset-lg" style="background: #f7f7fb;">
                                             <li class="tabset-item">
-                                                <a class="tabset-btn active" href="#database">
+                                                <a class="tabset-btn active" href="#cloud_1">
                                                     <span>클라우드 서비스 이용</span>
                                                 </a>
                                             </li>
                                             <li class="tabset-item">
-                                                <a class="tabset-btn" href="#bigdataplatform">
+                                                <a class="tabset-btn" href="#cloud_2">
                                                     <span>클라우드 도입</span>
                                                 </a>
                                             </li>
                                             <li class="tabset-item">
-                                                <a class="tabset-btn" href="#web">
+                                                <a class="tabset-btn" href="#cloud_3">
                                                     <span>클라우드 매니지드 서비스</span>
                                                 </a>
                                             </li>
                                             <li class="tabset-item">
-                                                <a class="tabset-btn" href="#was">
+                                                <a class="tabset-btn" href="#cloud_4">
                                                     <span>클라우드 최신 기술 활용</span>
+                                                </a>
+                                            </li>
+                                            <li class="tabset-item">
+                                                <a class="tabset-btn" href="#cloud_5">
+                                                    <span>비즈니스 센터 운영영</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -178,7 +183,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="databse">
+                        <div class="data-service" id="cloud_1">
                             <div class="data-service-inner">
                                 <div class="service-N74" id="EJM6k4ylEY">
                                     <div class="contents-container container-md">
@@ -323,10 +328,45 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="service-N31" id="Oqm6K5DqCP">
+                                        <div class="contents-container container-md">
+                                            <div class="contents-inner">
+                                                <div class="imageset">
+                                                    <img class="imageset-img"
+                                                        src="/images/dataservice/cloud/disitalservice_chart.png"
+                                                        alt="이미지" />
+                                                </div>
+                                                <div class="textset">
+                                                    <h3 class="textset-tit h3">
+                                                        공공기관 고객을 위한 디지털서비스 전문계약제도 지원
+                                                        </h2>
+                                                        <p class="textset-desc p1">
+                                                            디지털서비스를 신속히 도입하기 위한 디지털서비스 전문계약제도 가이드를 통해 공공기관 고객의 신속한 클라우드
+                                                            서비스 이용을 지원합니다.
+                                                        </p>
+                                                        <ul class="contents-list">
+                                                            <li class=" p1">
+                                                                AS-IS: 일반경쟁 입찰절차에 따라 용역 계약 진행
+                                                            </li>
+                                                            <li class="contents-item p2">
+                                                                조달요청 -> 구매규격 사전공개 -> 입찰공고 -> 입찰 -> 낙찰자 선정 -> 계약체결 및 납품
+                                                                시스템 구축 시 Two Track 전략 사용
+                                                            </li>
+                                                            <li class="p1">
+                                                                TO-BE: 디지털 서비스 전문계약제도
+                                                            </li>
+                                                            <li class="contents-item p1">
+                                                                디지털서비스 검색 -> 적합서비스 선택·계약조건 협의 -> 계약 및 납품
+                                                            </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="databse">
+                        <div class="data-service" id="cloud_2">
                             <div class="data-service-inner">
 
                                 <div class="service-N74" id="ykM6K55Bh9">
@@ -540,7 +580,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="databse">
+                        <div class="data-service" id="cloud_3">
                             <div class="data-service-inner">
                                 <div class="service-N74" id="EJM6k4ylEY">
                                     <div class="contents-container container-md">
@@ -632,6 +672,251 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="data-service" id="cloud_4">
+                            <div class="data-service-inner">
+                                <div class="service-N74" id="EJM6k4ylEY">
+                                    <div class="contents-container container-md">
+                                        <div class="contents-inner">
+                                            <div class="textset">
+                                                <h2 class="textset-tit h2">클라우드 최신 기술 활용</h2>
+                                            </div>
+                                        </div>
+                                        <hr class="title-line">
+                                    </div>
+                                    <div class="service-N33" id="Oqm6K5DqCP">
+                                        <div class="contents-container container-md">
+                                            <h3 class="textset-tit h3">
+                                                오픈 클라우드 플랫폼(K-PaaS)를 이용한 Cloud Native 환경의 시스템 구축
+                                            </h3>
+                                            <div class="contents-inner">
+                                                <div class="imageset">
+                                                    <img class="imageset-img"
+                                                        src="/images/dataservice/cloud/cloud_native.png" alt="이미지" />
+                                                </div>
+                                                <div class="textset">
+                                                    <ul class="contents-list">
+                                                        <li class="contents-item h5">
+                                                            Cloud Native 환경의 컨설팅/마이그레이션 서비스 제공
+                                                        </li>
+                                                        <li class="contents-item h5">
+                                                            K-PaaS 전문기업 인증을 통한 Cloud Native 기술능력 증빙
+                                                        </li>
+                                                    </ul>
+                                                    <div class="row row-cols-3 row-md-cols-1 gutter-2 contents-group">
+                                                        <div class="col">
+                                                            <div class="cardset cardset-hover cardset-border">
+                                                                <figure class="cardset-figure">
+                                                                    <img class="cardset-img"
+                                                                        src="/images/dataservice/cloud/cloud_native_logo.png"
+                                                                        alt="카드 이미지" />
+                                                                </figure>
+                                                                <div class="cardset-cont">
+                                                                    <h2 class="h5 cardset-tit">Cloud Native</h2>
+                                                                    <ul class="contents-list">
+                                                                        <li class="contents-item p3">
+                                                                            클라우드 환경을 고려한 애플리케이션 개발 & 운영
+                                                                        </li>
+                                                                        <li class="contents-item p3">
+                                                                            확장성을 활용한 비용 절감, 자동화된 관리, 장애시 빠른 복구,
+                                                                            업데이트시 다운타임
+                                                                            제로 등 다양한 장점 보유
+                                                                        </li>
+                                                                        <li class="contents-item p3">
+                                                                            Container, MSA, DevOps, CI/CD
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="cardset cardset-hover cardset-border">
+                                                                <figure class="cardset-figure">
+                                                                    <img class="cardset-img"
+                                                                        src="/images/dataservice/cloud/k-paas_logo.png"
+                                                                        alt="카드 이미지" />
+                                                                </figure>
+                                                                <div class="cardset-cont">
+                                                                    <h2 class="h5 cardset-tit">K-PaaS </h2>
+                                                                    <ul class="contents-list">
+                                                                        <li class="contents-item p3">
+                                                                            개방형 클라우드 플랫폼 표준모델 + K-PaaS 적합성 인증 서비스
+                                                                        </li>
+                                                                        <li class="contents-item p3">
+                                                                            오픈소스 기반 클라우드 네이티브 애플리케이션의 운영관리 가능
+                                                                        </li>
+                                                                        <li class="contents-item p3">
+                                                                            인프라 종속성 감소, 통합 관제 기능, Hybrid Cloud 통합 관리
+                                                                            등 다양한
+                                                                            장점 보유
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-N33" id="Oqm6K5DqCP">
+                                        <div class="contents-container container-md">
+                                            <h3 class="textset-tit h3">
+                                                클라우드 환경에서 고객의 AI 활용을 위한 AI & Cloud 연계 서비스 제공
+                                            </h3>
+                                            <div class="contents-inner sub-contents">
+                                                <div class="imageset">
+                                                    <img class="imageset-img"
+                                                        src="/images/dataservice/cloud/ai_cloud.png" alt="이미지" />
+                                                </div>
+                                                <div class="textset">
+                                                    <h3 class="h5">
+                                                        AI(with Cloud) 컨설팅 제공으로
+                                                        고객의 AI 서비스 구축 지원
+                                                    </h3>
+                                                    <ul class="contents-list">
+                                                        <li class="contents-item p1">
+                                                            CSP(AWS, Azure, Naver Cloud 등)는 단순 인프라 제공을 넘어 고객이 AI를 쉽게
+                                                            이용하도록 변화
+                                                        </li>
+                                                        <li class="contents-item p1">
+                                                            Cloud가 제공하는 서비스를 효율적으로 이용한다면 AI 서비스 구축시 투입 자원의 절감 가능
+                                                        </li>
+                                                    </ul>
+                                                    <div class="row row-cols-3 row-md-cols-1 gutter-2 contents-group">
+                                                        <div class="col" style="width: 100%;">
+                                                            <div class="cardset cardset-hover cardset-border sub-cardset"
+                                                                style="height: auto;margin-top: 2rem;">
+                                                                <div class="cardset-cont">
+                                                                    <h2 class="h5 cardset-tit" style="height: auto;">AI
+                                                                        & Cloud 장점 </h2>
+                                                                    <ul class="contents-list">
+                                                                        <li class="p1">
+                                                                            CSP 제공 서비스를 활용하여
+                                                                            AI 서비스 구축 간소화
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-service" id="cloud_5">
+                            <div class="data-service-inner">
+                                <div class="service-N74" id="EJM6k4ylEY">
+                                    <div class="contents-container container-md">
+                                        <div class="contents-inner">
+                                            <div class="textset">
+                                                <h2 class="textset-tit h2">비즈니스 센터 운영</h2>
+                                            </div>
+                                        </div>
+                                        <hr class="title-line">
+                                    </div>
+                                    <div class="service-N33" id="Oqm6K5DqCP">
+                                        <div class="contents-container container-md">
+                                            <div class="cardset cardset-hover" style="height: auto; padding: 2rem;">
+                                                <h3 class="textset-tit h3">
+                                                    MSP 관제
+                                                </h3>
+                                                <div class="contents-inner">
+                                                    <div class="imageset">
+                                                        <img class="imageset-img"
+                                                            src="/images/dataservice/cloud/msp.png" alt="이미지" />
+                                                    </div>
+                                                    <div class="textset">
+                                                        <h3 class="h4">
+                                                            인프라의 안정적인 운영을 위한 관제 전용 모니터링 툴 사용
+                                                        </h3>
+                                                        <ul class="contents-list">
+                                                            <li class="p1">
+                                                                인프라 리소스 모니터링 기능
+                                                            </li>
+                                                            <li class="contents-item p2">
+                                                                CPU, Memory, Disk, Network Traffic 등
+                                                            </li>
+                                                            <li class="contents-item p2">
+                                                                고객 희망시 직접 대시보드에 접근할 수 있는 기능 제공
+                                                            </li>
+                                                            <li class="p1">
+                                                                장애 정보 및 알림 기능
+                                                            </li>
+                                                            <li class="contents-item p2">
+                                                                상황 발생시 관제 센터 뿐 아니라 고객에게도 자동 연락기능 제공
+                                                            </li>
+                                                            <li class="contents-item p2">
+                                                                Mobile App, 메일, SMS, 알림톡, Slack 등 다양한 수신 채널 지원
+                                                            </li>
+                                                            <li class="p2">
+                                                                이벤트 통계 기능
+                                                            </li>
+                                                            <li class="contents-item p2">
+                                                                이벤트 통계 기능을 활용한 이슈 파악 및 예방정비
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-N44" id="dPM64BM4jF">
+                                        <div class="contents-container container-md">
+                                            <div class="cardset cardset-hover" style="height: auto; width:auto">
+                                                <div class="contents-inner">
+                                                    <div class="textset" style="margin-bottom: 2rem;">
+                                                        <h2 class="h3 textset-tit">지원센터 연락체계</h2>
+                                                        <p class="p1 textset-desc">운영 및 기술 지원, 장애 대응 요청 시 단일화된 채널을 통해
+                                                            신속하고 효율적인 기술 지원을 받을 수 있음.<br>
+                                                            일관된 고객 경험 제공, 효율적인 문제 해결, 자원 최적화 및 비용 절감, 데이터 수집 및 분석 용이.
+                                                    </div>
+                                                    <div class="imageset">
+                                                        <img class="imageset-img"
+                                                            src="/images/dataservice/cloud/ICC.png" alt="이미지">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-N44" id="dPM64BM4jF">
+                                        <div class="contents-container container-md">
+                                            <div class="cardset cardset-hover" style="height: auto; width:auto">
+                                                <div class="contents-inner">
+                                                    <div class="textset" style="margin-bottom: 2rem;">
+                                                        <h2 class="h3 textset-tit">운용 및 기술지원
+                                                        </h2>
+                                                    </div>
+                                                    <div class="imageset">
+                                                        <img class="imageset-img"
+                                                            src="/images/dataservice/cloud/operation.png" alt="이미지">
+                                                    </div>
+                                                    <ul class="contents-list">
+                                                        <li class="contents-item p2">
+                                                            VPN 계정을 발급 받아 Beyond ICC 에서 각 담당자들이 운영 및 기술지원을 수행합니다.
+                                                        </li>
+                                                        <li class="contents-item p2">
+                                                            장애 발생 시 원격 조치를 기본으로 하며, 필요시 고객사 인프라 위치에 방문하여 장애 조치를 수행 합니다.
+                                                        </li>
+                                                        <li class="contents-item p2">
+                                                            운영 지원의 경우 평일 오전 9시 ~ 오후 6시 까지 지원 합니다.
+                                                        </li>
+                                                        <li class="contents-item p2">
+                                                            장애 지원의 경우 24x7 지원을 원칙으로 합니다.
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="th-layout-stickyright"></div>
                     <div class="th-layout-sideright"></div>
