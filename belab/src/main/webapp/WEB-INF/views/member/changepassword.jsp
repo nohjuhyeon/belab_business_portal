@@ -48,7 +48,7 @@
           <div class="member-N24" id="Vgm5ys8tOU">
             <div class="contents-container container-valid-box">
               <div class="contents-inner">
-                <form id="changePasswordForm" action="/member/changepassword" method="post">
+                <form id="changePasswordForm" action="/member/validatePassword" method="post">
                   <div class="form-group">
                     <div class="textset">
                       <h2 class="h2 textset-tit">새 비밀번호를 입력하세요.</h2>

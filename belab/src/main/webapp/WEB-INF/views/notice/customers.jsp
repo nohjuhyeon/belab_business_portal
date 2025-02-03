@@ -75,6 +75,9 @@
                                   <button class="selectset-link btn" type="button" data-value="불만">문의</button>
                                 </li>
                                 <li class="selectset-item">
+                                  <button class="selectset-link btn" type="button" data-value="라이센스">라이센스</button>
+                                </li>
+                                <li class="selectset-item">
                                   <button class="selectset-link btn" type="button" data-value="문의">불만</button>
                                 </li>
                                 <li class="selectset-item">

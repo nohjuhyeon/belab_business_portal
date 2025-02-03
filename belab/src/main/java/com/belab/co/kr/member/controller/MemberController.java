@@ -57,24 +57,24 @@ public class MemberController {
     }
 
     // 로그인 처리
-@RequestMapping(value = "/login", method = RequestMethod.POST)
-public String login(MemberVO memberVO, HttpSession session, RedirectAttributes redirectAttributes) {
-    // 로그인 처리: 이메일과 비밀번호로 사용자 정보 조회
-    MemberVO loginMember = memberService.login(memberVO);
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String login(MemberVO memberVO, HttpSession session, RedirectAttributes redirectAttributes) {
+        // 로그인 처리: 이메일과 비밀번호로 사용자 정보 조회
+        MemberVO loginMember = memberService.login(memberVO);
 
-    // 로그인 성공 시
-    if (loginMember != null) {
-        // 로그인된 사용자 정보를 세션에 저장
-        session.setAttribute("loggedInUser", loginMember);
+        // 로그인 성공 시
+        if (loginMember != null) {
+            // 로그인된 사용자 정보를 세션에 저장
+            session.setAttribute("loggedInUser", loginMember);
 
-        // 로그인 후 메인 페이지로 리다이렉트
-        return "redirect:/main";
+            // 로그인 후 메인 페이지로 리다이렉트
+            return "redirect:/main";
+        }
+
+        // 로그인 실패 시 에러 메시지를 설정하고 로그인 페이지로 리다이렉트
+        redirectAttributes.addFlashAttribute("error", "이메일 또는 비밀번호가 올바르지 않습니다.");
+        return "redirect:/member/login";
     }
-
-    // 로그인 실패 시 에러 메시지를 설정하고 로그인 페이지로 리다이렉트
-    redirectAttributes.addFlashAttribute("error", "이메일 또는 비밀번호가 올바르지 않습니다.");
-    return "redirect:/member/login";
-}
     /**
      * 로그아웃
      *
@@ -162,15 +162,24 @@ public String login(MemberVO memberVO, HttpSession session, RedirectAttributes r
     public ResponseEntity<String> validatePassword(@RequestParam String password, HttpSession session) {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
 
+        // 세션에 사용자 정보가 없는 경우
+        if (loggedInUser == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("unauthorized");
+        }
+
         // 비밀번호 검증
         boolean isPasswordValid = memberService.checkPassword(loggedInUser.getEmail(), password);
 
         if (isPasswordValid) {
-            return ResponseEntity.ok("valid");  // 비밀번호가 맞으면 success를 반환
-
+            return ResponseEntity.ok("valid");  // 비밀번호가 맞으면 valid 반환
         } else {
-            return ResponseEntity.status(400).body("invalid");  // 비밀번호가 틀리면 error 반환
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("invalid");  // 비밀번호가 틀리면 invalid 반환
         }
+    }
+
+    @RequestMapping(value = "/validatePassword", method = RequestMethod.GET)
+    public String validateFasswordForm() {
+        return "/member/validatePasswordForm";  // 비밀번호 입력 페이지로 이동
     }
 
     /***
@@ -251,25 +260,25 @@ public String login(MemberVO memberVO, HttpSession session, RedirectAttributes r
         try {
             // 이메일로 사용자 정보 조회
             MemberVO user = memberService.findUserNameByEmail(email);
-    
+
             // 이메일이 데이터베이스에 없는 경우
             if (user == null) {
                 redirectAttributes.addFlashAttribute("error", "입력하신 이메일에 해당하는 회원이 존재하지 않습니다.");
                 return "redirect:/member/findPassword";
             }
-    
+
             // 입력된 이름과 이메일로 조회한 이름이 다를 경우
             if (!user.getUsername().equals(username)) {
                 redirectAttributes.addFlashAttribute("error", "사용자 정보가 일치하지 않습니다.");
                 return "redirect:/member/findPassword";
             }
-    
+
             // 새로운 임시 비밀번호 생성
             String newPassword = memberService.generateTempPassword(email);
-    
+
             // 새 비밀번호를 데이터베이스에 업데이트
             boolean isUpdated = memberService.updatePasswordByEmail(email, newPassword);
-    
+
             if (isUpdated) {
                 // 이메일로 새 비밀번호 전송
                 memberService.sendPasswordToEmail(email, newPassword);
@@ -281,10 +290,10 @@ public String login(MemberVO memberVO, HttpSession session, RedirectAttributes r
             // 이메일 전송 중 오류 발생
             redirectAttributes.addFlashAttribute("error", "비밀번호 전송 중 오류가 발생했습니다.");
         }
-    
+
         return "redirect:/member/findPassword";  // 비밀번호 찾기 페이지로 리다이렉트
     }
-    
+
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     public ResponseEntity<Map<String, String>> deleteMember(HttpSession session, SessionStatus sessionStatus) {
