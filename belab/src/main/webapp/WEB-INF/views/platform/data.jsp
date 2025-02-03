@@ -238,7 +238,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/database/oracle.png" alt="이미지" />
+                                                            src="/images/platform/database/oracle.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -261,7 +261,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/database/singlestore.png"
+                                                            src="/images/platform/database/singlestore.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -287,7 +287,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/database/sqlserver.png"
+                                                            src="/images/platform/database/sqlserver.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -313,7 +313,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/database/tibero.png" alt="이미지" />
+                                                            src="/images/platform/database/tibero.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -340,7 +340,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/database/agenssql.png" alt="이미지" />
+                                                            src="/images/platform/database/agenssql.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -364,7 +364,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/database/edb.png" alt="이미지" />
+                                                            src="/images/platform/database/edb.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -397,7 +397,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/database/postgresql.png"
+                                                            src="/images/platform/database/postgresql.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -425,7 +425,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/database/mariadb.png" alt="이미지" />
+                                                            src="/images/platform/database/mariadb.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -453,7 +453,7 @@
                                                     <div class="img-box">
                                                         <figure class="cardset-figure">
                                                             <img class="cardset-img"
-                                                                src="/images/dataservice/database/mongodb.png"
+                                                                src="/images/platform/database/mongodb.png"
                                                                 alt="이미지" />
                                                         </figure>
                                                     </div>
@@ -486,13 +486,13 @@
                                                     <h2 class="h4">기타 기술 지원 제품군</h2>
                                                 </div>
                                                 <div class="list-wrap">
-                                                    <img class="list-img" src="/images/dataservice/database/redis.png"
+                                                    <img class="list-img" src="/images/platform/database/redis.png"
                                                         alt="새로운 콘텐츠">
                                                     <img class="list-img"
-                                                        src="/images/dataservice/database/couchbase.png" alt="콘텐츠 보증">
-                                                    <img class="list-img" src="/images/dataservice/database/sqlite.png"
+                                                        src="/images/platform/database/couchbase.png" alt="콘텐츠 보증">
+                                                    <img class="list-img" src="/images/platform/database/sqlite.png"
                                                         alt="새로운 콘텐츠">
-                                                    <img class="list-img" src="/images/dataservice/database/mysql.png"
+                                                    <img class="list-img" src="/images/platform/database/mysql.png"
                                                         alt="새로운 콘텐츠">
                                                 </div>
                                             </div>
@@ -521,7 +521,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/bigdataplatform/hadoop.png"
+                                                            src="/images/platform/bigdataplatform/hadoop.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -546,7 +546,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/bigdataplatform/hive.png"
+                                                            src="/images/platform/bigdataplatform/hive.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -568,7 +568,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/bigdataplatform/spark.png"
+                                                            src="/images/platform/bigdataplatform/spark.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -590,7 +590,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/bigdataplatform/kafka.png"
+                                                            src="/images/platform/bigdataplatform/kafka.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -610,7 +610,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/bigdataplatform/hbase.png"
+                                                            src="/images/platform/bigdataplatform/hbase.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -644,7 +644,7 @@
                                             <p class="h6 textset-desc">World Wide Web</p>
                                         </div>
                                         <div class="imageset">
-                                            <img class="imageset-img" src="/images/dataservice/web/web_architecture.png"
+                                            <img class="imageset-img" src="/images/platform/web/web_architecture.png"
                                                 alt="이미지">
                                         </div>
                                         <div class="contents-box">
@@ -746,7 +746,7 @@
                                             <div class="col cardset">
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img" src="/images/dataservice/web/apach.png"
+                                                        <img class="cardset-img" src="/images/platform/web/apach.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -769,7 +769,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/web/Microsoftiis.png" alt="이미지" />
+                                                            src="/images/platform/web/Microsoftiis.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -795,7 +795,7 @@
                                             <div class="col cardset">
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img" src="/images/dataservice/web/nginx.png"
+                                                        <img class="cardset-img" src="/images/platform/web/nginx.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -817,7 +817,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/web/webtob.png" alt="이미지" />
+                                                            src="/images/platform/web/webtob.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -839,7 +839,7 @@
                                             <div class="col cardset">
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img" src="/images/dataservice/web/resin.png"
+                                                        <img class="cardset-img" src="/images/platform/web/resin.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -862,7 +862,7 @@
                                             <div class="col cardset">
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img" src="/images/dataservice/web/caddy.png"
+                                                        <img class="cardset-img" src="/images/platform/web/caddy.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -895,7 +895,7 @@
                                             <p class="h6 textset-desc">Web Application Server</p>
                                         </div>
                                         <div class="imageset">
-                                            <img class="imageset-img" src="/images/dataservice/was/was_architecture.png"
+                                            <img class="imageset-img" src="/images/platform/was/was_architecture.png"
                                                 alt="이미지">
                                         </div>
                                         <div class="contents-box">
@@ -993,7 +993,7 @@
                                             <div class="col cardset">
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img" src="/images/dataservice/was/jeus.png"
+                                                        <img class="cardset-img" src="/images/platform/was/jeus.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -1018,7 +1018,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/was/weblogic.png" alt="이미지" />
+                                                            src="/images/platform/was/weblogic.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -1039,7 +1039,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/was/apachetomcat.png" alt="이미지" />
+                                                            src="/images/platform/was/apachetomcat.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">
@@ -1059,7 +1059,7 @@
                                             <div class="col cardset">
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img" src="/images/dataservice/was/jboss.png"
+                                                        <img class="cardset-img" src="/images/platform/was/jboss.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -1078,7 +1078,7 @@
                                             <div class="col cardset">
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
-                                                        <img class="cardset-img" src="/images/dataservice/was/resin.png"
+                                                        <img class="cardset-img" src="/images/platform/was/resin.png"
                                                             alt="이미지" />
                                                     </figure>
                                                 </div>
@@ -1103,7 +1103,7 @@
                                                 <div class="img-box">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img"
-                                                            src="/images/dataservice/was/litespeed.png" alt="이미지" />
+                                                            src="/images/platform/was/litespeed.png" alt="이미지" />
                                                     </figure>
                                                 </div>
                                                 <div class="cardset-body">

@@ -52,7 +52,7 @@
                                             <p class="h6 textset-desc">AI 플랫폼 구축 및 효율적인 통합 서비스를 제공합니다.
                                         </div>
                                         <div class="imageset">
-                                            <img class="imageset-img" src="/images/dataservice/ai/aiplatform.png"
+                                            <img class="imageset-img" src="/images/platform/ai/aiplatform.png"
                                                 alt="이미지">
                                         </div>
                                     </div>
@@ -132,14 +132,14 @@
                                                 <h2 class="h4">사용 기술</h2>
                                             </div>
                                             <div class="list-wrap">
-                                                <img class="list-img" src="/images/dataservice/ai/logstash.png"
+                                                <img class="list-img" src="/images/platform/ai/logstash.png"
                                                     alt="logstash">
                                                 <img class="list-img"
-                                                    src="/images/dataservice/ai/selinium_beatifulsoup.png"
+                                                    src="/images/platform/ai/selinium_beatifulsoup.png"
                                                     alt="selinium_beatifulsoup">
-                                                <img class="list-img" src="/images/dataservice/ai/kafka.png"
+                                                <img class="list-img" src="/images/platform/ai/kafka.png"
                                                     alt="kafka">
-                                                <img class="list-img" src="/images/dataservice/ai/airflow.png"
+                                                <img class="list-img" src="/images/platform/ai/airflow.png"
                                                     alt="airflow">
                                             </div>
                                         </div>
@@ -233,17 +233,17 @@
                                                 <h2 class="h4">사용 기술</h2>
                                             </div>
                                             <div class="list-wrap">
-                                                <img class="list-img" style="width:15%" src="/images/dataservice/ai/redshift.png"
+                                                <img class="list-img" style="width:15%" src="/images/platform/ai/redshift.png"
                                                     alt="redshift">
-                                                <img class="list-img" style="width:15%" src="/images/dataservice/ai/oracle.png"
+                                                <img class="list-img" style="width:15%" src="/images/platform/ai/oracle.png"
                                                     alt="selinium_beatifulsoup">
-                                                <img class="list-img" style="width:15%" src="/images/dataservice/ai/singlestore.png"
+                                                <img class="list-img" style="width:15%" src="/images/platform/ai/singlestore.png"
                                                     alt="singlestore">
-                                                <img class="list-img" style="width:15%" src="/images/dataservice/ai/elasticsearch.png"
+                                                <img class="list-img" style="width:15%" src="/images/platform/ai/elasticsearch.png"
                                                     alt="elasticsearch">
-                                                <img class="list-img" style="width:15%" src="/images/dataservice/ai/mongodb.png"
+                                                <img class="list-img" style="width:15%" src="/images/platform/ai/mongodb.png"
                                                     alt="mongodb">
-                                                <img class="list-img" style="width:15%" src="/images/dataservice/ai/hadoop.png"
+                                                <img class="list-img" style="width:15%" src="/images/platform/ai/hadoop.png"
                                                     alt="hadoop">
                                             </div>
                                         </div>
@@ -324,14 +324,14 @@
                                                 <h2 class="h4">사용 기술</h2>
                                             </div>
                                             <div class="list-wrap">
-                                                <img class="list-img" style="width:19%", src="/images/dataservice/ai/python.png"
+                                                <img class="list-img" style="width:19%", src="/images/platform/ai/python.png"
                                                     alt="python">
-                                                <img class="list-img" style="width:19%", src="/images/dataservice/ai/r.png" alt="r">
-                                                <img class="list-img" style="width:19%", src="/images/dataservice/ai/tableu.png"
+                                                <img class="list-img" style="width:19%", src="/images/platform/ai/r.png" alt="r">
+                                                <img class="list-img" style="width:19%", src="/images/platform/ai/tableu.png"
                                                     alt="tableu">
-                                                <img class="list-img" style="width:19%", src="/images/dataservice/ai/kibana.png"
+                                                <img class="list-img" style="width:19%", src="/images/platform/ai/kibana.png"
                                                     alt="kibana">
-                                                <img class="list-img" style="width:19%", src="/images/dataservice/ai/spark.png"
+                                                <img class="list-img" style="width:19%", src="/images/platform/ai/spark.png"
                                                     alt="spark">
                                             </div>
                                         </div>
