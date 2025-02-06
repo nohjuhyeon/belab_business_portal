@@ -1786,7 +1786,14 @@
     object-fit: cover
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 500px) {
+    .butti-N1 .header-utils{
+        visibility: hidden;
+    }
+}
+
+
+@media (max-width: 1100px) {
     .butti-N1 .header-title a {
         height: 2.4rem
     }
@@ -1794,9 +1801,7 @@
     .butti-N1 .header-gnblink {
         padding: 2.8rem 2.4rem
     }
-}
 
-@media (max-width: 1100px) {
     .butti-N1.header-top-active:hover {
         background: transparent
     }
@@ -1847,7 +1852,18 @@
         z-index: 10
     }
 
-    .butti-N1.block-active .header-top {
+    .butti-N1.block-active .header-utils {
+        top: 100%;
+        opacity: 1;
+        visibility: visible
+    }
+
+    .butti-N1.block-active .header-left {
+        visibility: hidden
+    }
+
+    
+    .butti-N1.header-active .header-top {
         top: 100%;
         opacity: 1;
         visibility: visible

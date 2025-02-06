@@ -36,7 +36,7 @@
                                     </div>
                                     <div class="contents-body">
                                         <div class="textset">
-                                            <h2 class="h1 textset-tit">BeMON</h2>
+                                            <h2 class="h1 textset-tit">BeLOG</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -45,19 +45,21 @@
                         <div class="futurebiz-N74" id="EJM6k4ylEY">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
-                                    <figure class="cardset-figure">
-                                        <img class="cardset-img" src="/images/futurebiz/belog_logo.png"
-                                            alt="스와이퍼 이미지" />
-                                    </figure>
-                                    <div class="textset">
-                                        <h2 class="textset-tit h2">BeLOG</h2>
+                                    <div class="title-contents">
+                                        <figure class="cardset-figure">
+                                            <img class="cardset-img" src="/images/futurebiz/belog_logo.png"
+                                                alt="스와이퍼 이미지" />
+                                        </figure>
+                                        <div class="textset">
+                                            <h2 class="textset-tit h2">BeLOG</h2>
+                                        </div>
                                     </div>
                                 </div>
                                 <hr class="title-line">
                             </div>
                         </div>
                         <div class="futurebiz-N44" id="dPM64BM4jF">
-                            <div class="contents-inner">
+                            <div class="contents-inner container-md">
                                 <div class="textset">
                                     <h2 class="h2 textset-tit">BeLOG</h2>
                                     <p class="h6 textset-desc">웹 로그 분석 솔루션은 웹사이트 방문자의 행동을 추적하고 데이터를 시각화하여 인사이트를 제공합니다.
@@ -66,6 +68,27 @@
                                 </div>
                                 <div class="imageset">
                                     <img class="imageset-img" src="/images/futurebiz/belog.png" alt="이미지">
+                                </div>
+                                <div class="row row-cols-2 gutter-3" style="justify-content: space-between; width:80%;">
+                                    <div class="col cardset">
+                                        <div class="cardset-body">
+                                            <a href="http://issuefollow.com/belog/BEp.cgi"
+                                                class="btnset btnset-light btnset-lg"
+                                                style="font-weight: var(--fw-medium);">데모 사이트
+                                                바로가기</a>
+                                            <p class="p1 cardset-desc">
+                                                데모 사이트에서 시연을 해보실 수 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col cardset">
+                                        <div class="cardset-body">
+                                            <a href="/files/viewBoard/558" class="btnset btnset-light btnset-lg"
+                                                style="font-weight: var(--fw-medium);">BeLOG
+                                                자료 다운 받기</a>
+                                            <p class="p1 cardset-desc">자료실에서 BeLOG에 대한 자료를 다운받을 수 있습니다.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -175,16 +198,15 @@
                         <section class="futurebiz-N7" id="Jdm6oqRGP6">
                             <div class="contents-container container-full">
                                 <div class="contents-inner">
-                                    <h2 class="h3">데모 라이센스​<br /></h2>
-                                    <h2 class="p1" style="color: var(--line-color2);">7일 동안 사용이 가능합니다.<br />다수의 데모
-                                        라이센스를 신청할 경우, 별도의 절차가 필요합니다.<br />아래의 버튼을 클릭하시고 [제목]란에 'BeLOG 라이센스 요청'을 입력하신 후
-                                        요청해주세요.</h2>
-                                    <a href="javascript:void(0)" class="btnset btnset-light btnset-lg">라이선스 구매하러 가기</a>
+                                    <h2 class="h3">데모 라이센스 발급 및 라이센스 문의<br /></h2>
+                                    <h2 class="p1" style="color: var(--line-color2);">
+                                        7일 동안 사용이 가능합니다.<br />다수의 데모 라이센스를 신청할 경우, 별도의 절차가 필요합니다.<br />
+                                        아래의 버튼을 클릭하시고 [제목]란에 'BeLOG 라이센스 요청'을 입력하신 후 요청해주세요.
+                                    </h2>
+                                    <a href="/notice/customers" class="btnset btnset-light btnset-lg">라이선스 문의하기</a>
                                 </div>
                             </div>
                         </section>
-                    </div>
-
                     </div>
                     <div class="th-layout-stickyright"></div>
                     <div class="th-layout-sideright"></div>

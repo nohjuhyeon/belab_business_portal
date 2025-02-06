@@ -46,23 +46,29 @@
           <div class="contact-N32">
             <div class="container">
               <table>
+                <colgroup>
+                  <col style="width: 10%;">
+                  <col style="width: 40%;">
+                  <col style="width: 10%;">
+                  <col style="width: 40%;">
+                </colgroup>
                 <tr>
                   <th>제목</th>
                   <td colspan="3">${board.title}</td>
                 </tr>
                 <tr>
-                  <th style="width: 10%">작성자</th>
-                  <td style="width: 40%">${board.username}</td>
-                  <th style="width: 10%">작성일</th>
-                  <td style="width: 40%">${board.formattedCreatedAt}</td>
+                  <th>작성자</th>
+                  <td>${board.username}</td>
+                  <th>작성일</th>
+                  <td>${board.formattedCreatedAt}</td>
                 </tr>
                 <tr>
-                  <th style="width: 10%">첨부파일</th>
+                  <th>첨부파일</th>
                   <td colspan="3">
                     <ul>
                       <c:forEach var="file" items="${attachedFiles}">
                         <li>
-                          <a href="/files/download/${file.file_id}">${file.file_name}</a>
+                          <a class="file-link" href="/files/download/${file.file_id}">${file.file_name}</a>
                         </li>
                       </c:forEach>
                     </ul>

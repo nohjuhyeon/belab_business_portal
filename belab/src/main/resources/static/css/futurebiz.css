@@ -298,6 +298,12 @@
         margin-left: 0
     }
 
+    .futurebiz-N32[id='QaM6Ojoe2Y'] .textset {
+        width: 100%;
+        margin-top: 4rem;
+        margin-left: 0
+    }
+
     .futurebiz-N32 .textset br.pc-br {
         display: none
     }
@@ -410,6 +416,17 @@
     overflow: hidden
 }
 
+.futurebiz-N74 .title-contents {
+    display: flex;
+    align-items: center;
+
+}
+
+.futurebiz-N74 .cardset-figure {
+    margin: 0;
+
+}
+
 .futurebiz-N74 .textset {
     margin-bottom: 0
 }
@@ -430,13 +447,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-@media (max-width: 992px) {
-    .futurebiz-N74 {
-        padding-top: 5rem;
-        padding-bottom: 5rem
-    }
 }
 
 
@@ -809,124 +819,72 @@
     ;
 }
 
-.futurebiz-N44 .row {
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.futurebiz-N44 .col {
-    flex: 0 1 auto;
-    width: 23%;
-
-}
-
-.futurebiz-N44 .cardset .cardset-tit {
-    margin-bottom: 2rem;
-}
-
-.futurebiz-N44 .cardset .cardset-figure {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
 .futurebiz-N44 .textset {
     margin-bottom: 1rem;
     text-align: center;
 }
 
+
+.futurebiz-N44 .cardset {
+    width: 48%;
+    background: #ececee;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.futurebiz-N44 .cardset .cardset-figure {
+    height: 30rem;
+    border-radius: 2rem;
+    overflow: hidden
+}
+
 .futurebiz-N44 .cardset .cardset-figure+.cardset-body {
-    margin-top: 2rem;
+    margin-top: 4rem
 }
 
 .futurebiz-N44 .cardset .cardset-body {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.futurebiz-N44 .cardset .cardset-tit+.p1 {
-    margin-top: 1.6rem;
+.futurebiz-N44 .cardset .cardset-tit+.cardset-desc {
+    margin-top: 2rem
 }
 
-.futurebiz-N44 .cardset .p1 {
+.futurebiz-N44 .cardset .cardset-desc {
+    display: block;
     color: var(--text-color3);
+    margin-top: 1.2rem;
 }
 
-.futurebiz-N44 .contents-box {
-    background: #fafafa;
-    width: 100%;
-    padding: 4rem 2rem;
-    border-radius: 2rem;
-    margin-left: 1rem;
-}
-
-.futurebiz-N44 .contents-box .textset-tit {
-    margin-bottom: 3rem;
-}
-
-.futurebiz-N44 .textset .textset-desc {
-    color: var(--text-color3);
-}
-
-.futurebiz-N44 .contents-list {
-    margin-top: 1rem;
+.futurebiz-N44 .row {
+    justify-content:space-between;
     width: 80%;
 }
 
-.futurebiz-N44 .contents-item {
-    position: relative;
-    padding-left: 1.2rem;
-    color: #777777;
-    text-align: left;
-    padding-bottom: 1.2rem;
-}
-
-.futurebiz-N44 .contents-item::before {
-    content: "";
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    width: 0.4rem;
-    height: 0.4rem;
-    border-radius: 50%;
-    background-color: #242424
-}
-
-@media (max-width: 992px) {
-    .futurebiz-N44 {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
-
-    .futurebiz-N44 .row {
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    .futurebiz-N44 .cardset {
-        width: 48%;
-    }
-
+.futurebiz-N44 .btnset:hover{
+    background-color: var(--black);
+    color:var(--white);
+    
 }
 
 @media (max-width: 650px) {
-    .futurebiz-N44 {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
-
-    .futurebiz-N44 .row {
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    .futurebiz-N44 .cardset {
-        width: 100%;
-    }
 
     .futurebiz-N44 .imageset {
         max-height: 20rem;
     }
+
+    .futurebiz-N44 .cardset {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .futurebiz-N44 .row {
+        justify-content:center;
+        width: 80%;
+    }
+
 }
 
 /* futurebiz-N20 */
@@ -976,31 +934,39 @@
 
 .futurebiz-N20 .table-container {
     width: 100%;
-    overflow-x: auto; /* 작은 화면에서 스크롤 가능 */
+    overflow-x: auto;
+    /* 작은 화면에서 스크롤 가능 */
     margin: 20px 0;
     border: 1px solid #ddd;
     border-radius: 8px;
 }
+
 .futurebiz-N20 table {
     width: 100%;
     border-collapse: collapse;
     font-size: 16px;
     text-align: center;
-    min-width: 600px; /* 최소 너비 설정 */
+    min-width: 600px;
+    /* 최소 너비 설정 */
 }
-.futurebiz-N20 th, .futurebiz-N20 td {
+
+.futurebiz-N20 th,
+.futurebiz-N20 td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
     vertical-align: middle;
 }
+
 .futurebiz-N20 th {
     background-color: #f4f4f4;
     font-weight: bold;
 }
+
 .futurebiz-N20 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+
 .futurebiz-N20 tr:hover {
     background-color: #f1f1f1;
 }
@@ -1032,8 +998,11 @@
 }
 
 @media (max-width: 768px) {
-    .futurebiz-N20 th, .futurebiz-N20 td {
-        font-size: 14px; /* 작은 화면에서 글자 크기 조정 */
+
+    .futurebiz-N20 th,
+    .futurebiz-N20 td {
+        font-size: 14px;
+        /* 작은 화면에서 글자 크기 조정 */
         padding: 8px;
     }
 }
@@ -1060,7 +1029,9 @@
 
 
 @media (max-width: 768px) {
-    .futurebiz-N20 th, .futurebiz-N20 td {
+
+    .futurebiz-N20 th,
+    .futurebiz-N20 td {
         font-size: 14px;
         /* 작은 화면에서 글자 크기 조정 */
         padding: 8px;

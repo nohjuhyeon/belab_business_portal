@@ -443,7 +443,8 @@
 
 .contact-N24 .form-btn .btnset {
     min-width: 18rem;
-    padding: 0 2rem
+    padding: 0 2rem;
+    margin: 0.2rem;
 }
 
 @media (max-width: 992px) {
@@ -469,7 +470,6 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin: 0 10px;
     transition: background-color 0.3s ease;
 
 }
@@ -481,7 +481,6 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin: 0 10px;
     transition: background-color 0.3s ease;
 
 }
@@ -507,19 +506,30 @@
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    table-layout: fixed;
 }
 
 .contact-N32 table th,
 .contact-N32 table td {
     text-align: left;
-    padding: 12px;
+    padding: 7px;
     border: 1px solid #ddd;
 }
+
+.contact-N32 .file-link {
+    display: inline-block; /* inline-block을 사용해야 width를 적용 가능 */
+    max-width: 100%; /* 부모 요소의 너비를 초과하지 않도록 설정 */
+    white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트에 말줄임표(...) 추가 */
+  }
+  
 
 .contact-N32 table th {
     background-color: #f1f1f1;
     color: #333;
     font-weight: bold;
+    word-break: break-word; 
 }
 
 .contact-N32 pre {

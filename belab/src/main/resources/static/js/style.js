@@ -145,6 +145,7 @@
       // Mobile Top
       $block.find(".btn-momenu").on("click", function() {
         $block.toggleClass("block-active");
+        $block.toggleClass("header-active");
         $block.find(".header-gnbitem").removeClass("item-active");
         $block.find(".header-sublist").removeAttr('style');
       });
