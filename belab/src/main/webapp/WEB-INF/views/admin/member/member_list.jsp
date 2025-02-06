@@ -13,6 +13,7 @@
             <link rel="stylesheet" href="/css/plugin.css" />
             <link rel="stylesheet" href="/css/templatehouse.css" />
             <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/member.css" />
         </head>
 
         <body>
@@ -20,7 +21,7 @@
                 <div class="th-layout-sideleft"></div>
                 <div class="th-layout-stickyleft"></div>
                 <div class="th-layout-content">
-                    <div class="mypage-N10" id="HtM5yS8Tf5">
+                    <div class="basic-N10" id="HtM5yS8Tf5">
                         <div class="contents-container ">
                             <div class="contents-inner">
                                 <div class="contents-visual">
@@ -46,7 +47,7 @@
                     <div class="th-layout-sideleft"></div>
                     <div class="th-layout-stickyleft"></div>
                     <div class="th-layout-content">
-                        <section class="admin-N25" id="lPm5z1y19z">
+                        <section class="member-N25" id="lPm5z1y19z">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="title-area">
@@ -105,7 +106,7 @@
                     </div>
                 </div>
             </main>
-            <div class="mypage-N68">
+            <div class="basic-N68">
                 <div class="popup-overlay" id="popup-overlay">
                     <div class="popup" id="popup-confirm-delete">
                         <h3>정말 회원을 삭제하시겠습니까?</h3>

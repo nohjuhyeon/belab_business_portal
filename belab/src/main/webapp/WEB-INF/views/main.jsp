@@ -149,7 +149,7 @@
           </div>
 
 
-          <section class="mediastock-N7" id="Sxm5YNOwkd">
+          <section class="basic-N7" id="Sxm5YNOwkd">
             <div class="contents-container ">
               <div class="contents-inner">
                 <h2 class="h3"> (주) 비이랩은 항상 고객과의 소통을 위해 노력합니다.

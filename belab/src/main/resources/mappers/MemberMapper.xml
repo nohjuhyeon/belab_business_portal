@@ -45,22 +45,17 @@
         SET
         username = #{username},           <!-- 이름 수정 -->
         hp = #{hp},                       <!-- 휴대전화 번호 수정 -->
-        password = #{password},           <!-- 비밀번호 수정 -->
+        role= #{role},                      <!-- 권한 수정 -->
         updated_at = CURRENT_TIMESTAMP      <!-- 수정 일시 -->
         WHERE email = #{email}                <!-- 이메일을 기준으로 수정 -->
     </update>
 
     <select id="checkPassword" resultType="boolean">
         SELECT COUNT(*) > 0
-        FROM user
+        FROM member
         WHERE email = #{email}
           AND password = #{password}
     </select>
-
-    <delete id="deleteMemberByEmail" parameterType="String">
-        <!-- 메인 테이블의 데이터 삭제 -->
-        DELETE FROM user WHERE email = #{email};
-    </delete>
 
     <!-- 이메일로 회원 존재 여부 확인 -->
     <select id="findEmailExists" resultType="boolean">

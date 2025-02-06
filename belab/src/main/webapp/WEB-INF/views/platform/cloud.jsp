@@ -16,6 +16,8 @@
                 <link rel="stylesheet" href="/css/plugin.css" />
                 <link rel="stylesheet" href="/css/templatehouse.css" />
                 <link rel="stylesheet" href="/css/style.css" />
+                <link rel="stylesheet" href="/css/platform.css" />
+                <link rel="stylesheet" href="/css/cloud.css" />
                 <style>
                 </style>
             </head>
@@ -43,9 +45,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="databse">
-                            <div class="data-service-inner">
-                                <div class="service-N46" id="RCM6k3y4v3">
+                        <div class="platform-N01" id="databse">
+                            <div class="platform-inner">
+                                <div class="cloud-N46" id="RCM6k3y4v3">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -147,7 +149,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="service-N54" id="KlM61VgJPZ">
+                        <div class="cloud-N54" id="KlM61VgJPZ">
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <div class="tabset tabset-brick">
@@ -182,9 +184,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="cloud_1">
-                            <div class="data-service-inner">
-                                <div class="service-N74" id="EJM6k4ylEY">
+                        <div class="platform-N01" id="cloud_1">
+                            <div class="platform-inner">
+                                <div class="cloud-N74" id="EJM6k4ylEY">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -193,7 +195,7 @@
                                         </div>
                                         <hr class="title-line">
                                     </div>
-                                    <div class="service-N28" id="XNm6k4635f">
+                                    <div class="cloud-N28" id="XNm6k4635f">
                                         <div class="contents-container container-md">
                                             <div class="contents-container container-md">
                                                 <div class="contents-inner">
@@ -284,7 +286,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="service-N36" id="nJm6k4o50O">
+                                    <div class="cloud-N36" id="nJm6k4o50O">
                                         <div class="contents-container container-md">
                                             <div class="contents-inner">
                                                 <div class="textset">
@@ -326,7 +328,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="service-N31" id="Oqm6K5DqCP">
+                                    <div class="cloud-N31" id="Oqm6K5DqCP">
                                         <div class="contents-container container-md">
                                             <div class="contents-inner">
                                                 <div class="imageset">
@@ -364,10 +366,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="cloud_2">
-                            <div class="data-service-inner">
+                        <div class="platform-N01" id="cloud_2">
+                            <div class="platform-inner">
 
-                                <div class="service-N74" id="ykM6K55Bh9">
+                                <div class="cloud-N74" id="ykM6K55Bh9">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -376,7 +378,7 @@
                                         </div>
                                         <hr class="title-line">
                                     </div>
-                                    <div class="service-N31" id="Oqm6K5DqCP">
+                                    <div class="cloud-N31" id="Oqm6K5DqCP">
                                         <div class="contents-container container-md">
                                             <div class="contents-inner">
                                                 <div class="imageset">
@@ -433,7 +435,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="service-N13" id="skM6KAz5IG">
+                                    <div class="cloud-N13" id="skM6KAz5IG">
                                         <div class="contents-container container-md">
                                             <div class="contents-inner">
                                                 <div class="textset">
@@ -570,9 +572,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="cloud_3">
-                            <div class="data-service-inner">
-                                <div class="service-N74" id="EJM6k4ylEY">
+                        <div class="platform-N01" id="cloud_3">
+                            <div class="platform-inner">
+                                <div class="cloud-N74" id="EJM6k4ylEY">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -581,7 +583,7 @@
                                         </div>
                                         <hr class="title-line">
                                     </div>
-                                    <div class="service-N57">
+                                    <div class="cloud-N57">
                                         <div class="contents-container container-md">
                                             <div class="textset">
                                                 <h2 class="textset-tit h3">Belab ICC(Interactive Contact Center)</h2>
@@ -662,9 +664,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="cloud_4">
-                            <div class="data-service-inner">
-                                <div class="service-N74" id="EJM6k4ylEY">
+                        <div class="platform-N01" id="cloud_4">
+                            <div class="platform-inner">
+                                <div class="cloud-N74" id="EJM6k4ylEY">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -673,7 +675,7 @@
                                         </div>
                                         <hr class="title-line">
                                     </div>
-                                    <div class="service-N33" id="Oqm6K5DqCP">
+                                    <div class="cloud-N33" id="Oqm6K5DqCP">
                                         <div class="contents-container container-md">
                                             <h3 class="textset-tit h3">
                                                 오픈 클라우드 플랫폼(K-PaaS)를 이용한 Cloud Native 환경의 시스템 구축
@@ -748,7 +750,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="service-N33" id="Oqm6K5DqCP">
+                                    <div class="cloud-N33" id="Oqm6K5DqCP">
                                         <div class="contents-container container-md">
                                             <h3 class="textset-tit h3">
                                                 클라우드 환경에서 고객의 AI 활용을 위한 AI & Cloud 연계 서비스 제공
@@ -796,9 +798,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-service" id="cloud_">
-                            <div class="data-service-inner">
-                                <div class="service-N74" id="EJM6k4ylEY">
+                        <div class="platform-N01" id="cloud_">
+                            <div class="platform-inner">
+                                <div class="cloud-N74" id="EJM6k4ylEY">
                                     <div class="contents-container container-md">
                                         <div class="contents-inner">
                                             <div class="textset">
@@ -807,7 +809,7 @@
                                         </div>
                                         <hr class="title-line">
                                     </div>
-                                    <div class="service-N33" id="Oqm6K5DqCP">
+                                    <div class="cloud-N33" id="Oqm6K5DqCP">
                                         <div class="contents-container container-md">
                                             <div class="cardset cardset-hover" style="height: auto; padding: 2rem;">
                                                 <h3 class="textset-tit h3">
@@ -853,7 +855,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="service-N44" id="dPM64BM4jF">
+                                    <div class="platform-N44" id="dPM64BM4jF">
                                         <div class="contents-container container-md">
                                             <div class="cardset cardset-hover" style="height: auto; width:auto">
                                                 <div class="contents-inner">
@@ -871,7 +873,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="service-N44" id="dPM64BM4jF">
+                                    <div class="platform-N44" id="dPM64BM4jF">
                                         <div class="contents-container container-md">
                                             <div class="cardset cardset-hover" style="height: auto; width:auto">
                                                 <div class="contents-inner">

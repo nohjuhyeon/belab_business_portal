@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/plugin.css"/>
     <link rel="stylesheet" href="/css/templatehouse.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/contact.css"/>
     <style>
 
         .table th.title-column, .table td.title-column {
@@ -29,7 +30,7 @@
     <div class="th-layout-sideleft"></div>
     <div class="th-layout-stickyleft"></div>
     <div class="th-layout-content">
-        <div class="mypage-N10" id="HtM5yS8Tf5">
+        <div class="basic-N10" id="HtM5yS8Tf5">
             <div class="contents-container ">
                 <div class="contents-inner">
                     <div class="contents-visual">
@@ -55,11 +56,7 @@
         <div class="th-layout-sideleft"></div>
         <div class="th-layout-stickyleft"></div>
         <div class="th-layout-content">
-            <section class="butti-N10" id="ktM5Z1Y14R">
-            </section>
-            <div class="butti-N11" id="PaM5Z1y16M">
-            </div>
-            <section class="butti-N25" id="lPm5z1y19z">
+            <section class="contact-N25" id="lPm5z1y19z">
                 <div class="contents-container container-md">
                     <div class="contents-inner">
                         <div class="title-area">

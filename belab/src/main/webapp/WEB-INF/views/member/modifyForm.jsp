@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="/css/plugin.css" />
       <link rel="stylesheet" href="/css/templatehouse.css" />
       <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/member.css" />
     </head>
 
     <body>
@@ -21,7 +22,7 @@
         <div class="th-layout-sideleft"></div>
         <div class="th-layout-stickyleft"></div>
         <div class="th-layout-content">
-          <div class="mypage-N10" id="HtM5yS8Tf5">
+          <div class="basic-N10" id="HtM5yS8Tf5">
             <div class="contents-container ">
               <div class="contents-inner">
                 <div class="contents-visual">
@@ -44,7 +45,7 @@
               </div>
             </div>
           </div>
-          <div class="mypage-N58">
+          <div class="basic-N58">
             <!-- 드롭다운 버튼 -->
             <button class="dropdown-btn btnset-primary" onclick="toggleSidebar()">메뉴</button>
 
@@ -52,14 +53,14 @@
             <div class="sidebar" id="sidebar">
               <a href="/mypage/intro">마이페이지</a>
               <a href="/member/validateForm">개인정보 수정</a>
-              <a href="/member/inquiry">문의내역</a>
+              <a href="/member/validatePasswordForm">비밀번호 변경</a>
               <a href="/member/DeletevalidateForm">회원 탈퇴</a>
-
+  
             </div>
 
             <!-- 우측 내용 -->
             <div class="content">
-              <div class="mypage-N38" id="xxm5yRsU3Q">
+              <div class="member-N38" id="xxm5yRsU3Q">
                 <div class="contents-container container-md">
                   <div class="contents-inner">
                     <div class="form-group">
@@ -133,7 +134,7 @@
               </div>
             </div>
           </div>
-          <div class="mypage-N66">
+          <div class="member-N66">
             <div class="popup-overlay" onclick="closePopup()"></div>
             <div class="custom-popup">
               <h4>알림</h4>

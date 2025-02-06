@@ -16,6 +16,7 @@
                 <link rel="stylesheet" href="/css/plugin.css" />
                 <link rel="stylesheet" href="/css/templatehouse.css" />
                 <link rel="stylesheet" href="/css/style.css" />
+                <link rel="stylesheet" href="/css/futurebiz.css" />
             </head>
 
             <body>

@@ -5,8 +5,17 @@
     <html lang="en">
 
     <head>
-      <meta charset="UTF-8">
-      <title>게시글 상세보기</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta http-equiv="imagetoolbar" content="no" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="stylesheet" href="/css/setting.css" />
+      <link rel="stylesheet" href="/css/plugin.css" />
+      <link rel="stylesheet" href="/css/templatehouse.css" />
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/contact.css" />
+      <link rel="stylesheet" href="/css/contact.css" />
       <script>
         function navigateTo(url) {
           window.location.href = url;
@@ -82,37 +91,37 @@
                         </div>
                         <div class="form-box">
                           <div class="inputset inputset-line">
-                            <label for="basic-N37-inputset-a-1" class="form-tit h6">이름 <span>*</span>
+                            <label for="contact-N37-inputset-a-1" class="form-tit h6">이름 <span>*</span>
                             </label>
-                            <input id="basic-N37-inputset-a-1" type="text" name="name" class="inputset-input form-control" placeholder="이름을 입력해주세요." required="" />
+                            <input id="contact-N37-inputset-a-1" type="text" name="name" class="inputset-input form-control" placeholder="이름을 입력해주세요." required="" />
                           </div>
                         </div>
                         <div class="form-box">
                           <div class="inputset inputset-line">
-                            <label for="basic-N37-inputset-a-2" class="form-tit h6">E-mail <span>*</span>
+                            <label for="contact-N37-inputset-a-2" class="form-tit h6">E-mail <span>*</span>
                             </label>
-                            <input id="basic-N37-inputset-a-2" type="email" name="email" class="inputset-input form-control" placeholder="이메일을 입력해주세요." required="" />
+                            <input id="contact-N37-inputset-a-2" type="email" name="email" class="inputset-input form-control" placeholder="이메일을 입력해주세요." required="" />
                           </div>
                         </div>
                         <div class="form-box">
                           <div class="inputset inputset-line">
-                            <label for="basic-N37-inputset-a-2" class="form-tit h6">전화번호 <span>*</span>
+                            <label for="contact-N37-inputset-a-2" class="form-tit h6">전화번호 <span>*</span>
                             </label>
-                            <input id="basic-N37-inputset-a-2" type="tel" name="phone" class="inputset-input form-control" placeholder="전화번호를 입력해주세요." required="" />
+                            <input id="contact-N37-inputset-a-2" type="tel" name="phone" class="inputset-input form-control" placeholder="전화번호를 입력해주세요." required="" />
                           </div>
                         </div>
                         <div class="form-box">
                           <div class="inputset inputset-line">
-                            <label for="basic-N37-inputset-a-1" class="form-tit h6">제목 <span>*</span>
+                            <label for="contact-N37-inputset-a-1" class="form-tit h6">제목 <span>*</span>
                             </label>
-                            <input id="basic-N37-inputset-a-1" type="text" name="subject" class="inputset-input form-control" placeholder="제목을 입력하세요." required="" />
+                            <input id="contact-N37-inputset-a-1" type="text" name="subject" class="inputset-input form-control" placeholder="제목을 입력하세요." required="" />
                           </div>
                         </div>
                         <div class="form-box">
                           <div class="inputset">
-                            <label for="basic-N37-textarea-a-1" class="form-tit h6">문의 내용 <span>*</span>
+                            <label for="contact-N37-textarea-a-1" class="form-tit h6">문의 내용 <span>*</span>
                             </label>
-                            <textarea id="basic-N37-textarea-a-1" name="content" class="inputset-textarea form-control" placeholder="문의 내용을 입력해주세요." required=""></textarea>
+                            <textarea id="contact-N37-textarea-a-1" name="content" class="inputset-textarea form-control" placeholder="문의 내용을 입력해주세요." required=""></textarea>
                           </div>
                         </div>
                         <div class="form-btn">
