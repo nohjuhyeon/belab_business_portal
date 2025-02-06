@@ -172,17 +172,10 @@ public class MemberController {
         boolean isPasswordValid = memberService.checkPassword(loggedInUser.getEmail(), password);
 
         if (isPasswordValid) {
-<<<<<<< HEAD
             return ResponseEntity.ok("valid");  // 비밀번호가 맞으면 success를 반환
 
         } else {
             return ResponseEntity.status(400).body("invalid");  // 비밀번호가 틀리면 error 반환
-=======
-            return ResponseEntity.ok("valid"); // 비밀번호가 맞으면 success를 반환
-
-        } else {
-            return ResponseEntity.status(400).body("invalid"); // 비밀번호가 틀리면 error 반환
->>>>>>> 3cccaa480bf81f79d4c47be7649793ec3c2c53a4
         }
     }
 

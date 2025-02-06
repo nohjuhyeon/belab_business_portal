@@ -22,7 +22,8 @@ public class ReferBoardServiceImpl implements ReferBoardService {
     @Autowired
     private ReferBoardMapper referBoardMapper;
 
-    private String uploadDirectory = "/opt/test";
+    // private String uploadDirectory = "/opt/test"; 리눅스 경로
+    private String uploadDirectory = "C:\\test";
 
     /**
      * 초기화: 파일 저장 디렉토리 생성
