@@ -162,24 +162,15 @@ public class MemberController {
     public ResponseEntity<String> validatePassword(@RequestParam String password, HttpSession session) {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
 
-        // 세션에 사용자 정보가 없는 경우
-        if (loggedInUser == null) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("unauthorized");
-        }
-
         // 비밀번호 검증
         boolean isPasswordValid = memberService.checkPassword(loggedInUser.getEmail(), password);
 
         if (isPasswordValid) {
-            return ResponseEntity.ok("valid");  // 비밀번호가 맞으면 valid 반환
-        } else {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("invalid");  // 비밀번호가 틀리면 invalid 반환
-        }
-    }
+            return ResponseEntity.ok("valid");  // 비밀번호가 맞으면 success를 반환
 
-    @RequestMapping(value = "/validatePassword", method = RequestMethod.GET)
-    public String validateFasswordForm() {
-        return "/member/validatePasswordForm";  // 비밀번호 입력 페이지로 이동
+        } else {
+            return ResponseEntity.status(400).body("invalid");  // 비밀번호가 틀리면 error 반환
+        }
     }
 
     /***

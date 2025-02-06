@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="login 기능 완성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/error/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/error/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/errorPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f3a7509-50c6-471b-91e7-5c15344e24e6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f3a7509-50c6-471b-91e7-5c15344e24e6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f3a7509-50c6-471b-91e7-5c15344e24e6/storage_v2/_src_/schema/db.fgwAAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f3a7509-50c6-471b-91e7-5c15344e24e6/storage_v2/_src_/schema/db.fgwAAA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/files/service/ReferBoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/files/service/ReferBoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/BelabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/BelabApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/member/member_list_dump.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/member/member_list_dump.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/changepassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/changepassword.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/mypage_intro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/mypage_intro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/customers.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +92,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.belab [:com.belab.co.kr.BelabApplication.main()].executor": "Run",
     "Gradle.belab [bootJar].executor": "Run",
     "Gradle.belab [bootWar].executor": "Run",
     "Gradle.belab [war].executor": "Run",
@@ -118,7 +109,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ksk07/Documents/GitHub/belab_business_portal/belab/src/main/webapp/WEB-INF/views/error",
+    "last_opened_file_path": "C:/Users/ksk07/Downloads/belab_business_portal-main/belab",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,8 +118,9 @@
     "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.belabapplication.executor": "Run"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -159,7 +151,16 @@
       <recent name="com.belab.co.kr.files.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BelabApplication">
+  <component name="RunManager" selected="Gradle.belab [bootWar]">
+    <configuration name="belabapplication" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.belab.co.kr.BelabApplication" />
+      <module name="belab.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="belab [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -234,6 +235,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.belab [bootJar]" />
+      <item itemvalue="Gradle.belab [bootWar]" />
+      <item itemvalue="Gradle.belab [war]" />
+      <item itemvalue="애플리케이션.belabapplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.belab [bootWar]" />
@@ -241,14 +248,6 @@
         <item itemvalue="Gradle.belab [war]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -287,7 +286,10 @@
       <workItem from="1737475825469" duration="8758000" />
       <workItem from="1737699298439" duration="1952000" />
       <workItem from="1738299488193" duration="8989000" />
-      <workItem from="1738540623519" duration="8587000" />
+      <workItem from="1738540623519" duration="9892000" />
+      <workItem from="1738711955327" duration="20000" />
+      <workItem from="1738712540681" duration="25000" />
+      <workItem from="1738712575483" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="login 기능 완성">
       <option name="closed" value="true" />
