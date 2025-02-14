@@ -18,7 +18,7 @@
 
 .futurebiz-N42 .cardset-img {
     object-fit: contain;
-    width: 50%
+    width: 60%
 }
 
 .futurebiz-N42 .textset {
@@ -97,12 +97,12 @@
 .futurebiz-N42 .cardset {
     display: inline-block;
     width: 100%;
-    background: #fafafa;
+    background: #dadee3;
     border-radius: 2rem;
 }
 
 .futurebiz-N42 .cardset .cardset-tit {
-    padding-left: 2rem;
+    justify-content: center;
 }
 
 .futurebiz-N42 .cardset .cardset-figure {
