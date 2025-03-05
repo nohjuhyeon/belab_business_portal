@@ -46,7 +46,7 @@
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <figure class="cardset-figure">
-                                        <img class="cardset-img" src="/images/futurebiz/beshop_logo.png"
+                                        <img class="cardset-img" src="/images/futurebiz/beshop_logo_second.png"
                                             alt="스와이퍼 이미지" />
                                     </figure>
                                     <div class="textset">
@@ -183,9 +183,6 @@
                                                 </h2>
                                                 <p class="p1 cardset-desc">시즌별 할인, 구매 이벤트, 장인과의 만남 등 다양한 프로모션 기능 제공
                                                 </p>
-                                                <div class="btn-block">
-                                                    <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>

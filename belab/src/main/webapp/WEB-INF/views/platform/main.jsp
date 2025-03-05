@@ -84,7 +84,7 @@
                           <p class="p1 cardset-desc">다양한 클라우드 플랫폼을 활용하여 효율적이고, 유연한 인프라 IT 솔루션을 제공합니다.</p>
                         </div>
                         <div class="cardset-btn">
-                          <a class="btnset btnset-sm" href="/platform/data">자세히보기</a>
+                          <a class="btnset btnset-sm" href="/platform/cloud">자세히보기</a>
                         </div>
                       </div>
                     </div>

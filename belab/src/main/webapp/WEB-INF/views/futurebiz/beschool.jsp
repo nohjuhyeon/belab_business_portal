@@ -146,9 +146,6 @@
                                                 <p class="p1 cardset-desc">학습 주제에 대한 창의적인 질문을 생성하여 탐구력을 향상시키고 사고를 확장하도록
                                                     도와줌
                                                 </p>
-                                                <div class="btn-block">
-                                                    <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>

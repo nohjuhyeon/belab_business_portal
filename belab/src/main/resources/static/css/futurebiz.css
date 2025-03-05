@@ -97,7 +97,7 @@
 .futurebiz-N42 .cardset {
     display: inline-block;
     width: 100%;
-    background: #dadee3;
+    background: #fafafa;
     border-radius: 2rem;
 }
 
@@ -426,6 +426,12 @@
     margin: 0;
 
 }
+
+.futurebiz-N74 .cardset-img {
+    height: 8rem;
+
+}
+
 
 .futurebiz-N74 .textset {
     margin-bottom: 0

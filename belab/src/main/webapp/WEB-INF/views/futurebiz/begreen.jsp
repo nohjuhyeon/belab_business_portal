@@ -46,7 +46,7 @@
                             <div class="contents-container container-md">
                                 <div class="contents-inner">
                                     <figure class="cardset-figure">
-                                        <img class="cardset-img" src="/images/futurebiz/begreen_logo.png"
+                                        <img class="cardset-img" src="/images/futurebiz/begreen_logo_second.png"
                                             alt="스와이퍼 이미지" />
                                     </figure>
                                     <div class="textset">

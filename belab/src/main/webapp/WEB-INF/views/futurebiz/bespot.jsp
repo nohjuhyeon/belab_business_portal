@@ -136,9 +136,6 @@
                                                 </h2>
                                                 <p class="p1 cardset-desc">관측 후 리뷰 평가를 통한 사용자의 경험 공유 및 커뮤니티 기능을 활성화
                                                 </p>
-                                                <div class="btn-block">
-                                                    <a class="btnset btnset-lg" href="javascript:void(0);">자세히보기</a>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
