@@ -78,7 +78,7 @@
                                                         <img class="cardset-img" src="/icons/edit.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">입력 데이터 수집</h2>
+                                                        <h2 class="h5">입력 데이터 수집</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             고객의 비즈니스 요구에 맞춘 구조화된 데이터 및 비주조화된 데이터를 포함
                                                             <br />예) 전자상거래 사이트의 고객 구매 기록, 장바구니  데이터를 체계적으로
@@ -91,7 +91,7 @@
                                                         <img class="cardset-img" src="/icons/monitor.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">로그 수집기</h2>
+                                                        <h2 class="h5">로그 수집기</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">서버, 앱 네트워크
                                                             로그 데이터를 중앙화된 플랫폼으로 수집하여 성능 및 보안 모니터링을 지원 <br />예) 상품 비교
                                                             사이트에서 경쟁사의 가격 정보를 크롤링하여 동적 가격 책정 전략 수립</p>
@@ -102,7 +102,7 @@
                                                         <img class="cardset-img" src="/icons/camera.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">크롤링</h2>
+                                                        <h2 class="h5">크롤링</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             웹 데이터를 자동으로
                                                             수집하여 경쟁사 분석, 트렌드 파악 등에 활용
@@ -116,7 +116,7 @@
                                                         <img class="cardset-img" src="/icons/flash-1.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">센싱 데이터 수집</h2>
+                                                        <h2 class="h5">센싱 데이터 수집</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             IoT 센서를 통해 실시간으로
                                                             환경 데이터를 수집
@@ -168,7 +168,7 @@
                                                         <img class="cardset-img" src="/icons/layer.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">데이터 웨어하우스</h2>
+                                                        <h2 class="h5">데이터 웨어하우스</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             정형
                                                             데이터를 고속으로 처리하여 비즈니스 분석에 활용
@@ -185,7 +185,7 @@
                                                         <img class="cardset-img" src="/icons/bezier.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">
+                                                        <h2 class="h5">
                                                             빅데이터
                                                             분산 처리
                                                         </h2>
@@ -199,7 +199,7 @@
                                                         <img class="cardset-img" src="/icons/3d-square.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">
+                                                        <h2 class="h5">
                                                             관계형
                                                             데이터베이스
                                                         </h2>
@@ -212,7 +212,7 @@
                                                         <img class="cardset-img" src="/icons/box-2.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">
+                                                        <h2 class="h5">
                                                             NoSQL
                                                             데이터베이스
                                                         </h2>
@@ -269,7 +269,7 @@
                                                         <img class="cardset-img" src="/icons/chart-1.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">기술 통계</h2>
+                                                        <h2 class="h5">기술 통계</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             데이터를 요약하고
                                                             기본 통계치를 제공하여 초기 인사이트를 도출 <br />예) 설문 조사를 분석하여 평균 및
@@ -283,7 +283,7 @@
                                                             alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">진단 분석</h2>
+                                                        <h2 class="h5">진단 분석</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             데이터를 활용하여
                                                             문제의 원인을 파악 <br />예) 제조 공정의 비효율적인 부분을 분석하여 생산성을 개선
@@ -295,7 +295,7 @@
                                                         <img class="cardset-img" src="/icons/diagram.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">예측 분석</h2>
+                                                        <h2 class="h5">예측 분석</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             머신러닝 알고리즘을
                                                             사용하여 미래의 결과를 예측 <br />예) AI를 통해 재고 부족 가능성을 예측하고 공급망
@@ -309,7 +309,7 @@
                                                             alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">실시간 분석</h2>
+                                                        <h2 class="h5">실시간 분석</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             스트리밍 데이터를
                                                             분석하여 즉각적인 의사결정을 지원 <br />예) 금융 거래에서 이상 징후를 실시간으로
@@ -359,7 +359,7 @@
                                                             alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">자연어 처리(NLP)</h2>
+                                                        <h2 class="h5">자연어 처리(NLP)</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             텍스트 및 음성을 이해하고
                                                             처리하여 고객 경험을 개선
@@ -373,7 +373,7 @@
                                                         <img class="cardset-img" src="/icons/lamp-on.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">데이터 예측 및 분석</h2>
+                                                        <h2 class="h5">데이터 예측 및 분석</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             데이터를 활용하여 비즈니스
                                                             문제를 해결
@@ -388,7 +388,7 @@
                                                             alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">Gen AI</h2>
+                                                        <h2 class="h5">Gen AI</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             콘텐츠 생성 및 시뮬레이션
                                                             자동화를 지원
@@ -402,7 +402,7 @@
                                                         <img class="cardset-img" src="/icons/user-tick.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">추천 시스템</h2>
+                                                        <h2 class="h5">추천 시스템</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             사용자의 행동 데이터를
                                                             분석하여 개인화된 추천을 제공
@@ -416,7 +416,7 @@
                                                         <img class="cardset-img" src="/icons/image.svg" alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">이미지 및 비디오 분석</h2>
+                                                        <h2 class="h5">이미지 및 비디오 분석</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             시각 데이터를 처리하여 품질 관리 및 이상 탐지를 수행
                                                             <br />예) 제조업에서 AI 비전을 활용하여 제품 결함 자동 탐지
@@ -429,7 +429,7 @@
                                                             alt="이미지" />
                                                     </figure>
                                                     <div class="cardset-body">
-                                                        <h2 class="h5 cardset-tit">Multi Modal AI</h2>
+                                                        <h2 class="h5">Multi Modal AI</h2>
                                                         <p class="p1 cardset-desc" style="text-align: left;">
                                                             다양한 유형의 데이터를
                                                             결합하여 종합적인 인사이트를 제공
