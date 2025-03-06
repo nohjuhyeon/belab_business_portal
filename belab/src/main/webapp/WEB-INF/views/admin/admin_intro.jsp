@@ -49,8 +49,8 @@
       <!-- 좌측 사이드바 -->
       <div class="sidebar" id="sidebar">
         <a href="/admin/memberList">회원 관리</a>
-        <a href="/admin/users">공지사항 관리</a>
-        <a href="/admin/validatePasswordForm">자료실 관리</a>
+        <a href="/notice/boardList">공지사항 관리</a>
+        <a href="/files/boardList">자료실 관리</a>
       </div>
 
       <!-- 우측 내용 -->

@@ -144,7 +144,7 @@
                                 </div>
                                 <div class="contents-body">
                                     <div class="textset">
-                                        <h2 class="h1 textset-tit">공지사항</h2>
+                                        <h2 class="h1 textset-tit">자료실</h2>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@
                                 <form action="/files/createBoard" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <div class="textset">
-                                            <h2 class="h2 textset-tit">공지사항 작성하기</h2>
+                                            <h2 class="h2 textset-tit">자료실 작성하기</h2>
                                         </div>
                                         <div class="form-box">
                                             <div class="inputset">

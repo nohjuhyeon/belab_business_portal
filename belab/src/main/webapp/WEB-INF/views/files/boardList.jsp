@@ -119,7 +119,7 @@
                                         </c:when>
 
                                         <c:otherwise>
-                                            <a href="/notice/boardList?page=${pageNum}&size=${size}"
+                                            <a href="/files/boardList?page=${pageNum}&size=${size}"
                                                class="pagiset-link"
                                                style="margin-right: 5px;">${pageNum}</a>
                                         </c:otherwise>
@@ -131,7 +131,7 @@
                             <div class="pagiset-ctrl">
                                 <c:if test="${currentPage < totalPages}">
 
-                                    <a href="/notice/boardList?page=${currentPage + 1}&size=${size}"
+                                    <a href="/files/boardList?page=${currentPage + 1}&size=${size}"
                                        class="pagiset-link pagiset-next"
                                        style="margin-left: 5px;"></a>
                                 </c:if>
