@@ -49,7 +49,7 @@
                 </div>
                 <div class="textset textset-center">
                     <h2 class="textset-tit h6">404 Not Found</h2>
-                    <p class="textset-desc p2">죄송합니다. 해당 페이지를 찾을 수 없습니다.</p>
+                    <p class="textset-desc p2">죄송합니다. 해당 페이지는 현재 준비 중입니다.</p>
                     <a href="/" class="btnset btnset-primary btnset-round">메인으로</a>
                 </div>
             </div>

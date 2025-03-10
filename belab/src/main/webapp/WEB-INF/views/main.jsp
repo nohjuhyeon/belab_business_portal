@@ -122,7 +122,7 @@
                     <div class="cardset-body">
                       <div class="cardset-tit row">
                         <h5 class="h3 col-10">운영관제 서비스 </h5>
-                        <a href="/errorpage" class="col-2" style="text-align: right;">More</a>
+                        <a href="/platform/cloud" class="col-2" style="text-align: right;">More</a>
                       </div>
                       <h6 class="h6">고객의 비즈니스 업무 관리 수행을 안정적으로 지원
                       </h2>
