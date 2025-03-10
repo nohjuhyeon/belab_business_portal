@@ -159,48 +159,67 @@
                           <span>자료실</span>
                         </a>
                       </li>
+                      <c:choose>
+                          <c:when test="${sessionScope.loggedInUser != null}">
+                            <li class="header-subitem on">
+                              <a class="header-sublink p3" href="/member/logout">
+                                <span>로그아웃</span>
+                              </a>
+                            </li>
+                          </c:when>
+
+                          <c:otherwise>
+                            <li class="header-subitem on">
+                              <a class="header-sublink p3" href="/member/login">
+                                <span>관리자</span>
+                              </a>
+                            </li>
+                          </c:otherwise>
+
+
+                        </c:choose>
                     </ul>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="header-right">
-              <div class="header-utils">
-                <ul>
-                  <c:choose>
-                    <c:when test="${sessionScope.loggedInUser != null}">
-                      <!-- 로그인된 경우 -->
-                      <li class="">
-                        <a class="header-sublink" href="/member/logout">LOGOUT</a>
-                      </li>
-                      <li class="">
-                        <a class="header-sublink" href="/mypage/intro">My Page</a>
-                      </li>
-                      <c:if test="${sessionScope.loggedInUser.role == 'admin'}">
-                        <li class="">
-                          <a class="header-sublink" href="/admin/intro">Admin</a>
-                        </li>
-                      </c:if>
-                    </c:when>
-                    <c:otherwise>
-                      <!-- 로그인되지 않은 경우 -->
-                      <li class="">
-                        <a class="p1 header-sublink" href="/member/login">LOGIN</a>
-                      </li>
-                      <li class="">
-                        <a class="p1 header-sublink" href="/member/userjoin">회원가입</a>
-                      </li>
-                    </c:otherwise>
-                  </c:choose>
-                  <li class="allmenu">
-                    <button class="btn-allmenu">
-                      <i class="ico-hamburger"></i>
-                      <i class="ico-hamburger"></i>
-                      <i class="ico-hamburger"></i>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+<%--              <div class="header-utils">--%>
+<%--                <ul>--%>
+<%--                  <c:choose>--%>
+<%--                    <c:when test="${sessionScope.loggedInUser != null}">--%>
+<%--                      <!-- 로그인된 경우 -->--%>
+<%--                      <li class="">--%>
+<%--                        <a class="header-sublink" href="/member/logout">LOGOUT</a>--%>
+<%--                      </li>--%>
+<%--                      <li class="">--%>
+<%--                        <a class="header-sublink" href="/mypage/intro">My Page</a>--%>
+<%--                      </li>--%>
+<%--                      <c:if test="${sessionScope.loggedInUser.role == 'admin'}">--%>
+<%--                        <li class="">--%>
+<%--                          <a class="header-sublink" href="/admin/intro">Admin</a>--%>
+<%--                        </li>--%>
+<%--                      </c:if>--%>
+<%--                    </c:when>--%>
+<%--                    <c:otherwise>--%>
+<%--                      <!-- 로그인되지 않은 경우 -->--%>
+<%--                      <li class="">--%>
+<%--                        <a class="p1 header-sublink" href="/member/login">LOGIN</a>--%>
+<%--                      </li>--%>
+<%--                      <li class="">--%>
+<%--                        <a class="p1 header-sublink" href="/member/userjoin">회원가입</a>--%>
+<%--                      </li>--%>
+<%--                    </c:otherwise>--%>
+<%--                  </c:choose>--%>
+<%--                  <li class="allmenu">--%>
+<%--                    <button class="btn-allmenu">--%>
+<%--                      <i class="ico-hamburger"></i>--%>
+<%--                      <i class="ico-hamburger"></i>--%>
+<%--                      <i class="ico-hamburger"></i>--%>
+<%--                    </button>--%>
+<%--                  </li>--%>
+<%--                </ul>--%>
+<%--              </div>--%>
               <button class="btn-momenu">
                 <i class="ico-hamburger"></i>
                 <i class="ico-hamburger"></i>
