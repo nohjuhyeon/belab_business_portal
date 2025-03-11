@@ -51,6 +51,7 @@
         <a href="/admin/memberList">회원 관리</a>
         <a href="/notice/boardList">공지사항 관리</a>
         <a href="/files/boardList">자료실 관리</a>
+        <a class="header-sublink" href="/member/logout">로그아웃</a>
       </div>
 
       <!-- 우측 내용 -->
