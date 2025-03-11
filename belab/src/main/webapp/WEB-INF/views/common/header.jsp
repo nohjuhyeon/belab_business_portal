@@ -159,15 +159,19 @@
                           <span>자료실</span>
                         </a>
                       </li>
+
+
+<%--                      로그인 후--%>
                       <c:choose>
                           <c:when test="${sessionScope.loggedInUser != null}">
                             <li class="header-subitem on">
-                              <a class="header-sublink p3" href="/member/logout">
-                                <span>로그아웃</span>
+                              <a class="header-sublink p3" href="/admin/intro">
+                                <span>관리자</span>
                               </a>
                             </li>
                           </c:when>
 
+<%--                        로그인 전--%>
                           <c:otherwise>
                             <li class="header-subitem on">
                               <a class="header-sublink p3" href="/member/login">

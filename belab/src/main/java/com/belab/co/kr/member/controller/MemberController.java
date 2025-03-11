@@ -61,25 +61,20 @@ public class MemberController {
     public String login(MemberVO memberVO, HttpSession session, RedirectAttributes redirectAttributes) {
         // 로그인 처리
         MemberVO loginMember = memberService.login(memberVO);
-    
+
         if (loginMember != null) {
             session.setAttribute("loggedInUser", loginMember);
-    
-            // 세션에서 redirectURL 가져오기
-            String redirectURL = (String) session.getAttribute("redirectURL");
-    
-            // 이전 URL로 리다이렉트 (없으면 기본적으로 메인 페이지로 이동)
-            if (redirectURL != null) {
-                session.removeAttribute("redirectURL"); // 사용 후 삭제
-                return "redirect:" + redirectURL;
-            }
-    
-            return "redirect:/main"; // 기본 메인 페이지로 이동
+
+            // 🔹 이전 페이지로 이동하는 코드 삭제!
+            // 🔹 로그인 후 무조건 /admin/intro로 이동하도록 설정
+            return "redirect:/admin/intro";
         }
-    
+
+        // 로그인 실패 시 메시지 추가
         redirectAttributes.addFlashAttribute("error", "이메일 또는 비밀번호가 올바르지 않습니다.");
         return "redirect:/member/login";
     }
+
 
     /**
      * 로그아웃
