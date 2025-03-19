@@ -36,7 +36,7 @@
           <address class="footer-txt">
             <p class="p2">상호: 주식회사 비이랩</p>
             <p>
-              <span class="p2">개인정보책임자: 김성걸</span>
+              <span class="p2">개인정보책임자: 노주현</span>
               <span class="p2">사업자 등록번호: 457-8-02772</span>
             </p>
           </address>
