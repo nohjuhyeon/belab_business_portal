@@ -55,27 +55,33 @@ public class BoardServiceImpl implements BoardService {
         System.out.println("Total board count: " + totalBoardCount);
         return totalBoardCount;
     }
-
     @Override
     public void sendEmail(String to, String subject, String content) {
         try {
+            // MimeMessage 객체 생성
             MimeMessage message = mailSender.createMimeMessage();
+
+            // MimeMessageHelper로 메시지 설정
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
 
-            helper.setFrom("sk.kim@belab.co.kr"); // 발신자 이메일 명시적으로 설정
+            // 발신자 이메일 명시적으로 설정
+            helper.setFrom("sk.kim@belab.co.kr");
             helper.setTo(to);
             helper.setSubject(subject);
             helper.setText(content, true); // HTML 콘텐츠 허용
 
+            // 이메일 발송
             mailSender.send(message);
-            System.out.println("Email sent successfully to: " + to);
+
+            // 발송 완료 로그
+            System.out.println("이메일 보내짐. " + to);
         } catch (Exception e) {
+            // 에러 로그 출력
             System.out.println("Error while sending email: " + e.getMessage());
             e.printStackTrace();
             throw new RuntimeException("Email sending failed.", e);
         }
     }
-
     @Override
     public ContactBoardVO getBoardById(int dashboard_id) {
         System.out.println("Fetching board with ID: " + dashboard_id);
