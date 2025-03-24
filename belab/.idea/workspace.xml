@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="login 기능 완성" />
+    <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -305,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736401065943</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="env 파일 추가">
+      <option name="closed" value="true" />
+      <created>1742801995184</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742801995184</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,8 +333,18 @@
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="986193df-b7b8-4257-b3cd-20b4ecd3b2b8" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="986193df-b7b8-4257-b3cd-20b4ecd3b2b8">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -337,7 +355,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login 기능 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="login 기능 완성" />
+    <MESSAGE value="env 파일 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="env 파일 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
