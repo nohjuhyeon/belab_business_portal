@@ -181,14 +181,14 @@ public class ContactBoardController {
                                    @RequestParam("content") String content,
                                    Model model) {
         // 이메일 내용 구성
-        String mailContent = "<html><body>"
-                + "<strong>유형:</strong> " + type + "<br>"
-                + "<strong>이름:</strong> " + name + "<br>"
-                + "<strong>전화번호:</strong> " + phone + "<br>"
-                + "<strong>제목:</strong> " + subject + "<br>"
-                + "<strong>내용:</strong> " + content + "<br>"
-                + "<strong>고객 이메일:</strong> " + email + "<br>"
-                + "</body></html>";
+        // 이메일 내용 구성
+        String mailContent =
+                "<b>유형:</b> " + type + "<br>" +
+                        "<b>이름:</b> " + name + "<br>" +
+                        "<b>전화번호:</b> " + phone + "<br>" +
+                        "<b>제목:</b> " + subject + "<br>" +
+                        "<b>내용:</b> " + content + "<br>" +
+                        "<b>고객 이메일:</b> " + email;
 
         try {
             // 이메일 발송

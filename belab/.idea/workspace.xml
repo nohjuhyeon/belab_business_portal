@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 추가">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 위치 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/notice/controller/ContactBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/notice/controller/ContactBoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/customers.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,8 +138,8 @@
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\webapp\WEB-INF\views\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\BYD_NB_007\IdeaProjects\belab_business_portal\belab\src\main\resources" />
       <recent name="C:\Users\BYD_NB_007\IdeaProjects\belab_business_portal\belab" />
+      <recent name="C:\Users\BYD_NB_007\IdeaProjects\belab_business_portal\belab\src\main\resources" />
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\webapp\WEB-INF\views\admin\member" />
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\resources\mappers\member" />
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\resources\mappers\com.belab.co.kr.member" />
@@ -327,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742806090711</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="env 파일 위치 변경">
+      <option name="closed" value="true" />
+      <created>1742974986221</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742974986221</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +375,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login 기능 완성" />
     <MESSAGE value="env 파일 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="env 파일 추가" />
+    <MESSAGE value="env 파일 위치 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="env 파일 위치 변경" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
