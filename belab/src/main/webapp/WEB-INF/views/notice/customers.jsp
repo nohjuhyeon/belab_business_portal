@@ -72,14 +72,19 @@
                               <!-- 옵션 목록 -->
                               <ul class="selectset-list" id="dropdownList" style="display: none;">
                                 <li class="selectset-item">
-                                  <button class="selectset-link btn" type="button" data-value="불만">문의</button>
+                                  <button class="selectset-link btn" type="button" data-value="문의">문의</button>
                                 </li>
                                 <li class="selectset-item">
                                   <button class="selectset-link btn" type="button" data-value="라이센스">라이센스</button>
                                 </li>
                                 <li class="selectset-item">
-                                  <button class="selectset-link btn" type="button" data-value="문의">불만</button>
+                                  <button class="selectset-link btn" type="button" data-value="불만">불만</button>
                                 </li>
+
+                                   <li class="selectset-item">
+                                     <button class="selectset-link btn" type="button" data-value="견적서 문의">견적서 문의 </button>
+                                   </li>
+
                                 <li class="selectset-item">
                                   <button class="selectset-link btn" type="button" data-value="기타">기타</button>
                                 </li>
@@ -96,13 +101,15 @@
                             <input id="contact-N37-inputset-a-1" type="text" name="name" class="inputset-input form-control" placeholder="이름을 입력해주세요." required="" />
                           </div>
                         </div>
+
                         <div class="form-box">
                           <div class="inputset inputset-line">
-                            <label for="contact-N37-inputset-a-2" class="form-tit h6">E-mail <span>*</span>
+                            <label for="contact-N37-inputset-a-2" class="form-tit h6">고객 E-mail <span>*</span>
                             </label>
                             <input id="contact-N37-inputset-a-2" type="email" name="email" class="inputset-input form-control" placeholder="이메일을 입력해주세요." required="" />
                           </div>
                         </div>
+
                         <div class="form-box">
                           <div class="inputset inputset-line">
                             <label for="contact-N37-inputset-a-2" class="form-tit h6">전화번호 <span>*</span>
@@ -117,6 +124,7 @@
                             <input id="contact-N37-inputset-a-1" type="text" name="subject" class="inputset-input form-control" placeholder="제목을 입력하세요." required="" />
                           </div>
                         </div>
+
                         <div class="form-box">
                           <div class="inputset">
                             <label for="contact-N37-textarea-a-1" class="form-tit h6">문의 내용 <span>*</span>
@@ -220,6 +228,7 @@
     <script src="/js/plugin.js"></script>
     <script src="/js/templatehouse.js"></script>
     <script src="/js/style.js"></script>
+
         <script>
         document.addEventListener('DOMContentLoaded', () => {
             const toggleButton = document.getElementById('currentSelection'); // 현재 선택된 값 표시 버튼
@@ -249,7 +258,7 @@
                 dropdownList.style.display = 'none';
               });
             });
-          
+
             // 드롭다운 외부 클릭 시 닫기
             document.addEventListener('click', (event) => {
               if (!event.target.closest('.selectset')) {

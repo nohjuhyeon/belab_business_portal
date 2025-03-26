@@ -38,8 +38,8 @@ public class ContactBoardController {
 
     @GetMapping("/boardList")
     public String getBoardList(@RequestParam(defaultValue = "1") int page,
-            @RequestParam(defaultValue = "10") int size,
-            Model model) {
+                               @RequestParam(defaultValue = "10") int size,
+                               Model model) {
         // 페이징 처리를 위한 offset 계산
         int offset = (page - 1) * size;
 
@@ -174,24 +174,30 @@ public class ContactBoardController {
 
     @PostMapping("/sendInquiryEmail")
     public String sendInquiryEmail(@RequestParam("type") String type,
-            @RequestParam("email") String email,
-            @RequestParam("name") String name,
-            @RequestParam("phone") String phone,
-            @RequestParam("subject") String subject,
-            @RequestParam("content") String content,
-            Model model) {
-        // 이메일 주소 조합
-
+                                   @RequestParam("email") String email,
+                                   @RequestParam("name") String name,
+                                   @RequestParam("phone") String phone,
+                                   @RequestParam("subject") String subject,
+                                   @RequestParam("content") String content,
+                                   Model model) {
         // 이메일 내용 구성
-        String mailContent = "유형: " + type + "\n"
-                + "이름: " + name + "\n"
-                + "전화번호: " + phone + "\n"
-                + "제목: " + subject + "\n"
-                + "내용:\n" + content;
+        String mailContent = "<html><body>"
+                + "<table border='1' cellpadding='20' cellspacing='2' style='border-collapse: collapse;'>"
+                + "<tr><th style='background-color: yellow; min-width: 150px;'>항목</th><th style='background-color: yellow; min-width: 300px;'>내용</th></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>유형</td><td>" + type + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>이름</td><td>" + name + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>전화번호</td><td>" + phone + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>제목</td><td>" + subject + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>내용</td><td>" + content + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>고객 이메일</td><td>" + email + "</td></tr>"
+                + "</table>"
+                + "</body></html>";
+
+
 
         try {
             // 이메일 발송
-            boardService.sendEmail("sk.kim@belab.co.kr", "고객 문의 - " + subject, mailContent);
+            boardService.sendEmail("sk.kim@belab.co.kr", "고객 문의 :" + subject, mailContent);
 
             model.addAttribute("success", "문의가 성공적으로 접수되었습니다. 이메일로 알림을 전송했습니다.");
         } catch (Exception e) {
