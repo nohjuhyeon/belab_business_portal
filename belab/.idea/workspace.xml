@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 추가" />
+    <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 추가">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/notice/controller/ContactBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/notice/controller/ContactBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/customers.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +106,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.BelabApplication.executor": "Run",
-    "git-widget-placeholder": "SeongGeol에 #5개",
+    "git-widget-placeholder": "SeongGeol에 #6개",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/BYD_NB_007/IdeaProjects/belab_business_portal/belab",

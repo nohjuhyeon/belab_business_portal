@@ -92,7 +92,7 @@
                             </div>
                           </div>
                           <!-- 숨겨진 input 필드 -->
-                          <input type="hidden" name="type" id="selectedType" value="불만">
+                          <input type="hidden" name="type" id="selectedType" value="문의">
                         </div>
                         <div class="form-box">
                           <div class="inputset inputset-line">
