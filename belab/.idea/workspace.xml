@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/notice/controller/ContactBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/belab/co/kr/notice/controller/ContactBoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/customers.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.BelabApplication.executor": "Run",
-    "git-widget-placeholder": "SeongGeol에 #4개",
+    "git-widget-placeholder": "SeongGeol에 #5개",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/BYD_NB_007/IdeaProjects/belab_business_portal/belab",
@@ -148,7 +150,7 @@
       <recent name="com.belab.co.kr.files.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.belab [bootWar]">
+  <component name="RunManager" selected="애플리케이션.belabapplication">
     <configuration name="belabapplication" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />

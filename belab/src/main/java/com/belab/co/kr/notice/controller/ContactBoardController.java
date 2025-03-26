@@ -182,16 +182,17 @@ public class ContactBoardController {
                                    Model model) {
         // 이메일 내용 구성
         String mailContent = "<html><body>"
-                + "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse;'>"
-                + "<tr><th>항목</th><th>내용</th></tr>"
-                + "<tr><td>유형</td><td>" + type + "</td></tr>"
-                + "<tr><td>이름</td><td>" + name + "</td></tr>"
-                + "<tr><td>전화번호</td><td>" + phone + "</td></tr>"
-                + "<tr><td>제목</td><td>" + subject + "</td></tr>"
-                + "<tr><td>내용</td><td>" + content + "</td></tr>"
-                + "<tr><td>고객 이메일</td><td>" + email + "</td></tr>"
+                + "<table border='1' cellpadding='20' cellspacing='2' style='border-collapse: collapse;'>"
+                + "<tr><th style='background-color: yellow; min-width: 150px;'>항목</th><th style='background-color: yellow; min-width: 300px;'>내용</th></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>유형</td><td>" + type + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>이름</td><td>" + name + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>전화번호</td><td>" + phone + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>제목</td><td>" + subject + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>내용</td><td>" + content + "</td></tr>"
+                + "<tr><td style='background-color: yellow; min-width: 150px;'>고객 이메일</td><td>" + email + "</td></tr>"
                 + "</table>"
                 + "</body></html>";
+
 
 
         try {

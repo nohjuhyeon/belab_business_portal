@@ -80,6 +80,11 @@
                                 <li class="selectset-item">
                                   <button class="selectset-link btn" type="button" data-value="불만">불만</button>
                                 </li>
+
+                                   <li class="selectset-item">
+                                     <button class="selectset-link btn" type="button" data-value="견적서 문의">견적서 문의 </button>
+                                   </li>
+
                                 <li class="selectset-item">
                                   <button class="selectset-link btn" type="button" data-value="기타">기타</button>
                                 </li>
@@ -119,6 +124,7 @@
                             <input id="contact-N37-inputset-a-1" type="text" name="subject" class="inputset-input form-control" placeholder="제목을 입력하세요." required="" />
                           </div>
                         </div>
+
                         <div class="form-box">
                           <div class="inputset">
                             <label for="contact-N37-textarea-a-1" class="form-tit h6">문의 내용 <span>*</span>
@@ -222,6 +228,7 @@
     <script src="/js/plugin.js"></script>
     <script src="/js/templatehouse.js"></script>
     <script src="/js/style.js"></script>
+
         <script>
         document.addEventListener('DOMContentLoaded', () => {
             const toggleButton = document.getElementById('currentSelection'); // 현재 선택된 값 표시 버튼
@@ -251,7 +258,7 @@
                 dropdownList.style.display = 'none';
               });
             });
-          
+
             // 드롭다운 외부 클릭 시 닫기
             document.addEventListener('click', (event) => {
               if (!event.target.closest('.selectset')) {
