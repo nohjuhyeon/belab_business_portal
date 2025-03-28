@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 추가" />
+    <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 위치 변경">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,45 +86,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.belab [:com.belab.co.kr.BelabApplication.main()].executor": "Run",
-    "Gradle.belab [bootJar].executor": "Run",
-    "Gradle.belab [bootWar].executor": "Run",
-    "Gradle.belab [war].executor": "Run",
-    "Gradle.belab 빌드.executor": "Run",
-    "Notification.DisplayName-DoNotAsk-Database detector": "데이터베이스 탐지기",
-    "Notification.DoNotAsk-Database detector": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.BelabApplication.executor": "Run",
-    "git-widget-placeholder": "SeongGeol에 #5개",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/BYD_NB_007/IdeaProjects/belab_business_portal/belab",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true",
-    "애플리케이션.belabapplication.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.belab [:com.belab.co.kr.BelabApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.belab [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.belab [bootWar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.belab [war].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.belab 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;데이터베이스 탐지기&quot;,
+    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BelabApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;SeongGeol에 #7개&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/BYD_NB_007/IdeaProjects/beyond_business_portal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.belabapplication.executor&quot;: &quot;Run&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.belab.co.kr.files.service" />
@@ -135,8 +137,8 @@
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\webapp\WEB-INF\views\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\BYD_NB_007\IdeaProjects\belab_business_portal\belab\src\main\resources" />
       <recent name="C:\Users\BYD_NB_007\IdeaProjects\belab_business_portal\belab" />
+      <recent name="C:\Users\BYD_NB_007\IdeaProjects\belab_business_portal\belab\src\main\resources" />
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\webapp\WEB-INF\views\admin\member" />
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\resources\mappers\member" />
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\resources\mappers\com.belab.co.kr.member" />
@@ -321,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742806090711</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="env 파일 위치 변경">
+      <option name="closed" value="true" />
+      <created>1742974986221</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742974986221</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +374,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login 기능 완성" />
     <MESSAGE value="env 파일 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="env 파일 추가" />
+    <MESSAGE value="env 파일 위치 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="env 파일 위치 변경" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

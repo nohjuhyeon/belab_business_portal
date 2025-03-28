@@ -181,19 +181,14 @@ public class ContactBoardController {
                                    @RequestParam("content") String content,
                                    Model model) {
         // 이메일 내용 구성
-        String mailContent = "<html><body>"
-                + "<table border='1' cellpadding='20' cellspacing='2' style='border-collapse: collapse;'>"
-                + "<tr><th style='background-color: yellow; min-width: 150px;'>항목</th><th style='background-color: yellow; min-width: 300px;'>내용</th></tr>"
-                + "<tr><td style='background-color: yellow; min-width: 150px;'>유형</td><td>" + type + "</td></tr>"
-                + "<tr><td style='background-color: yellow; min-width: 150px;'>이름</td><td>" + name + "</td></tr>"
-                + "<tr><td style='background-color: yellow; min-width: 150px;'>전화번호</td><td>" + phone + "</td></tr>"
-                + "<tr><td style='background-color: yellow; min-width: 150px;'>제목</td><td>" + subject + "</td></tr>"
-                + "<tr><td style='background-color: yellow; min-width: 150px;'>내용</td><td>" + content + "</td></tr>"
-                + "<tr><td style='background-color: yellow; min-width: 150px;'>고객 이메일</td><td>" + email + "</td></tr>"
-                + "</table>"
-                + "</body></html>";
-
-
+        // 이메일 내용 구성
+        String mailContent =
+                "<b>유형:</b> " + type + "<br>" +
+                        "<b>이름:</b> " + name + "<br>" +
+                        "<b>전화번호:</b> " + phone + "<br>" +
+                        "<b>제목:</b> " + subject + "<br>" +
+                        "<b>내용:</b> " + content + "<br>" +
+                        "<b>고객 이메일:</b> " + email;
 
         try {
             // 이메일 발송
