@@ -55,6 +55,10 @@
                     </ul>
                   </li>
                   <li class="header-gnbitem on">
+                    <a class="header-gnblink" href="/platform/cloud"> <span>클라우드 사업부</span>
+                    </a>
+                  </li>
+                  <!-- <li class="header-gnbitem on">
                     <a class="header-gnblink" href="/errorpage"> <span>SI 사업부</span>
                     </a>
                     <ul class="header-sublist">
@@ -73,26 +77,25 @@
                           <span>NI</span>
                         </a>
                       </li>
-
                     </ul>
-                  </li>
+                  </li> -->
                   <li class="header-gnbitem on">
                     <a class="header-gnblink" href="/platform/main"> <span>플랫폼 사업부</span>
                     </a>
                     <ul class="header-sublist">
                       <li class="header-subitem on">
                         <a class="header-sublink p3" href="/platform/data">
-                          <span>기반 데이터 사업</span>
+                          <span>기반 데이터 사업부</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
                         <a class="header-sublink p3" href="/platform/ai">
-                          <span>응용데이터 사업</span>
+                          <span>응용데이터 사업부</span>
                         </a>
                       </li>
                       <li class="header-subitem on">
-                        <a class="header-sublink p3" href="/platform/cloud">
-                          <span>클라우드 사업</span>
+                        <a class="header-sublink p3" href="/errorpage">
+                          <span>SI 사업부</span>
                         </a>
                       </li>
                     </ul>
@@ -221,7 +224,7 @@
 <%--                      <i class="ico-hamburger"></i>--%>
 <%--                      <i class="ico-hamburger"></i>--%>
 <%--                    </button>--%>
-<%--                  </li>--%>
+<%--                  </li>-
 <%--                </ul>--%>
 <%--              </div>--%>
               <button class="btn-momenu">
@@ -257,7 +260,12 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="fullmenu-gnbitem">
+                  <!-- <li class="fullmenu-gnbitem">
+                    <a class="h6 fullmenu-gnblink" href="/platform/cloud">
+                      <span>클라우드 사업부</span>
+                    </a>
+                  </li> -->
+                  <!-- <li class="fullmenu-gnbitem">
                     <a class="h6 fullmenu-gnblink" href="/errorpage">
                       <span>SI 사업부</span>
                     </a>
@@ -278,7 +286,7 @@
                         </a>
                       </li>
                     </ul>
-                  </li>
+                  </li> -->
                   <li class="fullmenu-gnbitem">
                     <a class="h6 fullmenu-gnblink" href="/platform/main">
                       <span>플랫폼 사업부</span>
@@ -286,17 +294,17 @@
                     <ul class="fullmenu-sublist">
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="/platform/data">
-                          <span>기반 데이터 사업</span>
+                          <span>기반 데이터 사업부</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="/platform/ai">
-                          <span>응용데이터 사업</span>
+                          <span>응용데이터 사업부</span>
                         </a>
                       </li>
                       <li class="fullmenu-subitem">
-                        <a class="p1 fullmenu-sublink" href="/platform/cloud">
-                          <span>클라우드 사업</span>
+                        <a class="p1 fullmenu-sublink" href="/errorpage">
+                          <span>SI 사업부</span>
                         </a>
                       </li>
                     </ul>

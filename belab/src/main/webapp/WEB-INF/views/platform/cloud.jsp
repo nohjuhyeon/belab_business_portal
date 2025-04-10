@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="contents-body">
                                         <div class="textset">
-                                            <h2 class="h1 textset-tit">응용 데이터 서비스</h2>
+                                            <h2 class="h1 textset-tit">클라우드 서비스</h2>
                                         </div>
                                     </div>
                                 </div>

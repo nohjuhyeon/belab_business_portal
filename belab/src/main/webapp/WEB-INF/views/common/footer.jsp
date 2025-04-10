@@ -35,10 +35,8 @@
         <div class="footer-bottom">
           <address class="footer-txt">
             <p class="p2">상호: 주식회사 비이랩</p>
-            <p>
-              <span class="p2">개인정보책임자: 노주현</span>
-              <span class="p2">사업자 등록번호: 457-8-02772</span>
-            </p>
+            <p class="p2">개인정보책임자: 노주현</p>
+            <p class="p2">사업자 등록번호: 457-87-02772</p>
           </address>
           <address class="footer-txt">
             <p class="p2">
@@ -57,9 +55,6 @@
             </p>
           </address>
           <div class="footer-txt">
-            <p class="p2">
-              Copyright @ Belab. All Rights Reserved.
-            </p>
             <p class="p2">
               Copyright @ Belab. All Rights Reserved.
             </p>

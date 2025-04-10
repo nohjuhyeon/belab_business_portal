@@ -65,7 +65,7 @@
                     </figure>
                     <div class="cardset-body">
                       <div class="cardset-tit row">
-                        <h5 class="h3 col-10">데이터 서비스</h5>
+                        <h5 class="h3 col-10">기반 데이터 사업부</h5>
                         <a href="/platform/data" class="col-2" style="text-align: right;">More</a>
                       </div>
                       <h6 class="h6">데이터베이스를 포함한 미들웨어 기술지원 통합 서비스 제공
@@ -92,7 +92,7 @@
                     </figure>
                     <div class="cardset-body">
                       <div class="cardset-tit row">
-                        <h5 class="h3 col-10">AI 비즈니스 혁신서비스</h5>
+                        <h5 class="h3 col-10">응용 데이터 사업부</h5>
                         <a href="/platform/ai" class="col-2" style="text-align: right;">More</a>
                       </div>
                       <h6 class="h6">AI 플랫폼 구축 및 효율적인 통합 서비스 제공
@@ -121,7 +121,7 @@
                     </figure>
                     <div class="cardset-body">
                       <div class="cardset-tit row">
-                        <h5 class="h3 col-10">운영관제 서비스 </h5>
+                        <h5 class="h3 col-10">클라우드 사업부</h5>
                         <a href="/platform/cloud" class="col-2" style="text-align: right;">More</a>
                       </div>
                       <h6 class="h6">고객의 비즈니스 업무 관리 수행을 안정적으로 지원
