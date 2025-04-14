@@ -54,7 +54,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="header-gnbitem on">
+                  <li class="header-subitem on">
                     <a class="header-gnblink" href="/platform/cloud"> <span>클라우드 사업부</span>
                     </a>
                   </li>
@@ -260,11 +260,11 @@
                       </li>
                     </ul>
                   </li>
-                  <!-- <li class="fullmenu-gnbitem">
+                  <li class="fullmenu-gnbitem">
                     <a class="h6 fullmenu-gnblink" href="/platform/cloud">
                       <span>클라우드 사업부</span>
                     </a>
-                  </li> -->
+                  </li>
                   <!-- <li class="fullmenu-gnbitem">
                     <a class="h6 fullmenu-gnblink" href="/errorpage">
                       <span>SI 사업부</span>
