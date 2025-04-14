@@ -817,7 +817,7 @@
                                                 </h3>
                                                 <div class="contents-inner">
                                                     <div class="imageset">
-                                                        <img class="imageset-img" src="/images/platform/cloud/msp.png"
+                                                        <img class="imageset-img" src="/images/platform/cloud/msp.jpg"
                                                             alt="이미지" />
                                                     </div>
                                                     <div class="textset">
