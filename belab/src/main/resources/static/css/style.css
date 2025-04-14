@@ -899,11 +899,12 @@
 }
 
 .basic-N10 .contents-container {
-    position: relative
+    position: relative;
+    background: #111;
 }
 
 .basic-N10 .contents-inner {
-    width: calc(100% + 16rem);
+    width: 100%;
     height: 400px;
     margin-left: -8rem
 }
@@ -936,7 +937,7 @@
 
 @media (max-width: 1200px) {
     .basic-N10 .contents-inner {
-        width: calc(100% + 8rem);
+        width: 100%;
         margin-left: -4rem;
         height: 400px;
     }
@@ -948,7 +949,7 @@
 
 @media (max-width: 992px) {
     .basic-N10 .contents-inner {
-        width: calc(100% + 3.2rem);
+        width: 100%;
         height: 300px;
         margin-left: -1.6rem
     }
