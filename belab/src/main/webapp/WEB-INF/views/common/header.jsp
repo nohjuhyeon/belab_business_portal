@@ -175,14 +175,14 @@
                           </c:when>
 
 <%--                        로그인 전--%>
-                          <c:otherwise>
-                            <li class="header-subitem on">
-                              <a class="header-sublink p3" href="/member/login">
+<%--                    <c:otherwise>
+                        <li class="header-subitem on">
+                              <a class="header-sublink p3" href="/administrator/login">
                                 <span>관리자</span>
                               </a>
                             </li>
                           </c:otherwise>
-
+--%>
 
                         </c:choose>
                     </ul>
@@ -197,7 +197,7 @@
 <%--                    <c:when test="${sessionScope.loggedInUser != null}">--%>
 <%--                      <!-- 로그인된 경우 -->--%>
 <%--                      <li class="">--%>
-<%--                        <a class="header-sublink" href="/member/logout">LOGOUT</a>--%>
+<%--                        <a class="header-sublink" href="/administrator/logout">LOGOUT</a>--%>
 <%--                      </li>--%>
 <%--                      <li class="">--%>
 <%--                        <a class="header-sublink" href="/mypage/intro">My Page</a>--%>
@@ -211,7 +211,7 @@
 <%--                    <c:otherwise>--%>
 <%--                      <!-- 로그인되지 않은 경우 -->--%>
 <%--                      <li class="">--%>
-<%--                        <a class="p1 header-sublink" href="/member/login">LOGIN</a>--%>
+<%--                        <a class="p1 header-sublink" href="/administrator/login">LOGIN</a>--%>
 <%--                      </li>--%>
 <%--                      <li class="">--%>
 <%--                        <a class="p1 header-sublink" href="/member/userjoin">회원가입</a>--%>

@@ -20,7 +20,7 @@ public class RedirectURLInterceptor implements HandlerInterceptor {
         }
 
         // 현재 URL을 세션에 저장 (로그인 페이지는 제외)
-        if (!currentURL.contains("/member/login")) {
+        if (!currentURL.contains("/administrator/login")) {
             request.getSession().setAttribute("redirectURL", currentURL);
         }
 

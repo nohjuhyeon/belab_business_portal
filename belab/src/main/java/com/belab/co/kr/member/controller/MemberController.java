@@ -20,7 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/member") // 부모 URL 경로를 여기서 먼저 설정
+// @RequestMapping("/member") // 부모 URL 경로를 여기서 먼저 설정
 @SessionAttributes("loggedInUser")
 public class MemberController {
     Logger logger = LoggerFactory.getLogger(getClass());
@@ -39,7 +39,7 @@ public class MemberController {
     public String signup(MemberVO memberVO, Model model) {
         try {
             memberService.signup(memberVO);
-            return "redirect:/member/login"; // 회원가입 성공 시 로그인 페이지로 리다이렉트
+            return "redirect:/administrator/login"; // 회원가입 성공 시 로그인 페이지로 리다이렉트
         } catch (IllegalStateException e) {
             // 이메일 중복 예외 처리
             model.addAttribute("error", e.getMessage());
@@ -51,13 +51,13 @@ public class MemberController {
     }
 
     // 로그인 페이지로 이동
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/administrator/login", method = RequestMethod.GET)
     public String loginForm() {
-        return "member/login"; // views/member/login.jsp로 이동
+        return "administrator/login"; // views/administrator/login.jsp로 이동
     }
 
     // 로그인 처리
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/administrator/login", method = RequestMethod.POST)
     public String login(MemberVO memberVO, HttpSession session, RedirectAttributes redirectAttributes) {
         // 로그인 처리
         MemberVO loginMember = memberService.login(memberVO);
@@ -72,7 +72,7 @@ public class MemberController {
 
         // 로그인 실패 시 메시지 추가
         redirectAttributes.addFlashAttribute("error", "이메일 또는 비밀번호가 올바르지 않습니다.");
-        return "redirect:/member/login";
+        return "redirect:/administrator/login";
     }
 
 
@@ -89,7 +89,7 @@ public class MemberController {
      * @param session
      * @return
      */
-    @RequestMapping(value = "/logout", method = { RequestMethod.GET, RequestMethod.POST })
+    @RequestMapping(value = "/administrator/logout", method = { RequestMethod.GET, RequestMethod.POST })
     public String logout(HttpSession session, HttpServletResponse response, SessionStatus sessionStatus) {
         // 로그아웃 시 로깅 추가
         System.out.println("로그아웃 요청 수신됨.");
@@ -118,7 +118,7 @@ public class MemberController {
         if (loggedInUser != null) {
             return "/member/modifyForm"; // 회원 개인정보 수정 페이지로 이동
         }
-        return "redirect:/member/login"; // 로그인 페이지로 리다이렉트
+        return "redirect:/administrator/login"; // 로그인 페이지로 리다이렉트
     }
 
     /**
@@ -341,7 +341,7 @@ public class MemberController {
             // 로그인되지 않은 경우
             model.addAttribute("error", "로그인이 필요합니다.");
             response.put("message", "로그인이 필요합니다.");
-            return "redirect:/member/login"; //
+            return "redirect:/administrator/login"; //
         }
         else if (loggedInUser.getPassword().equals(password)) {
             // 로그인되지 않은 경우

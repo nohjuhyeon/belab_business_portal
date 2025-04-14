@@ -69,7 +69,7 @@
                 </c:if>
           
                 <div class="form-btn">
-                  <a href="/member/login" class="btnset btnset-primary" style="width: 80%;">로그인으로 돌아가기</a>
+                  <a href="/administrator/login" class="btnset btnset-primary" style="width: 80%;">로그인으로 돌아가기</a>
                 </div>
               </div>
             </form>
