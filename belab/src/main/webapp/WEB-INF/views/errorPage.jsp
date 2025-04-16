@@ -46,9 +46,10 @@
                   <img class="iconset-icon" src="/icons/ico_circle_illust.svg" alt="404" />
                 </div>
                     <div class="textset textset-center">
-                        <h2 class="textset-tit h6">404 Not Found</h2>
-                        <p class="textset-desc p2">해당 페이지의 내용은 추후에 업데이트될 예정입니다. </p>
-                        <a href="/" class="btnset btnset-primary btnset-round">메인으로</a>
+                      <!-- <h2 class="textset-tit h6">404 Not Found</h2>
+                      <p class="textset-desc p2">해당 페이지의 내용은 추후에 업데이트될 예정입니다. </p> -->
+                      <h2 class="textset-tit h6">해당 페이지의 내용은 추후에 업데이트될 예정입니다.</h2>
+                      <a href="/" class="btnset btnset-primary btnset-round">메인으로</a>
                     </div>
               </div>
             </div>

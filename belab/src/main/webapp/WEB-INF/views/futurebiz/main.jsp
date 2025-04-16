@@ -62,7 +62,7 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <!--
+                                            
                                             <div class="swiper-slide">
                                                 <a href="/futurebiz/bepet" class="cardset">
                                                     <figure class="cardset-figure">
@@ -74,7 +74,7 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            -->
+                                           
                                             <div class="swiper-slide">
                                                 <a href="/futurebiz/beschool" class="cardset">
                                                     <figure class="cardset-figure">

@@ -51,8 +51,8 @@
                 어디서나 접근 가능한 서비스 허브와 비즈니스 중심지를 목표로 하고 있으며, 앞으로도 많은 관심과 성원을 부탁드립니다. 감사합니다.
               </p>
             </div>
-            <div class="imageset">
-              <img class="imageset-img" src="/images/introduce/img_basic_N23_1.png" alt="이미지" />
+            <div class="imageset" style="height: 460px;">
+              <!-- <img class="imageset-img" src="/images/introduce/img_basic_N23_1.png" alt="이미지" /> -->
             </div>
             <ul class="row contents-list">
             </ul>

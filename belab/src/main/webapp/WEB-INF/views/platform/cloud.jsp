@@ -176,7 +176,7 @@
                                             </li>
                                             <li class="tabset-item">
                                                 <a class="tabset-btn" href="#cloud_5">
-                                                    <span>비즈니스 센터 운영영</span>
+                                                    <span>비즈니스 센터 운영</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -798,7 +798,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="platform-N01" id="cloud_">
+                        <div class="platform-N01" id="cloud_5">
                             <div class="platform-inner">
                                 <div class="cloud-N74" id="EJM6k4ylEY">
                                     <div class="contents-container container-md">
