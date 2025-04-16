@@ -23,7 +23,7 @@ public class ReferBoardServiceImpl implements ReferBoardService {
     private ReferBoardMapper referBoardMapper;
 
     // private String uploadDirectory = "/opt/test"; 리눅스 경로
-    private String uploadDirectory = "C:\\test";
+    private String uploadDirectory = "/belabweb/files";
 
     /**
      * 초기화: 파일 저장 디렉토리 생성

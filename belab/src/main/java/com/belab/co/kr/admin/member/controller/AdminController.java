@@ -33,7 +33,7 @@ public class AdminController {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
         if (loggedInUser == null || !"admin".equals(loggedInUser.getRole())) {
             logger.warn("권한이 없는 사용자가 접근했습니다.");
-            return "redirect:/member/login";
+            return "redirect:/administrator/login";
         }
         model.addAttribute("username", loggedInUser.getUsername());
         return "/admin/admin_intro";
@@ -44,7 +44,7 @@ public class AdminController {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
         if (loggedInUser == null || !"admin".equals(loggedInUser.getRole())) {
             logger.warn("권한이 없는 사용자가 접근했습니다.");
-            return "redirect:/member/login";
+            return "redirect:/administrator/login";
         }
 
         List<MemberVO> memberList = adminService.getAllUsersExceptLoggedIn(String.valueOf(loggedInUser.getUser_id()));
@@ -66,7 +66,7 @@ public class AdminController {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
         if (loggedInUser == null || !"admin".equals(loggedInUser.getRole())) {
             logger.warn("권한이 없는 사용자가 접근했습니다.");
-            return "redirect:/member/login";
+            return "redirect:/administrator/login";
         }
 
         try {
@@ -91,7 +91,7 @@ public class AdminController {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
         if (loggedInUser == null || !"admin".equals(loggedInUser.getRole())) {
             logger.warn("권한이 없는 사용자가 접근했습니다.");
-            return "redirect:/member/login";
+            return "redirect:/administrator/login";
         }
 
         try {

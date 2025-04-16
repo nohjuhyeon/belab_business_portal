@@ -101,7 +101,7 @@ public class FilesBoardController {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
         if (loggedInUser == null) {
             System.out.println("로그인된 사용자가 없습니다.");
-            return "redirect:/member/login";
+            return "redirect:/administrator/login";
         }
 
         // 디버깅: 파일 확인
@@ -217,7 +217,7 @@ public class FilesBoardController {
     public String editBoardForm(@RequestParam Long referBoardId, HttpSession session, Model model) {
         if (!checkLoginStatus(session, model)) {
             model.addAttribute("error", "잘못된 접근");
-            return "redirect:/member/login"; // 로그인되지 않으면 로그인 페이지로 리다이렉트
+            return "redirect:/administrator/login"; // 로그인되지 않으면 로그인 페이지로 리다이렉트
         }
         List<ReferenceFileInfoVO> attachedFiles = referBoardService.getFilesByBoardId(referBoardId);
         ReferenceBoardVO board = referBoardService.getBoardById(referBoardId);
@@ -239,7 +239,7 @@ public class FilesBoardController {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
         if (loggedInUser == null) {
             System.out.println("로그인된 사용자가 없습니다.");
-            return "redirect:/member/login";
+            return "redirect:/administrator/login";
         }
     
         try {

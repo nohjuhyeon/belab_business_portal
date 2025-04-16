@@ -71,7 +71,7 @@
                 <div class="links-container">
                   <div class="left-links">
                   </div>
-                  <a href="/member/login" class="right-link">로그인으로 돌아가기</a>
+                  <a href="/administrator/login" class="right-link">로그인으로 돌아가기</a>
                 </div>          
               </div>
             </form>

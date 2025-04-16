@@ -78,7 +78,7 @@ public class ContactBoardController {
 
         if (loggedInUser == null) {
             model.addAttribute("error", "로그인이 필요합니다.");
-            return "redirect:/member/login";
+            return "redirect:/administrator/login";
         }
 
         // 서비스에 로그인된 사용자 정보 주입
@@ -92,7 +92,7 @@ public class ContactBoardController {
         MemberVO loggedInUser = (MemberVO) session.getAttribute("loggedInUser");
 
         if (loggedInUser == null) {
-            return "redirect:/member/login";
+            return "redirect:/administrator/login";
         }
 
         // 서비스에 로그인된 사용자 정보 주입
@@ -107,7 +107,7 @@ public class ContactBoardController {
     public String editBoardForm(@PathVariable int dashboard_id, HttpSession session, Model model) {
         if (!checkLoginStatus(session, model)) {
             model.addAttribute("error", "잘못된 접근");
-            return "redirect:/member/login"; // 로그인되지 않으면 로그인 페이지로 리다이렉트
+            return "redirect:/administrator/login"; // 로그인되지 않으면 로그인 페이지로 리다이렉트
         }
 
         ContactBoardVO board = boardService.getBoardById(dashboard_id);

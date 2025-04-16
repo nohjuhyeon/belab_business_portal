@@ -51,7 +51,7 @@
       <div class="member-N24" id="Vgm5ys8tOU">
         <div class="contents-container container-sm">
           <div class="contents-inner">
-            <form action="/member/login" method="post">
+            <form action="/administrator/login" method="post">
               <div class="form-group">
                 <div class="textset">
                   <h2 class="h2 textset-tit">환영합니다!</h2>

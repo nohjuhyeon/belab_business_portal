@@ -125,7 +125,7 @@
         <c:choose>
     <c:when test="${sessionScope.loggedInUser != null}">
         <!-- 로그인된 경우 -->
-        <a href="/member/logout">LOGOUT</a>
+        <a href="/administrator/logout">LOGOUT</a>
         <a href="/mypage/intro">My Page</a>
         <c:if test="${sessionScope.loggedInUser.role == 'admin'}">
             <a href="/admin">Admin</a>
@@ -133,7 +133,7 @@
     </c:when>
     <c:otherwise>
         <!-- 로그인되지 않은 경우 -->
-        <a href="/member/login">LOGIN</a>
+        <a href="/administrator/login">LOGIN</a>
         <a href="/member/userjoin">회원가입</a>
     </c:otherwise>
 </c:choose>

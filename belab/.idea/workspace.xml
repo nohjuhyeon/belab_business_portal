@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7daa23b-3099-4af9-bcfc-9ec1307f1428" name="Changes" comment="env 파일 위치 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errorPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errorPage.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,10 +103,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.BelabApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;SeongGeol에 #7개&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/BYD_NB_007/IdeaProjects/beyond_business_portal&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/project/belab_business_portal/belab&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -137,11 +138,11 @@
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\webapp\WEB-INF\views\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\belab_business_portal\belab\src\main\webapp\WEB-INF\views\administrator" />
       <recent name="C:\Users\BYD_NB_007\IdeaProjects\belab_business_portal\belab" />
       <recent name="C:\Users\BYD_NB_007\IdeaProjects\belab_business_portal\belab\src\main\resources" />
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\webapp\WEB-INF\views\admin\member" />
       <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\resources\mappers\member" />
-      <recent name="C:\Users\ksk07\Documents\GitHub\belab_business_portal\belab\src\main\resources\mappers\com.belab.co.kr.member" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.belab.co.kr.files.dao" />
@@ -152,7 +153,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.belab.co.kr.BelabApplication" />
-      <module name="belab.main" />
+      <module name="belab.test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
