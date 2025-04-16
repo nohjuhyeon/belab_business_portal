@@ -80,11 +80,11 @@
                           <img class="cardset-img" src="/images/img_basic_N42_3.png" alt="카드 이미지">
                         </figure>
                         <div class="cardset-cont">
-                          <h2 class="h5 cardset-tit">클라우드 사업부</h2>
-                          <p class="p1 cardset-desc">다양한 클라우드 플랫폼을 활용하여 효율적이고, 유연한 인프라 IT 솔루션을 제공합니다.</p>
+                          <h2 class="h5 cardset-tit">SI 사업부</h2>
+                          <p class="p1 cardset-desc">고객의 비즈니스 환경에 최적화된 시스템을 기획부터 구축, 운영까지 통합적으로 제공하여 안정적이고 효율적인 IT 서비스를 실현합니다.</p>
                         </div>
                         <div class="cardset-btn">
-                          <a class="btnset btnset-sm" href="/platform/cloud">자세히보기</a>
+                          <a class="btnset btnset-sm" href="/errorpage">자세히보기</a>
                         </div>
                       </div>
                     </div>
