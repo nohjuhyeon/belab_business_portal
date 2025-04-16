@@ -115,11 +115,13 @@
                           <span>BeMON</span>
                         </a>
                       </li>
-                      <li class="header-subitem on">
+                       <!--
+                        <li class="header-subitem on">
                         <a class="header-sublink p3" href="/futurebiz/bepet">
                           <span>BePET</span>
                         </a>
                       </li>
+                      -->
                       <li class="header-subitem on">
                         <a class="header-sublink p3" href="/futurebiz/beschool">
                           <span>BeSCHOOL</span>
@@ -265,11 +267,13 @@
                           <span>BeMON</span>
                         </a>
                       </li>
+                      <!--
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="bepet">
                           <span>BePET</span>
                         </a>
                       </li>
+                      -->
                       <li class="fullmenu-subitem">
                         <a class="p1 fullmenu-sublink" href="/futurebiz/beschool">
                           <span>BeSCHOOL</span>
