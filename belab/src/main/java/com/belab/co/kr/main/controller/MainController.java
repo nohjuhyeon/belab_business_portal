@@ -17,6 +17,13 @@ public class MainController {
         return "main"; // main.jsp를 가리킵니다.
     }
 
+    // /test 경로를 처리하는 메서드 추가
+    @GetMapping("/test")
+    public String testPage() {
+        return "test"; // test.jsp를 가리킵니다.
+    }
+
+
     @GetMapping("/errorpage")
     public String error() {
         return "errorPage"; // errorPage.jsp를 가리킵니다.
