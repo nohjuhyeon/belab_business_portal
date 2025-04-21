@@ -66,7 +66,7 @@
                 <div class="container-fluid position-relative g-lg-4">
                     <div class="col-auto col-lg-2">
                         <!-- Logo -->
-                        <a class="logo" href="index.html" title="Simone"> <img src="test/images/logo-light.png" alt="BeLAB" height="27" /> </a>
+                        <a class="logo" href="#" title="Simone"> <img src="test/images/logo-light.png" alt="BeLAB" height="27" /> </a>
                         <!-- Logo End -->
                     </div>
                     <div class="col col-lg-8 navbar-accordion">
