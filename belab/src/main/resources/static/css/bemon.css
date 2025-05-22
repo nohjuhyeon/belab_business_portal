@@ -1,0 +1,985 @@
+.bemon-N9 {
+  overflow: hidden;
+  position: relative;
+  padding-top: 14rem;
+  padding-bottom: 10rem;
+}
+
+.bemon-N9 .contents-inner {
+  width: 100%;
+}
+
+.bemon-N9 .contents-form {
+  display: flex;
+  justify-content:space-between;
+  gap: 0.5rem;
+}
+
+.bemon-N9 .contents-form .selectset{
+  width: 20%;
+}
+
+.bemon-N9 .contents-form .inputset{
+  width: 80%;
+}
+
+.bemon-N9 .contents-form .inputset .checkset-wrap{
+  justify-content: space-between;
+}
+
+.bemon-N9 .contents-form .inputset .checkset-wrap+.checkset-wrap{
+  margin-top: 1rem;;  
+}
+
+.bemon-N9 .selectset{
+  display: flex;
+  align-items:center;
+}
+
+.bemon-N9 .selectset .selectset-area {
+  width: 100%;
+  height: 100%;
+}
+
+.bemon-N9 .selectset .selectset-area .btn {
+  height: 100%;
+}
+
+
+.bemon-N9 .form-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.bemon-N9 .form-group form{
+  width: 80%;
+}
+
+
+.bemon-N9 .title-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.bemon-N9 .ico-dot {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url("/api/t-a/107/1747807200/resources/icons/ico_diamond.svg") no-repeat center/contain;
+}
+
+.bemon-N9 .form-group {
+  width: 100%;
+}
+
+.bemon-N9 .form-group .form-tit {
+  margin-bottom: 0.8rem;
+  font-weight: var(--fw-medium);
+}
+
+.bemon-N9 .form-group .form-tit+.checkset-wrap {
+  gap: 1.2rem 4rem;
+  margin-top: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.bemon-N9 .form-group .form-tit span {
+  color: #c90000;
+}
+
+.bemon-N9 .form-box+.form-box {
+  margin-top: 2.6rem;
+}
+
+.bemon-N9 .radio-box {
+  display: flex;
+  flex-direction:row;
+}
+
+.bemon-N9 .radio-box .form-tit {
+  width: 20%;
+}
+
+.bemon-N9 .radio-box .contents-form {
+  width: 80%;
+}
+
+
+.bemon-N9 .form-btn .btnset {
+  width: 30rem;
+}
+
+
+.bemon-N9 .inputset+.inputset {
+  margin-top: 4rem;
+}
+
+.bemon-N9 .inputset .inputset-tit {
+  margin-bottom: 0.8rem;
+}
+
+.bemon-N9 .inputset .inputset-label {
+  width: 100%;
+}
+
+.bemon-N9 .inputset .inputset-textarea {
+  height: 14rem;
+  resize: none;
+}
+
+.bemon-N9 .form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
+
+.bemon-N9 .contents-agree {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.bemon-N9 .info-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bemon-N9 .info-title h3 {
+  font-size: var(--fs-h4);
+}
+
+.bemon-N9 .modal-close {
+  cursor: pointer;
+}
+
+.bemon-N9 .info-area {
+  overflow-y: auto;
+}
+
+.bemon-N9 .info-group+.info-group {
+  margin-top: 2.4rem;
+}
+
+.bemon-N9 .info-group strong {
+  display: block;
+  padding-bottom: 1.2rem;
+  font-size: var(--fs-h5);
+}
+
+.bemon-N9 .info-desc {
+  overflow-y: auto;
+  padding: 1.6rem;
+  max-height: 20.7rem;
+  background: #f8f8fa;
+  border-radius: 1.6rem;
+}
+
+.bemon-N9 .info-desc::-webkit-scrollbar {
+  width: 6px;
+}
+
+.bemon-N9 .info-desc::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.bemon-N9 .info-desc::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.bemon-N9 .info-desc p {
+  font-size: var(--fs-p1);
+}
+
+.bemon-N9 .info-desc p.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.bemon-N9 .info-desc .mtb {
+  margin: 2.4rem 0;
+}
+
+.bemon-N9 .info-desc em {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 2.4rem 0 1rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.bemon-N9 .info-list em::before {
+  content: "";
+  margin-right: 0.8rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--black);
+  border-radius: 50%;
+}
+
+.bemon-N9 .info-list p {
+  padding-left: 1.2rem;
+}
+
+.bemon-N9 .modal-confirm .modal-area {
+  position: relative;
+  padding: 3.2rem;
+  max-width: 36rem;
+  background: var(--text-color1);
+  border-radius: 0.8rem;
+}
+
+.bemon-N9 .modal-confirm .modal-icon {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.6rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 0;
+  background: transparent;
+}
+
+.bemon-N9 .modal-confirm .modal-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bemon-N9 .modal-confirm .modal-figure {
+  margin: 0 auto;
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.bemon-N9 .modal-confirm .modal-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bemon-N9 .modal-confirm .modal-body {
+  font-size: var(--fs-p1);
+  text-align: center;
+  color: var(--white);
+}
+
+.bemon-N9 .modal-confirm .modal-textarea {
+  margin: 1.6rem 0;
+}
+
+.bemon-N9 .modal-confirm .modal-footer {
+  text-align: center;
+}
+
+.bemon-N9 .modal-confirm .modal-footer .btnset {
+  min-width: 9.4rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+}
+
+.bemon-N9 .modal-confirm .modal-footer .btnset.btnset-line-light {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.bemon-N9 .modalset .modalset-close::before {
+  color: var(--text-color1);
+}
+
+.bemon-N9 .inputset-icon {
+  height: 100%;
+}
+
+.bemon-N9 .inputset-keyword .contents-form{
+  height: 5rem;
+}
+
+.bemon-N9 .inputset-icon .inputset-input {
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .bemon-N9 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .bemon-N9 .title-area {
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 3rem;
+    
+  }
+
+  .bemon-N9 .ico-dot {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .bemon-N9 .form-box+.form-box {
+    margin-top: 1.4rem;
+  }
+
+  .bemon-N9 .form-group .form-tit+.checkset-wrap {
+    gap: 0.8rem 2.4rem;
+  }
+
+  .bemon-N9 .form-wrap {
+    display: block;
+  }
+
+  .bemon-N9 .form-btn {
+    margin-top: 1.4rem;
+    max-width: 100%;
+  }
+
+  .bemon-N9 .form-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bemon-N9 .form-btn .btnset {
+    width: 30rem;
+  }
+
+  .bemon-N9 .modal-confirm .modal-figure {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .bemon-N9 .modal-confirm .modal-textarea {
+    margin: 0.8rem 0;
+  }
+
+  .bemon-N9 .inputset .inputset-icon.icon-right {
+      height: 100%;
+      right: 0rem;
+    }
+
+}
+
+/* bemon-N25 */
+.bemon-N25 {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 16rem
+}
+
+.bemon-N25 .contents-inner {
+    width: 100%
+}
+
+.bemon-N25 .title-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem
+}
+
+.btnset-icon .title-area span {
+    font-weight: var(--fw-bold)
+}
+
+.bemon-N25 .inputset {
+    flex-basis: 40rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: end;
+}
+
+.bemon-N25 .inputset.inputset-line .inputset-input {
+    border-bottom-color: var(--border-color)
+}
+
+.bemon-N25 .title-area .inputset-input {
+    padding-right: 3rem
+}
+
+.bemon-N25 .title-area .btnset-icon {
+    position: absolute;
+    right: 0;
+    background: none;
+    min-width: 2.4rem;
+    padding: 0
+}
+
+.bemon-N25 .btnset.btnset-icon.ico-left::before {
+    color: #111
+}
+
+.bemon-N25 .bemon-N25 .tableset {
+    text-align: center
+}
+
+.bemon-N25 .tableset .tableset-table>colgroup>.width-120 {
+    width: 120px
+}
+
+.bemon-N25 .tableset .tableset-table>thead.thead-light>*>* {
+    background: #fff
+}
+
+.bemon-N25 .tableset .tableset-table>thead.thead-border-top>*>* {
+    border-top: 1px solid #111;
+    border-bottom: 0;
+    text-align: center
+}
+
+.bemon-N25 .tableset .tableset-table> :not(caption):not(colgroup)>*>* {
+    text-align: center
+}
+
+.bemon-N25 .tableset .tableset-table>tbody>*>td.text-left {
+    text-align: left
+}
+
+.bemon-N25 .tableset tbody {
+    border-top: 1px solid var(--border-color)
+}
+
+.bemon-N25 .tableset tbody tr:hover {
+    background-color: #fafafa
+}
+
+.bemon-N25 .tableset tbody td.date {
+    color: #bbbbbb
+}
+
+.bemon-N25 .pagiset {
+    margin-top: 8rem
+}
+
+.bemon-N25 .pagiset .pagiset-ctrl .pagiset-first::after,
+.bemon-N25 .pagiset .pagiset-ctrl .pagiset-prev::after,
+.bemon-N25 .pagiset .pagiset-ctrl .pagiset-next::after,
+.bemon-N25 .pagiset .pagiset-ctrl .pagiset-last::after {
+    font-size: var(--fs-p1)
+}
+
+.bemon-N25 .pagiset .pagiset-link.active-fill {
+    background: var(--black)
+}
+
+@media (max-width: 992px) {
+    .bemon-N25 {
+        padding-bottom: 10rem
+    }
+
+    .bemon-N25 .title-area {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem
+    }
+
+    .bemon-N25 .inputset {
+        flex: none;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .bemon-N25 .textset {
+        margin-bottom: 2rem
+    }
+
+    .bemon-N25 .tableset-table {
+        min-width: auto
+    }
+
+    .bemon-N25 .tableset-table .tableset-tit a {
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table {
+        display: block
+    }
+
+    .bemon-N25 .tableset.tableset-fract thead {
+        display: none
+    }
+
+    .bemon-N25 .tableset.tableset-fract tbody {
+        display: block;
+        border-top: 1px solid #111
+    }
+
+    .bemon-N25 .tableset.tableset-fract tbody tr {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 1.6rem 0.8rem;
+        gap: 0;
+        border-bottom: 1px solid var(--border-color)
+    }
+
+    .bemon-N25 .tableset.tableset-fract tbody tr td {
+        padding: 10px;
+        border: 0
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table td.tableset-mobile {
+        display: none
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table td.tableset-tit {
+        width: 100%;
+        max-width: 100%;
+        max-height: 2.4rem
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table td.tableset-order01 {
+        order: 1
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table td.tableset-order02 {
+        order: 2
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table td.tableset-order03 {
+        order: 3
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table td.tableset-order04 {
+        order: 4
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table td.tableset-order05 {
+        order: 5
+    }
+
+    .bemon-N25 .tableset.tableset-fract .tableset-table td.tableset-order06 {
+        order: 6
+    }
+
+    .bemon-N25 .pagiset {
+        margin-top: 4rem
+    }
+
+    .bemon-N25 .pagiset.pagiset-line .pagiset-ctrl .pagiset-link::after {
+        font-size: 1.2rem
+    }
+}
+
+/* bemon-N37 */
+.bemon-N37 {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: hidden;
+}
+
+.bemon-N37 .contents-inner {
+    display: flex;
+    width: 100%
+}
+
+.bemon-N37 .imageset {
+    width: calc(50% - 12rem);
+    height: 95rem;
+    border-radius: 2rem;
+    overflow: hidden
+}
+
+.bemon-N37 .form-group {
+    width: calc(50% + 6rem);
+    margin-left: 6rem
+}
+
+.bemon-N37 .form-group .form-tit {
+    margin-bottom: 0.8rem
+}
+
+.bemon-N37 .form-group .form-tit+.checkset-wrap {
+    margin-top: 1.6rem
+}
+
+.bemon-N37 .form-group .form-tit span {
+    display: inline-block;
+    margin-left: 0.4rem;
+    color: #dc0000
+}
+
+.bemon-N37 .form-box+.form-box {
+    margin-top: 4rem
+}
+
+.bemon-N37 .checkset-wrap .checkset+.checkset {
+    margin-top: 0;
+    margin-left: 6rem
+}
+
+.bemon-N37 .inputset+.inputset {
+    margin-top: 4rem
+}
+
+.bemon-N37 .inputset .inputset-tit {
+    margin-bottom: 0.8rem
+}
+
+.bemon-N37 .inputset .inputset-label {
+    width: 100%
+}
+
+.bemon-N37 .inputset .inputset-input {
+    border-bottom: 1px solid var(--border-color)
+}
+
+.bemon-N37 .inputset .inputset-textarea {
+    height: 20rem;
+    padding: 1.6rem;
+    border: 0;
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-color)
+}
+
+.bemon-N37 .contents-agree {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    line-height: 1
+}
+
+.bemon-N37 .contents-agree .btnset {
+    min-width: auto;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--text-color3)
+}
+
+.bemon-N37 .contents-agree .btnset::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../icons/ico_chevron_gray.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+}
+
+.bemon-N37 .form-btn {
+    margin-top: 6rem;
+    text-align: right
+}
+
+.bemon-N37 .form-btn .btnset {
+    min-width: 18rem
+}
+
+.bemon-N37 .info-area {
+    overflow-y: auto
+}
+
+.bemon-N37 .info-group+.info-group {
+    margin-top: 2.4rem
+}
+
+.bemon-N37 .info-group strong {
+    padding-bottom: 1.2rem;
+    display: block
+}
+
+.bemon-N37 .info-desc {
+    max-height: 20.7rem;
+    padding: 1.6rem;
+    background: #f8f8fa;
+    border-radius: 1.6rem;
+    overflow-y: auto;
+    scrollbar-width: none
+}
+
+.bemon-N37 .info-desc p.fw-medium {
+    font-weight: var(--fw-medium)
+}
+
+.bemon-N37 .info-desc .mtb {
+    margin: 2.4rem 0
+}
+
+.bemon-N37 .info-desc em {
+    font-style: normal;
+    font-weight: 600;
+    margin: 2.4rem 0 1rem;
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.bemon-N37 .info-list em::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    background: var(--black);
+    border-radius: 50%;
+    margin-right: 0.8rem
+}
+
+.bemon-N37 .info-list p {
+    padding-left: 1.2rem
+}
+
+@media (max-width: 992px) {
+    .bemon-N37 {
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
+
+    .bemon-N37 .contents-inner {
+        flex-direction: column
+    }
+
+    .bemon-N37 .imageset {
+        width: 100%;
+        height: 40rem
+    }
+
+    .bemon-N37 .form-group {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 4rem
+    }
+
+    .bemon-N37 .form-btn {
+        text-align: center
+    }
+
+    .bemon-N37 .form-btn .btnset {
+        min-width: 16rem;
+        padding: 0 1.6rem
+    }
+}
+
+/* bemon-N24 */
+.bemon-N24 {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: hidden
+}
+
+.bemon-N24 .contents-inner {
+    width: 100%;
+    padding: 10rem 4rem;
+    border-radius: 2rem;
+    background: #f7f7fb
+}
+
+.bemon-N24 .textset {
+    margin-bottom: 4rem;
+    text-align: center
+}
+
+.bemon-N24 .form-box {
+    max-width: 100%;
+    margin: 0 auto
+}
+
+.bemon-N24 .form-box+.form-box {
+    margin-top: 2.4rem
+}
+
+.bemon-N24 .inputset .inputset-input,
+.bemon-N24 .inputset .inputset-textarea {
+    border-radius: 0.6rem
+}
+
+.bemon-N24 .form-tit {
+    margin-bottom: 1.2rem
+}
+
+.bemon-N24 .form-btn {
+    margin-top: 4rem;
+    text-align: end
+}
+
+.bemon-N24 .form-btn .btnset {
+    min-width: 18rem;
+    padding: 0 2rem;
+    margin: 0.2rem;
+}
+
+@media (max-width: 992px) {
+    .bemon-N24 {
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
+
+    .bemon-N24 .contents-inner {
+        padding: 8rem 2.4rem
+    }
+
+    .bemon-N24 .form-btn .btnset {
+        min-width: 16rem;
+        padding: 0 1.6rem
+    }
+}
+
+.bemon-N24 .cancel-button {
+    background-color: #ccc;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.bemon-N24 .cancel-button:hover {
+    background-color: #bbb;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.bemon-N32 .container {
+    margin: 30px auto;
+    max-width: 1200px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bemon-N32 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.bemon-N32 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.bemon-N32 table th,
+.bemon-N32 table td {
+    text-align: left;
+    padding: 7px;
+    border: 1px solid #ddd;
+}
+
+.bemon-N32 .file-link {
+    display: inline-block; /* inline-block을 사용해야 width를 적용 가능 */
+    max-width: 100%; /* 부모 요소의 너비를 초과하지 않도록 설정 */
+    white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트에 말줄임표(...) 추가 */
+  }
+  
+
+.bemon-N32 table th {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+    word-break: break-word; 
+}
+
+.bemon-N32 pre {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #444;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    min-height: 300px;
+}
+
+.bemon-N32 .content-section {
+    margin-bottom: 20px;
+}
+
+.bemon-N32 .content-section h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    /* 제목 크기 */
+    font-weight: bold;
+    /* 제목 굵기 */
+    color: #444;
+    /* 제목 색상 */
+}
+
+.bemon-N32 .content-section pre {
+    font-size: 16px;
+    /* 본문 및 답변 텍스트 크기 */
+    line-height: 1.6;
+    /* 줄 간격 */
+    color: #333;
+    /* 텍스트 색상 */
+    padding: 20px;
+    /* 텍스트 내부 여백 */
+    background-color: #fff;
+    /* 배경색 */
+    border: 1px solid #ddd;
+    /* 테두리 */
+    border-radius: 8px;
+    /* 모서리 둥글게 */
+}
+
+.bemon-N32 .button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bemon-N32 .btn {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+}
+
+.bemon-N32 .btn:hover {
+    background-color: #ddd;
+}
+
+.bemon-N32 .btn-danger {
+    background-color: #f9f9f9;
+    border-color: #ddd;
+    color: #333;
+}
+
+.bemon-N32 .btn-danger:hover {
+    background-color: #ddd;
+}
+
+.bemon-N32 .cardset {
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 3rem 8rem;
+}

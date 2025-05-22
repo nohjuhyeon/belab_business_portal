@@ -18,7 +18,7 @@ public class MyPageController {
         if (loggedInUser != null) {
             // 사용자 이름을 모델에 추가
             model.addAttribute("username", loggedInUser.getUsername());
-            return "/mypage/mypage_intro";
+            return "/mypage/mypageIntro";
         }
         return "redirect:/administrator/login"; // 로그인되지 않은 경우 로그인 페이지로 리다이렉트
     }

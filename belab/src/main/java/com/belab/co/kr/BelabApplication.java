@@ -16,10 +16,11 @@ public class BelabApplication {
 
         System.setProperty("MAIL_ID", dotenv.get("MAIL_ID"));
         System.setProperty("MAIL_PWD", dotenv.get("MAIL_PWD"));
+        System.setProperty("MONGO_ID", dotenv.get("MONGO_ID"));
+        System.setProperty("MONGODB_PW", dotenv.get("MONGODB_PW"));
+        System.setProperty("MONGODB_CLUSTER_URL", dotenv.get("MONGODB_CLUSTER_URL"));
+        System.setProperty("MONGODB_NAME", dotenv.get("MONGODB_NAME"));
 
-        // 환경 변수 출력 (디버깅용)
-        System.out.println("MAIL_ID: " + dotenv.get("MAIL_ID"));
-        System.out.println("MAIL_PWD: " + dotenv.get("MAIL_PWD"));
 
         SpringApplication.run(BelabApplication.class, args);
     }
