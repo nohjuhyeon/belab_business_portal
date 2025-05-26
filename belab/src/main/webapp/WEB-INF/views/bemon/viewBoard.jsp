@@ -14,6 +14,17 @@
             <link rel="stylesheet" href="/css/templatehouse.css" />
             <link rel="stylesheet" href="/css/style.css" />
             <link rel="stylesheet" href="/css/bemon.css" />
+            <style>
+                body {
+                    min-width: 720px;
+                    /* 최소 너비 설정 */
+                    overflow-x: auto;
+                    /* 가로 스크롤 활성화 */
+                    white-space: nowrap;
+                    /* 내용이 줄바꿈되지 않도록 설정 */
+
+                }
+            </style>
             <script>
                 function navigateTo(url) {
                     window.location.href = url;
@@ -47,10 +58,10 @@
                         <div class="container">
                             <table>
                                 <colgroup>
-                                    <col style="width: 10%;">
-                                    <col style="width: 40%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 40%;">
+                                    <col style="width: 15%;">
+                                    <col style="width: 35%;">
+                                    <col style="width: 15%;">
+                                    <col style="width: 35%;">
                                 </colgroup>
                                 <tr>
                                     <th>공고명</th>

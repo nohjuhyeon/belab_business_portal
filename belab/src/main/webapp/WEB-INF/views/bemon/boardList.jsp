@@ -20,6 +20,16 @@
                     width: 50%;
                 }
 
+                body {
+                    min-width: 720px;
+                    /* 최소 너비 설정 */
+                    overflow-x: auto;
+                    /* 가로 스크롤 활성화 */
+                    white-space: nowrap;
+                    /* 내용이 줄바꿈되지 않도록 설정 */
+
+                }
+
                 th {
                     padding: 2rem 1rem !important;
                 }
@@ -33,7 +43,7 @@
         <body>
             <%@ include file="../common/header.jsp" %>
 
-                <main class="th-layout-main">
+                <main class="th-layout-main bemon-main">
                     <div class="th-layout-sideleft"></div>
                     <div class="th-layout-stickyleft"></div>
                     <div class="th-layout-content">
@@ -80,22 +90,23 @@
                                                                 <div class="checkset checkset-fill">
                                                                     <input id="radio-all" class="checkset-input"
                                                                         type="radio" name="noticeRange" value="전체 공고"
-                                                                        ${noticeRange==null || noticeRange == '전체 공고' ? 'checked' : '' }>
+                                                                        ${noticeRange==null || noticeRange=='전체 공고'
+                                                                        ? 'checked' : '' }>
                                                                     <label for="radio-all" class="checkset-label">전체
                                                                         공고</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
                                                                     <input id="radio-open" class="checkset-input"
                                                                         type="radio" name="noticeRange"
-                                                                        value="마감되지 않은 공고" ${noticeRange == '마감되지 않은 공고' ? 'checked' : '' }>
+                                                                        value="마감되지 않은 공고" ${noticeRange=='마감되지 않은 공고'
+                                                                        ? 'checked' : '' }>
                                                                     <label for="radio-open" class="checkset-label">마감되지
                                                                         않은 공고</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
                                                                     <input id="radio-close" class="checkset-input"
                                                                         type="radio" name="noticeRange" value="마감된 공고"
-                                                                        ${noticeRange == '마감된 공고' ? 'checked'
-                                                                        : '' }>
+                                                                        ${noticeRange=='마감된 공고' ? 'checked' : '' }>
                                                                     <label for="radio-close" class="checkset-label">마감된
                                                                         공고</label>
                                                                 </div>
@@ -206,7 +217,8 @@
                                                         <div class="inputset">
                                                             <div class="checkset-wrap">
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-all" class="checkset-input category-input"
+                                                                    <input id="check-all"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="all"
                                                                         ${categories==null or categories.contains('all')
                                                                         ? 'checked' : '' }>
@@ -214,7 +226,8 @@
                                                                         class="checkset-label">전체</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-ai" class="checkset-input category-input"
+                                                                    <input id="check-ai"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="ai"
                                                                         ${categories==null or categories.contains('ai')
                                                                         ? 'checked' : '' }>
@@ -222,7 +235,8 @@
                                                                         class="checkset-label">인공지능</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-data" class="checkset-input category-input"
+                                                                    <input id="check-data"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="data"
                                                                         ${categories==null or
                                                                         categories.contains('data') ? 'checked' : '' }>
@@ -230,7 +244,8 @@
                                                                         class="checkset-label">데이터베이스</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-cloud" class="checkset-input category-input"
+                                                                    <input id="check-cloud"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="cloud"
                                                                         ${categories==null or
                                                                         categories.contains('cloud') ? 'checked' : '' }>
@@ -238,7 +253,8 @@
                                                                         컴퓨팅</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-software" class="checkset-input category-input"
+                                                                    <input id="check-software"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="software"
                                                                         ${categories==null or
                                                                         categories.contains('software') ? 'checked' : ''
@@ -249,7 +265,8 @@
                                                             </div>
                                                             <div class="checkset-wrap">
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-iot" class="checkset-input category-input"
+                                                                    <input id="check-iot"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="iot"
                                                                         ${categories==null or categories.contains('iot')
                                                                         ? 'checked' : '' }>
@@ -257,7 +274,8 @@
                                                                         class="checkset-label">IoT</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-blockchain" class="checkset-input category-input"
+                                                                    <input id="check-blockchain"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category"
                                                                         value="blockchain" ${categories==null or
                                                                         categories.contains('blockchain') ? 'checked'
@@ -266,7 +284,8 @@
                                                                         class="checkset-label">블록체인</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-metabus" class="checkset-input category-input"
+                                                                    <input id="check-metabus"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="metabus"
                                                                         ${categories==null or
                                                                         categories.contains('metabus') ? 'checked' : ''
@@ -275,7 +294,8 @@
                                                                         class="checkset-label">AR/VR 및 메타버스</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-network" class="checkset-input category-input"
+                                                                    <input id="check-network"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="network"
                                                                         ${categories==null or
                                                                         categories.contains('network') ? 'checked' : ''
@@ -284,7 +304,8 @@
                                                                         class="checkset-label">네트워크 및 보안</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-isp" class="checkset-input category-input"
+                                                                    <input id="check-isp"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="isp"
                                                                         ${categories==null or categories.contains('isp')
                                                                         ? 'checked' : '' }>
@@ -292,7 +313,8 @@
                                                                         class="checkset-label">ISP/ISMP</label>
                                                                 </div>
                                                                 <div class="checkset checkset-fill">
-                                                                    <input id="check-others" class="checkset-input category-input"
+                                                                    <input id="check-others"
+                                                                        class="checkset-input category-input"
                                                                         type="checkbox" name="category" value="others"
                                                                         ${categories==null or
                                                                         categories.contains('others') ? 'checked' : ''
