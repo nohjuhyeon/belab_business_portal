@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class BelabApplication {
 
     public static void main(String[] args) {
-        Dotenv dotenv = Dotenv.configure().directory("./").load();  // .env 파일 경로를 명시적으로 지정
+        Dotenv dotenv = Dotenv.configure().directory("./src/main/resources/").load();  // .env 파일 경로를 명시적으로 지정
 
         System.setProperty("MAIL_ID", dotenv.get("MAIL_ID"));
         System.setProperty("MAIL_PWD", dotenv.get("MAIL_PWD"));
