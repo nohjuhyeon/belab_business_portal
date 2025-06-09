@@ -18,11 +18,11 @@ public interface BemonRepository extends MongoRepository<Bemon, String>, BemonRe
     List<Bemon> findAllWithPagination(Pageable pageable);
 
     // 페이징 처리와 endDate 조건 추가
-    @Query("{ 'openDate': { $gt: ?0 }, 'itNoticeCheck':'True' }")
+    @Query("{'itNoticeCheck':'True' }")
     List<Bemon> findByEndDateAfterWithOffset(String today, Pageable pageable);
 
-    // 조건에 맞는 데이터 개수 조회 (endDate가 특정 날짜 이후인 경우)
-    @Query(value = "{ 'openDate': { $gt: ?0 }, 'itNoticeCheck': 'True' }", count = true)
+    // 조건에 맞는 데이터 개수 조회
+    @Query(value = "{'itNoticeCheck': 'True' }", count = true)
     long countByEndDateAfter(String today);
 
 
