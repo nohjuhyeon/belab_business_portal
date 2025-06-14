@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../common/header.jsp" %>
 <head>
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=45465a972bba01251806dfd3929bebf3"></script>
 </head>
 <main class="th-layout-main">
     <div class="th-layout-sideleft"></div>
@@ -99,7 +100,6 @@
   </main>
 
 </section>      
-<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=45465a972bba01251806dfd3929bebf3"></script>
 <script>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
       mapOption = { 
