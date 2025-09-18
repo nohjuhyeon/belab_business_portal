@@ -165,7 +165,7 @@
                                                                                 type="button"
                                                                                 data-value="requestingAgency"
                                                                                 onclick="updateKeywordLogicValue('requestingAgency')">
-                                                                                <span>수주 기관</span>
+                                                                                <span>수요 기관</span>
                                                                             </button>
                                                                         </li>
                                                                     </ul>
@@ -354,8 +354,9 @@
                                             </colgroup>
                                             <thead class="thead-light thead-border-top">
                                                 <tr>
-                                                    <th scope="col" class="p2">공고 번호</th>
-                                                    <th scope="col" class="p2" style="width: 50%;">제목</th>
+                                                    <th scope="col" class="p2" style="width: 5%;">공고 번호</th>
+                                                    <th scope="col" class="p2" style="width: 45%;">제목</th>
+                                                    <th style="width: 10%;">가격(부가세 포함)</th>
                                                     <th style="width: 10%;">공고 기관</th>
                                                     <th style="width: 10%;">수요 기관</th>
                                                     <th scope="col" class="p2" style="width: 10%;">게시 일시</th>
@@ -363,9 +364,11 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <c:forEach var="board" items="${boards}">
+                                                    <c:forEach var="board" items="${boards}" varStatus="status">
                                                     <tr onclick="window.location.href='/bemon/viewBoard/${board.id}'">
-                                                        <td class="p2 tableset-mobile">${board.boardId}</td>
+                                                            <td class="p2 tableset-mobile">
+                                                                <c:out value="${(currentPage-1)*10 + status.index + 1}"/>
+                                                            </td>
                                                         <td
                                                             class="p2 text-left tableset tableset-tit-ellipsis tableset-tit">
                                                             <a href="/bemon/viewBoard/${board.id}">
@@ -375,10 +378,11 @@
                                                                     ${board.type}</div>
                                                             </a>
                                                         </td>
+                                                        <td class="p2">${board.priceSummary}</td>
                                                         <td class="p2">${board.publishingAgency}</td>
                                                         <td class="p2">${board.requestingAgency}</td>
                                                         <td class="p2">${board.startDate}</td>
-                                                        <td class="p2">${board.endDate}</td>
+                                                        <td class="p2">${board.endDate}<br><span style="font-size:0.85em; color:#888;">${board.remainDaysText}</span></td>
                                                     </tr>
                                                 </c:forEach>
 

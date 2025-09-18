@@ -96,7 +96,7 @@ public class BemonController {
         } else if ("publishingAgency".equals(keywordLogic)) {
             keywordLogicStr = "공고 기관";
         } else if ("requestingAgency".equals(keywordLogic)) {
-            keywordLogicStr = "수주 기관";            
+            keywordLogicStr = "수요 기관";            
         } else {
             keywordLogicStr = "전체";
         }

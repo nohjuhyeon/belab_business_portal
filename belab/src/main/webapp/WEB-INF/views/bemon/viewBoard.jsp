@@ -76,18 +76,18 @@
                                 <tr>
                                     <th>수요 기관</th>
                                     <td>${bemon.requestingAgency}</td>
-                                    <th>공급 기관</th>
+                                    <th>공고 기관</th>
                                     <td>${bemon.publishingAgency}</td>
                                 </tr>
                                 <tr>
                                     <th>입찰 등록 일시</th>
                                     <td>${bemon.startDate}</td>
-                                    <th>추정 가격</th>
+                                    <th>추정 가격(부가세 포함)</th>
                                     <td>${bemon.price}</td>
                                 </tr>
                                 <tr>
                                     <th>입찰 마감 일시</th>
-                                    <td>${bemon.startDate}</td>
+                                    <td>${bemon.endDate}</td>
                                     <th>개찰 일시</th>
                                     <td>${bemon.openDate}</td>
                                 </tr>
