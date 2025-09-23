@@ -56,9 +56,9 @@
             <ul class="row contents-list">
               <li class="col col-6 contents-item">
                 <strong class="h6">주소</strong>
-                <p class="p1">서울 강남구 광평로 295 사이룩스 오피스텔 동관동 1714호</p>
+                <p class="p1">서울시 강남구 밤고개로 1길 30 우곡빌딩 5층 (수서동 714-3)</p>
                 <p class="p1">
-                  1714, Donggwan-dong, Sairux Officetel, 295, Gwangpyeong-ro, Gangnam-gu, Seoul, South Korea
+                  5F, Ugok Building, 30, Bamgogae-ro 1-gil, Gangnam-gu, Seoul, Republic of Korea (Suseo-dong 714-3)
                 </p>
               </li>
               <li class="col col-3 contents-item">
@@ -103,14 +103,14 @@
 <script>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
       mapOption = { 
-          center: new kakao.maps.LatLng(37.4885660, 127.1041591), // 지도의 중심좌표
+          center: new kakao.maps.LatLng(37.488665746531, 127.10325529516), // 지도의 중심좌표
           level: 4 // 지도의 확대 레벨
       };
   
   var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
   
   // 마커가 표시될 위치입니다 
-  var markerPosition  = new kakao.maps.LatLng(37.4885660, 127.1041591); 
+  var markerPosition  = new kakao.maps.LatLng(37.488665746531, 127.10325529516); 
   
   // 마커를 생성합니다
   var marker = new kakao.maps.Marker({
