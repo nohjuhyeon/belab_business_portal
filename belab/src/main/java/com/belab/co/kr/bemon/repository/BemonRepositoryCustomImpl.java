@@ -78,6 +78,7 @@ public class BemonRepositoryCustomImpl implements BemonRepositoryCustom {
             andCriteriaList.add(Criteria.where("endDate").gte(todayStr)); // endDate가 현재 시간보다 큰 경우
         } else if ("마감된 공고".equals(noticeRange)) {
             andCriteriaList.add(Criteria.where("endDate").lt(todayStr)); // endDate가 현재 시간보다 큰 경우
+            andCriteriaList.add(Criteria.where("endDate").gte("1990-01-01")); // endDate가 현재 시간보다 큰 경우
         }
 
         // OR 조건을 하나의 Criteria로 추가
@@ -198,6 +199,7 @@ public class BemonRepositoryCustomImpl implements BemonRepositoryCustom {
             andCriteriaList.add(Criteria.where("endDate").gte(todayStr)); // endDate가 현재 시간보다 큰 경우
         } else if ("마감된 공고".equals(noticeRange)) {
             andCriteriaList.add(Criteria.where("endDate").lt(todayStr)); // endDate가 현재 시간보다 작은 경우
+            andCriteriaList.add(Criteria.where("endDate").gte("1990-01-01")); // endDate가 현재 시간보다 큰 경우
         }
 
 
