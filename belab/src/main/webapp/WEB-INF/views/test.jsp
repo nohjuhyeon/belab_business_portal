@@ -648,7 +648,7 @@
                 <div class="modal-body p-4">
                     <h3 class="mb-3 mt-4 mt-4">개인정보책임자</h3>
                     <p>이 름 : 노주현</p>
-                    <p>이메일:jh.noh@belab.co.kr</p>
+                    <p>이메일:help@belab.co.kr</p>
                 </div>
             </div>
         </div>

@@ -64,7 +64,7 @@
               <li class="col col-3 contents-item">
                 <strong class="h6">이메일</strong>
                 <p class="p1">
-                  sk.kim@belab.co.kr
+                  help@belab.co.kr
                 </p>
               </li>
               <li class="col col-3 contents-item">

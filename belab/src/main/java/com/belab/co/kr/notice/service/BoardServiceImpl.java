@@ -65,7 +65,7 @@ public class BoardServiceImpl implements BoardService {
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
 
             // 발신자 이메일 명시적으로 설정
-            helper.setFrom("sk.kim@belab.co.kr");
+            helper.setFrom("help@belab.co.kr");
             helper.setTo(to);
             helper.setSubject(subject);
             helper.setText(content, true); // HTML 콘텐츠 허용

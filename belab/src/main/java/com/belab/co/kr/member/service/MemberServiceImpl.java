@@ -105,7 +105,7 @@ public class MemberServiceImpl implements MemberService {
         message.setText(content);
 
         // 발신자 주소 설정 (메일플러그)
-        message.setFrom(new InternetAddress("sk.kim@belab.co.kr")); // 발신자 이메일 설정
+        message.setFrom(new InternetAddress("help@belab.co.kr")); // 발신자 이메일 설정
 
         // 수신자 설정
         message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress(email));

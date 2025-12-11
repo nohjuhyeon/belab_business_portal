@@ -49,7 +49,7 @@
               <span class="p2">
                 팩스: 02-451-0905
               </span><span class="p2">
-                이메일: sk.kim@belab.co.kr
+                이메일: help@belab.co.kr
               </span>
             </p>
           </address>
@@ -293,7 +293,7 @@
                             <br />
                             전화번호: 02-451-0902
                             <br />
-                            이메일: sk.kim@belab.co.kr
+                            이메일: help@belab.co.kr
                           </p>
                         </li>
                       </ul>
