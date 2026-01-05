@@ -56,7 +56,7 @@
             <ul class="row contents-list">
               <li class="col col-6 contents-item">
                 <strong class="h6">주소</strong>
-                <p class="p1">서울시 강남구 밤고개로 1길 30 우곡빌딩 5층 (수서동 714-3)</p>
+                <p class="p1">경기 성남시 분당구 판교역로 225-15 블루웍스 빌딩 2층  (삼평동 672-2)</p>
                 <p class="p1">
                   5F, Ugok Building, 30, Bamgogae-ro 1-gil, Gangnam-gu, Seoul, Republic of Korea (Suseo-dong 714-3)
                 </p>
@@ -78,7 +78,7 @@
                   <img src="/images/introduce/car.png" alt="Car Icon">
                   <h3>[자가용 이용시]</h3>
                   <ul>
-                      <li>사이룩스 동관 지하주차장 무료 주차</li>
+                      <li>블루웍스 빌딩 지하주차장 무료 주차</li>
                   </ul>
               </div>
               <div>
@@ -103,14 +103,14 @@
 <script>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
       mapOption = { 
-          center: new kakao.maps.LatLng(37.488665746531, 127.10325529516), // 지도의 중심좌표
+          center: new kakao.maps.LatLng(37.400411, 127.108758), // 지도의 중심좌표
           level: 4 // 지도의 확대 레벨
       };
   
   var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
   
   // 마커가 표시될 위치입니다 
-  var markerPosition  = new kakao.maps.LatLng(37.488665746531, 127.10325529516); 
+  var markerPosition  = new kakao.maps.LatLng(37.400411, 127.108758); 
   
   // 마커를 생성합니다
   var marker = new kakao.maps.Marker({

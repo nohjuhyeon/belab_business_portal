@@ -148,7 +148,7 @@
                                     <li class=""><span class="fw-600 me-2">(주)비이랩</li>
                                         <li class="">02-451-0902</li>
                                         <li class=""><a href="mailto:help@belab.co.kr">help@belab.co.kr</a></li>
-                                    <li class="border-0">서울 강남구 광평로 295</li>
+                                    <li class="border-0">경기 성남시 분당구 판교역로 225-15, 블루웍스 빌딩 2층</li>
                                 </ul>
                                 <a href="#contact" class="btn btn-primary rounded-pill">오시는길</a>
                             </div>
@@ -581,9 +581,9 @@
                                 <div class="featured-box style-1">
                                     <div class="featured-box-icon text-white text-6"> <i class="fas fa-map-marker-alt"></i></div>
                                     <h3 class="text-white">Address</h3>
-                                    <p>(06349)<br>
-                                        서울특별시 강남구 광평로 295<br>
-                                        사이룩스오피스텔 동관동 1714호 </p>
+                                    <p>(13494)<br>
+                                        경기 성남시 분당구 판교역로 225-15 <br>
+                                        블루웍스 빌딩 2층 </p>
                                 </div>
                                 <div class="featured-box style-1">
                                     <div class="featured-box-icon text-white text-6"> <i class="fas fa-phone"></i> </div>
@@ -671,7 +671,7 @@
                     <p>사업자등록번호 : 457-87-02772</p>
                     <p>Tel : 02-451-0902</p>
                     <p>Fax : 02-451-0905 </p>
-                    <p>소재지 : (06349)서울 강남구 광평로 295 사이룩스오피스텔  동관동1714호</p>
+                    <p>소재지 : (13494) 경기 성남시 분당구 판교역로 225-15, 블루웍스 빌딩 2층</p>
                 </div>
             </div>
         </div>
