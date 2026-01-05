@@ -58,7 +58,7 @@
                 <strong class="h6">주소</strong>
                 <p class="p1">경기 성남시 분당구 판교역로 225-15 블루웍스 빌딩 2층  (삼평동 672-2)</p>
                 <p class="p1">
-                  5F, Ugok Building, 30, Bamgogae-ro 1-gil, Gangnam-gu, Seoul, Republic of Korea (Suseo-dong 714-3)
+                  2F, Blueworks Building, 225-15 Pangyo-yeok-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea(Sam-pyeong-dong 672-2)
                 </p>
               </li>
               <li class="col col-3 contents-item">
@@ -85,9 +85,9 @@
                   <img src="/images/introduce/bus.png" alt="Transfer Icon">
                   <h3>[대중교통 이용시]</h3>
                   <ul>
-                      <li>3호선: 수서지하철역 하차, 3번 출구와 인접</li>
-                      <li>분당선: 수서지하철역 하차, 3번 출구와 인접</li>
-                      <li>SRT: 수서역 하차, 지하 통로로 수서지하철역 이동, 3번 출구와 인접</li>
+                    <li>신분당선 : 판교역 하차, 4번 출구 도로 15분 거리</li>
+                    <li>경강선 : 판교역 하차, 4번 출구 도로 15분 거리</li>
+                    <li>버스 : 380, 375, 101, 66, 602-1A, 602-1B, 602-2B</li>
                   </ul>
               </div>
           </section>   
