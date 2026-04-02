@@ -52,6 +52,18 @@
                                     <div class="swiper contents-swiper">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
+                                                <a href="/futurebiz/belog" class="cardset">
+                                                    <figure class="cardset-figure">
+                                                        <img class="cardset-img" src="/images/futurebiz/belog_logo.png"
+                                                            alt="스와이퍼 이미지" />
+                                                    </figure>
+                                                    <div class="cardset-body">
+                                                        <h2 class="h5 cardset-tit">BeLOG</h2>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="swiper-slide">
                                                 <a href="/futurebiz/bemon" class="cardset">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img" src="/images/futurebiz/bemon_logo.png"
@@ -63,7 +75,7 @@
                                                 </a>
                                             </div>
                                             
-                                            <div class="swiper-slide">
+                                            <!-- <div class="swiper-slide">
                                                 <a href="/futurebiz/bepet" class="cardset">
                                                     <figure class="cardset-figure">
                                                         <img class="cardset-img" src="/images/futurebiz/bepet_logo.png"
@@ -118,7 +130,7 @@
                                                         <h2 class="h5 cardset-tit">BeShop</h2>
                                                     </div>
                                                 </a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="swiper-button-prev"></div>

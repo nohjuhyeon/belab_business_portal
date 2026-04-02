@@ -131,9 +131,9 @@
                                                     <div class="cardset-body">
                                                         <h2 class="h5 cardset-tit">클라우드 최신 기술 활용</h2>
                                                         <ul class="contents-list">
-                                                            <li class="contents-item p2">
+                                                            <!-- <li class="contents-item p2">
                                                                 K-PaaS를 활용한 Cloud Native 시스템 구축
-                                                            </li>
+                                                            </li> -->
                                                             <li class="contents-item p2">
                                                                 신기술 도입을 위한 AI &amp; Cloud
                                                             </li>
@@ -320,7 +320,7 @@
                                                                     alt="카드 이미지" />
                                                             </figure>
                                                             <div class="cardset-cont">
-                                                                <h2 class="cardset-tit h6">오픈소스/사용 WEB, WAS</h2>
+                                                                <h2 class="cardset-tit h6">오픈소스/상용 WEB, WAS</h2>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -678,7 +678,8 @@
                                     <div class="cloud-N33" id="Oqm6K5DqCP">
                                         <div class="contents-container container-md">
                                             <h3 class="textset-tit h3">
-                                                오픈 클라우드 플랫폼(K-PaaS)를 이용한 Cloud Native 환경의 시스템 구축
+                                                오픈 클라우드 플랫폼를 이용한 Cloud Native 환경의 시스템 구축
+                                                <!-- 오픈 클라우드 플랫폼(K-PaaS)를 이용한 Cloud Native 환경의 시스템 구축 -->
                                             </h3>
                                             <div class="contents-inner">
                                                 <div class="imageset">
@@ -690,12 +691,12 @@
                                                         <li class="contents-item h5">
                                                             Cloud Native 환경의 컨설팅/마이그레이션 서비스 제공
                                                         </li>
-                                                        <li class="contents-item h5">
+                                                        <!-- <li class="contents-item h5">
                                                             K-PaaS 전문기업 인증을 통한 Cloud Native 기술능력 증빙
-                                                        </li>
+                                                        </li> -->
                                                     </ul>
-                                                    <div class="row row-cols-3 row-md-cols-1 gutter-2 contents-group">
-                                                        <div class="col">
+                                                    <div class="row row-cols-3 row-md-cols-1 gutter-1 contents-group">
+                                                        <div class="col", style="width: 100%;">
                                                             <div class="cardset cardset-hover cardset-border">
                                                                 <figure class="cardset-figure">
                                                                     <img class="cardset-img"
@@ -720,7 +721,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col">
+                                                        <!-- <div class="col">
                                                             <div class="cardset cardset-hover cardset-border">
                                                                 <figure class="cardset-figure">
                                                                     <img class="cardset-img"
@@ -744,7 +745,7 @@
                                                                     </ul>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>

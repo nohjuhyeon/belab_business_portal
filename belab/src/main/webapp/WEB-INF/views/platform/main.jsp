@@ -44,7 +44,7 @@
             <div class="platform-N23" id="cvM64D6q1q">
               <div class="contents-container container-md">
                 <div class="contents-inner">
-                  <div class="row row-cols-3 row-md-cols-1 gutter-2 contents-group">
+                  <div class="row row-cols-2 row-md-cols-1 gutter-2 contents-group">
                     <div class="col">
                       <div class="cardset cardset-hover cardset-border">
                         <figure class="cardset-figure">
@@ -74,7 +74,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                       <div class="cardset cardset-hover cardset-border">
                         <figure class="cardset-figure">
                           <img class="cardset-img" src="/images/img_basic_N42_3.png" alt="카드 이미지">
@@ -86,7 +86,7 @@
                         <div class="cardset-btn">
                           <a class="btnset btnset-sm" href="/errorpage">자세히보기</a>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>

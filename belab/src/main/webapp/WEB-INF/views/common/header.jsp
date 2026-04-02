@@ -93,11 +93,11 @@
                           <span>응용데이터 사업부</span>
                         </a>
                       </li>
-                      <li class="header-subitem on">
+                      <!-- <li class="header-subitem on">
                         <a class="header-sublink p3" href="/errorpage">
                           <span>SI 사업부</span>
                         </a>
-                      </li>
+                      </li> -->
                     </ul>
                   </li>
                   <li class="header-gnbitem on">
@@ -116,7 +116,7 @@
                         </a>
                       </li>
                        
-                        <li class="header-subitem on">
+                        <!-- <li class="header-subitem on">
                         <a class="header-sublink p3" href="/futurebiz/bepet">
                           <span>BePET</span>
                         </a>
@@ -141,7 +141,7 @@
                         <a class="header-sublink p3" href="/futurebiz/beshop">
                           <span>BeSHOP</span>
                         </a>
-                      </li>
+                      </li> -->
                     </ul>
                   </li>
                   <li class="header-gnbitem on">
