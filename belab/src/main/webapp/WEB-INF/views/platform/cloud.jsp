@@ -308,7 +308,7 @@
                                                                     alt="카드 이미지" />
                                                             </figure>
                                                             <div class="cardset-cont">
-                                                                <h2 class="cardset-tit h6">오픈소스/ 상용 DBMS</h2>
+                                                                <h2 class="cardset-tit h6" style="justify-content: center;">오픈소스/ 상용 DBMS</h2>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -320,7 +320,7 @@
                                                                     alt="카드 이미지" />
                                                             </figure>
                                                             <div class="cardset-cont">
-                                                                <h2 class="cardset-tit h6">오픈소스/상용 WEB, WAS</h2>
+                                                                <h2 class="cardset-tit h6" style="justify-content: center;">오픈소스/상용 WEB, WAS</h2>
                                                             </div>
                                                         </div>
                                                     </div>
